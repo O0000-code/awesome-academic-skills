@@ -1,0 +1,35 @@
+# researchclaw.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: researchclaw
+slug: researchclaw
+source_url: https://github.com/alphalab-ustc/researchclaw
+author: alphalab-ustc
+author_url: https://github.com/alphalab-ustc
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: End-to-end OpenClaw research companion (six capabilities incl. arXiv search, reading, writing)
+  with no API keys and a live demo, from a USTC lab. Broad workflow coverage; a stray SKILL.md.bak suggests
+  light repo hygiene.
+description_zh: 端到端的 OpenClaw 研究伴侣（六项能力，含 arXiv 检索、阅读、写作），无需 API key 并附带在线 demo，来自 USTC 的一个实验室。工作流覆盖面广；仓库里残留的
+  SKILL.md.bak 暗示其清理略显粗放。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - alphalab-ustc.github.io
+  - ar5iv.labs.arxiv.org
+  - arxiv.org
+  - export.arxiv.org
+  - openclaw.ai
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 125
+updated_at: '2026-04-07'
+archived: false

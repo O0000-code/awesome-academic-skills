@@ -1,0 +1,35 @@
+# science-narrative-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: science_narrative_skills
+slug: science-narrative-skills
+source_url: https://github.com/kangning-huang/science_narrative_skills
+author: kangning-huang
+author_url: https://github.com/kangning-huang
+license: No License
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: suite
+description: Evaluates scientific writing through the And-But-Therefore (ABT) narrative framework (Schimel's
+  'Writing Science'), diagnosing whether a paper's argument forms a coherent story rather than a list
+  of facts.
+description_zh: 借助 And-But-Therefore（ABT）叙事框架（出自 Schimel 的《Writing Science》）评估科技写作，诊断一篇论文的论证是否构成连贯的故事，而非一堆事实的罗列。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - chat.openai.com
+  - developers.openai.com
+  - docs.cursor.com
+  - gemini.google.com
+  - support.google.com
+  - windsurf.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: De-AI & humanizing
+stargazers_count: 5
+updated_at: '2026-01-18'
+archived: false

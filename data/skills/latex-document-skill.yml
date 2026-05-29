@@ -1,0 +1,48 @@
+name: latex-document-skill
+slug: latex-document-skill
+source_url: https://github.com/ndpvt-web/latex-document-skill
+author: ndpvt-web
+author_url: https://github.com/ndpvt-web
+license: MIT
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: skill
+description: The most template-heavy LaTeX skill here — 27 templates spanning papers, forms and tables;
+  breadth over a single niche.
+description_zh: 本列表中模板最丰富的 LaTeX skill——27 套模板覆盖论文、表单与表格；走广度而非深耕一隅。
+description_long: 'A general-purpose LaTeX document factory for agents: 27 templates and 27 helper scripts
+  spanning papers, forms, charts and CSV-to-LaTeX tables, plus a submission-readiness check. The most
+  template-heavy LaTeX skill here; breadth over a single niche.'
+description_zh_long: 面向 agent 的通用 LaTeX 文档工厂：27 套模板加 27 个辅助脚本，覆盖论文、表单、图表以及 CSV 转 LaTeX 表格，还附带一项投稿就绪检查。本列表中模板最丰富的
+  LaTeX skill；走的是广度路线，而非深耕某一细分场景。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: Clone and copy the skill into your agent skills folder (see repo README)
+validate_claim: Ask it to build a two-column conference paper from one of its templates and run the submission-readiness
+  check; confirm it compiles and reports concrete missing-element warnings rather than a generic "looks
+  good".
+lang:
+- en
+tags:
+- latex
+- templates
+- document-generation
+- submission-check
+featured: false
+spotlight: false
+stargazers_count: 425
+updated_at: '2026-06-01'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: LaTeX authoring & submission prep

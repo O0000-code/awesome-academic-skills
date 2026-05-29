@@ -1,0 +1,41 @@
+# deeppapernote.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: deeppapernote
+slug: deeppapernote
+source_url: https://github.com/917dhj/deeppapernote
+author: 917dhj
+author_url: https://github.com/917dhj
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: skill
+description: Deep-reads a single paper and produces high-quality, structured Obsidian-style research notes
+  (claims, methods, takeaways) usable across Claude Code/Codex/Cursor. Great for building a notes vault;
+  one-paper-at-a-time, not corpus-scale.
+description_zh: 深读单篇论文，产出高质量、结构化的 Obsidian 风格研究笔记（论断、方法、要点），可在 Claude Code/Codex/Cursor 间通用。很适合搭建笔记库；一次只读一篇，不面向语料级规模。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 917dhj.github.io
+  - api.crossref.org
+  - api.openalex.org
+  - api.semanticscholar.org
+  - api.star-history.com
+  - arxiv.org
+  - doi.org
+  - example.org
+  - export.arxiv.org
+  - www.frontiersin.org
+  - www.semanticscholar.org
+  - www.star-history.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
+  then verify each claim is grounded in the source text.
+subcategory: Deep reading & comprehension
+stargazers_count: 163
+updated_at: '2026-05-27'
+archived: false

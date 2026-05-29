@@ -1,0 +1,45 @@
+name: Awesome AI for Economists
+slug: list-awesome-ai-for-economists
+source_url: https://github.com/hanlulong/awesome-ai-for-economists
+author: Lu Han
+author_url: https://github.com/hanlulong
+license: CC0-1.0
+category: Awesome Lists & Ecosystem Maps
+lifecycle_stage: meta
+type: list
+description: A discipline-focused map of AI tools for economics research and teaching,
+  from the OpenEcon team.
+description_long: A discipline-focused map of AI tools, libraries and resources for
+  economics research, teaching and policy analysis, from the OpenEcon team; the go-to
+  cross-reference for economists specifically, and CC0-licensed like a proper awesome
+  list.
+description_zh: 面向经济学研究与教学的 AI 工具图谱，由 OpenEcon 团队维护。
+description_zh_long: 一张聚焦学科的地图，汇集面向经济学研究、教学与政策分析的 AI 工具、库与资源，出自 OpenEcon 团队；专为经济学者准备的首选交叉参考，并像一份规范的
+  awesome 列表那样采用 CC0 许可证。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://openecon.ai
+lang:
+- en
+tags:
+- awesome-list
+- economics
+- discipline-specific
+- hanlulong
+featured: false
+spotlight: false
+stargazers_count: 314
+updated_at: '2026-05-31'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null

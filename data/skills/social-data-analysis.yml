@@ -1,0 +1,69 @@
+# social-data-analysis.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: social-data-analysis
+slug: social-data-analysis
+source_url: https://github.com/nealcaren/social-data-analysis
+author: nealcaren
+author_url: https://github.com/nealcaren
+license: MIT
+category: Data Analysis & Statistics
+lifecycle_stage: discipline
+type: suite
+description: An 18-skill sociology methods pack covering quantitative and qualitative social-data analysis,
+  authored by a computational sociologist. Scope and provenance are strong; component depth unverified
+  (content not inspected).
+description_zh: 18 个技能的社会学方法包，覆盖定量与定性社会数据分析，作者为一位计算社会学家。范围与来源可靠；各组件深度未经核实（内容未作检视）。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - api.openalex.org
+  - api.unpaywall.org
+  - blog.acceleratelearning.com
+  - blog.polleverywhere.com
+  - blogs.kcl.ac.uk
+  - citl.indiana.edu
+  - commons.wikimedia.org
+  - console.cloud.google.com
+  - crlt.umich.edu
+  - cte.alliant.edu
+  - ctl.columbia.edu
+  - ctl.uaf.edu
+  - dcal.dartmouth.edu
+  - developers.google.com
+  - ditchthattextbook.com
+  - docs.openalex.org
+  - doi.org
+  - download.pytorch.org
+  - dukespace.lib.duke.edu
+  - earthschooling.info
+  - evidencebased.education
+  - idc.ls.wisc.edu
+  - jekashop.com
+  - learningcenters.rutgers.edu
+  - mslexia.co.uk
+  - nlp.stanford.edu
+  - openalex.org
+  - orcid.org
+  - pandoc.org
+  - pmc.ncbi.nlm.nih.gov
+  - saifmohammad.com
+  - sites.dartmouth.edu
+  - teaching.berkeley.edu
+  - teaching.washington.edu
+  - tophat.com
+  - unsplash.com
+  - uwaterloo.ca
+  - writinginthesciences.uoguelph.ca
+  - www.ashg.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Statistical modeling & test selection
+stargazers_count: 61
+updated_at: '2026-01-30'
+archived: false

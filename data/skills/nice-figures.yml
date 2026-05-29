@@ -1,0 +1,29 @@
+# nice-figures.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: nice-figures
+slug: nice-figures
+source_url: https://github.com/mapika/nice-figures
+author: mapika
+author_url: https://github.com/mapika
+license: MIT
+category: Figures & Visualization
+lifecycle_stage: figures
+type: plugin
+description: 'Matplotlib figures in a soft-pastel research-blog register: smoothed trends with confidence
+  bands, rounded bars, log-log scaling-law scatter, white background, plus 16 recipes. Great for ML/alignment
+  write-ups; one opinionated aesthetic.'
+description_zh: 走柔和粉彩、研究博客风格的 Matplotlib 图表：带置信带的平滑趋势线、圆角柱状图、双对数 scaling-law 散点图、白色背景，外加 16 套配方。很适合 ML/alignment
+  类的文章；但只有一种鲜明的审美风格。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - rsms.me
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+subcategory: Data-driven statistical plots
+stargazers_count: 6
+updated_at: '2026-05-30'
+archived: false

@@ -1,0 +1,28 @@
+# paper-humanizer-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paper-humanizer-skill
+slug: paper-humanizer-skill
+source_url: https://github.com/crabin/paper-humanizer-skill
+author: crabin
+author_url: https://github.com/crabin
+license: No License
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: 'Academic text humanizer for Chinese and English: strips AI-writing tells while strictly
+  preserving facts, numbers and conclusions, and reports which patterns it found. Ships no open-source license.'
+description_zh: 中英文学术文本去 AI 味工具：清除 AI 写作痕迹，同时严格保留事实、数字与结论，并报告检测到的模式。缺少明确的 LICENSE。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: De-AI & humanizing
+stargazers_count: 87
+updated_at: '2026-03-28'
+archived: false

@@ -1,0 +1,54 @@
+# scp.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: scp
+slug: scp
+source_url: https://github.com/internscience/scp
+author: internscience
+author_url: https://github.com/internscience
+license: MIT
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 200+ computational-science skills (physics, chemistry, materials, numerical methods, HPC)
+  wrapping real simulation tools like ASE. A discipline pack for bench/sim science rather than literature
+  work; broad and cleanly built.
+description_zh: 200+ 个计算科学 skill（物理、化学、材料、数值方法、HPC），封装了 ASE 等真实仿真工具。这是一个面向实验/仿真科学而非文献工作的学科包；覆盖广、构建干净。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 101.126.156.90
+  - 127.0.0.1
+  - api-v3.monarchinitiative.org
+  - api.catalogkg.igvf.org
+  - api.clinpgx.org
+  - api.deepseek.com
+  - api.genohub.org
+  - api.ncbi.nlm.nih.gov
+  - api.openai.com
+  - arxiv.org
+  - dashscope.aliyuncs.com
+  - datatracker.ietf.org
+  - discovery-usercenter.intern-ai.org.cn
+  - discovery.intern-ai.org.cn
+  - eutils.ncbi.nlm.nih.gov
+  - gnomad.broadinstitute.org
+  - open.bigmodel.cn
+  - oss-cn-hangzhou.aliyuncs.com
+  - reg.genome.network
+  - scp.intern-ai.org.cn
+  - scphub.intern-ai.org.cn
+  - www.ebi.ac.uk
+  - www.pharmgkb.org
+  - www.shlab.org.cn
+  - yankai96.github.io
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Physical, computational & mathematical sciences
+stargazers_count: 145
+updated_at: '2026-04-29'
+archived: false

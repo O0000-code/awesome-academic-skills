@@ -1,0 +1,31 @@
+# proofreading.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: proofreading
+slug: proofreading
+source_url: https://github.com/jakobthumm/proofreading
+author: jakobthumm
+author_url: https://github.com/jakobthumm
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: Proofreads academic papers against 100+ checks (structure, math notation, statistics, figures,
+  grammar, abbreviations) in report or interactive mode, and extracts reviewer marks from annotated PDFs.
+  Deep checklist; English-style checks need tuning.
+description_zh: 对照 100+ 项检查（结构、数学记号、统计、配图、语法、缩写）校对学术论文，支持报告模式或交互模式，并能从批注 PDF 中提取审稿标记。检查清单详尽；英文风格的检查项需要调校。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - jakob-thumm.com
+  - www.ce.cit.tum.de
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: Manuscript proofreading & quality audit
+stargazers_count: 31
+updated_at: '2026-04-23'
+archived: false

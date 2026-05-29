@@ -1,0 +1,54 @@
+name: stop-slop
+slug: stop-slop
+source_url: https://github.com/hardikpandya/stop-slop
+author: Hardik Pandya (hardikpandya)
+author_url: https://github.com/hardikpandya
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: The most-starred de-slop skill — a dogmatic 8-rule rulebook, but general-purpose, not academic-specific,
+  and ignores false positives.
+description_zh: star 数最高的去 AI 味技能——一本独断的八条规则手册，但面向通用散文、非专为学术，也不处理误报。
+description_long: The most-starred de-slop skill — a terse, dogmatic 8-rule rulebook (kill adverbs, no
+  em dashes, no "not X but Y" contrasts) plus a 50-point scoring rubric. General-purpose for prose; not
+  academic-specific and does not address false positives.
+description_zh_long: star 数最高的去 AI 味技能——一本简短而独断的八条规则手册（删副词、禁破折号、不用"not X but Y"式对比），外加 50 分制评分量表。面向通用散文，并非专为学术而设，也不处理误报问题。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://hvpandya.com
+install: Add the stop-slop folder as a Claude Code skill, or paste SKILL.md rules into a project.
+validate_claim: 'Paste an AI-sounding paragraph (em dashes, ''not just X — it''s Y'', tricolons) and ask:
+  ''Use stop-slop to rewrite this and score it.'' Expect a rewrite with the tells removed and a 1-10 rating
+  per dimension.'
+lang:
+- en
+tags:
+- de-ai
+- prose
+- editing
+- style
+featured: false
+spotlight: false
+spotlight_rationale: 'The most-starred de-slop skill, and refreshingly opinionated: a terse eight-rule
+  rulebook (kill adverbs, drop em-dashes, no not-X-but-Y) plus a 50-point scoring rubric. It is general-purpose
+  rather than academic-specific and will not flag its own false positives — but as a fast first pass to
+  strip the AI tells out of a draft before a human edit, nothing else is this direct.'
+spotlight_rationale_zh: star 数最高的去 AI 味技能，且观点鲜明得令人耳目一新：一本简短的八条规则手册（删副词、去破折号、不用 not-X-but-Y），外加 50 分制评分量表。它面向通用散文而非专为学术，也不会标出自己的误报——但若只把它当作人工精修前的"快速第一遍"，把草稿里的
+  AI 痕迹先刮掉一层，没有谁比它更直接利落。
+stargazers_count: 7868
+updated_at: '2026-03-17'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: De-AI & humanizing

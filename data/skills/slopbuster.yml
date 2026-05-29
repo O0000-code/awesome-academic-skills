@@ -1,0 +1,34 @@
+# slopbuster.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: slopbuster
+slug: slopbuster
+source_url: https://github.com/gabelul/slopbuster
+author: gabelul
+author_url: https://github.com/gabelul
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: 'A local AI-text humanizer for prose, code and academic writing: a two-pass audit flags 100+
+  tell-tale AI patterns, scores them in three tiers, and rewrites with optional voice injection -- all
+  offline, no API calls.'
+description_zh: 面向散文、代码与学术写作的本地去 AI 味工具：两遍式审查标记出 100+ 种典型 AI 模式，按三档评分，并可选注入个人语气进行改写——全程离线，无 API 调用。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - booplex.com
+  - en.wikipedia.org
+  - keepachangelog.com
+  - semver.org
+  - www.conventionalcommits.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: Manuscript proofreading & quality audit
+stargazers_count: 13
+updated_at: '2026-04-30'
+archived: false

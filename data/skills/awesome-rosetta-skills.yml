@@ -1,0 +1,70 @@
+# awesome-rosetta-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: awesome-rosetta-skills
+slug: awesome-rosetta-skills
+source_url: https://github.com/xjtulyc/awesome-rosetta-skills
+author: xjtulyc
+author_url: https://github.com/xjtulyc
+license: NOASSERTION
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'Multi-discipline research-skills library: 169 skills across 24 fields (physics to linguistics
+  to public health), each wiring domain data sources and methods. Unmatched breadth for non-CS disciplines;
+  depth varies, license is NOASSERTION.'
+description_zh: 多学科研究技能库：横跨 24 个领域（从物理到语言学到公共卫生）共 169 个技能，每个都接入了该领域的数据源与方法。在非 CS 学科上覆盖面无出其右；但深度参差，license
+  为 NOASSERTION。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - aif360.res.ibm.com
+  - alkaline-ml.com
+  - allenai.github.io
+  - altmetrics.org
+  - ambermd.org
+  - api.acleddata.com
+  - api.altmetric.com
+  - api.bl.uk
+  - api.europeana.eu
+  - api.healthdata.org
+  - api.materialsproject.org
+  - api.openalex.org
+  - api.openaq.org
+  - api.osf.io
+  - api.qualtrics.com
+  - api.semanticscholar.org
+  - apis.europeana.eu
+  - appeears.earthdatacloud.nasa.gov
+  - apptainer.org
+  - aqs.epa.gov
+  - aquacropos.github.io
+  - arch.readthedocs.io
+  - arg.tech
+  - arxiv.org
+  - aspredicted.org
+  - astroquery.readthedocs.io
+  - bashtage.github.io
+  - bcallaway11.github.io
+  - bids-specification.readthedocs.io
+  - bids-standard.github.io
+  - billkarsh.github.io
+  - bmrb.io
+  - book.the-turing-way.org
+  - brian2.readthedocs.io
+  - cantera.org
+  - catma.de
+  - cccbdb.nist.gov
+  - cces.gov.harvard.edu
+  - cds.climate.copernicus.eu
+  - cfconventions.org
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Cross-discipline / multi-field packs
+stargazers_count: 25
+updated_at: '2026-04-14'
+archived: false

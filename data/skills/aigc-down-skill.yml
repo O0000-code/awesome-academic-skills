@@ -1,0 +1,29 @@
+# aigc-down-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: aigc-down-skill
+slug: aigc-down-skill
+source_url: https://github.com/yezery/aigc-down-skill
+author: yezery
+author_url: https://github.com/yezery
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: 'Chinese-thesis de-AIGC skill: parses CNKI/Wanfang detection reports, targets flagged passages,
+  and rewrites to cut AI-detection rate while keeping argument and register. Effective for zh theses;
+  not for English and no guarantee against detectors.'
+description_zh: 面向中文学位论文的去 AIGC skill：解析知网/万方的检测报告，定位被标记的段落，在保留论证与语体的前提下改写以降低 AI 检测率。对中文论文有效；不适用于英文，且不保证能通过各类检测器。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: AIGC detector evasion (thesis)
+stargazers_count: 185
+updated_at: '2026-03-18'
+archived: false

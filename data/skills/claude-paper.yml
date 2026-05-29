@@ -1,0 +1,41 @@
+# claude-paper.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: claude-paper
+slug: claude-paper
+source_url: https://github.com/alaliqing/claude-paper
+author: alaliqing
+author_url: https://github.com/alaliqing
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: plugin
+description: 'Paper-study plugin that turns a PDF or arXiv link into a learning environment: parsed text,
+  adaptive summaries/Q&A, runnable code demos and a KaTeX web viewer. Rich but heavy (Node/Nuxt/poppler
+  deps); uses an unscoped Bash allowlist.'
+description_zh: 一个论文研读 plugin，把 PDF 或 arXiv 链接变成学习环境：解析文本、自适应摘要/问答、可运行的代码示例，以及一个 KaTeX 网页阅读器。功能丰富但偏重（依赖
+  Node/Nuxt/poppler）；使用了未加限定的 Bash 白名单。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - arxiv.org
+  - code.claude.com
+  - dotenvx.com
+  - feross.org
+  - katex.org
+  - nodejs.org
+  - nuxt.com
+  - opencollective.com
+  - paulmillr.com
+  - registry.npmjs.org
+  - tidelift.com
+  - www.patreon.com
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+subcategory: Deep reading & comprehension
+stargazers_count: 234
+updated_at: '2026-04-03'
+archived: false

@@ -1,0 +1,34 @@
+# rstack.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: rstack
+slug: rstack
+source_url: https://github.com/sunnnybala/rstack
+author: sunnnybala
+author_url: https://github.com/sunnnybala
+license: MIT
+category: Autonomous Research Systems
+lifecycle_stage: autonomous
+type: suite
+description: 'Research-automation chain: /research runs lit-review→novelty-check→experiment→analyze-results→write-paper
+  toward a submittable draft in one session; each skill also works standalone. Ambitious end-to-end; quality
+  hinges on the experiment step.'
+description_zh: 一条研究自动化链：/research 在一次会话内依次执行文献综述→新颖性核查→实验→结果分析→论文撰写，直至产出可投稿的草稿；其中每个 skill 也能独立使用。端到端的雄心之作；但成品质量取决于实验这一环。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.semanticscholar.org
+  - arxiv.org
+  - esm.sh
+  - tectonic-typesetting.github.io
+  - www.contributor-covenant.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
+  and drafted result whose sources actually exist.
+subcategory: Fully autonomous auto-scientists
+stargazers_count: 66
+updated_at: '2026-04-06'
+archived: false

@@ -1,0 +1,70 @@
+# claude-research.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: claude-research
+slug: claude-research
+source_url: https://github.com/flonat/claude-research
+author: flonat
+author_url: https://github.com/flonat
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'PhD-researcher infrastructure: 50 skills plus agents, hooks and rules for bibliography validation,
+  LaTeX health-checks, experiment and causal design, and reproducible project setup. Strong end-to-end;
+  ships hooks and an unscoped Bash.'
+description_zh: 面向博士研究者的基础设施：50 个 skill，外加 agent、hook 与规则，用于参考文献校验、LaTeX 健康检查、实验与因果设计，以及可复现的项目搭建。端到端能力很强；附带
+  hook 和一个未限定范围的 Bash。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - aaai.org
+  - api.clarivate.com
+  - api.cloudflare.com
+  - api.crossref.org
+  - api.elsevier.com
+  - api.mistral.ai
+  - api.openalex.org
+  - api.star-history.com
+  - apps.microsoft.com
+  - arxiv.org
+  - astral.sh
+  - atlas.user.com
+  - books.user.com
+  - brew.sh
+  - cdn.jsdelivr.net
+  - chi.acm.org
+  - code.claude.com
+  - code.visualstudio.com
+  - cvpr.thecvf.com
+  - dev.elsevier.com
+  - developer.clarivate.com
+  - docs.astral.sh
+  - docs.openalex.org
+  - doi.org
+  - generativelanguage.googleapis.com
+  - git-scm.com
+  - groups.google.com
+  - iclr.cc
+  - icml.cc
+  - images.webofknowledge.com
+  - jasonmfletcher.substack.com
+  - journals.ieeeauthorcenter.ieee.org
+  - journals.plos.org
+  - kdd.org
+  - launchpad.net
+  - learn.microsoft.com
+  - literature.user.com
+  - marketplace.visualstudio.com
+  - miktex.org
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 78
+updated_at: '2026-05-31'
+archived: false

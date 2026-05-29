@@ -1,0 +1,30 @@
+# humanizer.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: humanizer
+slug: humanizer
+source_url: https://github.com/blader/humanizer
+author: blader
+author_url: https://github.com/blader
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: The de-facto standard for stripping AI tells from prose (em-dash overuse, rule-of-three,
+  filler, negative parallelism). Single-purpose and scoped to read/write tools; great as a finishing pass,
+  not a full writing assistant.
+description_zh: 去除文本 AI 痕迹（破折号滥用、三段式法则、填充语、否定式排比）的事实标准。单一用途，权限仅限读/写工具；作为收尾润色一遍极佳，但不是完整的写作助手。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - en.wikipedia.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: De-AI & humanizing
+stargazers_count: 21933
+updated_at: '2026-05-27'
+archived: false

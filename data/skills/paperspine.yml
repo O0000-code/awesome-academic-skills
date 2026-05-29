@@ -1,0 +1,34 @@
+# paperspine.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paperspine
+slug: paperspine
+source_url: https://github.com/wubing2023/paperspine
+author: wubing2023
+author_url: https://github.com/wubing2023
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: suite
+description: Ten-skill academic-writing suite covering discovery, literature synthesis, argument-building,
+  manuscript revision, citations, figures, reviewer responses, and submission. Strong end-to-end coverage,
+  bilingual EN/zh; orchestration-heavy.
+description_zh: 十个技能的学术写作套件，覆盖文献发现、文献综合、论点构建、稿件修订、引用、配图、审稿回复与投稿。端到端覆盖扎实，中英双语；偏重编排。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.crossref.org
+  - api.semanticscholar.org
+  - doi.org
+  - example.org
+  - www.bilibili.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Manuscript drafting pipelines
+stargazers_count: 1695
+updated_at: '2026-06-01'
+archived: false

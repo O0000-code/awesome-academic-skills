@@ -1,0 +1,68 @@
+# mineru-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: mineru-skill
+slug: mineru-skill
+source_url: https://github.com/nebutra/mineru-skill
+author: nebutra
+author_url: https://github.com/nebutra
+license: MIT
+category: PDF / OCR / Document Parsing
+lifecycle_stage: ocr
+type: skill
+description: Parses PDFs, Office docs and images into clean Markdown with LaTeX formulas, tables and OCR
+  via MinerU. A solid OCR/extraction entry point for getting papers into editable text.
+description_zh: 借助 MinerU 将 PDF、Office 文档和图片解析为干净的 Markdown，保留 LaTeX 公式、表格并支持 OCR。是把论文转为可编辑文本的扎实 OCR/提取入口；但依赖
+  MinerU，且只是若干 PDF 转 MD skill 之一，宜对比后再选。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - acme.atlassian.net
+  - airtable.com
+  - allenai.org
+  - api.airtable.com
+  - api.linear.app
+  - api.notion.com
+  - api.star-history.com
+  - api.ticktick.com
+  - cdn
+  - cdn-mineru.openxlab.org.cn
+  - clawhub.com
+  - coda.io
+  - developer.kdocs.cn
+  - developer.ticktick.com
+  - developer.work.weixin.qq.com
+  - docs.astral.sh
+  - feishu.cn
+  - files.slack.com
+  - graph.microsoft.com
+  - huggingface.co
+  - linear.app
+  - mathpix.com
+  - mineru.net
+  - neurohive.io
+  - notion.so
+  - oapi.dingtalk.com
+  - onenote.com
+  - open.dingtalk.com
+  - open.feishu.cn
+  - openclaw.ai
+  - oss
+  - pymupdf.io
+  - pypi.org
+  - qyapi.weixin.qq.com
+  - reducto.ai
+  - roamresearch.com
+  - siyuan.local
+  - slack.com
+  - smithery.ai
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to convert a sample PDF, then verify the output preserves
+  the document's structure (headings, tables, formulas).
+stargazers_count: 50
+updated_at: '2026-06-01'
+archived: false

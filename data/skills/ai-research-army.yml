@@ -1,0 +1,69 @@
+# ai-research-army.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: ai-research-army
+slug: ai-research-army
+source_url: https://github.com/terryfyl/ai-research-army
+author: terryfyl
+author_url: https://github.com/terryfyl
+license: Apache-2.0
+category: Autonomous Research Systems
+lifecycle_stage: autonomous
+type: suite
+description: Nine-agent pipeline taking clinical data to a submission-ready medical manuscript — requirement
+  scoping, data profiling, stats, figures, literature, drafting, submission packaging. Ambitious end-to-end;
+  some modules are a partial public release.
+description_zh: 九个 agent 组成的流水线，把临床数据一路推到可投稿的医学稿件——需求界定、数据画像、统计、绘图、文献、撰写、投稿打包。端到端的野心十足；部分模块只是部分公开发布。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - a16z.com
+  - ai.meta.com
+  - api.aicodewith.com
+  - api.census.gov
+  - api.crossref.org
+  - api.semanticscholar.org
+  - api.with7.cn
+  - arxiv.org
+  - aws.amazon.com
+  - azure.microsoft.com
+  - bensbites.beehiiv.com
+  - blogs.nvidia.com
+  - bmcpsychiatry.biomedcentral.com
+  - bmjopen.bmj.com
+  - cloud.google.com
+  - cloud.r-project.org
+  - community.amd.com
+  - conference.scipy.org.s3-website-us-east-1.amazonaws.com
+  - data.cdc.gov
+  - deepmind.google
+  - deepscientist.cc
+  - doi.org
+  - gis.cdc.gov
+  - investor.nvidia.com
+  - magazine.sebastianraschka.com
+  - news.ycombinator.com
+  - openai.com
+  - openrouter.ai
+  - osf.io
+  - personal.sron.nl
+  - pmc.ncbi.nlm.nih.gov
+  - pubmed.ncbi.nlm.nih.gov
+  - simonwillison.net
+  - space.bilibili.com
+  - sss.ccki.top
+  - stratechery.com
+  - techcrunch.com
+  - thegradient.pub
+  - theresanaiforthat.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
+  and drafted result whose sources actually exist.
+subcategory: Domain-bound autonomous systems
+stargazers_count: 6
+updated_at: '2026-04-23'
+archived: false

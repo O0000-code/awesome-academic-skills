@@ -1,0 +1,48 @@
+name: sciwrite
+slug: sciwrite
+source_url: https://github.com/labarba/sciwrite
+author: Lorena A. Barba (labarba)
+author_url: https://github.com/labarba
+license: CC-BY-4.0
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: Encodes Sainani's Stanford "Writing in the Sciences" method into five sequential audit passes.
+  A pedigree de-clutter pick for manuscripts.
+description_zh: 把 Sainani 在斯坦福的"Writing in the Sciences"方法编码成五道顺序审查。一款有学术渊源的论文"去冗赘"之选。
+description_long: Encodes Kristin Sainani's Stanford "Writing in the Sciences" method into five sequential
+  audit passes (clutter, verbs, concision, flow, keywords) with full, section, targeted, and interactive
+  modes. A pedigree de-clutter pick for manuscripts.
+description_zh_long: 把 Kristin Sainani 在斯坦福的 "Writing in the Sciences" 方法编码成五道顺序审查（冗赘、动词、精简、行文流畅、关键词），并提供全文、按节、定点、交互四种模式。一款有学术渊源的论文"去冗赘"之选。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://www.coursera.org/learn/sciwrite
+install: Add the sciwrite folder as a Claude Code skill.
+validate_claim: 'Paste a cluttered manuscript paragraph and ask: ''Use the manuscript-writing-review skill,
+  full-review mode.'' Expect the five audit passes with before/after rewrites (e.g., ''due to the fact
+  that'' → ''because'').'
+lang:
+- en
+tags:
+- de-ai
+- scientific-writing
+- clarity
+- sainani
+featured: false
+spotlight: false
+stargazers_count: 681
+updated_at: '2026-04-05'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Anti-hallucination & over-revision guards

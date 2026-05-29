@@ -1,0 +1,33 @@
+# paperbanana-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paperbanana-skill
+slug: paperbanana-skill
+source_url: https://github.com/plutolei/paperbanana-skill
+author: plutolei
+author_url: https://github.com/plutolei
+license: MIT
+category: Figures & Visualization
+lifecycle_stage: figures
+type: skill
+description: Multi-agent pipeline (Retriever→Planner→Stylist) for academic diagrams, methodology figures,
+  statistical plots and slide decks from text/data, plus a figure-vs-reference evaluator. Eight providers;
+  mature (v4.x). Heavyweight for one-off diagrams.
+description_zh: 多 agent 流水线（Retriever→Planner→Stylist），从文本/数据生成学术示意图、方法图、统计图与幻灯片，并配有「图 vs 参考图」评估器。支持八家
+  provider；较为成熟（v4.x）。用于一次性出图则偏重。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - skills.sh
+  - www.contributor-covenant.org
+  - www.conventionalcommits.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use this skill to produce a described figure, then verify it renders at
+  publication quality and matches the request.
+subcategory: Method & concept diagrams
+stargazers_count: 32
+updated_at: '2026-05-29'
+archived: false

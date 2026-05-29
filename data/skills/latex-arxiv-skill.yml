@@ -1,0 +1,42 @@
+# latex-arxiv-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: latex-arxiv-skill
+slug: latex-arxiv-skill
+source_url: https://github.com/renocrypt/latex-arxiv-skill
+author: renocrypt
+author_url: https://github.com/renocrypt
+license: No License
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: skill
+description: 'Issue-driven Codex skill for ML/AI arXiv review papers: scaffolds the LaTeX project and
+  verifies every BibTeX entry end-to-end. The BibTeX verification lifts it above generic templates; aimed
+  narrowly at arXiv-style ML reviews; ships no license.'
+description_zh: 一个以 issue 驱动、面向 ML/AI 领域 arXiv 综述论文的 Codex skill：搭建 LaTeX 项目脚手架，并对每条 BibTeX 条目做端到端核验。BibTeX
+  核验让它高出一般的 LaTeX 模板一筹；定位狭窄，仅针对 arXiv 风格的 ML 综述，且无许可证。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - a9.com
+  - agentskills.io
+  - arxiv.org
+  - code.claude.com
+  - developers.openai.com
+  - docs.claude.com
+  - docs.cloud.google.com
+  - export.arxiv.org
+  - help.runwayml.com
+  - lumalabs.ai
+  - openai.com
+  - pika.art
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
+  the output compiles/opens and matches the spec.
+subcategory: LaTeX authoring & submission prep
+stargazers_count: 330
+updated_at: '2025-12-29'
+archived: false

@@ -1,0 +1,28 @@
+# lit-review.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: lit-review
+slug: lit-review
+source_url: https://github.com/bethww/lit-review
+author: bethww
+author_url: https://github.com/bethww
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: Guides a literature review as an argument across seven phases (question, method, synthesis)
+  instead of summarizing sources. Bilingual EN/zh; explicitly will not write the paper for you.
+description_zh: 把文献综述当作一项论证、分七个阶段（提问、方法、综合）来引导，而非堆砌文献摘要。中英双语；明确声明不会替你把论文写出来。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Literature-review writing
+stargazers_count: 49
+updated_at: '2026-04-01'
+archived: false

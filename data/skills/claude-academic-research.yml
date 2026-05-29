@@ -1,0 +1,70 @@
+# claude-academic-research.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: claude-academic-research
+slug: claude-academic-research
+source_url: https://github.com/mronkko/claude-academic-research
+author: mronkko
+author_url: https://github.com/mronkko
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'Professor-built suite spanning the research lifecycle: PRISMA review, peer review, manuscript
+  revision, empirical-integrity stat checks, and Zotero/MCP-grounded citations that refuse hallucinated
+  references. Strong on rigor; needs Zotero+MCP setup.'
+description_zh: 由教授打造、覆盖研究全生命周期的套件：PRISMA 综述、同行评议、稿件修订、实证完整性的统计核查，以及由 Zotero/MCP 锚定、拒绝幻觉引用的参考文献。严谨性强；需要配置
+  Zotero+MCP。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - a
+  - academic.oup.com
+  - aistudio.google.com
+  - another-unknown.example
+  - api.clarivate.com
+  - api.crossref.org
+  - api.elsevier.com
+  - api.openalex.org
+  - api.semanticscholar.org
+  - api.unpaywall.org
+  - api.zotero.org
+  - astral.sh
+  - b
+  - bar
+  - beallslist.net
+  - bmkramer.github.io
+  - c
+  - calendarmcp.googleapis.com
+  - content.openalex.org
+  - d
+  - dev.elsevier.com
+  - developer.clarivate.com
+  - doi.org
+  - dx.doi.org
+  - example
+  - example.org
+  - ezproxy.jyu.fi
+  - fake-wiley.com
+  - foo
+  - generativelanguage.googleapis.com
+  - journals.aom.org
+  - journals.sagepub.com
+  - keepachangelog.com
+  - link.springer.com
+  - links.jstor.org
+  - melinda.example
+  - old
+  - onlinelibrary.wiley.com
+  - openalex.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 12
+updated_at: '2026-05-26'
+archived: false

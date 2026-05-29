@@ -1,0 +1,51 @@
+name: PDF (Anthropic document skill)
+slug: anthropic-pdf
+source_url: https://github.com/anthropics/skills/tree/main/skills/pdf
+author: Anthropic
+author_url: https://github.com/anthropics
+license: Proprietary
+category: PDF / OCR / Document Parsing
+lifecycle_stage: ocr
+type: skill
+description: Anthropic's own PDF skill — a task router over pypdf/pdfplumber/reportlab/qpdf
+  for routine merge/split/extract/forms. The reliable default, not a high-accuracy
+  OCR engine.
+description_zh: Anthropic 自家的 PDF 技能——在 pypdf/pdfplumber/reportlab/qpdf 之上做合并/拆分/抽取/填表。日常活儿的可靠默认，但不是高精度
+  OCR 引擎。
+description_long: 'Anthropic''s own PDF skill: a task router over pypdf, pdfplumber,
+  reportlab and qpdf for merging, splitting, extraction and form filling, with pytesseract
+  OCR as a fallback. The reliable default for routine PDF work, not a high-accuracy
+  OCR engine.'
+description_zh_long: Anthropic 自家的 PDF 技能：在 pypdf、pdfplumber、reportlab 和 qpdf 之上的一个任务路由器，做合并、拆分、抽取和填表，OCR
+  用 pytesseract 兜底。日常 PDF 活儿可靠的默认选项，但不是高精度 OCR 引擎。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://www.anthropic.com/news/skills
+install: Bundled with Claude file features; or copy skills/pdf/ into ~/.claude/skills/
+validate_claim: Give Claude a scanned multi-page PDF and ask it to extract the text
+  and tables; confirm it OCRs the scanned pages and returns structured tables.
+lang:
+- en
+tags:
+- pdf
+- extraction
+- forms
+- ocr-fallback
+- official
+featured: false
+spotlight: false
+stargazers_count: 144932
+updated_at: '2026-05-29'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null

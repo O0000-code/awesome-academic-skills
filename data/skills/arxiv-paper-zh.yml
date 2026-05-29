@@ -1,0 +1,34 @@
+# arxiv-paper-zh.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: arxiv-paper-zh
+slug: arxiv-paper-zh
+source_url: https://github.com/zeya-labs/arxiv-paper-zh
+author: zeya-labs
+author_url: https://github.com/zeya-labs
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: skill
+description: Translates arXiv LaTeX papers into Chinese while preserving formatting (formulas, figures,
+  citations), from an arXiv ID or local source. The format-preserving approach beats plain-text translation;
+  scope is narrow (arXiv LaTeX, EN to zh).
+description_zh: 将 arXiv 的 LaTeX 论文翻译成中文，并保留格式——公式、图表与引用——可从 arXiv ID 或本地源文件读取。这种保留格式的方式优于纯文本翻译；适用范围较窄（仅限
+  arXiv LaTeX、英译中）。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - arxiv.org
+  - drop-sh.fullyjustified.net
+  - export.arxiv.org
+  - tectonic-typesetting.github.io
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
+  then verify each claim is grounded in the source text.
+subcategory: Paper translation
+stargazers_count: 6
+updated_at: '2026-04-30'
+archived: false

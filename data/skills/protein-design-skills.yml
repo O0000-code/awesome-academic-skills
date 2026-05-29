@@ -1,0 +1,46 @@
+name: protein-design-skills
+slug: protein-design-skills
+source_url: https://github.com/adaptyvbio/protein-design-skills
+author: Adaptyv Bio
+author_url: https://github.com/adaptyvbio
+license: MIT
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: Narrow, deep protein design that auto-chains BoltzGen, Chai and QC into one pipeline; expects
+  real compute backends.
+description_zh: 专精而深入的蛋白质设计，把 BoltzGen、Chai 与质控自动串成一条流水线；需要真实的算力后端。
+description_long: 21 computational-protein-design skills from a protein-engineering company — chains BoltzGen
+  (generation), Chai (structure) and QC so "design a binder for PDB 1ALU" auto-routes through the pipeline.
+  Narrow and deep; expects real compute backends.
+description_zh_long: 出自一家蛋白质工程公司的 21 个计算蛋白质设计 skill——把 BoltzGen（生成）、Chai（结构）与质控串成一条链，于是“为 PDB 1ALU 设计一个结合体”便会自动沿流水线分发。专精而深入；需要真实的算力后端。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: /plugin marketplace add adaptyvbio/protein-design-skills then /plugin install adaptyv@protein-design-skills
+validate_claim: Ask "design a binder for PDB 1ALU" and confirm the agent sequences the BoltzGen -> Chai
+  -> QC skills automatically and explains each step, rather than inventing a one-shot answer.
+lang:
+- en
+tags:
+- protein-design
+- structural-biology
+- binder-design
+- pipeline
+featured: false
+spotlight: false
+stargazers_count: 135
+updated_at: '2026-01-19'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Biomedical & life sciences

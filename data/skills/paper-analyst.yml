@@ -1,0 +1,29 @@
+# paper-analyst.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paper-analyst
+slug: paper-analyst
+source_url: https://github.com/flyer-li/paper-analyst
+author: flyer-li
+author_url: https://github.com/flyer-li
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: skill
+description: Analyzes a paper in five depth modes (quick to presentation-with-figures) with anti-hallucination
+  source tagging and method extraction tuned to paper type. Good for structured reading/summaries; single-skill,
+  no external data sources of its own.
+description_zh: 以五种深度模式分析论文（从快速浏览到带图表的汇报），配有防幻觉的来源标注，并针对论文类型做相应的方法提取。擅长结构化阅读/摘要；为单个 skill，自身不接入外部数据源。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
+  then verify each claim is grounded in the source text.
+subcategory: Deep reading & comprehension
+stargazers_count: 47
+updated_at: '2026-04-26'
+archived: false

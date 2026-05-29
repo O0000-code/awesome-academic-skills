@@ -1,0 +1,69 @@
+# neurico.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: neurico
+slug: neurico
+source_url: https://github.com/chicagohai/neurico
+author: chicagohai
+author_url: https://github.com/chicagohai
+license: Apache-2.0
+category: Autonomous Research Systems
+lifecycle_stage: autonomous
+type: suite
+description: Give it a structured hypothesis; it runs the experiment loop and emits code, figures, and
+  a LaTeX paper. Lab-built and genuinely scholarly, though heavy (git+docker) and only as good as the
+  domain harness behind it.
+description_zh: 给它一个结构化假设，它就跑完实验循环，并产出代码、图表和一篇 LaTeX 论文。由实验室打造、确有学术性，但偏重（需 git+docker），其上限取决于背后的领域测评框架。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - academic.oup.com
+  - aflowlib.org
+  - allen.ai
+  - amir.rachum.com
+  - api.crossref.org
+  - api.semanticscholar.org
+  - api.sentiment-analysis.com
+  - archive.ics.uci.edu
+  - arxiv.org
+  - astral.sh
+  - batterydata.energy.gov
+  - bla.org
+  - cohere.com
+  - dashboard.cohere.com
+  - deb.nodesource.com
+  - discord.gg
+  - docs.astral.sh
+  - docs.docker.com
+  - docs.nvidia.com
+  - doi.org
+  - en.wikipedia.org
+  - export.arxiv.org
+  - feynrules.irmp.ucl.ac.be
+  - fsf.org
+  - github.io
+  - gitlab.com
+  - greensteam.dk
+  - hdl.handle.net
+  - huggingface.co
+  - hypogenic.ai
+  - icml.cc
+  - inspirehep.net
+  - materialsproject.org
+  - mirrors.ctan.org
+  - neurico.io
+  - neurips.cc
+  - nips.cc
+  - oauth2
+  - onlinelibrary.wiley.com
+  - openrouter.ai
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
+  and drafted result whose sources actually exist.
+subcategory: Domain-bound autonomous systems
+stargazers_count: 130
+updated_at: '2026-05-08'
+archived: false

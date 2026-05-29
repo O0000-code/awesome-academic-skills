@@ -1,0 +1,59 @@
+# scientific-research-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: scientific-research-skills
+slug: scientific-research-skills
+source_url: https://github.com/jxtse/scientific-research-skills
+author: jxtse
+author_url: https://github.com/jxtse
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'Methodology-first research skills for agents: literature search, three-depth paper reading,
+  full-text harvest, related-work survey, Zotero management and publication-figure generation.'
+description_zh: 方法学优先的 agent 研究技能：文献检索、三种深度的论文阅读、全文获取、related-work 综述、Zotero 管理与可发表配图生成。沉淀的是工作流经验，而非单薄的工具封装。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - agentskills.io
+  - ai.google.dev
+  - ai.studio
+  - api.crossref.org
+  - api.elsevier.com
+  - api.openalex.org
+  - api.springernature.com
+  - api.unpaywall.org
+  - api.wiley.com
+  - api.zotero.org
+  - dev.elsevier.com
+  - dev.springernature.com
+  - docs.openalex.org
+  - doi.org
+  - dx.doi.org
+  - exa.ai
+  - jina.ai
+  - journals.aps.org
+  - link.springer.com
+  - onlinelibrary.wiley.com
+  - open.aminer.cn
+  - pubs.acs.org
+  - pubs.aip.org
+  - pubs.rsc.org
+  - r.jina.ai
+  - tavily.com
+  - unpaywall.org
+  - www.crossref.org
+  - www.ebi.ac.uk
+  - www.tandfonline.com
+  - www.zotero.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 44
+updated_at: '2026-05-19'
+archived: false

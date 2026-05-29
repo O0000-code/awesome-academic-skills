@@ -1,0 +1,29 @@
+# academic-writing-agents.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: academic-writing-agents
+slug: academic-writing-agents
+source_url: https://github.com/andrehuang/academic-writing-agents
+author: andrehuang
+author_url: https://github.com/andrehuang
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: plugin
+description: Claude Code plugin running 12 specialist agents (logic, technical, prose, bibliography, LaTeX
+  reviewers) in parallel over a draft, diagnosing then fixing with human approval. Strong for structured
+  manuscript review; not a from-scratch writer.
+description_zh: 一个 Claude Code 插件，让 12 个专项 agent（逻辑、技术、文笔、参考文献、LaTeX 等评审角色）并行审阅同一份草稿，先诊断问题、再在人工确认后修改。擅长结构化的稿件评审；并非从零起草的写作工具。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - api.openalex.org
+  - dblp.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+subcategory: LaTeX & typesetting-integrated writing
+stargazers_count: 83
+updated_at: '2026-05-11'
+archived: false

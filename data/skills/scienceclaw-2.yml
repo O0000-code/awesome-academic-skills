@@ -1,0 +1,68 @@
+# scienceclaw-2.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: scienceclaw
+slug: scienceclaw-2
+source_url: https://github.com/lamm-mit/scienceclaw
+author: lamm-mit
+author_url: https://github.com/lamm-mit
+license: Apache-2.0
+category: Data Analysis & Statistics
+lifecycle_stage: suite
+type: suite
+description: 'Computational science-and-engineering skill suite (340+ skills) from MIT''s LAMM lab: materials
+  science, molecular dynamics, finite-element analysis, symbolic math and multiscale modeling.'
+description_zh: 来自 MIT LAMM 实验室、含 340+ 个 skill 的计算科学与工程套件：材料科学、分子动力学、有限元分析、符号数学与多尺度建模。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - 127.0.0.1
+  - a-paulus.github.io
+  - aaai.org
+  - accessgudid.nlm.nih.gov
+  - account-id.r2.cloudflarestorage.com
+  - account.uspto.gov
+  - aclanthology.org
+  - alfred.stlouisfed.org
+  - allensdk.readthedocs.io
+  - alphafold.ebi.ac.uk
+  - ambermd.org
+  - amstar.ca
+  - anndata.readthedocs.io
+  - anonymous.4open.science
+  - apastyle.apa.org
+  - api.biorxiv.org
+  - api.chaidiscovery.com
+  - api.clinpgx.org
+  - api.crossref.org
+  - api.datacite.org
+  - api.deepseek.com
+  - api.fda.gov
+  - api.firecrawl.dev
+  - api.fiscaldata.treasury.gov
+  - api.imgur.com
+  - api.labarchives.com
+  - api.lkeap.cloud.tencent.com
+  - api.materialsproject.org
+  - api.ncbi.nlm.nih.gov
+  - api.openalex.org
+  - api.pasqal.cloud
+  - api.pharmgkb.org
+  - api.platform.opentargets.org
+  - api.stlouisfed.org
+  - apidoc.protocols.io
+  - apikeys.datacommons.org
+  - arpa-e.energy.gov
+  - arriveguidelines.org
+  - arxiv.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Domain computational & simulation pipelines
+stargazers_count: 205
+updated_at: '2026-05-29'
+archived: false

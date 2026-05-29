@@ -1,0 +1,68 @@
+# alterlab-academic-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: alterlab-academic-skills
+slug: alterlab-academic-skills
+source_url: https://github.com/alterlab-ieu/alterlab-academic-skills
+author: alterlab-ieu
+author_url: https://github.com/alterlab-ieu
+license: MIT
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 186+ domain-organized academic skills for faculty/researchers, wrapping real scientific databases
+  and libraries (ENA, biopython, cellxgene, cobrapy, ESM, etc.).
+description_zh: 面向教师/研究人员的 186+ 个按领域组织的学术 skill，封装了真实的科研数据库与库（ENA、biopython、cellxgene、cobrapy、ESM 等）。在生物信息学/计算科学的覆盖广度上很强。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - '...store'
+  - 2024.emnlp.org
+  - aaai.org
+  - accessgudid.nlm.nih.gov
+  - account-id.r2.cloudflarestorage.com
+  - account.uspto.gov
+  - aclanthology.org
+  - acrl.ala.org
+  - adho.org
+  - ahkstrategies.net
+  - alfred.stlouisfed.org
+  - allensdk.readthedocs.io
+  - alphafold.ebi.ac.uk
+  - ambermd.org
+  - amstar.ca
+  - anndata.readthedocs.io
+  - anonymous.4open.science
+  - apastyle.apa.org
+  - api-v3.monarchinitiative.org
+  - api.biorxiv.org
+  - api.clinpgx.org
+  - api.crossref.org
+  - api.datacite.org
+  - api.fda.gov
+  - api.fiscaldata.treasury.gov
+  - api.glytoucan.org
+  - api.labarchives.com
+  - api.mapbox.com
+  - api.ncbi.nlm.nih.gov
+  - api.openalex.org
+  - api.openweathermap.org
+  - api.parallel.ai
+  - api.pasqal.cloud
+  - api.pharmgkb.org
+  - api.platform.opentargets.org
+  - api.stlouisfed.org
+  - apidoc.protocols.io
+  - apikeys.datacommons.org
+  - arpa-e.energy.gov
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Biomedical & life sciences
+stargazers_count: 22
+updated_at: '2026-04-27'
+archived: false

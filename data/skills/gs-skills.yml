@@ -1,0 +1,38 @@
+# gs-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: gs-skills
+slug: gs-skills
+source_url: https://github.com/cookjohn/gs-skills
+author: cookjohn
+author_url: https://github.com/cookjohn
+license: MIT
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: suite
+description: 'A genuinely useful Google Scholar toolkit for the CLI: keyword/advanced search, citation-chain
+  tracking, full-text link resolution and one-step Zotero export. Relies on Chrome DevTools MCP and scrapes
+  the DOM, so it can break when Scholar changes.'
+description_zh: 一套真正实用的命令行 Google Scholar 工具箱：关键词/高级检索、引用链追踪、全文链接解析与一键 Zotero 导出。依赖 Chrome DevTools MCP
+  并抓取 DOM，因此 Scholar 一改版就可能失效。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - discord.gg
+  - doi.org
+  - pubmed.ncbi.nlm.nih.gov
+  - scholar.google.com
+  - sci-hub.ru
+  - www.ncbi.nlm.nih.gov
+  - www.zotero.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
+  returned title/DOI resolves to a real paper.
+subcategory: Multi-source discovery search
+stargazers_count: 351
+updated_at: '2026-03-13'
+archived: false

@@ -1,0 +1,48 @@
+name: Manuscript Submission Formatting Agent
+slug: my-submission-formatting-agent
+source_url: https://github.com/maxwell2732/my-submission-formatting-agent
+author: Chen Zhu (朱晨)
+author_url: https://github.com/maxwell2732
+license: No License
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: suite
+description: Reformats a finished manuscript to a new journal's author guidelines for post-rejection resubmission,
+  never touching the results.
+description_zh: 为被拒后改投，把已完稿论文按新期刊作者须知重新排版，全程不动结果。
+description_long: 'Solves the post-rejection chore: reformats a finished manuscript to a new journal''s
+  author guidelines — section order, citation style, missing declarations, word limits — into a submission-ready
+  Word file, never touching data, results or conclusions.'
+description_zh_long: 专治被拒后改投的杂活：把已完稿的论文按新期刊的作者须知重新排版——章节顺序、引用格式、缺失的声明、字数限制——产出一份可直接投稿的 Word 文件，全程不动数据、结果与结论。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: Clone; the skills live under .claude/skills/ (copy into your project or ~/.claude/skills/)
+validate_claim: Give it a draft plus a target journal's author-guidelines URL/PDF; confirm it emits a
+  reordered, reference-restyled .docx whose body text/results are byte-for-byte unchanged from the input.
+lang:
+- en
+- zh
+tags:
+- submission-formatting
+- journal-reformat
+- docx
+- suite
+homepage_url: https://doi.org/10.5281/zenodo.19026694
+featured: false
+spotlight: false
+stargazers_count: 84
+updated_at: '2026-03-15'
+archived: false
+current_release:
+  tag: v1
+  published_at: '2026-03-15'
+last_link_check: null
+last_security_scan: null
+subcategory: Journal & Word-template formatting

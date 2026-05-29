@@ -1,0 +1,51 @@
+name: voidful/academic-skills
+slug: voidful-academic-skills
+source_url: https://github.com/voidful/academic-skills
+author: Eric Lam
+author_url: https://github.com/voidful
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+skills_count: 8
+description: A compact, opinionated grad-school pipeline (CS/ML flavor) across Claude Code, Codex and
+  Gemini.
+description_long: A compact 8-skill grad-school pipeline — professor-fit analysis, paper reading, idea
+  generation, experiment design, proof writing, writing and review — for Claude Code, Codex and Gemini
+  CLI; smaller and more opinionated, with a CS/ML flavor.
+description_zh: 精简而主张鲜明、带 CS/ML 气质的研究生流水线，可在 Claude Code、Codex 与 Gemini 上运行。
+description_zh_long: 一条精简的八 skill 研究生流水线——导师匹配度分析、论文阅读、想法生成、实验设计、证明撰写、写作与审稿——支持 Claude Code、Codex 与 Gemini
+  CLI；体量更小、主张更鲜明，带着 CS/ML 的气质。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+homepage_url: ''
+install: git clone into ~/.claude/skills/ (or ~/.codex/skills, ~/.gemini/skills) per the README
+validate_claim: Use professor-fit-analyser with a target lab's recent papers and your background; confirm
+  it produces a concrete fit assessment and application angle, not generic advice.
+lang:
+- en
+- zh
+tags:
+- grad-school
+- cs-ml
+- cross-platform
+- lightweight
+- voidful
+featured: false
+spotlight: false
+stargazers_count: 79
+updated_at: '2026-04-04'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Full-lifecycle research backbones

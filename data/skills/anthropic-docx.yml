@@ -1,0 +1,48 @@
+name: DOCX (Anthropic document skill)
+slug: anthropic-docx
+source_url: https://github.com/anthropics/skills/tree/main/skills/docx
+author: Anthropic
+author_url: https://github.com/anthropics
+license: Proprietary
+category: PDF / OCR / Document Parsing
+lifecycle_stage: ocr
+type: skill
+description: Anthropic's Word skill whose academic edge is first-class tracked changes
+  and comments — the best off-the-shelf option for revising a marked-up manuscript.
+description_zh: Anthropic 的 Word 技能，学术上的长处是对修订痕迹和批注的一流支持——处理已批注稿件，开箱即用里的最佳选择。
+description_long: Anthropic's Word skill for creating and editing .docx via docx-js,
+  pandoc and LibreOffice — what sets it apart for academics is first-class handling
+  of tracked changes and comments. The best off-the-shelf option for revising a marked-up
+  manuscript.
+description_zh_long: Anthropic 的 Word 技能，借 docx-js、pandoc 和 LibreOffice 创建和编辑 .docx——对学术写作而言，真正与众不同之处在于它对修订痕迹和批注的一流支持。处理一份已批注的稿件，这是开箱即用里最好的选择。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://www.anthropic.com/news/skills
+install: Bundled with Claude file features; or copy skills/docx/ into ~/.claude/skills/
+validate_claim: Give Claude a .docx with tracked changes and ask it to accept all
+  changes and summarize the remaining comments; confirm the output reflects both.
+lang:
+- en
+tags:
+- docx
+- word
+- tracked-changes
+- comments
+- official
+featured: false
+spotlight: false
+stargazers_count: 144932
+updated_at: '2026-05-29'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null

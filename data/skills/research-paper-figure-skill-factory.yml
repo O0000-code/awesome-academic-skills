@@ -1,0 +1,29 @@
+# research-paper-figure-skill-factory.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: research-paper-figure-skill-factory
+slug: research-paper-figure-skill-factory
+source_url: https://github.com/c-narcissus/research-paper-figure-skill-factory
+author: c-narcissus
+author_url: https://github.com/c-narcissus
+license: MIT-0
+category: Figures & Visualization
+lifecycle_stage: figures
+type: skill
+description: 'A figure-skill factory: distills one class of paper figure (framework, mechanism, taxonomy,
+  results) into a reusable diagram-generation skill with multi-candidate rounds. Process-heavy and meta;
+  overkill for a single one-off figure.'
+description_zh: 一个“制图 skill 的工厂”：把某一类论文配图（框架图、机制图、分类图、结果图）提炼成可复用的图表生成 skill，并以多候选轮次产出。流程偏重、偏元层面；用于单张一次性配图属于杀鸡用牛刀。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to produce a described figure, then verify it renders at
+  publication quality and matches the request.
+subcategory: Method & concept diagrams
+stargazers_count: 42
+updated_at: '2026-05-07'
+archived: false

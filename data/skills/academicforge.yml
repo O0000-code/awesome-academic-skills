@@ -1,0 +1,54 @@
+name: AcademicForge
+slug: academicforge
+source_url: https://github.com/HughYau/AcademicForge
+author: Hugh (HughYau)
+author_url: https://github.com/HughYau
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+skills_count: 7
+description: A convenient web installer that bundles seven existing academic skills — but it repackages
+  others' work rather than adding its own.
+description_zh: 一个方便的网页安装器，把七套现成的学术 skill 打包装入——但本质是转手打包他人的成果，而非自有产出。
+description_long: A skill-modpack loader (its own Minecraft-Forge analogy) that installs seven existing
+  academic skills as a set — K-Dense's and Orchestra's suites plus humanizer-zh — via a web installer;
+  convenient, but it repackages others' work.
+description_zh_long: 一个 skill 整合包加载器（作者自比 Minecraft 的 Forge），通过网页安装器把七套现成的学术 skill 打包装入——K-Dense 与 Orchestra
+  的套件，加上 humanizer-zh；用着方便，但本质是在转手打包他人的成果。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - hughyau.com/AcademicForge installer; GitHub (submodule fetches)
+  - (inherited) whatever the bundled skills call — e.g. K-Dense databases, Exa
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: true
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+homepage_url: http://hughyau.com/AcademicForge/
+install: Use the web installer at hughyau.com/AcademicForge to generate a one-line command for the packs
+  you select (site-first), or clone with submodules
+validate_claim: Open the web installer, deselect the packs you don't want, and confirm the generated command
+  installs only the chosen skills (e.g. humanizer-zh + paper-polish-workflow).
+lang:
+- en
+- zh
+tags:
+- aggregator
+- installer
+- meta-bundle
+- curated
+- HughYau
+featured: false
+spotlight: false
+stargazers_count: 1434
+updated_at: '2026-05-25'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Installers, marketplaces & meta

@@ -1,0 +1,37 @@
+# tufte-data-viz.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: tufte-data-viz
+slug: tufte-data-viz
+source_url: https://github.com/caylent/tufte-data-viz
+author: caylent
+author_url: https://github.com/caylent
+license: MIT
+category: Figures & Visualization
+lifecycle_stage: figures
+type: skill
+description: Applies Tufte's data-viz principles (high data-ink ratio, no chartjunk, no pie charts) across
+  six charting libraries plus accessibility rules. Excellent for clean, honest charts; deliberately opinionated,
+  so it overrides styling choices.
+description_zh: 在六种绘图库上贯彻 Tufte 的数据可视化原则（高 data-ink 比、不要 chartjunk、不用饼图），并附带可访问性规则。做干净、诚实的图表极佳；刻意地立场鲜明，因而会覆盖你的样式选择。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - caylent.github.io
+  - cdn.jsdelivr.net
+  - fonts.googleapis.com
+  - matplotlib.org
+  - plotly.com
+  - recharts.org
+  - www.chartjs.org
+  - www.edwardtufte.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to produce a described figure, then verify it renders at
+  publication quality and matches the request.
+subcategory: Figure aesthetics & style systems
+stargazers_count: 155
+updated_at: '2026-02-19'
+archived: false

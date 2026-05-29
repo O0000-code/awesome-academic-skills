@@ -1,0 +1,70 @@
+# skillfoundry.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: skillfoundry
+slug: skillfoundry
+source_url: https://github.com/ma-compbio-lab/skillfoundry
+author: ma-compbio-lab
+author_url: https://github.com/ma-compbio-lab
+license: Apache-2.0
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'Computational-biology discipline pack: 260+ skills wrapping standard bioinformatics workflows
+  (RNA-seq with DESeq2/Salmon, GATK variant calling, ChIP/ATAC-seq, single-cell QC and integration, spatial
+  transcriptomics, MaxQuant proteomics).'
+description_zh: 面向计算生物学的学科包：260+ 个 skill 封装了标准的生物信息学工作流（用 DESeq2/Salmon 做 RNA-seq、GATK 变异检测、ChIP/ATAC-seq、单细胞
+  QC 与整合、空间转录组、MaxQuant 蛋白质组、IQ-TREE 系统发育……）。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - ai.damtp.cam.ac.uk
+  - aif360.readthedocs.io
+  - amplicon-docs.qiime2.org
+  - anaconda.org
+  - anndata.readthedocs.io
+  - api.crossref.org
+  - api.gbif.org
+  - api.openalex.org
+  - api.semanticscholar.org
+  - api.wiley.com
+  - apptainer.org
+  - arxiv.org
+  - asv.readthedocs.io
+  - automeris.io
+  - autoprotocol-python.readthedocs.io
+  - ax.dev
+  - bioconductor.org
+  - biofam.github.io
+  - birdnet.cornell.edu
+  - blueskyproject.io
+  - botorch.org
+  - brainglobe.info
+  - ccms-ucsd.github.io
+  - cdn.skypack.dev
+  - cds.climate.copernicus.eu
+  - cell2location.readthedocs.io
+  - cellcharter.readthedocs.io
+  - cellphonedb.readthedocs.io
+  - cellprofiler.org
+  - cellrank.readthedocs.io
+  - celltypist.readthedocs.io
+  - cellxgene-census.readthedocs.io
+  - chanzuckerberg.github.io
+  - chaospy.readthedocs.io
+  - chatgpt.com
+  - choishingwan.github.io
+  - clinicaltrials.gov
+  - clipboardjs.com
+  - cloufield.github.io
+  - codecheck.org.uk
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Biomedical & life sciences
+stargazers_count: 29
+updated_at: '2026-04-26'
+archived: false

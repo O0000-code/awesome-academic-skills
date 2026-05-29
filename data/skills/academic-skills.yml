@@ -1,0 +1,30 @@
+# academic-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: academic-skills
+slug: academic-skills
+source_url: https://github.com/chtc66/academic-skills
+author: chtc66
+author_url: https://github.com/chtc66
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: suite
+description: 'Everyday-researcher workflow suite (AI/NLP-leaning, Chinese-first): paper deep-notes, survey
+  writing, arXiv monitoring, review/rebuttal drafting, experiment-log summaries, benchmark extraction,
+  research-gap finding and weekly lab updates.'
+description_zh: 面向日常科研的工作流套件（偏 AI/NLP、中文优先）：论文精读笔记、综述写作、arXiv 追踪、审稿/rebuttal 草拟、实验日志小结、benchmark 提取、研究空白挖掘与每周组会汇报。覆盖面广，单项偏轻量。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - export.arxiv.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Manuscript drafting pipelines
+stargazers_count: 239
+updated_at: '2026-04-05'
+archived: false

@@ -1,0 +1,50 @@
+name: Deep Research Skill
+slug: deep-research-skills
+source_url: https://github.com/Weizhena/Deep-Research-skills
+author: Lan Zheng
+author_url: https://github.com/Weizhena
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: skill
+description: Two-phase deep research that gates on your approval of the outline before any search runs
+  — the human-in-the-loop answer to fire-and-forget agents.
+description_zh: 两段式深度研究，任何检索动手前先让你确认提纲——是对"一键放飞"型代理的人在环路制衡。
+description_long: Two-phase deep-research skill — outline first, then deep investigation — with AskUserQuestion
+  gates so you approve the framework and time window before any search runs. The human-in-the-loop counterweight
+  to fire-and-forget agents. EN/ZH.
+description_zh_long: 两段式深度研究技能——先出提纲，再深入调查——并用 AskUserQuestion 设卡，让你在任何检索动手之前先敲定框架和时间窗。是对那些"一键放飞、不再过问"型代理的人在环路制衡。中英双语。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - via Claude Code's own WebSearch tool (no hard-coded endpoints)
+  - bundled web-search agent (uses host search; EXA on OpenCode)
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://github.com/Weizhena/Deep-Research-skills
+install: cp -r skills/research-en/* ~/.claude/skills/ ; install bundled agent + pip install pyyaml
+validate_claim: Run /research on a niche topic; confirm it generates an outline, asks you to confirm scope
+  and time range via AskUserQuestion, then runs deep investigation only after approval.
+lang:
+- en
+- zh
+tags:
+- deep-research
+- human-in-the-loop
+- outline
+- two-phase
+featured: false
+spotlight: false
+stargazers_count: 929
+updated_at: '2026-05-07'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Grounded Q&A & knowledge bases

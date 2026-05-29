@@ -1,0 +1,33 @@
+# paper2code.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paper2code
+slug: paper2code
+source_url: https://github.com/prathamlearnstocode/paper2code
+author: prathamlearnstocode
+author_url: https://github.com/prathamlearnstocode
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: skill
+description: arXiv ID in, citation-anchored Python implementation out — each module tagged to the paper
+  section it implements, ambiguities flagged rather than guessed. Great for paper reproduction; not a
+  general code generator.
+description_zh: 输入一个 arXiv ID，输出有引用锚定的 Python 实现——每个模块都标注它对应论文的哪一节，遇到含糊之处会明确标记而非擅自猜测。非常适合论文复现；并非通用代码生成器。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - ar5iv.labs.arxiv.org
+  - arxiv.org
+  - export.arxiv.org
+  - www.statmt.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
+  then verify each claim is grounded in the source text.
+subcategory: Study & derivative artifacts
+stargazers_count: 1370
+updated_at: '2026-04-03'
+archived: false

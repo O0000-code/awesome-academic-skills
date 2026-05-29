@@ -1,0 +1,68 @@
+# neuroclaw.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: neuroclaw
+slug: neuroclaw
+source_url: https://github.com/cuhk-aim-group/neuroclaw
+author: cuhk-aim-group
+author_url: https://github.com/cuhk-aim-group
+license: MIT
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'Neuroscience and medical-imaging skill pack (87 skills) from CUHK''s AIM group: connectome
+  analysis, fMRI/EEG pipelines, neuroimaging statistics and clinical-data workflows.'
+description_zh: 来自 CUHK AIM 团队的神经科学与医学影像 skill 包（87 个 skill）：连接组分析、fMRI/EEG 流水线、神经影像统计以及临床数据工作流。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - abcdstudy.org
+  - adni.loni.usc.edu
+  - ahanio.github.io
+  - aibl.csiro.au
+  - api.deepseek.com
+  - api.semanticscholar.org
+  - arxiv.org
+  - aslprep.readthedocs.io
+  - bcmi.sjtu.edu.cn
+  - bids-apps.neuroimaging.io
+  - bids-specification.readthedocs.io
+  - bids.neuroimaging.io
+  - biobank.ndph.ox.ac.uk
+  - bold5000-dataset.github.io
+  - brain-development.org
+  - braininfo.rprc.washington.edu
+  - brainmap.org
+  - camcan.mrc-cbu.cam.ac.uk
+  - clawhub.ai
+  - cn.bing.com
+  - cocodataset.org
+  - cuhk-aim-group.github.io
+  - data.pyg.org
+  - db.humanconnectome.org
+  - dipy.org
+  - disease-ontology.org
+  - doi.org
+  - download.pytorch.org
+  - duckduckgo.com
+  - eutils.ncbi.nlm.nih.gov
+  - fcon
+  - fcp-indi.s3.amazonaws.com
+  - files.osf.io
+  - fmriprep.org
+  - fsl.fmrib.ox.ac.uk
+  - git-scm.com
+  - hpo.jax.org
+  - huggingface.co
+  - ida.loni.usc.edu
+  - marklodato.github.io
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Biomedical & life sciences
+stargazers_count: 53
+updated_at: '2026-05-29'
+archived: false

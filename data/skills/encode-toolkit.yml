@@ -1,0 +1,70 @@
+# encode-toolkit.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: encode-toolkit
+slug: encode-toolkit
+source_url: https://github.com/ammawla/encode-toolkit
+author: ammawla
+author_url: https://github.com/ammawla
+license: AGPL-3.0
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'Genomics suite: searches ENCODE, cross-references 14 databases (GWAS, ClinVar, GTEx, JASPAR),
+  runs 7 pipelines, and writes provenance-tracked methods. Heavily tested; AGPL and genomics-specific,
+  so niche elsewhere.'
+description_zh: 基因组学套件：检索 ENCODE，交叉比对 14 个数据库（GWAS、ClinVar、GTEx、JASPAR），运行 7 条 pipeline，并撰写带 provenance
+  追踪的 methods。测试充分；AGPL 且专攻基因组学，在其他领域较为小众。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.genome.ucsc.edu
+  - apptainer.org
+  - astral.sh
+  - bioconductor.org
+  - broadinstitute.github.io
+  - cdn.jsdelivr.net
+  - cellxgene.cziscience.com
+  - cheatsheetseries.owasp.org
+  - claude.com
+  - cloud.r-project.org
+  - cran.r-project.org
+  - custom.encode.org
+  - datatracker.ietf.org
+  - developer.microsoft.com
+  - docs.docker.com
+  - doi.org
+  - encode-files.s3.amazonaws.com
+  - encode-files.s3.us-west-2.amazonaws.com
+  - encode-public.s3.amazonaws.com
+  - encode-public.s3.us-west-2.amazonaws.com
+  - eutils.ncbi.nlm.nih.gov
+  - evil.com
+  - example.org
+  - fake-encodeproject.org
+  - fsf.org
+  - ftp.ncbi.nlm.nih.gov
+  - genai.owasp.org
+  - genome.ucsc.edu
+  - get.docker.com
+  - get.nextflow.io
+  - glama.ai
+  - gnomad.broadinstitute.org
+  - great.stanford.edu
+  - gtexportal.org
+  - hgdownload.gi.ucsc.edu
+  - hgdownload.soe.ucsc.edu
+  - homer.ucsd.edu
+  - jaspar.elixir.no
+  - jaspar.genereg.net
+  - keepachangelog.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Biomedical & life sciences
+stargazers_count: 35
+updated_at: '2026-05-08'
+archived: false

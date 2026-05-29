@@ -1,0 +1,40 @@
+# latex-paper-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: latex-paper-skills
+slug: latex-paper-skills
+source_url: https://github.com/yunshenwuchuxun/latex-paper-skills
+author: yunshenwuchuxun
+author_url: https://github.com/yunshenwuchuxun
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: suite
+description: 'Modular LaTeX paper-writing bundle for ML/AI: topic-to-compiled-PDF with verified BibTeX
+  citations, gated workflows, a results-backfill step and a prose ''rhythm refiner'', plus multi-agent
+  (Claude+Gemini) collaboration.'
+description_zh: 面向 ML/AI 的模块化 LaTeX 论文写作套件：从选题到编译出 PDF，配有经核验的 BibTeX 引用、带关卡的工作流、结果回填步骤和文句「节奏精修器」，并支持多
+  agent（Claude+Gemini）协作。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - a9.com
+  - api.crossref.org
+  - api.openalex.org
+  - api.star-history.com
+  - arxiv.org
+  - ctan.org
+  - doi.org
+  - export.arxiv.org
+  - linux.do
+  - star-history.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: LaTeX & typesetting-integrated writing
+stargazers_count: 175
+updated_at: '2026-03-25'
+archived: false

@@ -1,0 +1,47 @@
+name: archora-skills
+slug: archora-skills
+source_url: https://github.com/richard-kim-79/archora-skills
+author: Richard Kim (Archora)
+author_url: https://github.com/richard-kim-79
+license: MIT
+category: Peer Review & Response
+lifecycle_stage: peer-review
+type: suite
+description: Simulates an editor-in-chief plus three reviewers; vendor-affiliated (Archora) but runs standalone
+  as plain markdown.
+description_zh: 能模拟主编加三位审稿人；背靠厂商（Archora），但以纯 markdown 形式独立运行。
+description_long: Nine chainable research skills; the standout simulates an editor-in-chief plus three
+  reviewers, with a devil's-advocate critique skill and a statistical-error checker alongside. Vendor-affiliated
+  (Archora) but skills run standalone as plain markdown.
+description_zh_long: 九个可串联的科研 skill，最亮眼的一个能模拟主编加三位审稿人，旁边还配了一个唱反调的批判 skill 和一个统计错误检查器。背靠厂商（Archora），但各
+  skill 以纯 markdown 形式独立运行。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: npx skills add https://github.com/richard-kim-79/archora-skills
+validate_claim: Run the peer-review skill on a short IMRaD draft; confirm it returns an EIC decision plus
+  three distinct reviewer reports rather than one generic critique.
+lang:
+- en
+tags:
+- peer-review
+- research-pipeline
+- hypothesis
+- suite
+featured: false
+spotlight: false
+stargazers_count: 39
+updated_at: '2026-05-20'
+archived: false
+current_release:
+  tag: v1.1.0
+  published_at: '2026-05-15'
+last_link_check: null
+last_security_scan: null
+subcategory: Pre-submission review & rebuttal

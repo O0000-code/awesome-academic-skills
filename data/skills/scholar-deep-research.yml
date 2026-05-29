@@ -1,0 +1,68 @@
+# scholar-deep-research.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: scholar-deep-research
+slug: scholar-deep-research
+source_url: https://github.com/agents365-ai/scholar-deep-research
+author: agents365-ai
+author_url: https://github.com/agents365-ai
+license: MIT
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: skill
+description: Script-driven 8-phase literature-review pipeline over 7 federated sources with enforced citation
+  anchoring, dedup, transparent ranking, citation-chasing and a mandatory self-critique gate.
+description_zh: 脚本驱动的 8 阶段文献综述 pipeline，覆盖 7 个联合来源，强制引用锚定、去重、透明排序、引文追溯，并设有一道必经的自我批判关卡。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - aapm.onlinelibrary.wiley.com
+  - academic.oup.com
+  - aclanthology.org
+  - acnsci.org
+  - agents365-ai.github.io
+  - agentskills.io
+  - ajrccm.atsjournals.org
+  - aka.ms
+  - alzres.biomedcentral.com
+  - api.crossref.org
+  - api.openalex.org
+  - api.semanticscholar.org
+  - api.unpaywall.org
+  - archiv.ub.uni-heidelberg.de
+  - archive-ouverte.unige.ch
+  - ard.bmj.com
+  - arxiv.org
+  - as-proceeding.com
+  - assets.cureus.com
+  - audioldm.github.io
+  - authors.library.caltech.edu
+  - bmjopen.bmj.com
+  - btierneyshiny.shinyapps.io
+  - cardiab.biomedcentral.com
+  - care.diabetesjournals.org
+  - citeseerx.ist.psu.edu
+  - clawhub.ai
+  - clindiabetesendo.biomedcentral.com
+  - clinicaltrials.gov
+  - cran.r-project.org
+  - crfm.stanford.edu
+  - curis.ku.dk
+  - data.aliveevidence.org
+  - dblp.org
+  - dev.biologists.org
+  - diabetesjournals.org
+  - direct.mit.edu
+  - discord.gg
+  - discovery.ucl.ac.uk
+  - dl.acm.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
+  returned title/DOI resolves to a real paper.
+subcategory: Systematic review & deep-research pipelines
+stargazers_count: 13
+updated_at: '2026-05-19'
+archived: false

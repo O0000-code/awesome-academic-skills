@@ -1,0 +1,40 @@
+# claude-scholar-2.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: claude-scholar
+slug: claude-scholar-2
+source_url: https://github.com/yy/claude-scholar
+author: yy
+author_url: https://github.com/yy
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'A 12-skill academic toolkit: OpenAlex/arXiv search, DOI-to-BibTeX, citation verification,
+  LaTeX cleanup, arXiv packaging, pre-submission checks, math verification, manuscript/figure critique.
+  Honest that it is early-stage; lists its data egress.'
+description_zh: 一套 12 个 skill 的学术工具箱：OpenAlex/arXiv 检索、DOI 转 BibTeX、引用核验、LaTeX 清理、arXiv 打包、投稿前检查、数学核验、稿件/图表点评。坦诚自己尚处早期阶段；并列出其数据外发情况。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.openalex.org
+  - arxiv.org
+  - docs.openalex.org
+  - doi.org
+  - export.arxiv.org
+  - openalex.org
+  - orcid.org
+  - pdfix.net
+  - trevorcampbell.me
+  - www.sympy.org
+  - yyahn.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 25
+updated_at: '2026-05-17'
+archived: false

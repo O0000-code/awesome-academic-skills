@@ -1,0 +1,49 @@
+name: skill-deslop
+slug: skill-deslop
+source_url: https://github.com/stephenturner/skill-deslop
+author: Stephen Turner (stephenturner)
+author_url: https://github.com/stephenturner
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: A science-aware de-slop skill that spares conventions like passive-voice Methods — the pick
+  when stop-slop feels too blog-flavored.
+description_zh: 一款懂科研的去 AI 味技能，对 Methods 被动语态等学科惯例网开一面——嫌 stop-slop 太"博客腔"时就选它。
+description_long: A science-aware de-slop skill from a bioinformatician — its four catalogs target manuscripts,
+  abstracts, cover letters, and referee responses, and it spares conventions like passive voice in Methods.
+  The pick when stop-slop feels too blog-flavored.
+description_zh_long: 一款懂科研的去 AI 味技能，出自一位生物信息学者之手——四套清单分别针对论文、摘要、cover letter 与审稿回复，并对 Methods 中的被动语态等学科惯例网开一面。当你嫌
+  stop-slop 太"博客腔"时，就选它。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: null
+install: Add the skill-deslop folder as a Claude Code skill.
+validate_claim: 'Paste a Discussion section and ask: ''Use deslop to remove AI tropes but keep Methods-style
+  passive voice intact.'' Expect tropes (delve, ''serves as'', false ranges) removed while domain conventions
+  are preserved.'
+lang:
+- en
+tags:
+- de-ai
+- scientific-writing
+- manuscripts
+- editing
+featured: false
+spotlight: false
+stargazers_count: 269
+updated_at: '2026-03-18'
+archived: false
+current_release:
+  tag: v1.0.0
+  published_at: '2026-03-18'
+last_link_check: null
+last_security_scan: null
+subcategory: De-AI & humanizing

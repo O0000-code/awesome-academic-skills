@@ -1,0 +1,68 @@
+# sciclaw.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: sciclaw
+slug: sciclaw
+source_url: https://github.com/drpedapati/sciclaw
+author: drpedapati
+author_url: https://github.com/drpedapati
+license: No License
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: A 'pair-scientist' research suite (23 skills) wrapped in a lightweight Go runtime that injects
+  lifecycle hooks, a manuscript spine and run-logging so every session is reproducible, logged and citeable.
+description_zh: 一套"结对科学家"式的研究套件（23 个 skill），封装在轻量的 Go runtime 中，注入生命周期 hook、稿件主干结构与运行日志，使每次会话都可复现、有记录、可引用。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - addon
+  - api-data.line.me
+  - api.biorxiv.org
+  - api.deepseek.com
+  - api.example.test
+  - api.groq.com
+  - api.line.me
+  - api.moonshot.cn
+  - api.open-meteo.com
+  - api.openai.com
+  - api.resend.com
+  - api.search.brave.com
+  - auth.openai.com
+  - brave.com
+  - cdn.discordapp.com
+  - chatgpt.com
+  - dash.cloudflare.com
+  - developer.1password.com
+  - discord.com
+  - discord.gg
+  - drpedapati.github.io
+  - eslint.org
+  - example
+  - generativelanguage.googleapis.com
+  - geocoding-api.open-meteo.com
+  - go.dev
+  - howkeyboardswork.com
+  - html.duckduckgo.com
+  - integrate.api.nvidia.com
+  - list.sciclaw.dev
+  - ollama.com
+  - open-meteo.com
+  - open.bigmodel.cn
+  - opencollective.com
+  - openrouter.ai
+  - pubmed.ncbi.nlm.nih.gov
+  - registry.npmjs.org
+  - router.shengsuanyun.com
+  - sciclaw.dev
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 76
+updated_at: '2026-05-06'
+archived: false

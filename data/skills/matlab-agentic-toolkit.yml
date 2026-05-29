@@ -1,0 +1,39 @@
+# matlab-agentic-toolkit.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: matlab-agentic-toolkit
+slug: matlab-agentic-toolkit
+source_url: https://github.com/matlab/matlab-agentic-toolkit
+author: matlab
+author_url: https://github.com/matlab
+license: No License
+category: Data Analysis & Statistics
+lifecycle_stage: analysis
+type: suite
+description: 'Official MathWorks toolkit of 61 agent skills for MATLAB/Simulink engineering and scientific
+  work: curve fitting, system identification, timeseries forecasting, signal detrending/filtering, parameter
+  optimization, unit conversion, and data cleaning.'
+description_zh: MathWorks 官方出品、面向 MATLAB/Simulink 工程与科学工作的 61 个 agent skill 工具包：曲线拟合、系统辨识、时间序列预测、信号去趋势/滤波、参数优化、单位换算、数据清洗等。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - adb-123.1.azuredatabricks.net
+  - adb-1234567890123456.1.azuredatabricks.net
+  - adb-1234567890123456.azuredatabricks.net
+  - duckdb.org
+  - geodesy.noaa.gov
+  - igs.org
+  - mathworks.com
+  - modelcontextprotocol.io
+  - ssd.mathworks.com
+  - www.mathworks.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to run a described analysis on a small dataset, then verify
+  the statistics and output are correct and reproducible.
+subcategory: Domain computational & simulation pipelines
+stargazers_count: 566
+updated_at: '2026-05-21'
+archived: false

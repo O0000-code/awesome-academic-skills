@@ -1,0 +1,41 @@
+# skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: xueshuzhi-skills
+slug: xueshuzhi-skills
+source_url: https://github.com/yipng05-max/-skills
+author: yipng05-max
+author_url: https://github.com/yipng05-max
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'Wide-coverage Chinese academic suite: topic selection, research design, CNKI/foreign literature
+  search and verification, thematic coding, review and dissertation drafting, plus a 12-checkpoint TA
+  pipeline assembling a Word draft. Breadth over depth.'
+description_zh: 覆盖面很广的中文学术套件：选题、研究设计、CNKI/外文文献检索与核验、主题编码、综述与学位论文撰写，外加一条 12 检查点的 TA 流水线来拼装 Word 初稿。重广度而非深度。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.crossref.org
+  - api.openalex.org
+  - doi.org
+  - kns.cnki.net
+  - navi.cnki.net
+  - openalex.org
+  - qikan.cqvip.com
+  - s.wanfangdata.com.cn
+  - scholar.google.com
+  - skillsmp.com
+  - www.cnki.net
+  - xueshu.baidu.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 164
+updated_at: '2026-04-15'
+archived: false

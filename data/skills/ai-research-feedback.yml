@@ -1,0 +1,48 @@
+name: AI-research-feedback
+slug: ai-research-feedback
+source_url: https://github.com/claesbackman/AI-research-feedback
+author: Claes Bäckman
+author_url: https://github.com/claesbackman
+license: MIT
+category: Peer Review & Response
+lifecycle_stage: peer-review
+type: suite
+description: Pre-submission referee simulator tuned only for AER/QJE/JF-tier economics — six parallel
+  agents, not general review.
+description_zh: 专为 AER/QJE/JF 量级经济学调校的投稿前审稿人模拟器——六个并行 agent，不适合泛用型审稿。
+description_long: 'Economics pre-submission referee simulator: six parallel agents (style, claim discipline,
+  math, an adversarial top-5 referee, more) over a LaTeX paper, consolidated into a journal-targeted report.
+  Tuned for AER/QJE/JF-tier econ, not general review.'
+description_zh_long: 经济学投稿前的审稿人模拟器：六个并行 agent（文风、论断把关、数学推导、一个对抗式的 top-5 期刊审稿人等）通读 LaTeX 论文，汇总成一份面向具体期刊的评审报告。专为
+  AER/QJE/JF 量级的经济学论文调校，不适合泛用型审稿。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: curl the command .md files into ~/.claude/commands/ (per README), or copy the Skills/ folder
+validate_claim: Point /review-paper QJE at a working-paper .tex draft; confirm it returns a consolidated
+  PRE_SUBMISSION_REVIEW_*.md with CRITICAL/MAJOR/MINOR-tagged findings and a desk-reject-or-send-to-referees
+  verdict.
+lang:
+- en
+tags:
+- peer-review
+- economics
+- latex
+- multi-agent
+featured: false
+spotlight: false
+stargazers_count: 356
+updated_at: '2026-04-16'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Pre-submission review & rebuttal

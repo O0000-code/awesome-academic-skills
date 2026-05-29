@@ -1,0 +1,55 @@
+# awesome-gaussian-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: awesome-gaussian-skills
+slug: awesome-gaussian-skills
+source_url: https://github.com/jaccen/awesome-gaussian-skills
+author: jaccen
+author_url: https://github.com/jaccen
+license: Apache-2.0
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'Discipline pack for 3D Gaussian Splatting / NeRF research: a 600+ method catalog with an
+  interactive explorer plus skills for paper tracking, CUDA-kernel review, and spatial-intelligence Q&A.
+  Strong for graphics researchers; uses a Bash wildcard.'
+description_zh: 面向 3D Gaussian Splatting / NeRF 研究的学科包：含 600+ 方法目录与交互式浏览器，外加论文追踪、CUDA kernel 审查与空间智能问答等
+  skill。对图形学研究者很强；使用了 Bash 通配符。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.star-history.com
+  - arxiv.org
+  - arxiv.tmmu.edu.cn
+  - asia.siggraph.org
+  - contrib.rocks
+  - cursor.sh
+  - dblp.uni-trier.de
+  - diglib.eg.org
+  - dl.acm.org
+  - huggingface.co
+  - jaccen.github.io
+  - openaccess.thecvf.com
+  - playcanvas.com
+  - r-itk.github.io
+  - renderhub.org
+  - repo-sam.informatik.uni-halle.de
+  - ruixu.me
+  - s2025.siggraph.org
+  - scholar.google.com
+  - shin-dong-yeon.github.io
+  - star-history.com
+  - superspl.at
+  - www.realtimerendering.com
+  - xueshuso.com
+  - yihua7.github.io
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Computer science, AI / ML & graphics
+stargazers_count: 84
+updated_at: '2026-06-01'
+archived: false

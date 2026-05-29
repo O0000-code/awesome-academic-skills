@@ -1,0 +1,50 @@
+# make-bib.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: make-bib
+slug: make-bib
+source_url: https://github.com/milkclouds/make-bib
+author: milkclouds
+author_url: https://github.com/milkclouds
+license: No License
+category: Reference & Citation Management
+lifecycle_stage: citation
+type: skill
+description: Human-in-the-loop BibTeX fetcher pulling every field from the authoritative publisher (ACL/PMLR/arXiv/NeurIPS,
+  DBLP fallback) not the LLM, with provenance per entry and a stop-to-ask on ambiguous venues. Great for
+  de-hallucinating .bib; no license.
+description_zh: 带人工确认环节的 BibTeX 抓取器，每个字段都从权威出版方（ACL/PMLR/arXiv/NeurIPS，DBLP 兜底）取得，而非来自 LLM，逐条记录来源出处，遇到含混的
+  venue 会停下来询问。非常适合给 .bib 去幻觉；未附许可协议。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - aclanthology.org
+  - api.crossref.org
+  - api.openreview.net
+  - api.semanticscholar.org
+  - api2.openreview.net
+  - arxiv.org
+  - code.claude.com
+  - dblp.dagstuhl.de
+  - dblp.org
+  - dblp.uni-trier.de
+  - docs.astral.sh
+  - docs.openreview.net
+  - doi.org
+  - export.arxiv.org
+  - fortune.com
+  - info.arxiv.org
+  - openreview.net
+  - proceedings.neurips.cc
+  - spylab.ai
+  - www.joachim-breitner.de
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to format or verify a set of references, then check each
+  citation against the authoritative record (DOI/metadata).
+subcategory: BibTeX / metadata generation
+stargazers_count: 8
+updated_at: '2026-05-20'
+archived: false

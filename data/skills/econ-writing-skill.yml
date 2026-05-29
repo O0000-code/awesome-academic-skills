@@ -1,0 +1,48 @@
+name: econ-writing-skill
+slug: econ-writing-skill
+source_url: https://github.com/hanlulong/econ-writing-skill
+author: Lu Han (hanlulong)
+author_url: https://github.com/hanlulong
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: The best-sourced discipline writing skill here, distilling 50+ named economics guides into
+  enforceable rules.
+description_zh: 本列表中出处最扎实的学科写作技能，把 50+ 篇名家经济学写作指南提炼成可执行的规则。
+description_long: An economics-paper editor distilling 50+ named guides (Cochrane, McCloskey, Shapiro,
+  Goldin, Glaeser) into enforceable rules — triangular structure, one central contribution, reader-first
+  prose. The best-sourced discipline writing skill here.
+description_zh_long: 一款经济学论文编辑工具，把 50+ 篇名家写作指南（Cochrane、McCloskey、Shapiro、Goldin、Glaeser）提炼成可执行的规则——三角形结构、单一核心贡献、读者优先的行文。本列表中出处最扎实的学科写作技能。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://agentskills.io
+install: cp -R .claude/skills/econ-write ~/.claude/skills/  (or run ./install.sh)
+validate_claim: 'Paste an econ paper intro and ask: ''Use econ-write to rewrite this Introduction for
+  a DiD minimum-wage paper, applying the reader-first and one-central-contribution rules.'' Expect triangular
+  restructuring with cited principles flagged.'
+lang:
+- en
+tags:
+- writing
+- economics
+- latex
+- revision
+featured: false
+spotlight: false
+stargazers_count: 317
+updated_at: '2026-05-30'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Prose refinement & discipline-specific style

@@ -1,0 +1,42 @@
+# materials-simulation-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: materials-simulation-skills
+slug: materials-simulation-skills
+source_url: https://github.com/heshamfs/materials-simulation-skills
+author: heshamfs
+author_url: https://github.com/heshamfs
+license: Apache-2.0
+category: Data Analysis & Statistics
+lifecycle_stage: analysis
+type: suite
+description: '23-skill computational-materials-science suite: numerical-stability analysis, finite-element
+  meshing, DFT/MD setup, Monte-Carlo/phase-field modeling, spectral methods, time-integration, and
+  uncertainty quantification. Strong methodological breadth.'
+description_zh: 含 23 个 skill 的计算材料科学套件：数值稳定性分析、有限元网格剖分、DFT/MD 设置、蒙特卡洛与相场建模、谱方法、时间积分以及不确定性量化。方法学覆盖面很广。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - agentskills.io
+  - code.claude.com
+  - code.visualstudio.com
+  - developers.openai.com
+  - example.org
+  - geminicli.com
+  - ocdo.github.io
+  - owasp.org
+  - purl.obolibrary.org
+  - purls.helmholtz-metadaten.de
+  - qudt.org
+  - w3id.org
+  - www.contributor-covenant.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use this skill to run a described analysis on a small dataset, then verify
+  the statistics and output are correct and reproducible.
+subcategory: Domain computational & simulation pipelines
+stargazers_count: 40
+updated_at: '2026-05-18'
+archived: false

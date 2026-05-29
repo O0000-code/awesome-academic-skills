@@ -1,0 +1,50 @@
+name: PPTX (Anthropic document skill)
+slug: anthropic-pptx
+source_url: https://github.com/anthropics/skills/tree/main/skills/pptx
+author: Anthropic
+author_url: https://github.com/anthropics
+license: Proprietary
+category: PDF / OCR / Document Parsing
+lifecycle_stage: ocr
+type: skill
+description: Anthropic's PowerPoint skill that builds decks and pulls text from any
+  .pptx — an authoring tool for paper-to-talk, not layout-faithful slide OCR.
+description_zh: Anthropic 的 PowerPoint 技能，能做幻灯片、也能从任意 .pptx 抽文字——把论文改成报告很顺手。是创作工具，不是忠于版式的幻灯
+  OCR。
+description_long: Anthropic's PowerPoint skill for building and editing decks (PptxGenJS
+  + LibreOffice) and pulling text from any .pptx via markitdown — handy for turning
+  a paper into a talk. A presentation-authoring tool, not a layout-faithful slide
+  OCR.
+description_zh_long: Anthropic 的 PowerPoint 技能，用 PptxGenJS + LibreOffice 制作和编辑幻灯片，并通过
+  markitdown 从任意 .pptx 里抽文字——把一篇论文改成报告很顺手。它是做演示用的创作工具，不是忠于版式的幻灯 OCR。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://www.anthropic.com/news/skills
+install: Bundled with Claude file features; or copy skills/pptx/ into ~/.claude/skills/
+validate_claim: Ask Claude to extract all slide text from a .pptx into an outline,
+  then generate a 5-slide summary deck; confirm both the extraction and the new file.
+lang:
+- en
+tags:
+- pptx
+- slides
+- extraction
+- presentations
+- official
+featured: false
+spotlight: false
+stargazers_count: 144932
+updated_at: '2026-05-29'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null

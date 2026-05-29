@@ -1,0 +1,44 @@
+name: Awesome AI for Science
+slug: list-ai-boost
+source_url: https://github.com/ai-boost/awesome-ai-for-science
+author: AwesomeGPTS (ai-boost)
+author_url: https://github.com/ai-boost
+license: MIT
+category: Awesome Lists & Ecosystem Maps
+lifecycle_stage: meta
+type: list
+description: A broad AI4Science map of tools, papers and datasets — wider and more
+  model-oriented than a skills list.
+description_long: A broad AI4Science map of tools, libraries, papers, datasets and
+  frameworks across physics, chemistry, biology and materials — wider and more literature-oriented
+  than a skills list; complements this index with the surrounding model landscape.
+description_zh: 覆盖面更广的 AI4Science 资源图谱（工具、论文、数据集），比技能列表更偏模型与文献。
+description_zh_long: 一张宽泛的 AI4Science 全景图，囊括物理、化学、生物、材料领域的工具、库、论文、数据集与框架——比一份 skill
+  列表更广、更偏文献；以周边的模型生态为本索引做补充。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://github.com/ai-boost/awesome-ai-for-science
+lang:
+- en
+tags:
+- awesome-list
+- ai4science
+- broad-landscape
+- ai-boost
+featured: false
+spotlight: false
+stargazers_count: 1610
+updated_at: '2026-06-01'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null

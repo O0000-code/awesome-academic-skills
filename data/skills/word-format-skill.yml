@@ -1,0 +1,28 @@
+# word-format-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: word-format-skill
+slug: word-format-skill
+source_url: https://github.com/yeap531/word-format-skill
+author: yeap531
+author_url: https://github.com/yeap531
+license: No License
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: plugin
+description: Replicates a reference Word document's typography onto new content via an HTML bridge — useful
+  for matching a journal or institutional .docx template. Strong for submission/formatting chores.
+description_zh: 借助 HTML 桥接，把参照 Word 文档的排版样式复刻到新内容上——适合套用期刊或机构的 .docx 模板。在投稿/格式化这类杂活上很强；适用面广（不限学术），其 license
+  待核实。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - linux.do
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+subcategory: Journal & Word-template formatting
+stargazers_count: 222
+updated_at: '2026-04-27'
+archived: false

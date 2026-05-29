@@ -1,18 +1,15 @@
 # Contributing to Awesome Academic Skills
 
-Thank you for helping build this list. The goal is simple: a vendor-neutral,
-carefully curated index of the **best Claude Skills and adjacent agent tooling
-for academic and research work** — across the whole scholarly lifecycle, for
-every discipline, in English and 中文.
+Thank you for helping build this list. The goal is simple: a carefully curated
+index of Claude Skills and adjacent agent tooling for academic and research
+work, across the research lifecycle, in English and 中文.
 
 We would genuinely love your help finding skills we have missed. Nominating
 someone else's great work is just as welcome as submitting your own. This guide
-explains what belongs here, how to contribute, and the one thing that makes this
-list trustworthy: **every entry surfaces its own disclosed capabilities (network,
-hooks, permission scope), cross-checked against the code by an open, deterministic
-framework; a human curator decides what to include; and we are honest about
-exactly what that does and does not promise — the tags are facts, not a safety
-rating.**
+explains what belongs here, how to contribute, and how the disclosure check
+works: every entry surfaces its own capabilities (network, hooks, permission
+scope), cross-checked against the code by an open framework, and a human curator
+decides what to include. The tags are facts, not a safety rating.
 
 If anything below is unclear, please open a [Discussion](../../discussions) and
 ask — improving this guide is itself a valuable contribution.
@@ -26,7 +23,7 @@ ask — improving this guide is itself a valuable contribution.
 - [Security disclosure (required)](#security-disclosure-required)
 - [Validate your claims](#validate-your-claims)
 - [How the disclosure check works](#how-the-disclosure-check-works)
-- [Submitting your own skill (and our neutrality promise)](#submitting-your-own-skill-and-our-neutrality-promise)
+- [Submitting your own skill](#submitting-your-own-skill)
 - [Maintenance and removal](#maintenance-and-removal)
 - [The badge](#the-badge)
 
@@ -268,7 +265,7 @@ that would claim a line-by-line human audit that does not happen. See
 mean, and remember you run third-party code at your own risk. If you fix something
 the cross-check flagged, ask for a re-scan.
 
-## Submitting your own skill (and our neutrality promise)
+## Submitting your own skill
 
 **Yes, please submit your own skill** — most submissions to lists like this are
 self-authored, and that is expected and welcome. It competes on equal footing:
@@ -276,7 +273,7 @@ same data contract, same disclosure, same deterministic scan. There is no
 preferential placement; ordering within a category is generated deterministically
 from the data, not hand-arranged to float anyone's work.
 
-You should also know this, because neutrality only counts if it is stated plainly:
+You should also know:
 
 > **This list is maintained by an author of some of the skills it lists.** Those
 > skills go through the *identical* ASDF disclosure check as every other entry —
@@ -291,8 +288,6 @@ You should also know this, because neutrality only counts if it is stated plainl
 > any category — including one that beats the maintainer's own — **submit it.** It
 > will be judged on exactly the same terms, and we would rather list the best tool
 > than our own.
-
-That promise is the whole point of a *neutral* index, and we hold ourselves to it.
 
 ## Held for improvement (the backlog)
 

@@ -1,0 +1,33 @@
+# ai-peer-review-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: ai-peer-review-skill
+slug: ai-peer-review-skill
+source_url: https://github.com/alexwortega/ai-peer-review-skill
+author: alexwortega
+author_url: https://github.com/alexwortega
+license: MIT
+category: Peer Review & Response
+lifecycle_stage: peer-review
+type: skill
+description: Drop in a paper PDF, get N independent structured reviews plus a synthesized meta-review
+  and a concern matrix CSV. Adapts poldrack/ai-peer-review to free Claude subagents; defaults to a hard
+  alignment-style critic.
+description_zh: 丢进一份论文 PDF，得到 N 份独立的结构化评审意见，外加一份综合的 meta-review 和一张问题清单 CSV。将 poldrack/ai-peer-review
+  改造为免费的 Claude subagent；默认采用 alignment 式的严苛批评者口径。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - arxiv.org
+  - claude.com
+  - www.alignmentforum.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify the critique is
+  specific, accurate, and actionable.
+subcategory: Pre-submission review & rebuttal
+stargazers_count: 39
+updated_at: '2026-05-08'
+archived: false

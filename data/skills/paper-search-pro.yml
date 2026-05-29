@@ -1,0 +1,62 @@
+name: paper-search-pro
+slug: paper-search-pro
+source_url: https://github.com/O0000-code/paper-search-pro
+author: O0000-code
+author_url: https://github.com/O0000-code
+license: Apache-2.0
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: skill
+description: "OpenAlex-led five-source search (PubMed, arXiv, Semantic Scholar, CrossRef) across four
+  depth tiers; goes past a hit list to a saturation curve, a stop decision, and an interactive HTML
+  report. No LLM key; one free OpenAlex key to start."
+description_zh: "以 OpenAlex 为主轴的五源检索（PubMed、arXiv、Semantic Scholar、CrossRef），分四档深度；不止给命中清单，还产出饱和度曲线、停检判定与可交互
+  HTML 报告。免 LLM key，一个免费 OpenAlex key 即可起步。"
+description_long: "Four depth tiers — a 5-min quick scan up to a 3-hr audit pass — over five orchestrated
+  sources: OpenAlex as the deep backbone, PubMed and arXiv as signal-triggered domain boosters, and
+  Semantic Scholar and CrossRef for citation and metadata enrichment, all deduped into one set. It goes
+  past a hit list to a saturation curve with an explicit stop decision, a PRISMA-S log, and an interactive
+  Shadcn HTML report — so the output is a defensible coverage judgment, not just matches. No LLM key
+  needed; only a free OpenAlex key is required to start (Semantic Scholar, NCBI, CrossRef optional, all free)."
+description_zh_long: "四个深度档位——从 5 分钟快扫到 3 小时审计级——覆盖五个协同的源：OpenAlex 作为深度主轴，PubMed
+  与 arXiv 作为按信号触发的领域增强，Semantic Scholar 与 CrossRef 负责引用与元数据补全，去重合并为一个集合。它不止给一张命中清单，还产出带明确停检判定的饱和度曲线、PRISMA-S
+  日志和可交互的 Shadcn HTML 报告——让结果是一个站得住的覆盖度判断，而不只是命中。免 LLM key；起步只需一个免费的 OpenAlex key（Semantic Scholar、NCBI、CrossRef 可选，且都免费）。"
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.openalex.org
+  - api.semanticscholar.org
+  - api.crossref.org
+  - eutils.ncbi.nlm.nih.gov
+  - export.arxiv.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+homepage_url: https://o0000-code.github.io/paper-search-pro/
+install: git clone into ~/.claude/skills/paper-search-pro; pip install -r scripts/requirements.txt; 1
+  free OpenAlex key required, others optional (~15 min)
+validate_claim: 'Ask: "Find 30 papers on working memory training in older adults, Standard tier." Confirm
+  it picks a tier, runs OpenAlex + PubMed enrichment, produces a saturation curve, and writes report.html
+  + papers.bib you can open and import to Zotero.'
+lang:
+- en
+- zh
+tags:
+- literature-search
+- multi-source
+- systematic-review
+- prisma
+featured: false
+spotlight: false
+stargazers_count: 21
+updated_at: '2026-05-29'
+archived: false
+current_release:
+  tag: v2.1.2
+  published_at: '2026-05-29'
+last_link_check: null
+last_security_scan: null
+subcategory: Multi-source discovery search

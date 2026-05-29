@@ -1,0 +1,33 @@
+# engineering-figure-agent.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: engineering-figure-agent
+slug: engineering-figure-agent
+source_url: https://github.com/heyu-233/engineering-figure-agent
+author: heyu-233
+author_url: https://github.com/heyu-233
+license: MIT
+category: Figures & Visualization
+lifecycle_stage: figures
+type: skill
+description: Generates publication-style engineering and computer-science figures (diagram and plot modes)
+  with bilingual EN/ZH labeling and editable output, tuned for Chinese academic papers. Narrow but does
+  the figure job well; not a general plotting library.
+description_zh: 生成发表级的工程与计算机科学图表（示意图与绘图两种模式），支持中英双语标注、输出可编辑，并针对中文学术论文做了调校。功能聚焦，但把作图这件事做得很好；不是通用绘图库。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.openai.com
+  - api.zhizengzeng.com
+  - generativelanguage.googleapis.com
+  - socialistic.ai
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to produce a described figure, then verify it renders at
+  publication quality and matches the request.
+subcategory: Method & concept diagrams
+stargazers_count: 204
+updated_at: '2026-05-25'
+archived: false

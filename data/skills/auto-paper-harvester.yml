@@ -1,0 +1,45 @@
+# auto-paper-harvester.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: auto-paper-harvester
+slug: auto-paper-harvester
+source_url: https://github.com/jxtse/auto-paper-harvester
+author: jxtse
+author_url: https://github.com/jxtse
+license: No License
+category: PDF / OCR / Document Parsing
+lifecycle_stage: ocr
+type: skill
+description: Batch-downloads paper PDFs by DOI, cascading publisher TDM APIs (Wiley/Elsevier/Springer)
+  to OA sources (Crossref/OpenAlex/Unpaywall) to an optional browser fallback on an institutional session.
+  Good for bulk retrieval; ships a hardcoded credential.
+description_zh: 按 DOI 批量下载论文 PDF，逐级回退：先走出版商 TDM API（Wiley/Elsevier/Springer），再到 OA 渠道（Crossref/OpenAlex/Unpaywall），最后可选复用机构
+  session 的浏览器回退。适合批量获取；内置一处硬编码凭证。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.crossref.org
+  - api.elsevier.com
+  - api.openalex.org
+  - api.springernature.com
+  - api.unpaywall.org
+  - api.wiley.com
+  - dev.elsevier.com
+  - dev.springernature.com
+  - docs.openalex.org
+  - doi.org
+  - dx.doi.org
+  - link.springer.com
+  - onlinelibrary.wiley.com
+  - sso.uni.edu
+  - unpaywall.org
+  - www.crossref.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to convert a sample PDF, then verify the output preserves
+  the document's structure (headings, tables, formulas).
+stargazers_count: 19
+updated_at: '2026-05-19'
+archived: false

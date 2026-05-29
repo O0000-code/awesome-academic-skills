@@ -1,0 +1,35 @@
+# stata-ai-fusion.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: stata-ai-fusion
+slug: stata-ai-fusion
+source_url: https://github.com/haoyu-haoyu/stata-ai-fusion
+author: haoyu-haoyu
+author_url: https://github.com/haoyu-haoyu
+license: MIT
+category: Data Analysis & Statistics
+lifecycle_stage: analysis
+type: skill
+description: Lets an agent drive a real Stata session (run commands, inspect data, extract estimation
+  results, capture graphs) via an MCP server plus a Stata skill knowledge base. Fills the AI-Stata gap
+  for econ/epi/biostat; requires a licensed Stata install.
+description_zh: 让 agent 通过一个 MCP server 加一份 Stata skill 知识库，驱动一个真实的 Stata 会话：运行命令、查看数据、提取估计结果、抓取图形。为经济学/流行病学/生物统计填补了
+  AI 与 Stata 之间的空缺；需要已授权的 Stata 安装。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - docs.astral.sh
+  - marketplace.visualstudio.com
+  - modelcontextprotocol.io
+  - pypi.org
+  - www.stata.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to run a described analysis on a small dataset, then verify
+  the statistics and output are correct and reproducible.
+subcategory: Statistical modeling & test selection
+stargazers_count: 25
+updated_at: '2026-05-03'
+archived: false

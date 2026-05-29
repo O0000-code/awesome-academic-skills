@@ -1,0 +1,50 @@
+name: research-paper-writing
+slug: research-paper-writing
+source_url: https://github.com/Master-cai/Research-Paper-Writing-Skills
+author: Xudong Cai (Master-cai)
+author_url: https://github.com/Master-cai
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: Packages Peng Sida's well-known research-writing notes into paragraph-level rewriting discipline
+  for ML/CV/NLP papers.
+description_zh: 把彭思达广为流传的科研写作笔记，封装成面向 ML/CV/NLP 论文的段落级改写纪律。
+description_long: Paragraph-level rewriting discipline for ML/CV/NLP papers — one message per paragraph,
+  reverse-outlining each section, and a skeptical-reviewer self-pass. Packages Peng Sida's well-known
+  research-writing notes as a Claude skill.
+description_zh_long: 面向 ML/CV/NLP 论文的段落级改写纪律——一段一条消息、对各节做逆向提纲、再以怀疑型审稿人视角自查一遍。把彭思达广为流传的科研写作笔记封装成了一个 Claude
+  技能。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: null
+install: cp -R research-paper-writing ~/.claude/skills/
+validate_claim: 'Paste a rough ML-paper Introduction and ask: ''Use research-paper-writing to rewrite
+  this Introduction one message per paragraph and run a reverse outline.'' Expect paragraph-by-paragraph
+  rewrites plus a topic-sentence→thesis mapping.'
+lang:
+- en
+- zh
+tags:
+- writing
+- ml-papers
+- reverse-outline
+- revision
+featured: false
+spotlight: false
+stargazers_count: 3159
+updated_at: '2026-04-23'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Prose refinement & discipline-specific style

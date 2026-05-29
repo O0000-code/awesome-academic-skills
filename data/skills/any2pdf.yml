@@ -1,0 +1,49 @@
+name: any2pdf
+slug: any2pdf
+source_url: https://github.com/lovstudio/any2pdf
+author: lovstudio
+author_url: https://github.com/lovstudio
+license: MIT
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: skill
+description: Markdown to PDF with no LaTeX; its real edge is CJK rendering where Pandoc and wkhtmltopdf
+  break.
+description_zh: 无需 LaTeX 的 Markdown 转 PDF；真正的过人之处在中日韩文渲染，能正常处理 Pandoc 与 wkhtmltopdf 翻车之处。
+description_long: 'Markdown to publication-quality PDF with one Python file and one dependency (reportlab)
+  — no LaTeX, no 4GB TeX. Its real edge is CJK: mixed Chinese/Latin wrapping and fonts that render where
+  Pandoc and wkhtmltopdf break. Interactive, not a bare CLI.'
+description_zh_long: 用一个 Python 文件、一个依赖（reportlab）把 Markdown 转成可发表质量的 PDF——不用 LaTeX，也省去 4GB 的 TeX。真正的过人之处在中日韩文：中英混排的断行与字体，在
+  Pandoc 和 wkhtmltopdf 翻车的地方它能正常渲染。交互式使用，而非纯命令行。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: /plugin marketplace add lovstudio/any2pdf (or copy lovstudio-any2pdf/ into your skills dir);
+  pip install reportlab
+validate_claim: Hand it a Markdown file mixing English and Chinese with a date like "2026年4月1日"; confirm
+  the PDF renders CJK without boxes/□ and no Latin name is split mid-word across a line break.
+lang:
+- en
+- zh
+tags:
+- markdown-to-pdf
+- cjk
+- typesetting
+- reportlab
+featured: false
+spotlight: false
+stargazers_count: 178
+updated_at: '2026-05-30'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Format conversion & document transformation

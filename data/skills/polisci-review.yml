@@ -1,0 +1,35 @@
+# polisci-review.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: polisci-review
+slug: polisci-review
+source_url: https://github.com/cmertdalli/polisci-review
+author: cmertdalli
+author_url: https://github.com/cmertdalli
+license: MIT
+category: Peer Review & Response
+lifecycle_stage: peer-review
+type: suite
+description: 'Pre-submission audit for political-science manuscripts: 9 modules (contribution, theory,
+  measurement, identification, transparency, journal fit) with journal-aware personas and 8 verified journal-policy
+  profiles. Rigorous and discipline-specific.'
+description_zh: 面向政治学论文的投稿前审查：9 个模块（贡献、理论、测量、识别、透明度、期刊匹配），配有按期刊定制的审稿人 persona 与 8 份经核实的期刊政策档案。严谨且高度学科专属。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - ajps.org
+  - direct.mit.edu
+  - journals.sagepub.com
+  - petergpt.github.io
+  - spsa.net
+  - www.cambridge.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify the critique is
+  specific, accurate, and actionable.
+subcategory: Pre-submission review & rebuttal
+stargazers_count: 16
+updated_at: '2026-03-07'
+archived: false

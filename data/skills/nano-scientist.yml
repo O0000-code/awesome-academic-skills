@@ -1,0 +1,70 @@
+# nano-scientist.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: nano-scientist
+slug: nano-scientist
+source_url: https://github.com/ai4scientist/nano-scientist
+author: ai4scientist
+author_url: https://github.com/ai4scientist
+license: No License
+category: Autonomous Research Systems
+lifecycle_stage: autonomous
+type: suite
+description: 'Autonomous research agent: turns a topic into a full draft paper via four budget-capped
+  loops (deep-search, experiment, improvement, review) with CrossRef citation recovery and a multi-model
+  review gate.'
+description_zh: 自主研究 agent：通过四个有预算上限的循环（深度检索、实验、改进、评审）把一个选题变成完整的论文初稿，配 CrossRef 引用补全和多模型评审关卡。强大且模块化（含
+  87+ 研究技能）。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - aaai.org
+  - acl-org.github.io
+  - aclweb.org
+  - ai.google.dev
+  - aistudio.google.com
+  - alphaxiv.org
+  - api.crossref.org
+  - api.deepseek.com
+  - api.lingyiwanwu.com
+  - api.minimax.io
+  - api.moonshot.cn
+  - api.openai.com
+  - api.semanticscholar.org
+  - api.siliconflow.cn
+  - arxiv.org
+  - cloud.vast.ai
+  - dashscope.aliyuncs.com
+  - davidmathlogic.com
+  - dblp.org
+  - dl.acm.org
+  - doi.org
+  - exa.ai
+  - export.arxiv.org
+  - generativelanguage.googleapis.com
+  - huggingface.co
+  - iclr.cc
+  - icml.cc
+  - kaken.nii.ac.jp
+  - mirror.ctan.org
+  - mirrors.ctan.org
+  - modal.com
+  - neurips.cc
+  - open.bigmodel.cn
+  - open.feishu.cn
+  - openalex.org
+  - openrouter.ai
+  - qz.yourorg.edu.cn
+  - r.jina.ai
+  - tex.stackexchange.com
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
+  and drafted result whose sources actually exist.
+subcategory: Fully autonomous auto-scientists
+stargazers_count: 98
+updated_at: '2026-05-17'
+archived: false

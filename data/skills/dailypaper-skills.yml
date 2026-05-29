@@ -1,0 +1,40 @@
+# dailypaper-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: dailypaper-skills
+slug: dailypaper-skills
+source_url: https://github.com/huangkiki/dailypaper-skills
+author: huangkiki
+author_url: https://github.com/huangkiki
+license: Apache-2.0
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: suite
+description: 'A daily paper-reading pipeline built from Agent Skills: arXiv search, PDF parsing, key-point
+  extraction, Zotero sync, and structured notes plus a daily digest. Cohesive and popular; Chinese-first
+  docs, so non-CJK users lean on the code.'
+description_zh: 由 Agent Skills 搭建的每日读论文流水线：arXiv 检索、PDF 解析、要点抽取、Zotero 同步，外加结构化笔记与每日摘要。整体连贯且受欢迎；文档以中文为主，非中日韩用户更多需依赖代码本身。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - api.star-history.com
+  - arxiv.org
+  - doi.org
+  - export.arxiv.org
+  - huggingface.co
+  - obsidian.md
+  - poppler.freedesktop.org
+  - www.star-history.com
+  - www.zotero.org
+  - xhslink.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
+  then verify each claim is grounded in the source text.
+subcategory: Deep reading & comprehension
+stargazers_count: 837
+updated_at: '2026-05-27'
+archived: false

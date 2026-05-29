@@ -1,0 +1,47 @@
+name: academic-research-skills (economics)
+slug: franklee16-academic-research-skills
+source_url: https://github.com/franklee16/academic-research-skills
+author: franklee16
+author_url: https://github.com/franklee16
+license: No License
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: An economics/social-science pack useful for empirical economists, but lightly curated (near-duplicate
+  skills) and unlicensed.
+description_zh: 对实证经济学者有用的经济学/社会科学套件，但筛选较粗（存在近似重复的 skill）、且无许可证。
+description_long: Economics/social-science pack of ~79 stage-organized skills with field-specific entries
+  — an econ-writing skill synthesizing 50+ guides, R&R response-letter drafting, econ visualization. Useful
+  for empirical economists; light curation, no license.
+description_zh_long: 经济学/社会科学套件，约 79 个按研究阶段组织的 skill，含若干学科专属条目——一个综合了 50 多份指南的经济学写作 skill、R&R 回复信起草、经济学可视化。对做实证的经济学者有用；筛选较粗，无许可证。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: Clone and copy the per-stage skill folders into your agent skills directory
+validate_claim: Ask the econ-write or review-response skill to draft an R&R response to two referee comments;
+  confirm it produces a point-by-point letter in the conventions of economics journals rather than a generic
+  reply.
+lang:
+- en
+tags:
+- economics
+- social-science
+- empirical-research
+- peer-review
+featured: false
+spotlight: false
+stargazers_count: 157
+updated_at: '2026-04-26'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Social sciences

@@ -1,0 +1,31 @@
+# academic-writing-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: academic-writing-skills
+slug: academic-writing-skills
+source_url: https://github.com/wenyuchiou/academic-writing-skills
+author: wenyuchiou
+author_url: https://github.com/wenyuchiou
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: suite
+description: 'Field-agnostic paper-writing workflow: findings-first drafting, de-AI/overclaim detection,
+  claim-to-evidence checks, reviewer-response tables, and pre-submission checklists, with per-paper journal
+  overrides. Ships evals — rare and welcome.'
+description_zh: 一套不限学科的论文写作工作流：以发现为先的起草、去 AI 痕迹/过度宣称检测、论点到证据的核查、审稿回应表，以及投稿前清单，并支持逐篇论文的期刊规范覆盖。附带 evals——这很少见，值得肯定。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - keepachangelog.com
+  - semver.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Manuscript drafting pipelines
+stargazers_count: 5
+updated_at: '2026-05-23'
+archived: false

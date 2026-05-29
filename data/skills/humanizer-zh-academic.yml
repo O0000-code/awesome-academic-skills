@@ -1,0 +1,30 @@
+# humanizer-zh-academic.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: humanizer-zh-academic
+slug: humanizer-zh-academic
+source_url: https://github.com/redbaronyyyyy-eng/humanizer-zh-academic
+author: redbaronyyyyy-eng
+author_url: https://github.com/redbaronyyyyy-eng
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: Rewrites Chinese academic prose to read as human-written and lower AIGC-detector scores.
+  Single-purpose and popular among zh writers; quality of output depends heavily on the source draft,
+  and 'beating detectors' is inherently a moving target.
+description_zh: 改写中文学术文字，使其读起来像人写的，并降低 AIGC 检测器的评分。单一用途，在中文写作者中颇受欢迎；产出质量高度依赖原始草稿，而且"击败检测器"本身就是个不断变化的移动靶。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - en.wikipedia.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: AIGC detector evasion (thesis)
+stargazers_count: 164
+updated_at: '2026-02-24'
+archived: false

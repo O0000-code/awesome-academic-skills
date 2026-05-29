@@ -1,0 +1,70 @@
+# beril-research-observatory.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: beril-research-observatory
+slug: beril-research-observatory
+source_url: https://github.com/kbaseincubator/beril-research-observatory
+author: kbaseincubator
+author_url: https://github.com/kbaseincubator
+license: AGPL-3.0
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'KBase AI co-scientist over the BER microbial-ecology data lakehouse: 16 skills plus reusable
+  patterns for pangenomics, fitness, metagenomics and biochemistry. Strong for KBase research; large executable
+  surface and AGPL, so read before trusting.'
+description_zh: 架设在 BER 微生物生态数据湖仓之上的 KBase AI 协作科学家：16 个 skill 外加用于泛基因组学、适应度、宏基因组学与生物化学的可复用范式。对 KBase
+  研究很强；可执行面较大且采用 AGPL，信任前请先通读。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - 127.0.0.1
+  - academic.oup.com
+  - alembic.sqlalchemy.org
+  - alphafold.ebi.ac.uk
+  - api.bacdive.dsmz.de
+  - api.cborg.lbl.gov
+  - astral.sh
+  - berdl.kbase.us
+  - beril.kbase.us
+  - card.mcmaster.ca
+  - cborg.lbl.gov
+  - cdn.plot.ly
+  - cdn.rcsb.org
+  - data.gtdb.ecogenomic.org
+  - data.microbiomedata.org
+  - data.qiime2.org
+  - data.rcsb.org
+  - dl.min.io
+  - docs.astral.sh
+  - docs.nersc.gov
+  - doi.org
+  - elifesciences.org
+  - enigma.lbl.gov
+  - essentialgene.org
+  - evil.com
+  - example.org
+  - example.test
+  - figshare.com
+  - fit.genomics.lbl.gov
+  - fonts.google.com
+  - fsf.org
+  - ftp.ebi.ac.uk
+  - ftp.sra.ebi.ac.uk
+  - genome.jgi.doe.gov
+  - genomics.lbl.gov
+  - gitlab.com
+  - gtdb.ecogenomic.org
+  - hub.berdl.kbase.us
+  - hub.berdl.kbase.us.
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Biomedical & life sciences
+stargazers_count: 14
+updated_at: '2026-05-29'
+archived: false

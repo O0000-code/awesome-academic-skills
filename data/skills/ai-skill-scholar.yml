@@ -1,0 +1,51 @@
+# --- REQUIRED ---
+name: ai-skill-scholar
+slug: ai-skill-scholar
+source_url: https://github.com/dsebastien/ai-skill-scholar
+author: Sébastien Dubois (dsebastien)
+author_url: https://github.com/dsebastien
+license: MIT
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: skill
+description: Three composable OpenAlex skills (venue search, citation-graph walk, review orchestrator)
+  — stdlib-only, no pip, no key.
+description_zh: 三个可组合的 OpenAlex 技能（会议检索、引用图游走、综述编排）——纯标准库，免 pip、免 key。
+description_long: Three composable OpenAlex skills — venue search, a citation-graph walker, and a pause/resume
+  two-pass review orchestrator. Stdlib Python, no pip, no API key; picks OpenAlex over Semantic Scholar
+  so it just works. Pairs with the author's arXiv skills.
+description_zh_long: 三个可组合的 OpenAlex 技能：按会议/期刊检索、沿引用图游走、外加一个可暂停/续跑的两遍式综述编排器。 纯标准库 Python，免 pip、免 API key，选
+  OpenAlex 而非 Semantic Scholar，所以开箱即用。 与作者另一套 arXiv 技能搭配更顺手。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.openalex.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: null
+install: npx skills add dsebastien/ai-skill-scholar --skill "*"  (or copy skills/* into ~/.claude/skills/)
+validate_claim: 'Ask: "Find high-citation papers on mechanistic interpretability from ICLR and NeurIPS,
+  then show what 2501.11120 cites." Confirm scholar-search returns citation-counted hits and scholar-citations
+  walks the reference graph — no API key prompted.'
+lang:
+- en
+tags:
+- openalex
+- citation-graph
+- literature-review
+- no-api-key
+featured: false
+spotlight: false
+stargazers_count: 7
+updated_at: '2026-04-16'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Multi-source discovery search

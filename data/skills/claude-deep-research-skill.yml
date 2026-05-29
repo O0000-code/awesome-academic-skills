@@ -1,0 +1,50 @@
+name: Claude Deep Research Skill
+slug: claude-deep-research-skill
+source_url: https://github.com/199-biotechnologies/claude-deep-research-skill
+author: 199 Longevity (199-biotechnologies)
+author_url: https://github.com/199-biotechnologies
+license: No License
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: skill
+description: The most engineering-heavy deep-research skill — verifies each claim against its source via
+  CrossRef and persists citations across compaction. No license file.
+description_zh: 工程味最重的深度研究技能——逐条对 CrossRef 核验论断出处，让引用在上下文压缩后仍留存。没有协议文件。
+description_long: 'The most engineering-heavy deep-research skill here: a Python pipeline that extracts
+  claims, verifies each against its source via CrossRef, scores credibility and persists citations across
+  compaction. No license file — redistribution unclear.'
+description_zh_long: 本列表里工程味最重的深度研究技能：一条 Python 流水线，抽取论断、逐条对 CrossRef 核验出处、给可信度打分，并让引用在上下文压缩后依然留存。没有协议文件——能否再分发不明确。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.crossref.org (DOI/citation verification)
+  - optional search-cli providers (Brave, Serper, Exa, Jina, Firecrawl) when configured
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://github.com/199-biotechnologies/claude-deep-research-skill
+install: 'git clone into ~/.claude/skills/deep-research (stdlib-only core; optional: brew install search-cli,
+  pip install weasyprint)'
+validate_claim: Ask for "deep research in deep mode" on a claim-heavy topic; confirm the output report
+  carries per-claim citations and that verify_citations resolves DOIs against CrossRef.
+lang:
+- en
+tags:
+- deep-research
+- citation-verification
+- red-team
+- report-generation
+featured: false
+spotlight: false
+stargazers_count: 739
+updated_at: '2026-04-11'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Grounded Q&A & knowledge bases

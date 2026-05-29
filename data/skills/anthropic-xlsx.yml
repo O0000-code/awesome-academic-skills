@@ -1,0 +1,49 @@
+name: XLSX (Anthropic document skill)
+slug: anthropic-xlsx
+source_url: https://github.com/anthropics/skills/tree/main/skills/xlsx
+author: Anthropic
+author_url: https://github.com/anthropics
+license: Proprietary
+category: PDF / OCR / Document Parsing
+lifecycle_stage: ocr
+type: skill
+description: Anthropic's spreadsheet skill that, unusually, recalculates formulas
+  rather than reading cached values — good for cleaning messy supplementary-data tables.
+description_zh: Anthropic 的表格技能，难得地真去重算公式、而非只读缓存值——适合把杂乱的补充数据表整理干净。
+description_long: Anthropic's spreadsheet skill (openpyxl + Pandas) that reads, cleans
+  and builds .xlsx/.csv and — unusually — actually recalculates formulas rather than
+  reading cached values. Good for cleaning messy supplementary-data tables into formatted
+  workbooks.
+description_zh_long: Anthropic 的表格技能（openpyxl + Pandas），读取、清洗和生成 .xlsx/.csv，且难得地是真去重算公式，而非只读缓存值。适合把杂乱的补充数据表整理成格式规整的工作簿。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://www.anthropic.com/news/skills
+install: Bundled with Claude file features; or copy skills/xlsx/ into ~/.claude/skills/
+validate_claim: Give Claude a messy .csv with misplaced headers and ask for a cleaned
+  .xlsx with a computed summary column; confirm formulas recalculate (not just static
+  values).
+lang:
+- en
+tags:
+- xlsx
+- spreadsheet
+- formulas
+- data-cleaning
+- official
+featured: false
+spotlight: false
+stargazers_count: 144932
+updated_at: '2026-05-29'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null

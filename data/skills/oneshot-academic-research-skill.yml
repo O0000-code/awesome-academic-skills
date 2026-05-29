@@ -1,0 +1,50 @@
+# oneshot-academic-research-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: oneshot-academic-research-skill
+slug: oneshot-academic-research-skill
+source_url: https://github.com/orhoncan/oneshot-academic-research-skill
+author: orhoncan
+author_url: https://github.com/orhoncan
+license: MIT
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: skill
+description: 'Iterative deep-literature-research skill: 5-15 search cycles gathering 12-50+ sources with
+  gap identification, source-diversity tracking and APA7 footnotes, to Obsidian or PDF. Turkish/English
+  auto-detect; depth depends on the underlying web tools.'
+description_zh: 迭代式深度文献研究 skill：用 5-15 轮检索汇集 12-50+ 篇文献，附带空白识别、来源多样性追踪与 APA7 脚注，可导出到 Obsidian 或 PDF。自动识别土耳其语/英语；深度取决于底层的
+  web 检索工具。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - apastyle.apa.org
+  - arxiv.org
+  - blog.orhon.net.tr
+  - citationgecko.com
+  - consensus.app
+  - doi.org
+  - elicit.org
+  - nces.ed.gov
+  - pubmed.ncbi.nlm.nih.gov
+  - repository.url
+  - scholar.google.com
+  - www.apa.org
+  - www.connectedpapers.com
+  - www.nimh.nih.gov
+  - www.nytimes.com
+  - www.perplexity.ai
+  - www.scimagojr.com
+  - www.semanticscholar.org
+  - www.webofscience.com
+  - www.who.int
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
+  returned title/DOI resolves to a real paper.
+subcategory: Systematic review & deep-research pipelines
+stargazers_count: 7
+updated_at: '2026-01-09'
+archived: false

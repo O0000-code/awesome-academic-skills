@@ -1,0 +1,47 @@
+# fiftyone-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: fiftyone-skills
+slug: fiftyone-skills
+source_url: https://github.com/voxel51/fiftyone-skills
+author: voxel51
+author_url: https://github.com/voxel51
+license: Apache-2.0
+category: Data Analysis & Statistics
+lifecycle_stage: analysis
+type: suite
+description: 'Official FiftyOne skill suite: expert workflows for computer-vision dataset curation, evaluation
+  and model analysis via AI assistants, with a companion MCP server. Strong for CV/ML dataset research;
+  tied to the FiftyOne tool and CV-specific.'
+description_zh: FiftyOne 官方 skill 集：借助 AI 助手完成计算机视觉数据集整理、评估与模型分析的专家级工作流，并配有一个配套的 MCP server。对 CV/ML 数据集研究很强；但与
+  FiftyOne 工具绑定，且专限于计算机视觉。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - agentskills.io
+  - cdn.voxel51.com
+  - cocodataset.org
+  - cursor.com
+  - discord.com
+  - discord.gg
+  - docs.voxel51.com
+  - huggingface.co
+  - insiders.vscode.dev
+  - medium.com
+  - pypi.org
+  - share.hsforms.com
+  - voodo.dev.fiftyone.ai
+  - voxel51.com
+  - www.linkedin.com
+  - x.com
+  - your-server
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to run a described analysis on a small dataset, then verify
+  the statistics and output are correct and reproducible.
+subcategory: Domain computational & simulation pipelines
+stargazers_count: 30
+updated_at: '2026-05-22'
+archived: false

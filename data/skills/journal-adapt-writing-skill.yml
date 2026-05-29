@@ -1,0 +1,29 @@
+# journal-adapt-writing-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: journal-adapt-writing-skill
+slug: journal-adapt-writing-skill
+source_url: https://github.com/wantongc/journal-adapt-writing-skill
+author: wantongc
+author_url: https://github.com/wantongc
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing-quality
+type: skill
+description: Goes beyond generic style rules by building a corpus-grounded 'dynamic skill' from a target
+  journal's own papers, then revising section by section. The differentiator is journal adaptation; needs
+  you to supply the reference corpus.
+description_zh: 不止于套用通用文体规则，而是从目标期刊自身的论文出发、构建一个以语料为依据的“动态 skill”，再逐节修改。其独到之处在于针对具体期刊做适配；但需要你自行提供参考语料库。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: Prose refinement & discipline-specific style
+stargazers_count: 601
+updated_at: '2026-05-15'
+archived: false

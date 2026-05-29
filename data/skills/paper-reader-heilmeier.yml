@@ -1,0 +1,30 @@
+# paper-reader-heilmeier.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paper-reader-heilmeier
+slug: paper-reader-heilmeier
+source_url: https://github.com/realzyzhang/paper-reader-heilmeier
+author: realzyzhang
+author_url: https://github.com/realzyzhang
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: skill
+description: Reads STEM papers through Heilmeier's Catechism, surfacing the core problem, approach, cost
+  and impact for a fast big-picture take. A focused, opinionated comprehension aid; great for triaging
+  papers, less so for deep line-by-line reading.
+description_zh: 以 Heilmeier 问题清单（Heilmeier's Catechism）的视角阅读 STEM 论文，提炼核心问题、方法、成本与影响，快速形成全局把握。一个聚焦而有主见的理解辅助工具；很适合对论文做初筛分流，但不擅长逐行深读。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - arxiv.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
+  then verify each claim is grounded in the source text.
+subcategory: Deep reading & comprehension
+stargazers_count: 60
+updated_at: '2026-04-20'
+archived: false

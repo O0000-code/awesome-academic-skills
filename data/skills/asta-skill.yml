@@ -1,0 +1,38 @@
+# asta-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: asta-skill
+slug: asta-skill
+source_url: https://github.com/agents365-ai/asta-skill
+author: agents365-ai
+author_url: https://github.com/agents365-ai
+license: MIT
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: skill
+description: 'Instruction-pack skill that drives Ai2''s Asta MCP (Semantic Scholar): keyword/ID/author
+  search, citation traversal, batch lookup and ~500-word snippet retrieval, with safe defaults. Clean
+  routing; needs the Asta MCP + free API key.'
+description_zh: 驱动 Ai2 旗下 Asta MCP（Semantic Scholar）的指令包式 skill：支持关键词/ID/作者检索、引文追溯、批量查询与约 500 词的片段抓取，并配有稳妥的默认设置。路由清晰；需要
+  Asta MCP 与一个免费 API key。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - agentskills.io
+  - allenai.org
+  - asta-tools.allen.ai
+  - clawhub.ai
+  - discord.gg
+  - share.hsforms.com
+  - skillsmp.com
+  - space.bilibili.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
+  returned title/DOI resolves to a real paper.
+subcategory: Multi-source discovery search
+stargazers_count: 131
+updated_at: '2026-05-25'
+archived: false

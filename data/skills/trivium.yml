@@ -1,0 +1,53 @@
+name: trivium
+slug: trivium
+source_url: https://github.com/MetaQiu/Trivium
+author: MetaQiu
+author_url: https://github.com/MetaQiu
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: Drafts each paragraph by Claude/Codex/Gemini consensus, betting three-model-approved text
+  also satisfies LLM reviewers — needs all three CLIs.
+description_zh: 让 Claude、Codex、Gemini 三方共识起草每个段落，赌三模型认可的文字也能让 LLM 审稿人满意——需同时装好三个 CLI。
+description_long: Drafts each paragraph by making Claude, Codex, and Gemini independently write, cross-review,
+  and argue to consensus — betting text three models approve of will also satisfy LLM reviewers. Strong
+  for code-to-paper writeups; needs all three CLIs.
+description_zh_long: 让 Claude、Codex、Gemini 各自独立起草每个段落，再交叉评审、争辩到达成共识——赌的是三个模型都认可的文字也能让 LLM 审稿人满意。尤其适合把代码写成论文；需同时装好三个
+  CLI。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - Codex CLI (OpenAI)
+  - Gemini CLI (Google)
+  - optional local proxy 127.0.0.1:7890 (configurable in config.json)
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: true
+  allowed_tools_scoped: true
+homepage_url: null
+install: Clone to ~/.claude/skills/trivium; requires codex + gemini CLIs on PATH (see README).
+validate_claim: 'With codex and gemini CLIs installed, ask: ''Use Trivium to draft the Methods section
+  — have all three agents draft, cross-review, and reach consensus.'' Expect independent drafts, a debate
+  log, and a converged paragraph.'
+lang:
+- en
+- zh
+tags:
+- writing
+- multi-agent
+- codex
+- gemini
+featured: false
+spotlight: false
+stargazers_count: 24
+updated_at: '2026-02-15'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Manuscript drafting pipelines

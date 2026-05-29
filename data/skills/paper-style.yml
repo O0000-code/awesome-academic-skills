@@ -1,0 +1,30 @@
+# paper-style.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paper-style
+slug: paper-style
+source_url: https://github.com/freemty/paper-style
+author: freemty
+author_url: https://github.com/freemty
+license: MIT
+category: Figures & Visualization
+lifecycle_stage: figures
+type: skill
+description: Five low-saturation color themes giving a paper one coherent identity across LaTeX text and
+  matplotlib figures (documentclass to savefig), with a preview PDF. Great for consistent palettes; purely
+  a styling layer, not a plotting or layout tool.
+description_zh: 五套低饱和度配色主题，让一篇论文在 LaTeX 正文与 matplotlib 图表（从 documentclass 到 savefig）之间拥有统一的视觉身份，并附预览 PDF。很适合保持配色一致；纯粹是样式层，不是绘图或排版工具。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - skills.sh
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to produce a described figure, then verify it renders at
+  publication quality and matches the request.
+subcategory: Figure aesthetics & style systems
+stargazers_count: 7
+updated_at: '2026-04-22'
+archived: false

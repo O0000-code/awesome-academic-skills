@@ -1,0 +1,70 @@
+# paperfit.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: paperfit
+slug: paperfit
+source_url: https://github.com/openraiser/paperfit
+author: openraiser
+author_url: https://github.com/openraiser
+license: MIT
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: suite
+description: LaTeX typesetting suite that compiles, renders pages to images, then visually diagnoses and
+  fixes layout problems (overfull boxes, float placement, spacing, tables). The vision-in-the-loop loop
+  is its real edge; needs a working local LaTeX toolchain.
+description_zh: LaTeX 排版套件，先编译、把页面渲染为图像，再以视觉方式诊断并修复版式问题（overfull box、浮动体摆放、间距、表格）。其真正的优势在于“视觉闭环”；需要一套可用的本地
+  LaTeX 工具链。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 2025.aclweb.org
+  - aaai.org
+  - acl-org.github.io
+  - aclanthology.org
+  - aclweb.org
+  - ahanio.github.io
+  - apastyle.apa.org
+  - arxiv.org
+  - cljournal.org
+  - code.claude.com
+  - ctan.org
+  - doi.org
+  - dx.doi.org
+  - eccv.ecva.net
+  - feross.org
+  - git.overleaf.com
+  - iccv.thecvf.com
+  - icml.cc
+  - media.eventhosts.cc
+  - media.icml.cc
+  - media.neurips.cc
+  - mirrors.ctan.org
+  - neurips.cc
+  - nips.cc
+  - nodejs.org
+  - openreview.net
+  - paperfit.local
+  - registry.npmjs.org
+  - richardt.name
+  - sigir2025.dei.unipd.it
+  - superuser.com
+  - support.apple.com
+  - taiya.github.io
+  - tex.stackexchange.com
+  - tinyurl.com
+  - www.aclweb.org
+  - www.adobe.com
+  - www.computer.org
+  - www.cs.cmu.edu
+  - www.ctan.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
+  the output compiles/opens and matches the spec.
+subcategory: LaTeX authoring & submission prep
+stargazers_count: 304
+updated_at: '2026-05-26'
+archived: false

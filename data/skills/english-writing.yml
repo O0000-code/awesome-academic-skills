@@ -1,0 +1,35 @@
+# english-writing.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: english-writing
+slug: english-writing
+source_url: https://github.com/yzy1996/english-writing
+author: yzy1996
+author_url: https://github.com/yzy1996
+license: No License
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: Academic-English polishing skill backed by a curated per-section phrasebook (abstract, intro,
+  related work, method, experiment, rebuttal) of good usages mined from real papers. Great phrasing help
+  for non-native CS/ML writers; no LICENSE file.
+description_zh: 学术英语润色 skill，背后是一本精选的分章节短语手册（摘要、引言、相关工作、方法、实验、rebuttal），收录了从真实论文中挖掘的地道用法。对非母语的 CS/ML 作者在措辞上帮助很大；无
+  LICENSE 文件。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - chat.crazyang.com
+  - chatgpt.com
+  - chatgpt.crazyang.com
+  - consensus.app
+  - makeapullrequest.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Prose refinement & discipline-specific style
+stargazers_count: 1166
+updated_at: '2026-04-17'
+archived: false

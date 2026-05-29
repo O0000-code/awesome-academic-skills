@@ -1,0 +1,70 @@
+# diogenes.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: diogenes
+slug: diogenes
+source_url: https://github.com/diogenes-project/diogenes
+author: diogenes-project
+author_url: https://github.com/diogenes-project
+license: GPL-3.0
+category: Peer Review & Response
+lifecycle_stage: peer-review
+type: skill
+description: Applies a unified, anti-sycophantic evidence methodology - ICD 203, GRADE, PRISMA, Cochrane
+  RoB and others - as a 14-step appraisal for systematic reviews, evidence grading and claim verification.
+  Rigorous; ships hooks.
+description_zh: 将一套统一的、反“随声附和”的证据方法论（ICD 203、GRADE、PRISMA、Cochrane RoB 等）落实为 14 步评估流程，用于系统综述、证据分级与论断核验。严谨；附带
+  hook。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - a
+  - a.com
+  - api.search.brave.com
+  - arxiv.org
+  - b
+  - b.com
+  - brave.com
+  - c.com
+  - code.claude.com
+  - custom.api.com
+  - developers.google.com
+  - dup.com
+  - empty.com
+  - ex.com
+  - fail.com
+  - fsf.org
+  - google.serper.dev
+  - hit.com
+  - joohn.substack.com
+  - keepachangelog.com
+  - link.springer.com
+  - miss.com
+  - missing.com
+  - omitted.com
+  - outlier.com
+  - r
+  - r0.com
+  - r1.com
+  - r2.com
+  - r3.com
+  - r4.com
+  - real.com
+  - s
+  - semver.org
+  - serper.dev
+  - slow.com
+  - the-infrastructure-mindset.ghost.io
+  - unmatched.com
+  - unscored.com
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify the critique is
+  specific, accurate, and actionable.
+subcategory: Systematic review & evidence appraisal
+stargazers_count: 6
+updated_at: '2026-05-27'
+archived: false

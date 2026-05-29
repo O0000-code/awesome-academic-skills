@@ -1,0 +1,68 @@
+# unslop.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: unslop
+slug: unslop
+source_url: https://github.com/mohamedabdallah-14/unslop
+author: mohamedabdallah-14
+author_url: https://github.com/mohamedabdallah-14
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: plugin
+description: De-AI plugin that strips AI-isms (sycophancy, stock phrases, hedging, em-dash pileups) while
+  preserving code, URLs and headings, with a benchmarked detector. Strong general-prose humanizer; not
+  academic-specific, needs tuning to keep technical voice.
+description_zh: 一个去 AI 痕迹的 plugin，剔除各类 AI 腔（谄媚口吻、套话、模棱两可的措辞、em-dash 堆砌），同时保留代码、URL 与标题，并配有经过基准测试的检测器。通用文字的"去
+  AI 化"很强；但不针对学术场景，需调校才能保住技术性语气。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - absolutelyagentic.com
+  - aclanthology.org
+  - agent-harness.ai
+  - agentsindex.ai
+  - agntcraft.co
+  - ahrefs.com
+  - ai-coding-flow.com
+  - ai.googleblog.com
+  - ai.meta.com
+  - ai.nejm.org
+  - aiagentskit.com
+  - aiandyou.net
+  - aicompanionguides.com
+  - aicostcheck.com
+  - aidetectplus.com
+  - aifundingtracker.com
+  - aiguide.substack.com
+  - aihumanizerapi.com
+  - aiinsightsnews.net
+  - aiintransit.medium.com
+  - ailistingtool.com
+  - aimadesimple0.substack.com
+  - aimlapi.com
+  - ainora.lt
+  - ainowinstitute.org
+  - aitipsters.com
+  - aitoolclinic.com
+  - aitoolsatlas.ai
+  - aixradar.com
+  - aizourn.com
+  - alignx.ai
+  - alinia.ai
+  - allenai.org
+  - anthroscore.stanford.edu
+  - anyscale.com
+  - anyword.com
+  - api.star-history.com
+  - api.writehuman.ai
+  - apify.com
+  - apps.shopify.com
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+subcategory: De-AI & humanizing
+stargazers_count: 52
+updated_at: '2026-05-05'
+archived: false

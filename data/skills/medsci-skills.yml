@@ -1,0 +1,70 @@
+# medsci-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: medsci-skills
+slug: medsci-skills
+source_url: https://github.com/aperivue/medsci-skills
+author: aperivue
+author_url: https://github.com/aperivue
+license: NOASSERTION
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'A 34-skill medical-research suite from a physician-researcher: PubMed search, study design,
+  IRB protocols, biostatistics, PRISMA/STROBE/TRIPOD reporting checks, figures and manuscript drafting.
+  Broad and clinical; license is NOASSERTION.'
+description_zh: 由一位临床研究型医师打造、含 34 个 skill 的医学研究套件：PubMed 检索、研究设计、IRB 方案、生物统计、PRISMA/STROBE/TRIPOD 报告核查、绘图与稿件撰写。覆盖广、偏临床；许可证为
+  NOASSERTION。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - academic.oup.com
+  - alexlenail.me
+  - aperivue.com
+  - api.crossref.org
+  - api.openalex.org
+  - api.unpaywall.org
+  - archive.ics.uci.edu
+  - arriveguidelines.org
+  - authors.wiley.com
+  - automeris.io
+  - bioart.niaid.nih.gov
+  - bioicons.com
+  - biorender.com
+  - bmcmedicine.biomedcentral.com
+  - citationstyles.org
+  - cms.galenos.com.tr
+  - cran.r-project.org
+  - doi.org
+  - dx.doi.org
+  - e-dmj.org
+  - e-enm.org
+  - e-kcj.org
+  - edmgr.ovid.com
+  - europepmc.org
+  - eutils.ncbi.nlm.nih.gov
+  - ftp.ncbi.nlm.nih.gov
+  - ieeexplore.ieee.org
+  - j-stroke.org
+  - jamanetwork.com
+  - jkms.org
+  - jnis.bmj.com
+  - jnm.snmjournals.org
+  - journal.chestnet.org
+  - journals.lww.com
+  - journals.plos.org
+  - journals.sagepub.com
+  - jsonlint.com
+  - kcj.edmgr.com
+  - kcj.edmgr.com.
+  - kjronline.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Biomedical & life sciences
+stargazers_count: 126
+updated_at: '2026-06-01'
+archived: false

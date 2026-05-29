@@ -1,0 +1,69 @@
+# daaf.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: daaf
+slug: daaf
+source_url: https://github.com/daaf-contribution-community/daaf
+author: daaf-contribution-community
+author_url: https://github.com/daaf-contribution-community
+license: LGPL-3.0
+category: Data Analysis & Statistics
+lifecycle_stage: analysis
+type: suite
+description: Instruction framework making Claude Code behave like a rigorous, reproducible quantitative
+  researcher in any domain, with auditable steps, guardrails, and human-in-the-loop verification. Heavyweight
+  and opinionated; core decisions stay with the user.
+description_zh: 一套指令框架，让 Claude Code 在任何领域都表现得像一名严谨、可复现的定量研究者：可审计的步骤、护栏，以及人在回路（human-in-the-loop）的核验。重量级且观点鲜明；每个核心决策都由用户把舵。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 0.0.0.0
+  - 172.18.0.2
+  - aeturrell.github.io
+  - analysisfunction.civilservice.gov.uk
+  - api.census.gov
+  - api.ipums.org
+  - arxiv.org
+  - astral.sh
+  - bashtage.github.io
+  - bedrock-runtime.us-east-1.amazonaws.com
+  - blog.stata.com
+  - blog.tidy-intelligence.com
+  - cdn.plot.ly
+  - chartability.fizz.studio
+  - cheatsheets.quantecon.org
+  - christophm.github.io
+  - civilrightsdata.ed.gov
+  - claude.com
+  - code.claude.com
+  - code.visualstudio.com
+  - coder.com
+  - colorbrewer2.org
+  - contextily.readthedocs.io
+  - corteva.github.io
+  - cran.r-project.org
+  - crdc.communities.ed.gov
+  - daaf.openaugments.org
+  - daafguide.substack.com
+  - data-to-viz.com
+  - data2.nhgis.org
+  - datafeminism.io
+  - dataverse.harvard.edu
+  - developer.ipums.org
+  - developercertificate.org
+  - developmentseed.org
+  - discord.gg
+  - distill.pub
+  - docs.astral.sh
+  - docs.docker.com
+  - docs.fast.ai
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to run a described analysis on a small dataset, then verify
+  the statistics and output are correct and reproducible.
+subcategory: Reproducible-analysis frameworks
+stargazers_count: 210
+updated_at: '2026-05-31'
+archived: false

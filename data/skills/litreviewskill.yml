@@ -1,0 +1,32 @@
+# litreviewskill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: litreviewskill
+slug: litreviewskill
+source_url: https://github.com/zsun79/litreviewskill
+author: zsun79
+author_url: https://github.com/zsun79
+license: No License
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: skill
+description: 'End-to-end literature-review workflow: drafts keywords, builds an OpenAlex seed set, expands
+  by backward/forward citations, screens by title/abstract until saturation, then ranks and reads up to
+  30 full texts into a concept matrix.'
+description_zh: 端到端的文献综述工作流：拟定关键词，构建 OpenAlex 种子集，通过前向/后向引用扩展，按标题/摘要筛选直至饱和，再排序并通读至多 30 篇全文，整理成概念矩阵。流程严谨。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.core.ac.uk
+  - api.openalex.org
+  - doi.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
+  returned title/DOI resolves to a real paper.
+subcategory: Systematic review & deep-research pipelines
+stargazers_count: 5
+updated_at: '2026-04-24'
+archived: false

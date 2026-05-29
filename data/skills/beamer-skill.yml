@@ -1,0 +1,48 @@
+name: beamer-skill
+slug: beamer-skill
+source_url: https://github.com/Noi1r/beamer-skill
+author: Noi1r
+author_url: https://github.com/Noi1r
+license: MIT
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: skill
+description: 'The strongest pick for academic LaTeX slides, with opinionated pedagogy: no overlays, density
+  caps, visual overflow detection.'
+description_zh: 学术 LaTeX 幻灯片的首选，带着鲜明的排版主张：不用逐步显现动画、设密度上限、靠视觉审查检测溢出。
+description_long: 'Turns agents into competent Beamer authors with opinionated pedagogy: no overlays,
+  per-slide density caps, 3-pass XeLaTeX compile, box-overflow detection via visual audit, WCAG-AA colorblind-safe
+  palette. The strongest pick for academic LaTeX slides.'
+description_zh_long: 把 agent 训练成称职的 Beamer 作者，并带着一套鲜明的排版主张：不用逐步显现动画、每页设密度上限、XeLaTeX 三遍编译、靠视觉审查检测文本框溢出、采用符合
+  WCAG-AA 的色盲友好配色。学术 LaTeX 幻灯片的首选。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: Copy the beamer/ skill into your agent skills folder; requires a XeLaTeX install
+validate_claim: Ask it to create and compile a 15-minute Beamer talk from a topic; confirm it produces
+  a compiling deck with no \pause overlays, flags any slide exceeding the density caps, and reports box-overflow
+  from the visual audit.
+lang:
+- en
+tags:
+- beamer
+- latex
+- slides
+- presentations
+featured: false
+spotlight: false
+stargazers_count: 248
+updated_at: '2026-05-07'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null
+subcategory: Slides & presentation decks

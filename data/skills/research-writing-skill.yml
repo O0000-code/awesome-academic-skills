@@ -1,0 +1,32 @@
+# research-writing-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: research-writing-skill
+slug: research-writing-skill
+source_url: https://github.com/alfonso0512/research-writing-skill
+author: alfonso0512
+author_url: https://github.com/alfonso0512
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: 'Bilingual (zh/en) academic-writing prompt pack: 30 templates spanning lit review, outlining,
+  drafting, polishing, de-AI, reviewer rebuttal and grant text. Broad and popular, but template-based
+  rather than tool-backed; light on verification.'
+description_zh: 中英双语的学术写作 prompt 合集：30 个模板，涵盖文献综述、列提纲、起草、润色、de-AI、审稿 rebuttal 与基金文本。覆盖广、受欢迎，但基于模板而非工具支撑；核验能力较弱。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - discord.com
+  - openclaw.ai
+  - your
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Prose refinement & discipline-specific style
+stargazers_count: 215
+updated_at: '2026-03-19'
+archived: false

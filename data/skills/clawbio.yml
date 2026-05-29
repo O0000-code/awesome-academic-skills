@@ -1,0 +1,69 @@
+# clawbio.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: clawbio
+slug: clawbio
+source_url: https://github.com/clawbio/clawbio
+author: clawbio
+author_url: https://github.com/clawbio
+license: MIT
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: 'Bioinformatics-native agent skill library: local-first, reproducible genomics/QC/GWAS workflows
+  built on OpenClaw, with CI and a cited release. Strong domain coverage; large executable surface typical
+  of a real bioinformatics stack.'
+description_zh: 生物信息学原生的 agent skill 库：基于 OpenClaw 构建的本地优先、可复现的基因组学/QC/GWAS 工作流，配有 CI 与可被引用的发布版本。领域覆盖扎实；可执行面较大，这是真实生物信息学技术栈的常态。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - aistudio.google.com
+  - anndata.readthedocs.io
+  - api.biorxiv.org
+  - api.clinpgx.org
+  - api.crossref.org
+  - api.datacite.org
+  - api.figshare.com
+  - api.flock.io
+  - api.groq.com
+  - api.platform.opentargets.org
+  - api.telegram.org
+  - api.together.xyz
+  - apidocs.protocols.io
+  - app.flow.bio
+  - astral.sh
+  - bgpt.pro
+  - bioblend.readthedocs.io
+  - bioconductor.org
+  - biorxiv.org
+  - busco.ezlab.org
+  - cdnjs.cloudflare.com
+  - chat.yourdomain.com
+  - clawbio.ai
+  - clawbio.github.io
+  - clawhub.ai
+  - clinicalgenome.org
+  - clinicaltrials.gov
+  - cloud.google.com
+  - cpicpgx.org
+  - cran.r-project.org
+  - cup.columbia.edu
+  - dash.cloudflare.com
+  - data.broadinstitute.org
+  - datadryad.org
+  - developers.facebook.com
+  - developers.zenodo.org
+  - discord.com
+  - docs.astral.sh
+  - docs.figshare.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
+  meets that discipline's conventions.
+subcategory: Biomedical & life sciences
+stargazers_count: 902
+updated_at: '2026-06-01'
+archived: false

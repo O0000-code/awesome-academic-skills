@@ -1,0 +1,31 @@
+# writing-in-the-sciences-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+# NOTE: security = conservative default (no ASDF inferred at audit); finalize in deep-ASDF pass.
+name: writing-in-the-sciences-skill
+slug: writing-in-the-sciences-skill
+source_url: https://github.com/jingkarqi/writing-in-the-sciences-skill
+author: jingkarqi
+author_url: https://github.com/jingkarqi
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: 'Scientific-writing skill built on Stanford''s Writing in the Sciences (Sainani): a structured
+  draft/revise workflow for clear, evidence-backed prose. Strong principled grounding; a Codex-native
+  single skill, English-pedagogy-centric.'
+description_zh: 一个基于斯坦福《Writing in the Sciences》（Sainani）课程的科学写作 skill：用结构化的起草/修改工作流，产出清晰、有证据支撑的文字。原则根基扎实；为
+  Codex 原生的单个 skill，以英语写作教学为核心。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Prose refinement & discipline-specific style
+stargazers_count: 5
+updated_at: '2026-04-04'
+archived: false

@@ -1,0 +1,39 @@
+# Verified from repo as-of 2026-05-29.
+name: Awesome-AI-Scientists
+slug: list-tsinghua-ai-scientists
+source_url: https://github.com/tsinghua-fib-lab/Awesome-AI-Scientists
+author: FIB Lab, Tsinghua University
+author_url: https://github.com/tsinghua-fib-lab
+license: MIT
+category: Awesome Lists & Ecosystem Maps
+lifecycle_stage: meta
+type: list
+description: The reading list behind Tsinghua FIB Lab's AI-Scientists survey — a paper-centric map of the literature.
+description_long: "The companion reading list to Tsinghua FIB Lab's survey \"A Comprehensive Survey of AI Scientists\" — a paper-centric map of the autonomous-research literature, the academic grounding behind systems like AI-Scientist and AI-Researcher."
+description_zh: 清华 FIB 实验室《AI 科学家综述》的配套阅读清单——以论文为主的文献图谱。
+description_zh_long: "清华 FIB 实验室综述《A Comprehensive Survey of AI Scientists》的配套阅读清单——一张以论文为中心的自主科研文献地图，构成 AI-Scientist、AI-Researcher 等系统背后的学术根基。"
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: ""
+lang: [en]
+tags:
+  - awesome-list
+  - survey-backed
+  - ai-scientists
+  - papers
+  - tsinghua-fib-lab
+featured: false
+spotlight: false
+stargazers_count: 38
+updated_at: '2025-12-18'
+archived: false
+current_release: { tag: null, published_at: null }
+last_link_check: null
+last_security_scan: null

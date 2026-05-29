@@ -1,0 +1,36 @@
+# llm-wiki.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: llm-wiki
+slug: llm-wiki
+source_url: https://github.com/nvk/llm-wiki
+author: nvk
+author_url: https://github.com/nvk
+license: MIT
+category: Reading, Summarization & Q&A
+lifecycle_stage: reading
+type: plugin
+description: 'LLM-compiled knowledge bases for agents: parallel multi-agent research, thesis-driven investigation,
+  source ingestion, then a queryable wiki. Good for building a durable, cited knowledge base from many
+  sources.'
+description_zh: 为 agent 构建 LLM 编译的知识库：并行多 agent 调研、论点驱动的探查、来源摄入，最终形成可查询的 wiki。适合从大量来源搭建持久、带引用的知识库，属于研究综合工具，而非文献检索工具。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - api.fxtwitter.com
+  - api.vxtwitter.com
+  - dump.bitcoin.it
+  - example.org
+  - figshare.com
+  - web.archive.org
+  - www.retardmaxx.com
+  - x.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+subcategory: Grounded Q&A & knowledge bases
+stargazers_count: 496
+updated_at: '2026-05-23'
+archived: false

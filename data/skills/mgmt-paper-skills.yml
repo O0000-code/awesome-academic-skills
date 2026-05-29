@@ -1,0 +1,66 @@
+# mgmt-paper-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: mgmt-paper-skills
+slug: mgmt-paper-skills
+source_url: https://github.com/haonanalex/mgmt-paper-skills
+author: haonanalex
+author_url: https://github.com/haonanalex
+license: Apache-2.0
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'Management-research workbench: idea-to-review pipeline with SPSS/Stata/Python analysis,
+  causal methods (DiD/RDD/IV/SC/PSM), qualitative coding and journal-figure profiles (UTD24). Deep for
+  econ/management; Chinese-data oriented, needs a stats MCP.'
+description_zh: 管理学研究工作台：从选题到评审的全流程，含 SPSS/Stata/Python 分析、因果方法（DiD/RDD/IV/SC/PSM）、质性编码与期刊图表规范（UTD24）。在经济/管理领域很深；偏向中文数据，需要一个统计
+  MCP。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - api.bfl.ml
+  - api.openai.com
+  - api.replicate.com
+  - api.tushare.pro
+  - choice.eastmoney.com
+  - console.cloud.google.com
+  - dagitty.net
+  - datav.aliyun.com
+  - example.org
+  - fal.ai
+  - files.openai.com
+  - ft.10jqka.com.cn
+  - gadm.org
+  - graphml.graphdrawing.org
+  - kd.nsfc.cn
+  - mermaid.js.org
+  - mermaid.live
+  - mixtape.scunning.com
+  - modelcontextprotocol.io
+  - nsfc.example.test
+  - ori.hhs.gov
+  - platform.openai.com
+  - replicate.com
+  - synth-inference.r-universe.dev
+  - tushare.pro
+  - www.cnki.net
+  - www.cqvip.com
+  - www.csmar.com
+  - www.nber.org
+  - www.nsfc.gov.cn
+  - www.prisma-statement.org
+  - www.recraft.ai
+  - www.stats.gov.cn
+  - www.wanfangdata.com.cn
+  - x
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 117
+updated_at: '2026-05-02'
+archived: false

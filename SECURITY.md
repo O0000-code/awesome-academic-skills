@@ -2,9 +2,9 @@
 
 This list indexes tooling that **runs code** — Claude Skills execute Python and
 bash, declare `allowed-tools`, define hooks that fire on lifecycle events, and
-can reach the network. Security is therefore not a footnote here; it is the
-reason the list exists. This document explains what the capability tags do and
-do **not** mean, how the disclosure check works, and how to report a problem.
+can reach the network. So each entry discloses what it does. This document
+explains what the capability tags do and do **not** mean, how the disclosure
+check works, and how to report a problem.
 
 ## What the capability tags mean — and what they do not
 

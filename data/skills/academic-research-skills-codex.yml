@@ -1,0 +1,70 @@
+# academic-research-skills-codex.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: academic-research-skills-codex
+slug: academic-research-skills-codex
+source_url: https://github.com/imbad0202/academic-research-skills-codex
+author: imbad0202
+author_url: https://github.com/imbad0202
+license: NOASSERTION
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'Codex-native Academic Research Skills: deep research, paper drafting, manuscript review,
+  research-to-paper pipelines, citation/integrity checks. Broad end-to-end; vendored as one giant skill
+  (audit accordingly); non-commercial license.'
+description_zh: Codex 原生的学术研究 Skill 集：深度调研、论文起草、稿件评审、从研究到成文的流水线、引用与学术诚信核查。端到端覆盖面广；但以一整个巨型 skill 的形式打包内置（审查时需相应留意）；采用非商用
+  license。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - 2023.aclweb.org
+  - 2026.emnlp.org
+  - agentskills.io
+  - ai.jmir.org
+  - aisnet.org
+  - aistudio.google.com
+  - api.crossref.org
+  - api.openai.com
+  - api.openalex.org
+  - api.semanticscholar.org
+  - arxiv-sanity-lite.com
+  - arxiv.org
+  - buymeacoffee.com
+  - chat.openai.com
+  - chat.openai.com.
+  - claude.com
+  - code.claude.com
+  - docs.citationstyles.org
+  - docs.claude.com
+  - doi.org
+  - drop-sh.fullyjustified.net
+  - ec.europa.eu
+  - eppi.ioe.ac.uk
+  - example.com--
+  - example.go.jp
+  - example.gov.tw
+  - example.org
+  - generativelanguage.googleapis.com
+  - github
+  - gptzero.me
+  - hdl.handle.net
+  - iclr.cc
+  - jamanetwork.com
+  - journals.plos.org
+  - law.moj.gov.tw
+  - legalinstruments.oecd.org
+  - nature.com
+  - neurips.cc
+  - ntrs.nasa.gov
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 2508
+updated_at: '2026-06-01'
+archived: false

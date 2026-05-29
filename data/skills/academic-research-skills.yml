@@ -1,0 +1,53 @@
+name: academic-research-skills
+slug: academic-research-skills
+source_url: https://github.com/Imbad0202/academic-research-skills
+author: Edward Cheng-I Wu
+author_url: https://github.com/Imbad0202
+license: CC-BY-NC-4.0
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: A human-in-the-loop pipeline built to fight AI fabrication that deliberately refuses to ghost-write;
+  non-commercial license.
+description_zh: 一条专为对抗 AI 编造而设计、刻意拒绝代笔的人在环路流水线；非商业许可证。
+description_long: A human-in-the-loop paper pipeline whose whole design fights AI fabrication — claim-faithfulness
+  audit gates, citation anchors, an AI-disclosure command, a simulated reviewer panel; deliberately refuses
+  to ghost-write. Non-commercial license.
+description_zh_long: 一条人在环路的论文流水线，整套设计都在对抗 AI 编造——论断忠实性审计关卡、引文锚点、一个 AI 使用声明命令、一个模拟审稿小组；刻意拒绝代笔写作。非商业许可证。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - Semantic Scholar API (citation/source verification)
+  - cited-source fetching for the opt-in claim-audit pass (ARS_CLAIM_AUDIT)
+  - Anthropic API (Claude Code runtime)
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://github.com/Imbad0202/academic-research-skills
+install: /plugin marketplace add Imbad0202/academic-research-skills && /plugin install academic-research-skills
+  (or symlink skills/ manually)
+validate_claim: Run /ars-plan and describe a paper you're drafting; verify it runs a Socratic chapter-by-chapter
+  plan rather than dumping a full ghost-written draft.
+lang:
+- en
+- zh
+tags:
+- non-commercial
+- human-in-the-loop
+- citation-integrity
+- paper-pipeline
+- Imbad0202
+featured: false
+spotlight: false
+stargazers_count: 25450
+updated_at: '2026-06-01'
+archived: false
+current_release:
+  tag: v3.10.0
+  published_at: '2026-06-01'
+last_link_check: null
+last_security_scan: null
+subcategory: Full-lifecycle research backbones

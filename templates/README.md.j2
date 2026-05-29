@@ -2,20 +2,22 @@
 {# v2 Swiss/monochrome hero + deep H2->H3 hierarchy + nested TOC named "Table of #}
 {# contents" (so strict toc.js does not fire). Lint-verified: scripts/generate_readme.py #}
 {# header + 01_working/R1_DF2 PART A. #}
-{# ===== [HERO] terse Swiss composition (centered; banner is NOT the first node so #}
-{# the centered-div-with-image is never miscounted as a 2nd heading). ===== #}
-<p align="center"><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
+{# ===== [HERO] PSP-style top: language switch pinned top-right, then ONE centered #}
+{# block — title (+ awesome badge), tagline, hero lines, monochrome badges, browse #}
+{# link. The H1 sits inside the centered div but is separated by blank lines, so #}
+{# remark/awesome-lint still parse it as the document's first heading with the badge #}
+{# immediately after it. ===== #}
+<div align="right">
+
+**English** · [中文](README.zh-CN.md)
+
+</div>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-    <img alt="{{ site.title }}" src="assets/banner-light.png" width="560">
-  </picture>
-</div>
 
 # {{ site.title }} [![Awesome]({{ site.awesome_badge_url }})]({{ site.awesome_url }})
 
-<div align="center">
+<br/>
 
 **{{ ed.tagline }}**
 <br/>
@@ -32,11 +34,9 @@
 ![Updated](https://img.shields.io/badge/updated-{{ updated_dotted }}-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
 
-<br/>
-
-**[↓ Browse the list below](#contents)**
-
 </div>
+
+<br/>
 
 {# ===== [TOC] Named exactly "Contents" so awesome-lint's strict toc.js fires and #}
 {# validates this AS a TOC (depth-0 item <-> H2 super-group, depth-1 <-> H3 category) #}

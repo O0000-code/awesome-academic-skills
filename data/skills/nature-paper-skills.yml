@@ -1,0 +1,69 @@
+# nature-paper-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: nature-paper-skills
+slug: nature-paper-skills
+source_url: https://github.com/boom5426/nature-paper-skills
+author: boom5426
+author_url: https://github.com/boom5426
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: suite
+description: A journal-first manuscript pipeline for Nature-style submissions — citation-integrity, claim/evidence
+  discipline, submission preflight and rebuttal. Opinionated and narrow by design; strong for high-end
+  bio/medical writing.
+description_zh: 一条以期刊为先、面向 Nature 风格投稿的稿件流水线——引用完整性、论点/证据的严格把控、投稿前预检与反驳回应。主张鲜明、定位有意收窄；对高端生物/医学写作很有优势。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - aaai.org
+  - acl-org.github.io
+  - aclanthology.org
+  - aclrollingreview.org
+  - aclweb.org
+  - aistudio.google.com
+  - anonymous.4open.science
+  - apastyle.apa.org
+  - api.crossref.org
+  - api.semanticscholar.org
+  - arriveguidelines.org
+  - arxiv.org
+  - billf.mit.edu
+  - bounded-regret.ghost.io
+  - byteiota.com
+  - citely.ai
+  - cljournal.org
+  - cn.overleaf.com
+  - colmweb.org
+  - cseweb.ucsd.edu
+  - ctan.org
+  - docs.openalex.org
+  - doi.org
+  - dx.doi.org
+  - endnote.com
+  - ethanperez.net
+  - export.arxiv.org
+  - fged.org
+  - flowcyt.org
+  - gensc.org
+  - git.overleaf.com
+  - grigorisg9gr.github.io
+  - iclr.cc
+  - icml.cc
+  - ieeeauthorcenter.ieee.org
+  - info.arxiv.org
+  - jamanetwork.com
+  - jfly.uni-koeln.de
+  - journals.plos.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Manuscript drafting pipelines
+stargazers_count: 267
+updated_at: '2026-05-08'
+archived: false

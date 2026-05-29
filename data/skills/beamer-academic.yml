@@ -1,0 +1,37 @@
+# beamer-academic.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: beamer-academic
+slug: beamer-academic
+source_url: https://github.com/faust-donf/beamer-academic
+author: faust-donf
+author_url: https://github.com/faust-donf
+license: MIT
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: skill
+description: Turns a thesis or paper into ready-to-present academic Beamer slides with a real layout library
+  and an interactive editing loop. Bilingual, no LaTeX expertise required; scope is defense/conference
+  decks, not general slide design.
+description_zh: 将学位论文或期刊论文转化为可直接演示的学术 Beamer 幻灯片，配有实用的版式库与交互式编辑循环。支持双语，无需 LaTeX 专业知识；适用范围是答辩/会议演示，而非通用幻灯片设计。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - api.star-history.com
+  - keepachangelog.com
+  - openai.com
+  - semver.org
+  - star-history.com
+  - www.contributor-covenant.org
+  - www.conventionalcommits.org
+  - xhslink.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
+  the output compiles/opens and matches the spec.
+subcategory: Slides & presentation decks
+stargazers_count: 97
+updated_at: '2026-05-24'
+archived: false

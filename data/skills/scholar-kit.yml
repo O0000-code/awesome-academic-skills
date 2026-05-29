@@ -1,0 +1,42 @@
+# scholar-kit.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: scholar-kit
+slug: scholar-kit
+source_url: https://github.com/lottshin/scholar-kit
+author: lottshin
+author_url: https://github.com/lottshin
+license: MIT
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: skill
+description: 'Chinese-first literature toolkit: search CNKI/OpenAlex/Semantic Scholar/arXiv/NSSD, enrich
+  via Crossref, resolve OA via Unpaywall, batch-download (incl. CNKI PDFs), export GB/T 7714/BibTeX/RIS/APA.
+  Strong CNKI; scraping is fragile + ToS-sensitive.'
+description_zh: 以中文为先的文献工具包：检索知网/OpenAlex/Semantic Scholar/arXiv/国家哲学社会科学文献中心，用 Crossref 补全元数据，经 Unpaywall
+  解析 OA 版本，批量下载（含知网 PDF），导出 GB/T 7714/BibTeX/RIS/APA。知网支持出色；但抓取较脆弱且涉及 ToS 风险。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - 127.0.0.1
+  - api.crossref.org
+  - api.openalex.org
+  - api.semanticscholar.org
+  - api.unpaywall.org
+  - arxiv.org
+  - doi.org
+  - export.arxiv.org
+  - kns.cnki.net
+  - openalex.org
+  - www.nssd.cn
+  - www.semanticscholar.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
+  returned title/DOI resolves to a real paper.
+subcategory: Multi-source discovery search
+stargazers_count: 14
+updated_at: '2026-05-27'
+archived: false

@@ -1,0 +1,48 @@
+name: bioSkills
+slug: bioskills
+source_url: https://github.com/GPTomics/bioSkills
+author: GPTomics
+author_url: https://github.com/GPTomics
+license: MIT
+category: Discipline-Specific Packs
+lifecycle_stage: discipline
+type: suite
+description: The most benchmark-honest bioinformatics pack — idiomatic samtools/DESeq2/Seurat code, with
+  published Bio-Task Bench scores.
+description_zh: 基准测试最坦诚的生物信息学套件——地道的 samtools/DESeq2/Seurat 代码，并公布了 Bio-Task Bench 成绩。
+description_long: Bioinformatics pack teaching agents idiomatic code for the real toolchain — samtools/bcftools/BLAST,
+  DESeq2/edgeR/Seurat, single-cell RNA-seq, variant calling — and reports its scores on the authors' Bio-Task
+  Bench. The most benchmark-honest pack.
+description_zh_long: 生物信息学套件，教 agent 为真实工具链写地道的代码——samtools/bcftools/BLAST、DESeq2/edgeR/Seurat、单细胞 RNA-seq、变异检测——并公布了它在作者自建的
+  Bio-Task Bench 上的成绩。基准测试最坦诚的一个套件。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: git clone then ./install-claude.sh (supports --project, --categories, --uninstall)
+validate_claim: Ask Claude (with the variant-calling category installed) to write a samtools+bcftools
+  pipeline for a small BAM; confirm idiomatic, runnable code with correct flag usage rather than hallucinated
+  subcommands.
+lang:
+- en
+tags:
+- bioinformatics
+- rna-seq
+- single-cell
+- variant-calling
+featured: false
+spotlight: false
+stargazers_count: 824
+updated_at: '2026-05-30'
+archived: false
+current_release:
+  tag: '3.0'
+  published_at: '2026-02-14'
+last_link_check: null
+last_security_scan: null
+subcategory: Biomedical & life sciences

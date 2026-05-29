@@ -1,0 +1,49 @@
+name: apa-referencing-skill
+slug: apa-referencing-skill
+source_url: https://github.com/keemanxp/apa-referencing-skill
+author: Chuah Kee Man (keemanxp)
+author_url: https://github.com/keemanxp
+license: No License
+category: Reference & Citation Management
+lifecycle_stage: citation
+type: skill
+description: 'The most complete APA-7th formatter: 28 source types, down to tweets and datasets. Ships
+  no open-source license.'
+description_zh: 最完整的 APA 第 7 版格式化工具：28 种文献类型，细到推文和数据集。要注意：没有开源协议。
+description_long: 'The most complete APA-7th reference formatter here: a packaged rules file covers 28
+  source types (down to tweets, films, datasets); it formats, corrects, converts, and web-verifies. Caveat:
+  no open-source license (educational use only).'
+description_zh_long: 本列表里最完整的 APA 第 7 版文献格式化工具：内置规则文件覆盖 28 种文献类型（细到推文、影片、数据集）， 能格式化、纠错、转换并联网核验。要注意：没有开源协议（仅限教学用途）。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - doi.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: null
+install: Copy into ~/.claude/skills/apa-referencing-skill
+validate_claim: Paste a sloppily formatted journal reference and a tweet citation and ask for APA 7th.
+  Confirm it fixes italics/sentence-case/DOI format and produces a correct social-media entry, then web-verifies
+  the journal article exists.
+lang:
+- en
+tags:
+- apa7
+- reference-formatting
+- style-conversion
+- no-license
+featured: false
+spotlight: false
+stargazers_count: 9
+updated_at: '2026-03-26'
+archived: false
+current_release:
+  tag: v1.0.0
+  published_at: '2026-03-21'
+last_link_check: null
+last_security_scan: null
+subcategory: Reference formatting & style

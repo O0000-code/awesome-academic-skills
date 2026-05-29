@@ -1,0 +1,29 @@
+# physics-lab-report-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: physics-lab-report-skill
+slug: physics-lab-report-skill
+source_url: https://github.com/ydh0411/physics-lab-report-skill
+author: ydh0411
+author_url: https://github.com/ydh0411
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: 'Generates pre-lab and formal university-physics lab reports in spec-compliant LaTeX, with
+  real data-processing built in: uncertainty propagation, the method of successive differences, least-squares
+  fitting and uncertainty analysis.'
+description_zh: 生成符合规范的大学物理预习与正式实验报告（LaTeX），并内置真实的数据处理：不确定度传递、逐差法、最小二乘拟合与不确定度分析。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Thesis & degree-work authoring
+stargazers_count: 5
+updated_at: '2026-05-25'
+archived: false

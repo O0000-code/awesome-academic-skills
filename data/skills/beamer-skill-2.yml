@@ -1,0 +1,31 @@
+# beamer-skill-2.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: beamer-skill
+slug: beamer-skill-2
+source_url: https://github.com/jaxonjp/beamer-skill
+author: jaxonjp
+author_url: https://github.com/jaxonjp
+license: MIT
+category: Submission, Formatting & Conversion
+lifecycle_stage: publishing
+type: skill
+description: Create/compile/review/polish academic Beamer decks with TikZ and pedagogical audits and quality
+  gates; explicitly defers PPTX to other skills. A derivative work, extended; LaTeX-only by design.
+description_zh: 创建/编译/评审/打磨学术 Beamer 幻灯片，支持 TikZ、教学法审查与质量关卡；明确把 PPTX 交由其他 skill 处理。一个经过扩展的衍生作品；设计上仅支持
+  LaTeX。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - git
+  - latex.ustc.edu.cn
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
+  the output compiles/opens and matches the spec.
+subcategory: Slides & presentation decks
+stargazers_count: 16
+updated_at: '2026-05-23'
+archived: false

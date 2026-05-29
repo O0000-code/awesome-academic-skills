@@ -1,0 +1,30 @@
+# stata-graphics-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: stata-graphics-skill
+slug: stata-graphics-skill
+source_url: https://github.com/youngfujun/stata-graphics-skill
+author: youngfujun
+author_url: https://github.com/youngfujun
+license: No License
+category: Figures & Visualization
+lifecycle_stage: figures
+type: skill
+description: Knowledge base for AI-assisted Stata graphing aimed at economics empirical research. Narrow
+  but well-targeted for econ publication figures; the main gap is a missing LICENSE. A good companion
+  for Stata-based analysis workflows.
+description_zh: 面向经济学实证研究的 AI 辅助 Stata 绘图知识库。定位窄但精准切中经济学发表用图；主要短板是缺少 LICENSE。是基于 Stata 的分析工作流的好搭档。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - www.stata-journal.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to produce a described figure, then verify it renders at
+  publication quality and matches the request.
+subcategory: Data-driven statistical plots
+stargazers_count: 19
+updated_at: '2026-04-29'
+archived: false

@@ -1,0 +1,29 @@
+# academic-review-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: academic-review-skill
+slug: academic-review-skill
+source_url: https://github.com/pengkangzhen/academic-review-skill
+author: pengkangzhen
+author_url: https://github.com/pengkangzhen
+license: MIT
+category: Peer Review & Response
+lifecycle_stage: peer-review
+type: skill
+description: Reviews OR/management-science manuscripts for academic merit rather than implementation,
+  detecting domain-specific red flags (infeasible quantities, trivial VSS%) and deliberately phrasing
+  critiques as queries to avoid killing genuine findings.
+description_zh: 审阅运筹学/管理科学稿件，着眼学术价值而非实现细节，识别领域特有的疑点（不可行的取值、无意义的 VSS%），并刻意把批评措辞为提问，以免误伤真正反直觉的发现。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify the critique is
+  specific, accurate, and actionable.
+subcategory: Pre-submission review & rebuttal
+stargazers_count: 5
+updated_at: '2026-03-15'
+archived: false

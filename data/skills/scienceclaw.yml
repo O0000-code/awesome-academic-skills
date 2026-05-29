@@ -1,0 +1,70 @@
+# scienceclaw.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: scienceclaw
+slug: scienceclaw
+source_url: https://github.com/beita6969/scienceclaw
+author: beita6969
+author_url: https://github.com/beita6969
+license: MIT
+category: Autonomous Research Systems
+lifecycle_stage: autonomous
+type: suite
+description: 'Large self-evolving research-agent platform (OpenClaw-based): 285 skills across 28+ disciplines,
+  persistent memory, API-grounded citations. Popular for end-to-end research agents; bundles a full messaging/browser/sandbox
+  OS, so read before trusting.'
+description_zh: 一个大型自演化研究 agent 平台（基于 OpenClaw）：横跨 28+ 个学科的 285 个 skill，配有持久化记忆和以 API 为依据的引用。在端到端研究 agent
+  领域颇受欢迎；但内置了一整套消息/浏览器/沙箱式的“操作系统”，使用前务必先读懂再信任。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - .
+  - '...'
+  - 0.0.0.0
+  - 0177.0.0.1
+  - '0x7f000001'
+  - 1.example
+  - 10.0.0.1
+  - 10.0.0.42
+  - 10.0.0.5
+  - 10.42.13.132
+  - 100.100.50.1
+  - 100.106.161.80
+  - 100.64.0.1
+  - 100.64.0.9
+  - 100.86.79.37
+  - 127.0.0.1
+  - 169.254.1.1
+  - 169.254.169.254
+  - 172.16.0.1
+  - 192.168.1.1
+  - 192.168.1.100
+  - 192.168.1.202
+  - 192.168.1.5
+  - 192.168.20.14
+  - 192.168.x.x
+  - 198.18.0.1
+  - 198.18.0.153
+  - 198.51.100.42
+  - 2.example
+  - 3.example
+  - 4.example
+  - 5.example
+  - 6.example
+  - 7.example
+  - 8.8.8.8
+  - 8.example
+  - 9.example
+  - 93.184.216.34
+  - a
+  - a.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
+  and drafted result whose sources actually exist.
+subcategory: Domain-bound autonomous systems
+stargazers_count: 829
+updated_at: '2026-05-25'
+archived: false

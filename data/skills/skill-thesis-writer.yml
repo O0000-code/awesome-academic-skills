@@ -1,0 +1,34 @@
+# skill-thesis-writer.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: skill-thesis-writer
+slug: skill-thesis-writer
+source_url: https://github.com/yanlin-cheng/skill-thesis-writer
+author: yanlin-cheng
+author_url: https://github.com/yanlin-cheng
+license: MulanPSL-2.0
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: skill
+description: A Chinese-academic thesis-writing skill for undergraduate and graduate work across engineering,
+  psychology, education and management, enforcing GB/T 7714-2015 reference formatting with built-in data-analysis
+  and citation management.
+description_zh: 一个中文学术学位论文写作技能，覆盖工科、心理、教育与管理的本科及研究生工作，强制 GB/T 7714-2015 参考文献格式，内置数据分析与引用管理。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - arxiv.org
+  - license.coscl.org.cn
+  - www.creader.com
+  - www.oclc.org
+  - www.stats.gov.cn
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
+  claims match scholarly conventions and the source material.
+subcategory: Thesis & degree-work authoring
+stargazers_count: 155
+updated_at: '2026-04-13'
+archived: false

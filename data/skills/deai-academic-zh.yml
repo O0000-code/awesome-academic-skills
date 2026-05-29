@@ -1,0 +1,29 @@
+# deai-academic-zh.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: deai-academic-zh
+slug: deai-academic-zh
+source_url: https://github.com/houlaisan/deai-academic-zh
+author: houlaisan
+author_url: https://github.com/houlaisan
+license: MIT
+category: Writing Quality & De-AI
+lifecycle_stage: writing-quality
+type: skill
+description: Chinese-thesis AIGC detection + de-AI rewriting with a documented 3-pass method (wording→burstiness→restructuring)
+  and a zero-fabrication rule; reports real Weipu/CNKI score drops. For zh undergrad/master theses, not
+  English.
+description_zh: 面向中文学位论文的 AIGC 检测 + 去 AI 改写，采用有据可查的三轮方法（措辞→突发性→重构）并恪守零捏造原则；报告了维普/知网检测分数的实际下降。适用于中文本科/硕士学位论文，不适用于英文。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
+  and preserves the original meaning and citations.
+subcategory: AIGC detector evasion (thesis)
+stargazers_count: 44
+updated_at: '2026-04-05'
+archived: false

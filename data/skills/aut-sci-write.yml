@@ -1,0 +1,52 @@
+# aut-sci-write.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: aut_sci_write
+slug: aut-sci-write
+source_url: https://github.com/shzhao27208/aut_sci_write
+author: shzhao27208
+author_url: https://github.com/shzhao27208
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'Modular research-lifecycle suite: literature search across arXiv/PubMed/Web of Science,
+  PDF and figure extraction, review/meta-analysis writing, Zotero sync and slides. Broad and well-adopted;
+  a do-everything suite, not a best-in-one-stage tool.'
+description_zh: 一个覆盖研究全生命周期的模块化 skill 集：跨 arXiv/PubMed/Web of Science 文献检索、PDF 与图表提取、综述/meta 分析写作、Zotero
+  同步以及幻灯片制作。覆盖面广、采用率高；属于“样样都能做”的大而全 skill 集，而非某一环节做到最好的专精工具。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.clarivate.com
+  - api.crossref.org
+  - api.moonshot.cn
+  - api.star-history.com
+  - api.unpaywall.org
+  - api.zotero.org
+  - arxiv.org
+  - developer.clarivate.com
+  - eutils.ncbi.nlm.nih.gov
+  - export.arxiv.org
+  - latex.codecogs.com
+  - nodejs.org
+  - numpy.org
+  - opencv.org
+  - openlibrary.org
+  - pillow.readthedocs.io
+  - pubmed.ncbi.nlm.nih.gov
+  - pymupdf.readthedocs.io
+  - shzhao27208.github.io
+  - www.star-history.com
+  - www.webofscience.com
+  - www.zotero.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 91
+updated_at: '2026-05-30'
+archived: false

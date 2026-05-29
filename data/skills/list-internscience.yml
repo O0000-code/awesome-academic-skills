@@ -1,0 +1,45 @@
+name: Awesome Scientific Skills
+slug: list-internscience
+source_url: https://github.com/InternScience/Awesome-Scientific-Skills
+author: Intern Science
+author_url: https://github.com/InternScience
+license: MIT
+category: Awesome Lists & Ecosystem Maps
+lifecycle_stage: meta
+type: list
+description: The closest active peer — a curated awesome-list of agent skills for
+  science. Cross-reference, don't race.
+description_long: The closest active peer to this list — an open, curated collection
+  of Agent Skills for scientific research with the awesome.re badge, from the InternScience
+  org, paired with their own Skiller and skill-metric tooling. Cross-reference, don't
+  race.
+description_zh: 最接近的活跃同类——一份科研 agent 技能的 awesome 列表；可交叉参考，而非竞争。
+description_zh_long: 与本列表最接近的活跃同侪——一份开放、精选的科研 Agent Skills 合集，带 awesome.re 徽章，出自 InternScience
+  组织，并配有其自研的 Skiller 与 skill 评估工具。互为交叉参考，而非彼此竞速。
+security:
+  makes_network_calls: false
+  network_endpoints: []
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: ''
+lang:
+- en
+- zh
+tags:
+- awesome-list
+- competing-index
+- InternScience
+featured: false
+spotlight: false
+stargazers_count: 407
+updated_at: '2026-05-26'
+archived: false
+current_release:
+  tag: null
+  published_at: null
+last_link_check: null
+last_security_scan: null

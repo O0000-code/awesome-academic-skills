@@ -247,8 +247,8 @@ editorial:
   # [HERO] One bold tagline + 2-3 <br/>-split value lines (owner's hero grammar).
   tagline: "The research lifecycle, as agent skills."
   hero_lines:
-    - "A neutral, bilingual index of Claude and agent skills for academic work — from literature search to peer review."
-    - "Curated by working researchers, not a vendor funnel. Every entry's executable behaviour (network, hooks) is disclosed and cross-checked by an open script; the maintainer's own skills appear as peers under the same bar."
+    - "A bilingual index of Claude and agent skills for academic work, from literature search to peer review."
+    - "Organized by where skills fit in the research lifecycle; each entry notes its license and what it runs (network, hooks)."
 
   # [BELOW INDEX] How to use — terse prose on-ramp (no emoji lifecycle string).
   how_to_use_intro: >-
@@ -294,7 +294,7 @@ editorial:
   neutrality_clause: >-
     This list is maintained by an author of some listed skills; those skills are held to
     the identical disclosure check, get no preferential placement, and sit in
-    deterministic alphabetical order like every other entry.
+    alphabetical order like every other entry.
 
   # [CONTRIBUTING] pointer (denylisted from TOC).
   contributing_pointer: >-
@@ -311,8 +311,8 @@ editorial:
 editorial_zh:
   tagline: "把科研全流程，做成 agent 技能。"
   hero_lines:
-    - "一个中立、双语的 Claude 与 agent 技能索引，覆盖学术工作的方方面面——从文献检索到同行评审。"
-    - "由一线研究者策展，而非产品导流页。每个条目的可执行行为（联网、hook）都经一套开放脚本披露并对照核验；维护者本人的技能也作为同等条目、按同一把尺子收录。"
+    - "一个双语的 Claude 与 agent 技能索引，覆盖从文献检索到同行评审的学术工作。"
+    - "按技能在研究流程中的位置来组织；每个条目都标注许可证，以及它会做什么（联网、hook）。"
 
   how_to_use_intro: >-
     按研究者实际做的事来组织，而非按字母排序。从你当前所处的阶段开始，沿研究生命周期往下走：
@@ -345,7 +345,7 @@ editorial_zh:
 
   neutrality_clause: >-
     本列表由部分被收录技能的作者维护；这些技能接受完全相同的披露核验、不享受任何排序优待，
-    并和其他所有条目一样按确定性的字母序排列。
+    并和其他所有条目一样按字母序排列。
 
   contributing_pointer: >-
     欢迎贡献，且大多数收录技能都由其作者自行提交。两种贡献方式（低门槛的 Issue 表单，或一个

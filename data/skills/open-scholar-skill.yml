@@ -1,0 +1,69 @@
+# open-scholar-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: open-scholar-skill
+slug: open-scholar-skill
+source_url: https://github.com/joshzyj/open-scholar-skill
+author: joshzyj
+author_url: https://github.com/joshzyj
+license: NOASSERTION
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'Social-science paper suite for top journals: analytics with publication-ready regression
+  tables/figures (NHANES/IPUMS/GSS), literature synthesis, causal design, citation. Broad end-to-end;
+  non-commercial license + a self-citation nudge.'
+description_zh: 面向顶刊的社会科学论文套件：分析能力可产出可直接发表的回归表格/图（NHANES/IPUMS/GSS）、文献综合、因果设计、引用。端到端覆盖面广；非商业许可，且带一处自引导向。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - acleddata.com
+  - addhealth.cpc.unc.edu
+  - agents.md
+  - aixiv.me
+  - api.census.gov
+  - api.crossref.org
+  - api.data.gov
+  - api.openalex.org
+  - api.retractiondatabase.org
+  - api.semanticscholar.org
+  - api.twitter.com
+  - api.usa.gov
+  - arxiv.org
+  - bcallaway11.github.io
+  - catalog.data.gov
+  - cde.ucr.cjis.gov
+  - cloud.r-project.org
+  - codeocean.com
+  - comparativeconstitutionsproject.org
+  - correlatesofwar.org
+  - cran.r-project.org
+  - data.gdeltproject.org
+  - data.worldbank.org
+  - dataverse.harvard.edu
+  - dataverse.nl
+  - dhsprogram.com
+  - direct.mit.edu
+  - docs.ntfy.sh
+  - doi.org
+  - dpic.org
+  - ec.europa.eu
+  - ed-public-download.app.cloud.gov
+  - electionstudies.org
+  - essentia.upf.edu
+  - europeansocialsurvey.org
+  - europeanvaluesstudy.eu
+  - evictionlab.org
+  - export.arxiv.org
+  - fred.stlouisfed.org
+  - gdeltproject.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 71
+updated_at: '2026-05-31'
+archived: false

@@ -1,0 +1,70 @@
+# claude-scientific-writer.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: claude-scientific-writer
+slug: claude-scientific-writer
+source_url: https://github.com/k-dense-ai/claude-scientific-writer
+author: k-dense-ai
+author_url: https://github.com/k-dense-ai
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: 'A 27-skill scientific-writing suite: literature review, citation management, peer review,
+  figures, posters, slides and manuscript drafting. The most popular here and broad, but jack-of-all-trades;
+  ships an unscoped Bash.'
+description_zh: 一个包含 27 个 skill 的科学写作 skill 集：文献综述、引用管理、同行评审、图表、海报、幻灯片以及稿件起草。是此处最受欢迎、覆盖面最广的一个，但样样通而无一精；且附带了一个未限定权限范围的
+  Bash。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - aaai.org
+  - alphafold.ebi.ac.uk
+  - amstar.ca
+  - anonymous.4open.science
+  - apastyle.apa.org
+  - api.crossref.org
+  - api.datacite.org
+  - api.parallel.ai
+  - api.star-history.com
+  - arpa-e.energy.gov
+  - arriveguidelines.org
+  - arxiv.org
+  - astral.sh
+  - beta.sam.gov
+  - betterposters.blogspot.com
+  - biorender.com
+  - chi.acm.org
+  - colinpurrington.com
+  - color.adobe.com
+  - colorable.jxnblk.com
+  - colorbrewer2.org
+  - commons.era.nih.gov
+  - coolors.co
+  - ctan.org
+  - cvpr.thecvf.com
+  - database.ich.org
+  - deepmind.google
+  - docs.parallel.ai
+  - doi.org
+  - dx.doi.org
+  - eere-exchange.energy.gov
+  - en.wikibooks.org
+  - endnote.com
+  - eutils.ncbi.nlm.nih.gov
+  - export.arxiv.org
+  - fged.org
+  - flowcyt.org
+  - fontawesome.com
+  - gensc.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
+  matches what that skill claims to do.
+subcategory: Full-lifecycle research backbones
+stargazers_count: 1875
+updated_at: '2026-05-27'
+archived: false

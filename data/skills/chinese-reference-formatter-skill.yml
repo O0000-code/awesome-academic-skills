@@ -1,0 +1,38 @@
+# chinese-reference-formatter-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: chinese-reference-formatter-skill
+slug: chinese-reference-formatter-skill
+source_url: https://github.com/zechang-xiong/chinese-reference-formatter-skill
+author: zechang-xiong
+author_url: https://github.com/zechang-xiong
+license: MIT
+category: Reference & Citation Management
+lifecycle_stage: citation
+type: skill
+description: Formats Chinese academic references to GB/T 7714 and completes BibTeX from Chinese/English
+  titles. Fills a real gap for CN scholars that Western citation tools ignore. Narrow by design; bundles
+  helper scripts and an agent.
+description_zh: 将中文学术参考文献格式化为 GB/T 7714 标准，并依据中英文标题补全 BibTeX 条目。填补了西方引用工具忽视的中文学者真实需求空白。定位本就专一；附带辅助脚本和一个
+  agent。
+security:
+  makes_network_calls: false
+  network_endpoints:
+  - api.star-history.com
+  - example.org
+  - openaccess.thecvf.com
+  - openreview.net
+  - source.example
+  - www.creader.com
+  - www.lis.ac.cn
+  - www.star-history.com
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to format or verify a set of references, then check each
+  citation against the authoritative record (DOI/metadata).
+subcategory: Reference formatting & style
+stargazers_count: 50
+updated_at: '2026-05-10'
+archived: false

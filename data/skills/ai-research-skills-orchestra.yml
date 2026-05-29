@@ -1,0 +1,52 @@
+name: AI Research Skills (Orchestra)
+slug: ai-research-skills-orchestra
+source_url: https://github.com/Orchestra-Research/AI-Research-SKILLs
+author: Orchestra Research
+author_url: https://github.com/Orchestra-Research
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+skills_count: 98
+description: A 98-skill curriculum for the engineering half of ML research, taking an agent from idea
+  to trained model — not wet-lab.
+description_zh: 一套 98 个 skill 的课程体系，专攻机器学习研究偏工程的那一半，带 agent 从想法走到训练好的模型——不涉及湿实验。
+description_long: A 98-skill curriculum for the engineering half of ML research across 23 domains — architecture,
+  fine-tuning, post-training, distributed training, mechanistic interpretability, RAG, MLOps; takes an
+  agent from idea to trained model, not wet-lab.
+description_zh_long: 一套 98 个 skill 的课程体系，专攻机器学习研究中偏工程的那一半，横跨 23 个领域——模型架构、微调、后训练、分布式训练、机制可解释性、RAG、MLOps；能带着
+  agent 从想法走到训练好的模型，但不涉及湿实验。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - ML infra/services referenced per skill (Hugging Face, Lambda Labs, vLLM, etc.)
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+homepage_url: https://www.orchestra-research.com/perspectives/ai-research-skills
+install: 'npm: @orchestra-research/ai-research-skills, or copy the numbered category folders into your
+  skills dir'
+validate_claim: Load the 03-fine-tuning skills and ask the agent to draft an Unsloth QLoRA config for
+  a 7B model; check it cites the skill's documented best-practices, not generic defaults.
+lang:
+- en
+tags:
+- ml-research
+- training
+- llm-engineering
+- curriculum
+- Orchestra-Research
+featured: false
+spotlight: false
+stargazers_count: 9179
+updated_at: '2026-04-28'
+archived: false
+current_release:
+  tag: v1.4.0
+  published_at: '2026-03-16'
+last_link_check: null
+last_security_scan: null
+subcategory: Compute & data-science suites

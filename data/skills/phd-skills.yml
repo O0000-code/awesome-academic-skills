@@ -1,0 +1,37 @@
+# phd-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: phd-skills
+slug: phd-skills
+source_url: https://github.com/fcakyon/phd-skills
+author: fcakyon
+author_url: https://github.com/fcakyon
+license: MIT
+category: Autonomous Research Systems
+lifecycle_stage: autonomous
+type: suite
+description: 'PhD/ML research guardrails: reproduce arXiv papers, debug runs evidence-first, compare experiments
+  at the same epoch, audit dataset bias, run pre-flight launch checks. Catches costly AI research mistakes;
+  uses a Bash wildcard plus opt-in alerts.'
+description_zh: 面向博士/ML 研究的护栏：复现 arXiv 论文、以证据为先地调试实验、在同一 epoch 下对比实验、审查数据集偏差、运行启动前的预检。能拦下代价高昂的 AI 研究错误；使用了一个
+  Bash 通配符外加可选的告警。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - api.star-history.com
+  - arxiv.org
+  - contrib.rocks
+  - ntfy.sh
+  - paperswithcode.com
+  - scholar.google.com
+  - www.star-history.com
+  has_hooks: true
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: false
+validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
+  and drafted result whose sources actually exist.
+subcategory: Human-in-the-loop / gate-driven pipelines
+stargazers_count: 254
+updated_at: '2026-05-09'
+archived: false

@@ -1,0 +1,45 @@
+# scientific-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
+name: scientific-skills
+slug: scientific-skills
+source_url: https://github.com/yorkeccak/scientific-skills
+author: yorkeccak
+author_url: https://github.com/yorkeccak
+license: MIT
+category: Literature Search & Discovery
+lifecycle_stage: discovery
+type: suite
+description: Natural-language literature search over 13 sources (PubMed, arXiv, bioRxiv/medRxiv, ChEMBL,
+  DrugBank, Open Targets, trials, patents) via Valyu semantic search. Strong biomedical/drug-discovery
+  coverage; depends on the Valyu API, not self-contained.
+description_zh: 借助 Valyu 语义检索，在 13 个数据源（PubMed、arXiv、bioRxiv/medRxiv、ChEMBL、DrugBank、Open Targets、临床试验、专利）上进行自然语言文献检索。生物医学/药物发现的覆盖很强；依赖
+  Valyu API，并非自包含。
+security:
+  makes_network_calls: true
+  network_endpoints:
+  - '...'
+  - api.valyu.ai
+  - arxiv.org
+  - biorxiv.org
+  - chembl.org
+  - clinicaltrials.gov
+  - docs.valyu.ai
+  - drugbank.com
+  - fda.gov
+  - medrxiv.org
+  - patents.google.com
+  - platform.opentargets.org
+  - platform.valyu.ai
+  - pubmed.ncbi.nlm.nih.gov
+  - skills.sh
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
+  returned title/DOI resolves to a real paper.
+subcategory: Multi-source discovery search
+stargazers_count: 46
+updated_at: '2026-01-21'
+archived: false
