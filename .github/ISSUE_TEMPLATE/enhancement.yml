@@ -1,0 +1,59 @@
+name: Suggest an enhancement
+description: Propose a structural change — a new category, a taxonomy tweak, a docs fix, or another improvement to the list itself.
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the list! Use this form for changes to **how the list is organized or built** — categories, taxonomy, README structure, contributing docs, the data schema, CI, and so on.
+
+        - To **recommend a skill**, use the [Recommend a skill](./new?template=recommend-skill.yml) form instead.
+        - To **report a security problem** (in our tooling or in a listed skill), please follow [SECURITY.md](https://github.com/O0000-code/awesome-academic-skills/blob/main/SECURITY.md) rather than opening a public issue.
+        - For open-ended questions or ideas, a [Discussion](../../discussions) is often the better home.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: What part of the project does this concern?
+      options:
+        - Taxonomy / categories (add, rename, merge, or re-scope a category)
+        - README structure or content (sections, ordering, wording)
+        - Data schema / entry fields
+        - CI / generator / tooling
+        - Contributing, security, or governance docs
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you change, and why?
+      description: |
+        Describe the change concretely and the problem it solves. If you are proposing a **new category**, please note that we add one only when at least three solid candidate entries would live in it — list those candidates if you can.
+      placeholder: |
+        Proposal: split "Data Analysis & Statistics" into a separate "Reproducibility & Environments" category.
+        Why: there are now several skills focused on reproducible environments rather than analysis itself, and they read awkwardly under the current label.
+        Candidate entries: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+      description: Other approaches you weighed, and why this one is better.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and discussions, and this is not a duplicate.
+          required: true
+        - label: I have read the [Contributing guidelines](https://github.com/O0000-code/awesome-academic-skills/blob/main/CONTRIBUTING.md).
+          required: true

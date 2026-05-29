@@ -1,0 +1,17 @@
+{
+  "name": "awesome-academic-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A neutral, bilingual index of Claude and agent skills for the academic research lifecycle — every entry credited to its author and capability-disclosed by an open framework.",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/O0000-code/awesome-academic-skills.git"
+  },
+  "scripts": {
+    "lint": "awesome-lint"
+  },
+  "devDependencies": {
+    "awesome-lint": "^2.3.0"
+  }
+}

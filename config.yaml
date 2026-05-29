@@ -1,0 +1,474 @@
+# config.yaml — drives scripts/generate_readme.py
+#
+# v2 (R3 redesign): monochrome Swiss/shadcn art direction + deep H2->H3 hierarchy.
+# Category order, lifecycle super-group labels, tag legends, the HONEST analysis
+# legend, and the (terse) editorial prose are defined here. The README BODY is
+# generated; the editorial prose below is the editable source for the non-list
+# blocks. Hand-edited by maintainers.
+#
+# Source contracts (DECISIONAL): 01_working/_redesign_spec.md §A (design) + §B (IA)
+#   + §C (honest analysis framework) + §D (neutrality). Supersedes v1's design/IA/
+#   trust where they conflict. Lint reality: 01_working/R1_DF2_ia_content_factors.md
+#   PART A (source-verified — NO heading-depth rule; TOC named "Table of contents"
+#   so strict toc.js does not fire, per awesome-selfhosted's proven pattern).
+
+site:
+  title: "Awesome Academic Skills"
+  # H1 anchor that ^ back-to-top links and the zh mirror reference.
+  anchor: "awesome-academic-skills"
+  repo_url: "https://github.com/O0000-code/awesome-academic-skills"
+  pages_url: "https://o0000-code.github.io/awesome-academic-skills/"
+  awesome_badge_url: "https://awesome.re/badge.svg"               # exact, lint-critical (verified HTTP 200)
+  awesome_url: "https://awesome.re"
+  # Static metadata stamp; the generator overrides `updated` with today's date at build time.
+  data_as_of: "2026-05-29"
+
+# ---------------------------------------------------------------------------
+# Repo topics — set these in GitHub repo Settings (NOT in the README).
+# awesome-lint Gate-A requires `awesome` + `awesome-list`.
+# ---------------------------------------------------------------------------
+repo_topics:
+  - awesome
+  - awesome-list
+  - claude
+  - claude-code
+  - agent-skills
+  - academic
+  - research
+  - academic-skills
+  - mcp
+  - llm
+
+# ---------------------------------------------------------------------------
+# Taxonomy — lifecycle super-groups RENDERED AS H2 (## <group>) -> categories
+# RENDERED AS H3 (### <category>). This is the deep hierarchy the data always
+# encoded; v1 flattened it. The nested TOC mirrors super-group -> category.
+# `category` must match the schema enum + the per-entry `category` field exactly.
+# `stage` is the canonical lifecycle_stage that files into this category.
+# `emoji` is RETAINED in data (companion site / future use) but is NOT rendered
+# into the monochrome README headings (§A: zero emoji).
+# ---------------------------------------------------------------------------
+super_groups:
+  - label: "Discover & Collect"
+    label_zh: "检索与采集"
+    blurb: "Turn a research question into an organized, reference-clean reading set."
+    blurb_zh: "检索、界定并汇集文献——再把参考文献理清楚。"
+    categories:
+      - category: "Literature Search & Discovery"
+        category_zh: "文献检索与发现"
+        emoji: "🔍"
+        stage: "discovery"
+        blurb: "Find, scope, and gather the literature — multi-source search, citation graphs, and discovery agents that turn a topic into a reading list."
+        blurb_zh: "检索、界定并汇集文献——多源检索、引文网络，以及把一个题目变成一份阅读清单的发现型 agent。"
+      - category: "Reference & Citation Management"
+        category_zh: "参考文献与引用管理"
+        emoji: "🔖"
+        stage: "citation"
+        blurb: "Manage, format, and verify references — library integrations, citation styles, and the DOI/metadata checks that keep a bibliography honest."
+        blurb_zh: "管理、规范并核验参考文献——文献库集成、引用样式，以及让参考文献表站得住脚的 DOI 与元数据核查。"
+
+  - label: "Read & Understand"
+    label_zh: "阅读与理解"
+    blurb: "Turn a pile of PDFs into something you have actually read and can question."
+    blurb_zh: "把一堆 PDF 变成你真正读过、还能向其提问的东西。"
+    categories:
+      - category: "Reading, Summarization & Q&A"
+        category_zh: "阅读、摘要与问答"
+        emoji: "📖"
+        stage: "reading"
+        blurb: "Read deeply and ask questions of papers — summarization, multi-document synthesis, and grounded question-answering over a corpus."
+        blurb_zh: "深读论文并向其提问——摘要、跨文献综合，以及在语料之上有据可循的问答。"
+      - category: "PDF / OCR / Document Parsing"
+        category_zh: "PDF / OCR / 文档解析"
+        emoji: "📄"
+        stage: "ocr"
+        blurb: "Turn PDFs, scans, and office docs into clean, LLM-ready structure — layout-aware parsing, tables, formulas, and figures preserved."
+        blurb_zh: "把 PDF、扫描件与 Office 文档转成干净、可直接喂给大模型的结构——版面感知解析，保留表格、公式与图片。"
+
+  - label: "Analyze & Visualize"
+    label_zh: "分析与可视化"
+    blurb: "Do the analysis, then build the journal-grade figures."
+    blurb_zh: "做分析、出图——让数字与论述保持一致。"
+    categories:
+      - category: "Data Analysis & Statistics"
+        category_zh: "数据分析与统计"
+        emoji: "📊"
+        stage: "analysis"
+        blurb: "Run and reason about analyses — statistics, reproducible pipelines, and tools that keep the numbers and the narrative in step."
+        blurb_zh: "做分析、也讲清分析——统计、可复现流程，以及让数字与论述保持一致的工具。"
+      - category: "Figures & Visualization"
+        category_zh: "图表与可视化"
+        emoji: "📈"
+        stage: "figures"
+        blurb: "Make publication-quality figures — charts, plots, and visual encodings built for journals, not dashboards."
+        blurb_zh: "绘制达到发表水准的图——为期刊而非仪表盘打造的图表、绘图与视觉编码。"
+
+  - label: "Write & Refine"
+    label_zh: "写作与润色"
+    blurb: "Draft the scholarly prose, win the funding, and strip the machine tells."
+    blurb_zh: "起草学术文字、拿下经费，并抹去机器写作的痕迹。"
+    categories:
+      - category: "Academic Writing & Drafting"
+        category_zh: "学术写作与起草"
+        emoji: "✍️"
+        stage: "writing"
+        blurb: "Draft scholarly prose — sections, structure, and argument scaffolding for papers, theses, and reviews."
+        blurb_zh: "起草学术文字——为论文、学位论文与综述搭好章节、结构与论证骨架。"
+      - category: "Writing Quality & De-AI"
+        category_zh: "写作质量与去 AI 味"
+        emoji: "🧹"
+        stage: "writing-quality"
+        blurb: "Tighten and de-slop the draft — clarity, voice, and removing the tells that mark text as machine-generated."
+        blurb_zh: "把初稿改紧、去 AI 味——讲清楚、有自己的语气，并抹去那些一眼看出是机器写的痕迹。"
+      # "Grant & Proposal Writing" (stage: grant) was removed from the rendered taxonomy
+      # 2026-06-02: after the 5-star floor its only entry was an unmaintained 2024 link
+      # list, now backlogged. The `grant` lifecycle_stage stays valid in the schema, so the
+      # category re-appears automatically when a qualifying grant skill is added.
+
+  - label: "Review & Publish"
+    label_zh: "评审与发表"
+    blurb: "Get reviewer-quality critique, then make the manuscript submission-ready."
+    blurb_zh: "拿到审稿水准的评判，再把稿件做到可投状态。"
+    categories:
+      - category: "Peer Review & Response"
+        category_zh: "同行评审与回应"
+        emoji: "🔬"
+        stage: "peer-review"
+        blurb: "Review and respond — reviewer-quality critique, rebuttal letters, and the response-to-reviewers that gets a paper accepted."
+        blurb_zh: "评审与回应——审稿水准的评判、申辩信，以及让论文获接收的「致审稿人回复」。"
+      - category: "Submission, Formatting & Conversion"
+        category_zh: "投稿、格式与转换"
+        emoji: "📤"
+        stage: "publishing"
+        blurb: "Get it submission-ready — journal templates, format conversion, and the camera-ready details editors check first."
+        blurb_zh: "让稿件达到可投状态——期刊模板、格式转换，以及编辑最先检查的清样细节。"
+
+  - label: "Suites, Systems & Meta"
+    label_zh: "套件、系统与生态"
+    blurb: "Multi-stage suites, end-to-end research agents, field-specific packs, and maps of the wider ecosystem."
+    blurb_zh: "多阶段套件、端到端研究 agent、学科专用包，以及更广生态的导览图。"
+    categories:
+      - category: "Skill Suites"
+        category_zh: "技能套件"
+        emoji: "🧰"
+        stage: "suite"
+        blurb: "Multi-skill repositories that cover several lifecycle stages at once. Compared side by side in the table below."
+        blurb_zh: "一次覆盖多个生命周期阶段的多技能仓库。在下表中横向比较。"
+        render: "table"   # the one category rendered as a comparison table (DF-1.15)
+      - category: "Autonomous Research Systems"
+        category_zh: "自主研究系统"
+        emoji: "🤖"
+        stage: "autonomous"
+        blurb: "End-to-end research agents — give them a question, get back a searched, read, and drafted result with citations."
+        blurb_zh: "端到端的研究 agent——给它一个问题，拿回一份检索过、读过、并附引用的成稿。"
+      - category: "Discipline-Specific Packs"
+        category_zh: "学科专用包"
+        emoji: "🧫"
+        stage: "discipline"
+        blurb: "Skills tuned to one field's conventions — bench biology, clinical, social-science, or humanities workflows."
+        blurb_zh: "为某一学科的惯例量身打造的技能——实验生物学、临床、社会科学或人文领域的工作流。"
+      - category: "Awesome Lists & Ecosystem Maps"
+        category_zh: "精选列表与生态导览"
+        emoji: "🗺️"
+        stage: "meta"
+        blurb: "Other curated lists and maps of the agent-skill ecosystem — where to look next, beyond this index."
+        blurb_zh: "agent 技能生态中的其他精选列表与导览图——本索引之外，下一步该往哪儿看。"
+
+# ---------------------------------------------------------------------------
+# Tag legends. Per-entry inline tags render in a FIXED order with Type LEADING:
+#   `Type`  [name](url) — one clause.  `License` · <analysis marker>
+# Type is the FIRST, visually-distinct monochrome signal on every entry (D3).
+# ---------------------------------------------------------------------------
+legends:
+  type:
+    title: "Type"
+    # Skills-only scope (E4): the whole list is Claude/agent skills, so a plain `skill`
+    # carries NO inline tag (it would be noise on every line). Only the *distinguishing*
+    # types are tagged — Suite (a multi-skill repo), Plugin, List. The legend lists just
+    # those three; mcp-server/tool/template are intentionally gone (no entry uses them).
+    order: ["suite", "plugin", "list"]
+    values:
+      skill: "Skill"
+      suite: "Suite"
+      plugin: "Plugin"
+      list: "List"
+    # One-line legend definitions (rendered terse, in the type-legend line).
+    defs:
+      suite: "a multi-skill repository"
+      plugin: "a Claude Code plugin / skill-pack"
+      list: "another curated list"
+  stage:
+    title: "Stage"
+    # Short, human display label per lifecycle stage (shown in the inline tag).
+    values:
+      discovery: "Discovery"
+      citation: "Citation"
+      reading: "Reading"
+      ocr: "OCR"
+      analysis: "Analysis"
+      figures: "Figures"
+      writing: "Writing"
+      writing-quality: "Writing Quality"
+      grant: "Grant"
+      peer-review: "Peer Review"
+      publishing: "Publishing"
+      suite: "Suite"
+      autonomous: "Autonomous"
+      mcp: "MCP"
+      discipline: "Discipline"
+      meta: "Meta"
+  license:
+    title: "License"
+    # Free-form SPDX string is rendered as-is; this note documents the convention.
+    note: "Shows the indexed item's OWN license (not this list's). 'No License' / non-OSI / 'CC-BY-NC' are rendered verbatim and read as caution flags."
+
+# ---------------------------------------------------------------------------
+# Capability-disclosure legend (§C / DF-3) — replaces v1's dishonest
+# "human-reviewed" ✅ tier AND the later analyzed/listed severity verdict (dropped
+# for being false-positive-prone). Entries now carry objective capability tags
+# (net / hooks / bypass) from their own `security` block, cross-checked by the open
+# ASDF framework. NEVER "human-reviewed", NEVER a green check, NEVER a safety rating.
+# ---------------------------------------------------------------------------
+analysis:
+  reports_dir: "framework/reports"
+  # Capability-tag legend (replaces the old analyzed/listed severity verdict, which was
+  # dropped for being false-positive-prone). These are objective, self-declared facts an
+  # entry's `security` block discloses — NOT a safety rating. An untagged entry declares
+  # none of them. See framework/ for how disclosures are checked against the code.
+  legend: "Capability tags are the skill's own disclosed behaviour, not a safety rating: `net` = makes network calls; `hooks` = runs lifecycle hooks; `bypass` = needs permission-bypass; `⚠ disclosure` = the declaration disagrees with the code. Untagged = none of these. Always review third-party code before running it."
+  legend_zh: "能力标记是该技能自我披露的行为，不是安全评级：`net` = 会联网；`hooks` = 有生命周期 hook；`bypass` = 需要权限绕过；`⚠ disclosure` = 声明与代码不符。无标记 = 以上皆无。运行任何第三方代码前请自行审查。"
+
+# ---------------------------------------------------------------------------
+# Editorial sections — EDITABLE. Terse, monochrome, no marketing, no self-promo
+# (§A voice). Governance prose lives BELOW the index and inside <details>, never
+# in the hero (§A: no wall of prose above the TOC).
+# ---------------------------------------------------------------------------
+editorial:
+  # [HERO] One bold tagline + 2-3 <br/>-split value lines (owner's hero grammar).
+  tagline: "The research lifecycle, as agent skills."
+  hero_lines:
+    - "A neutral, bilingual index of Claude and agent skills for academic work — from literature search to peer review."
+    - "Curated by working researchers, not a vendor funnel. Every entry's executable behaviour (network, hooks) is disclosed and cross-checked by an open script; the maintainer's own skills appear as peers under the same bar."
+
+  # [BELOW INDEX] How to use — terse prose on-ramp (no emoji lifecycle string).
+  how_to_use_intro: >-
+    Organised by what researchers actually do, not alphabetically. Start from your
+    current stage and move down the lifecycle:
+  lifecycle_flow: "Discover → Read → Analyze → Write → Review → Publish"
+
+  # [BELOW INDEX] Curation principles — terse.
+  curation_included:
+    - "Open or source-available, with an identifiable license"
+    - "Actively maintained, with a real README and a working repo"
+    - "Genuinely useful to researchers — solves a real lifecycle task, not a generic wrapper"
+    - "Inspectable: behaviour you can read and reason about"
+  curation_excluded:
+    - "Closed SaaS with no inspectable skill / agent layer"
+    - "Generic LLM wrappers with no academic-specific value"
+    - "Abandoned or non-working repos"
+    - "AI-generated slop, or submissions that merely restate a repo's own tagline"
+
+  # [DETAILS] Security note (honest, bounded — no audit-badge wall).
+  security_note: >-
+    Skills run code — Python, shell, hooks that can fire on lifecycle events. This list
+    does **not** security-audit or rate them. What it does is surface each skill's own
+    **disclosed behaviour** — does it make network calls, run hooks, need permission
+    bypass — as plain capability tags, and check that disclosure against the code with an
+    open, re-runnable script (`framework/`). **Tags are facts, not a safety rating; an
+    untagged skill is not "verified safe."** Review the source yourself before running any
+    skill in an institutional or sensitive environment, and see [SECURITY.md](SECURITY.md)
+    to report one behaving badly.
+
+  # [DETAILS] How the disclosure check works (objective facts, no severity verdict).
+  analysis_note: >-
+    Each entry declares its executable surface (network, hooks, bypass, tool scope). An
+    open, deterministic script (`framework/`) reads the repo and reports the capabilities
+    it can infer, then flags any place the declaration disagrees with the code. That is
+    the whole claim: **disclosed facts, cross-checked — not a security audit, not a
+    quality score, no pass/fail label.** We deliberately removed the earlier
+    "analyzed/listed" severity verdict because static severity-guessing produced too many
+    false positives to be trustworthy. Inclusion is a human curator's editorial call
+    about scholarly usefulness, stated openly.
+
+  # [DETAILS] Neutrality clause — ONE line (§D: terse, not a paragraph).
+  neutrality_clause: >-
+    This list is maintained by an author of some listed skills; those skills are held to
+    the identical disclosure check, get no preferential placement, and sit in
+    deterministic alphabetical order like every other entry.
+
+  # [CONTRIBUTING] pointer (denylisted from TOC).
+  contributing_pointer: >-
+    Contributions are welcome, and most listed skills are self-submitted by their authors.
+    See **CONTRIBUTING.md** for the two ways to contribute (a low-friction Issue Form or a
+    YAML pull request), the eligibility bar, and the security disclosure every entry must
+    make. Submissions are made by humans.
+
+# ---------------------------------------------------------------------------
+# editorial_zh — 中文版编辑文案（与上方 `editorial` 平行）。生成器在 lang=="zh"
+# 时优先取此处字段，缺失则回退英文。术语 DOI / OCR / RAG / PRISMA / LaTeX / MCP /
+# hook / README / SaaS 等保持原形。
+# ---------------------------------------------------------------------------
+editorial_zh:
+  tagline: "把科研全流程，做成 agent 技能。"
+  hero_lines:
+    - "一个中立、双语的 Claude 与 agent 技能索引，覆盖学术工作的方方面面——从文献检索到同行评审。"
+    - "由一线研究者策展，而非产品导流页。每个条目的可执行行为（联网、hook）都经一套开放脚本披露并对照核验；维护者本人的技能也作为同等条目、按同一把尺子收录。"
+
+  how_to_use_intro: >-
+    按研究者实际做的事来组织，而非按字母排序。从你当前所处的阶段开始，沿研究生命周期往下走：
+  lifecycle_flow: "检索 → 精读 → 分析 → 写作 → 评审 → 发表"
+
+  curation_included:
+    - "开源或源码可得，且有可辨识的许可证"
+    - "活跃维护，有像样的 README 和一个能跑起来的仓库"
+    - "对研究者确有用处——解决生命周期里的某个真实任务，而非一个通用套壳"
+    - "可检视：其行为读得懂、推得明白"
+  curation_excluded:
+    - "闭源 SaaS，没有可检视的技能 / agent 层"
+    - "通用大模型套壳，缺乏面向学术的特定价值"
+    - "已弃坑或跑不起来的仓库"
+    - "AI 生成的注水内容，或只是把仓库自己的标语复述一遍的提交"
+
+  security_note: >-
+    技能会执行代码——Python、Shell、以及可在生命周期事件上触发的 hook。本列表**不**对它们做
+    安全审计或评级，而是把每个技能**自我披露的行为**——是否联网、是否有 hook、是否需要权限
+    绕过——以能力标记呈现，并用一套开放、可复跑的脚本（`framework/`）拿这些声明去对照代码核验。
+    **标记是事实，不是安全评级；无标记也不代表「已验证安全」。** 在机构或敏感环境中运行任何
+    技能前请自行审查源码；发现行为不当请见 [SECURITY.md](SECURITY.md) 举报。
+
+  analysis_note: >-
+    每个条目都会声明自己的可执行面（联网、hook、权限绕过、工具范围）。一套开放、确定性的脚本
+    （`framework/`）读取仓库、报告它能推断出的能力，并标出任何声明与代码不符之处。全部主张仅此
+    而已：**披露的事实 + 交叉核验——不是安全审计、不是质量评分、没有通过/不通过标签。** 我们
+    刻意移除了早先的「analyzed/listed」严重度判定，因为静态severity猜测误报太多、不可信。是否
+    收录是维护者关于学术价值的人工编辑判断，并公开说明。
+
+  neutrality_clause: >-
+    本列表由部分被收录技能的作者维护；这些技能接受完全相同的披露核验、不享受任何排序优待，
+    并和其他所有条目一样按确定性的字母序排列。
+
+  contributing_pointer: >-
+    欢迎贡献，且大多数收录技能都由其作者自行提交。两种贡献方式（低门槛的 Issue 表单，或一个
+    YAML pull request）、收录门槛、以及每个条目必须做的安全披露，详见 **CONTRIBUTING.md**。
+    所有提交均由真人完成。
+
+# ---------------------------------------------------------------------------
+# Section ordering / feature toggles for the generated README.
+# ---------------------------------------------------------------------------
+render:
+  latest_additions_count: 5     # newest-by-date entries named below the index
+  show_at_a_glance_table: true  # the compact super-group counts dashboard (DF F4)
+
+# ---------------------------------------------------------------------------
+# Task-based second-level taxonomy (designed top-down by research task, not by
+# platform/language). Ordered subcategories per category; entries carry a matching
+# `subcategory` field. Categories absent here are flat (small; no subdivision).
+# Within each subcategory the generator orders suites first, then skills.
+# ---------------------------------------------------------------------------
+subcategories:
+  Literature Search & Discovery:
+  - name: Multi-source discovery search
+    name_zh: 多源检索发现
+  - name: Systematic review & deep-research pipelines
+    name_zh: 系统综述与深度检索流程
+  - name: Full-text acquisition
+    name_zh: 全文获取
+  - name: Current-awareness & monitoring
+    name_zh: 前沿追踪与监测
+  Reference & Citation Management:
+  - name: Citation verification & integrity auditing
+    name_zh: 引用核验与完整性审计
+  - name: Reference formatting & style
+    name_zh: 参考文献格式与样式
+  - name: BibTeX / metadata generation
+    name_zh: BibTeX / 元数据生成
+  Reading, Summarization & Q&A:
+  - name: Deep reading & comprehension
+    name_zh: 深读与理解
+  - name: Grounded Q&A & knowledge bases
+    name_zh: 有据问答与知识库
+  - name: Paper translation
+    name_zh: 论文翻译
+  - name: Study & derivative artifacts
+    name_zh: 学习与衍生材料
+  Data Analysis & Statistics:
+  - name: Statistical modeling & test selection
+    name_zh: 统计建模与检验选择
+  - name: Causal inference & econometrics
+    name_zh: 因果推断与计量经济
+  - name: Domain computational & simulation pipelines
+    name_zh: 领域计算与仿真流程
+  - name: Reproducible-analysis frameworks
+    name_zh: 可复现分析框架
+  Figures & Visualization:
+  - name: Method & concept diagrams
+    name_zh: 方法与概念图
+  - name: Data-driven statistical plots
+    name_zh: 数据驱动的统计绘图
+  - name: Figure aesthetics & style systems
+    name_zh: 图表美学与样式系统
+  Academic Writing & Drafting:
+  - name: Manuscript drafting pipelines
+    name_zh: 稿件起草流程
+  - name: LaTeX & typesetting-integrated writing
+    name_zh: LaTeX 与排版一体化写作
+  - name: Thesis & degree-work authoring
+    name_zh: 学位论文写作
+  - name: Literature-review writing
+    name_zh: 文献综述写作
+  - name: Prose refinement & discipline-specific style
+    name_zh: 行文润色与学科风格
+  Writing Quality & De-AI:
+  - name: De-AI & humanizing
+    name_zh: 去 AI 味与拟人化
+  - name: AIGC detector evasion (thesis)
+    name_zh: AIGC 检测规避（学位论文）
+  - name: Manuscript proofreading & quality audit
+    name_zh: 稿件校对与质量审查
+  - name: Anti-hallucination & over-revision guards
+    name_zh: 反幻觉与过度修订防护
+  Peer Review & Response:
+  - name: Pre-submission review & rebuttal
+    name_zh: 投稿前评审与申辩
+  - name: Systematic review & evidence appraisal
+    name_zh: 系统综述与证据评估
+  - name: Research integrity & correctness auditing
+    name_zh: 研究诚信与正确性审计
+  Submission, Formatting & Conversion:
+  - name: LaTeX authoring & submission prep
+    name_zh: LaTeX 写作与投稿准备
+  - name: Slides & presentation decks
+    name_zh: 幻灯片与演示
+  - name: Journal & Word-template formatting
+    name_zh: 期刊与 Word 模板排版
+  - name: Format conversion & document transformation
+    name_zh: 格式转换与文档转化
+  Skill Suites:
+  - name: Full-lifecycle research backbones
+    name_zh: 全流程研究主干
+  - name: Compute & data-science suites
+    name_zh: 计算与数据科学套件
+  - name: Manuscript & writing-craft suites
+    name_zh: 写作与稿件套件
+  - name: Installers, marketplaces & meta
+    name_zh: 安装器、市场与元工具
+  Discipline-Specific Packs:
+  - name: Biomedical & life sciences
+    name_zh: 生物医学与生命科学
+  - name: Physical, computational & mathematical sciences
+    name_zh: 物理、计算与数学科学
+  - name: Computer science, AI / ML & graphics
+    name_zh: 计算机、AI / ML 与图形学
+  - name: Social sciences
+    name_zh: 社会科学
+  - name: Humanities, law & qualitative-research disciplines
+    name_zh: 人文、法律与质性研究
+  - name: Cross-discipline / multi-field packs
+    name_zh: 跨学科 / 多领域包
+  Autonomous Research Systems:
+  - name: Fully autonomous auto-scientists
+    name_zh: 全自主 AI 科学家
+  - name: Human-in-the-loop / gate-driven pipelines
+    name_zh: 人在回路 / 门控流程
+  - name: Domain-bound autonomous systems
+    name_zh: 领域专用自主系统

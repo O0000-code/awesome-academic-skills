@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/O0000-code/awesome-academic-skills/discussions
+    about: Questions, ideas, and open-ended conversation. Start here if you are not sure an issue is the right home.
+  - name: 🔒 Report a security issue
+    url: https://github.com/O0000-code/awesome-academic-skills/security/advisories/new
+    about: Found a vulnerability in our tooling, or a listed skill behaving maliciously? Report it privately — see SECURITY.md.

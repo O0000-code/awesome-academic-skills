@@ -1,0 +1,40 @@
+# Scheduled unmaintained-entry sweep (RF §4 check #7). Reports archived/stale
+# entries into a tracking issue for HUMAN triage — never auto-delists (R-RF-4).
+# Weekly; the daily metadata refresh runs earlier each morning so updated_at is
+# fresh by the time this Monday sweep reads it. Pinned SHAs.
+name: check-unmaintained
+
+on:
+  schedule:
+    - cron: "42 5 * * 1"   # weekly, Mondays 05:42 UTC (after update-metadata)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write   # opens/updates the tracking issue
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      # actions/checkout v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      # actions/setup-python v5.3.0
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: make install
+
+      - name: Run unmaintained sweep
+        run: make check_unmaintained > unmaintained-report.md || true
+
+      # peter-evans/create-issue-from-file v5.0.1 — open/update a single tracking issue.
+      - name: Open/update tracking issue
+        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd
+        with:
+          title: "Maintenance sweep: archived / stale entries to review"
+          content-filepath: unmaintained-report.md
+          labels: maintenance, needs-triage

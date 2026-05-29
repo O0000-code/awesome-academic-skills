@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# Node (awesome-lint / lychee are run via npx / CI; no local node_modules needed)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local tooling output
+*.log
+.lychee.cache
+
+# Internal working files — planning/coverage/launch notes must never ship in the deliverable
+01_working/

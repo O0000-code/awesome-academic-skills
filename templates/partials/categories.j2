@@ -1,0 +1,39 @@
+{# Deep hierarchy: `## <super-group>` (H2) -> `### <category>` (H3) -> bullets|table. #}
+{# This renders the lifecycle the data always encoded (v1 flattened it). H2->H3 is #}
+{# lint-clean (no heading-depth rule; awesome-selfhosted ships the same at 295k★). #}
+{# Bullets / table_lines are pre-rendered, whitespace-correct strings. #}
+{% for grp in groups %}
+## {{ grp.display }}
+
+{% if grp.blurb %}
+> {{ grp.blurb }}
+{% endif %}
+
+{% for cat in grp.categories %}
+### {{ cat.display }}
+
+> {{ cat.blurb }}
+
+{% if cat.render == 'table' %}
+{% for line in cat.table_lines %}
+{{ line }}
+{% endfor %}
+{% elif cat.subcats %}
+{% for sub in cat.subcats %}
+#### {{ sub.display }}
+
+{% for bullet in sub.bullets %}
+{{ bullet }}
+{% endfor %}
+
+{% endfor %}
+{% elif cat.bullets %}
+{% for bullet in cat.bullets %}
+{{ bullet }}
+{% endfor %}
+{% else %}
+{{ empty_category_note }}
+{% endif %}
+
+{% endfor %}
+{% endfor %}

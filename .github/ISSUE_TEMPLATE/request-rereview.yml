@@ -1,0 +1,47 @@
+name: 🔁 Request a re-review
+description: Your skill was held in the backlog (or not yet listed) and you've improved it — ask for another look
+title: "[Re-review]: "
+labels: ["re-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If your skill was discovered and reviewed but not yet listed, it's likely recorded in
+        [`data/backlog.yml`](../../blob/main/data/backlog.yml) with the specific, usually-fixable
+        reason it was held and what would get it listed. This is a tracking record, not a rejection —
+        once you've addressed the reason, open this issue and a maintainer will re-run the open
+        analysis framework and reconsider it on exactly the same terms as every other entry.
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repository URL
+      description: The GitHub URL of your skill / suite / plugin
+      placeholder: https://github.com/you/your-skill
+    validations:
+      required: true
+  - type: textarea
+    id: what-changed
+    attributes:
+      label: What changed since it was reviewed
+      description: |
+        Point to the specific improvement that addresses the recorded reason — e.g. "added a LICENSE
+        and a real README with a usage example", "added a SKILL.md so it works as a skill", "added the
+        validate_claim example". Link commits/releases if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: backlog-reason
+    attributes:
+      label: The recorded reason (optional)
+      description: If you found your entry in data/backlog.yml, paste its `held_for` line so the maintainer can match it.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: This is a human-submitted request (not an automated/agent-filed issue).
+          required: true
+        - label: The repository is public, has an identifiable license, and a real README.
+          required: true

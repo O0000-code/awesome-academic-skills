@@ -1,0 +1,51 @@
+# Scheduled refresh of CI-maintained metadata (modelled on awesome-claude-code's
+# update-repo-ticker + selfhosted's daily-update-metadata). Fills stargazers_count
+# / updated_at / archived / current_release from the GitHub API, regenerates the
+# READMEs from the refreshed data, and commits the result. Author-supplied fields
+# are never touched. Every action pinned to a full commit SHA.
+name: update-metadata
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # daily, 04:17 UTC (off-peak; fast-moving field)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # commits the refreshed metadata + regenerated READMEs
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # actions/checkout v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      # actions/setup-python v5.3.0
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: make install
+
+      - name: Refresh metadata from GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: make update_metadata
+
+      - name: Regenerate READMEs
+        run: make generate
+
+      - name: Commit changes if any
+        run: |
+          set -euo pipefail
+          PATHS="data/ README.md README.zh-CN.md"
+          if [[ -n "$(git status --porcelain -- $PATHS)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -- $PATHS
+            git commit -m "chore: daily metadata refresh + regenerated READMEs"
+            git push
+          else
+            echo "No metadata changes."
+          fi

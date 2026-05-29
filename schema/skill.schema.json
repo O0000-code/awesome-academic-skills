@@ -1,0 +1,317 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/awesome-academic-skills/schema/skill.schema.json",
+  "title": "Awesome Academic Skills — entry schema",
+  "description": "One YAML file per skill at data/skills/<slug>.yml. Author/curator-supplied fields are the contract; CI-maintained fields are auto-filled and must not be hand-edited. Source: 02_build_round_plan.md §0.2 (LOCKED) + 07_RF_governance_security.md §3.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "slug",
+    "source_url",
+    "author",
+    "author_url",
+    "license",
+    "category",
+    "lifecycle_stage",
+    "type",
+    "description",
+    "security"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name, e.g. paper-search-pro."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "kebab-case; MUST equal the filename (without .yml). Enforced additionally by the schema-check script."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "description": "Canonical GitHub repo URL, re-verified post-rename."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Real author/org name or handle."
+    },
+    "author_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "description": "https://github.com/<author>"
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "description": "SPDX id; 'CC-BY-NC-4.0' / 'No License' allowed but FLAGGED. Verify from the repo's LICENSE/README, not just the API (API NOASSERTION masks the real license)."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Literature Search & Discovery",
+        "Reference & Citation Management",
+        "Reading, Summarization & Q&A",
+        "PDF / OCR / Document Parsing",
+        "Data Analysis & Statistics",
+        "Figures & Visualization",
+        "Academic Writing & Drafting",
+        "Writing Quality & De-AI",
+        "Grant & Proposal Writing",
+        "Peer Review & Response",
+        "Submission, Formatting & Conversion",
+        "Skill Suites",
+        "Autonomous Research Systems",
+        "MCP Servers & Integrations",
+        "Discipline-Specific Packs",
+        "Awesome Lists & Ecosystem Maps"
+      ],
+      "description": "One controlled category (02_build_round_plan §0.4)."
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Optional task-based second-level grouping within a category (e.g. 'Systematic review & deep-research pipelines'). Free-form label, assigned by the curator; renders as an H4 under the category H3. Categories below the subdivide threshold leave it empty."
+    },
+    "lifecycle_stage": {
+      "type": "string",
+      "enum": [
+        "discovery",
+        "citation",
+        "reading",
+        "ocr",
+        "analysis",
+        "figures",
+        "writing",
+        "writing-quality",
+        "grant",
+        "peer-review",
+        "publishing",
+        "suite",
+        "autonomous",
+        "mcp",
+        "discipline",
+        "meta"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "skill",
+        "suite",
+        "mcp-server",
+        "tool",
+        "plugin",
+        "list"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 250,
+      "description": "<=250 chars, sentence case, OPINIONATED & specific, NOT a restated tagline, no emoji, do not address the reader."
+    },
+    "description_zh": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 250,
+      "description": "<=250 chars, sentence case, OPINIONATED & specific, NOT a restated tagline, no emoji, do not address the reader."
+    },
+    "skills_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "For type: suite — number of skills the suite bundles; rendered in the Skill Suites comparison table (#Skills column)."
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "makes_network_calls",
+        "has_hooks",
+        "requires_bypass_permissions",
+        "telemetry",
+        "auto_update",
+        "depends_3rdparty",
+        "allowed_tools_scoped"
+      ],
+      "properties": {
+        "makes_network_calls": {
+          "type": "boolean"
+        },
+        "network_endpoints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Required iff makes_network_calls is true (Anthropic API exempt). Enforced by the allOf rule below."
+        },
+        "has_hooks": {
+          "type": "boolean"
+        },
+        "requires_bypass_permissions": {
+          "type": "boolean"
+        },
+        "telemetry": {
+          "type": "boolean"
+        },
+        "auto_update": {
+          "type": "boolean"
+        },
+        "depends_3rdparty": {
+          "type": "boolean"
+        },
+        "allowed_tools_scoped": {
+          "type": "boolean"
+        }
+      },
+      "allOf": [
+        {
+          "comment": "network_endpoints required (non-empty) iff makes_network_calls is true.",
+          "if": {
+            "properties": {
+              "makes_network_calls": {
+                "const": true
+              }
+            },
+            "required": [
+              "makes_network_calls"
+            ]
+          },
+          "then": {
+            "required": [
+              "network_endpoints"
+            ],
+            "properties": {
+              "network_endpoints": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "homepage_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "install": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validate_claim": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "A concrete task+prompt that demonstrates the skill (mandatory for skill/suite — enforced by the schema-check script)."
+    },
+    "lang": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$",
+        "description": "ISO 639-1 code of a language the skill supports (e.g. en, zh, ja, ko, fr, es)."
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "spotlight": {
+      "type": "boolean"
+    },
+    "spotlight_rationale": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "2-3 sentence prose WHY (lead writes; only iff spotlight)."
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Free-form curator/maintainer note (e.g. license caveat, 'SMOKE-TEST SEED')."
+    },
+    "stargazers_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "archived": {
+      "type": "boolean"
+    },
+    "current_release": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "last_link_check": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "last_security_scan": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "spotlight_rationale_zh": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "2-3 sentence prose WHY (lead writes; only iff spotlight)."
+    },
+    "description_long": {
+      "type": "string",
+      "description": "Full rich description (relocated from v1's long description; rendered on the companion site, not the terse README line)."
+    },
+    "description_zh_long": {
+      "type": "string",
+      "description": "Full rich description (relocated from v1's long description; rendered on the companion site, not the terse README line)."
+    }
+  }
+}

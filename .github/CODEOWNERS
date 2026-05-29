@@ -1,0 +1,24 @@
+# CODEOWNERS — every change to the listing or the machinery is a human-reviewed event.
+#
+# This is the structural guarantee behind the list's "human-in-the-loop" promise:
+# data, generator scripts, schema, the generated READMEs, and the .github config
+# all require maintainer approval before merge. There is no auto-merge path.
+#
+# @O0000-code is the repository owner and sole maintainer.
+
+# Default: the owner reviews everything not matched more specifically below.
+*                   @O0000-code
+
+# The listing itself — the source of truth. Never changes without human review.
+/data/              @O0000-code
+
+# Generated output — should only change via the generator, never hand-edited.
+/README.md          @O0000-code
+/README.zh-CN.md    @O0000-code
+
+# The machinery: generator, schema, templates, config, CI, and this file.
+/scripts/           @O0000-code
+/schema/            @O0000-code
+/templates/         @O0000-code
+/config.yaml        @O0000-code
+/.github/           @O0000-code

@@ -1,0 +1,50 @@
+# Scheduled dead-link sweep (RF §4 check #3, anti-rot — mirrors awesome-claude-code's
+# validate-links). The PR gate (validate.yml) link-checks on submission, but links
+# rot BETWEEN PRs — an entry's repo gets deleted or renamed and nothing notices.
+# This sweep re-checks every entry URL and files the broken ones into a single
+# tracking issue for HUMAN triage. Like check-unmaintained, it NEVER auto-delists
+# (R-RF-4): a broken link is a LABEL FOR REVIEW, not an automatic removal (link
+# checkers have false positives — transient 503/429, browser-only sites). Pinned SHAs.
+#
+# Cadence: weekly, not daily like the exemplar. Link rot is slow, and a daily sweep
+# of 200+ external URLs churns the tracking issue on transient failures. Flip the
+# cron to "0 2 * * *" if a faster signal is ever wanted.
+name: check-links
+
+on:
+  schedule:
+    - cron: "23 6 * * 1"   # weekly, Mondays 06:23 UTC (after the metadata + stale sweeps)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write   # opens/updates the broken-link tracking issue
+
+jobs:
+  link-sweep:
+    runs-on: ubuntu-latest
+    steps:
+      # actions/checkout v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      # lycheeverse/lychee-action v2.7.0 — SAME pinned action + lychee.toml config
+      # (incl. the false-positive allowlist) as the PR gate. fail:false so the
+      # scheduled run reports instead of failing; writes ./lychee/out.md.
+      - name: Link check (report-only)
+        id: lychee
+        uses: lycheeverse/lychee-action@a8c4c7cb88f0c7386610c35eb25108e448569cb0
+        with:
+          args: "--config lychee.toml README.md README.zh-CN.md"
+          fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # peter-evans/create-issue-from-file v5.0.1 — open/update ONE tracking issue,
+      # only when lychee found broken links (exit_code != 0). Human triages; no auto-delist.
+      - name: Open/update broken-link issue
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd
+        with:
+          title: "Link sweep: broken links to review"
+          content-filepath: ./lychee/out.md
+          labels: maintenance, broken-link, needs-triage

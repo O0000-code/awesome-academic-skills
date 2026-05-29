@@ -1,0 +1,132 @@
+# PR-time validation gate (RF §4). Runs the SAME `make` targets contributors run
+# locally. Every third-party action is pinned to a full commit SHA (RF §4: a
+# compromised floating tag re-points; selfhosted pins, ACC does not — we copy the
+# safer one). Update SHAs deliberately via Dependabot/manual review.
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "schema/**"
+      - "templates/**"
+      - "config.yaml"
+      - "scripts/**"
+      - "README.md"
+      - "README.zh-CN.md"
+  # Also validate direct pushes to main (this repo is maintainer-pushed, not only
+  # PR-merged). Bot commits use GITHUB_TOKEN, which does NOT re-trigger workflows,
+  # so the daily metadata refresh won't spam this — only human pushes run it.
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "schema/**"
+      - "templates/**"
+      - "config.yaml"
+      - "scripts/**"
+      - "README.md"
+      - "README.zh-CN.md"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      # actions/checkout v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0   # full history so awesome-lint's git-repo-age can read it
+
+      # actions/setup-python v5.3.0
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b
+        with:
+          python-version: "3.11"
+
+      # actions/setup-node v4.4.0 (for awesome-lint via npx)
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "20"
+
+      - name: Install Python deps
+        run: make install
+
+      # Check #2 — JSON-Schema validation + cross-field rules (slug, recusal, validate_claim)
+      - name: Schema check
+        run: make schema_check
+
+      # Check #2b — public-visibility hard gate. Fetches every repo UNAUTHENTICATED
+      # (what an anonymous visitor sees) so a private repo that slipped in via an
+      # authenticated discovery token is caught and blocks the PR. A public index must
+      # contain only public repos.
+      - name: Public-visibility check
+        run: make check_public
+
+      # Check #1 — awesome-lint Gate-A conformance (badge, TOC, list-item, no License heading, …)
+      - name: awesome-lint
+        run: make awesome_lint
+
+      # Check #4 — README regeneration + drift gate. data/ is the single source of
+      # truth; the committed READMEs must match a fresh generate (no hand-edits).
+      - name: Generate READMEs
+        run: make generate
+
+      - name: Drift gate (committed READMEs must match the generator)
+        run: git diff --exit-code README.md README.zh-CN.md
+
+      # Check #3 — link health (lychee, pinned action, with allowlist). Blocks on PR.
+      # lycheeverse/lychee-action v2.7.0
+      - name: Link check
+        uses: lycheeverse/lychee-action@a8c4c7cb88f0c7386610c35eb25108e448569cb0
+        with:
+          args: "--config lychee.toml README.md README.zh-CN.md"
+          fail: true
+
+      # Check #5 — Tier-1 security pre-scan of the submitted repo. COMMENT-ONLY:
+      # never blocks (RF check #5). If the PR adds/edits a single entry, the
+      # scan targets that entry's source_url; otherwise it self-tests.
+      - name: Security pre-scan (comment-only)
+        if: always()
+        run: |
+          set -euo pipefail
+          # Find changed entry files in this PR.
+          BASE="${{ github.event.pull_request.base.sha }}"
+          HEAD="${{ github.event.pull_request.head.sha }}"
+          CHANGED=$(git diff --name-only "$BASE" "$HEAD" -- 'data/skills/*.yml' || true)
+          echo "Changed entry files:"; echo "$CHANGED"
+          PY=.venv/bin/python   # make install created this venv (has pyyaml)
+          REPORT=$(mktemp)
+          if [ -z "$CHANGED" ]; then
+            "$PY" framework/scanner/security_scan.py --self-test | tee "$REPORT" || true
+          else
+            for f in $CHANGED; do
+              [ -f "$f" ] || continue
+              URL=$("$PY" -c "import sys,yaml; print((yaml.safe_load(open(sys.argv[1])) or {}).get('source_url',''))" "$f")
+              echo "### Scan: $f ($URL)" | tee -a "$REPORT"
+              if [ -n "$URL" ]; then
+                "$PY" framework/scanner/security_scan.py --repo "$URL" | tee -a "$REPORT" || true
+              fi
+            done
+          fi
+          echo "SECURITY_REPORT_PATH=$REPORT" >> "$GITHUB_ENV"
+
+      # actions/github-script v7.0.1 — post the scan as a PR comment (best-effort).
+      - name: Post security scan comment
+        if: always() && github.event.pull_request.number != ''
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const fs = require('fs');
+            const path = process.env.SECURITY_REPORT_PATH;
+            if (!path || !fs.existsSync(path)) { core.info('No scan report to post.'); return; }
+            const body = "<!-- security-scan -->\n" + fs.readFileSync(path, 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body,
+            });

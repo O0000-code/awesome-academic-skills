@@ -1,0 +1,262 @@
+name: Recommend a skill
+description: Nominate a Claude Skill, suite, MCP server, tool, plugin, or list for Awesome Academic Skills.
+title: "[Skill]: "
+labels: ["skill-submission", "pending-validation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping build this list! This form collects everything we need to review a recommendation. On approval, a maintainer turns it into a `data/skills/<slug>.yml` entry and opens the pull request for you — you never have to touch YAML.
+
+        A few things up front:
+        - **Submit only what a human has looked at.** AI may have *written* the skill (that's fine); the *recommendation* must come from a person. See [CONTRIBUTING.md](https://github.com/O0000-code/awesome-academic-skills/blob/main/CONTRIBUTING.md).
+        - **You may absolutely recommend your own skill** — it competes on equal footing.
+        - The **description** and the **security disclosure** are the parts we care about most. Please take the extra minute on them.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The display name of the skill, exactly as it should appear (e.g. `paper-search-pro`).
+      placeholder: paper-search-pro
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      description: The canonical GitHub repository URL. If the repo was ever renamed, use the current real URL (after redirects).
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: The real author or organization — a name, alias, or GitHub handle.
+      placeholder: Jane Researcher (@jresearcher)
+    validations:
+      required: true
+
+  - type: input
+    id: author_url
+    attributes:
+      label: Author URL
+      description: Link to the author's GitHub profile (or org page).
+      placeholder: https://github.com/jresearcher
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: |
+        The repository's license (an SPDX identifier). Confirm it from the repo's LICENSE file, not just GitHub's sidebar — the API sometimes masks the real license. A non-commercial license or none is **allowed but flagged**, never a silent blank.
+      options:
+        - MIT
+        - Apache-2.0
+        - BSD-2-Clause
+        - BSD-3-Clause
+        - GPL-3.0
+        - AGPL-3.0
+        - LGPL-3.0
+        - MPL-2.0
+        - Unlicense
+        - CC0-1.0
+        - CC-BY-4.0
+        - CC-BY-SA-4.0
+        - CC-BY-NC-4.0 (non-commercial — will be flagged)
+        - Other (specify in description)
+        - No License / Unspecified (will be flagged)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: The single best-fitting category in the research lifecycle.
+      options:
+        - "Discover & Collect — Literature Search & Discovery"
+        - "Discover & Collect — Reference & Citation Management"
+        - "Read & Understand — Reading, Summarization & Q&A"
+        - "Read & Understand — PDF / OCR / Document Parsing"
+        - "Analyze & Visualize — Data Analysis & Statistics"
+        - "Analyze & Visualize — Figures & Visualization"
+        - "Write & Refine — Academic Writing & Drafting"
+        - "Write & Refine — Writing Quality & De-AI"
+        - "Write & Refine — Grant & Proposal Writing"
+        - "Review & Publish — Peer Review & Response"
+        - "Review & Publish — Submission, Formatting & Conversion"
+        - "Suites, Systems & Meta — Skill Suites"
+        - "Suites, Systems & Meta — Autonomous Research Systems"
+        - "Suites, Systems & Meta — MCP Servers & Integrations"
+        - "Suites, Systems & Meta — Discipline-Specific Packs"
+        - "Suites, Systems & Meta — Awesome Lists & Ecosystem Maps"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lifecycle_stage
+    attributes:
+      label: Lifecycle stage
+      description: Where in the research lifecycle this primarily fits.
+      options:
+        - discovery
+        - citation
+        - reading
+        - ocr
+        - analysis
+        - figures
+        - writing
+        - writing-quality
+        - grant
+        - peer-review
+        - publishing
+        - suite
+        - autonomous
+        - mcp
+        - discipline
+        - meta
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What kind of thing this is.
+      options:
+        - skill
+        - suite
+        - mcp-server
+        - tool
+        - plugin
+        - list
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        **≤250 characters**, sentence case, ending with a period. Say what it *does* and what it is good (and not good) at — descriptive, not promotional. **Do not** address the reader ("you can…"), **do not** restate the repo's own tagline, and **no emoji**. A specific, honest line written from actually using the skill is what makes this list trustworthy.
+      placeholder: Multi-source literature search across OpenAlex, Semantic Scholar, CrossRef, PubMed, and arXiv; strong for coverage, weaker on non-English sources.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Security disclosure (required)
+
+        Skills run code, so we ask every submission to disclose its executable surface. This is not an accusation — it gives reviewers and users the facts. Check a box only if the statement is **true**; if it is not, leave it unchecked and explain in the "Details" box below. A disclosure later found false is a strong signal against listing.
+
+  - type: checkboxes
+    id: security_disclosure
+    attributes:
+      label: Executable-surface disclosure
+      description: Check each statement that is TRUE of this skill.
+      options:
+        - label: Makes **no** network calls except to the Anthropic API — or every external endpoint is listed in Details below.
+          required: false
+        - label: Defines **no** hooks / lifecycle auto-execution — or each hook and its trigger is described in Details below.
+          required: false
+        - label: Does **not** require `--dangerously-skip-permissions` or any permission-bypass mode — or the reason is stated in Details below and users are warned.
+          required: false
+        - label: Has **no** telemetry and **no** auto-update (e.g. `npx …@latest`) — or it is disclosed in Details below.
+          required: false
+        - label: "`allowed-tools` is scoped — no `Bash(*)` wildcard — or the wildcard is justified in Details below."
+          required: false
+        - label: Does **not** depend on a commercial/paid product or proprietary API to function — or that dependency is stated in Details below.
+          required: false
+        - label: Any bash script a user is expected to run is commented and auditable.
+          required: false
+
+  - type: textarea
+    id: security_details
+    attributes:
+      label: Security disclosure — Details
+      description: |
+        List every external network endpoint (the Anthropic API need not be listed); describe each hook and what triggers it; justify any bypass-permission need or `Bash(*)` wildcard; note any telemetry, auto-update, or commercial dependency. Write "None" if every box above is checked and there is nothing to add.
+      placeholder: |
+        Network endpoints: api.openalex.org, api.semanticscholar.org, api.crossref.org
+        Hooks: none
+        Bypass permissions: not required
+        Telemetry / auto-update: none
+        allowed-tools: scoped (no Bash(*))
+        Commercial dependency: none
+    validations:
+      required: true
+
+  - type: textarea
+    id: validate_claim
+    attributes:
+      label: Validate the claims (required for a skill or suite)
+      description: |
+        Give us a concrete, low-friction way to see this work: a specific task plus the exact prompt you would hand Claude, and what a correct result looks like. This is **mandatory for skills and suites** and is one of the strongest things you can include to get an entry approved quickly. (For tools, MCP servers, and lists, write "N/A — not a skill/suite" if it does not apply.)
+      placeholder: Ask Claude to find five recent papers on CRISPR off-target effects across all five sources, then verify every returned DOI resolves.
+    validations:
+      required: true
+
+  - type: input
+    id: homepage_url
+    attributes:
+      label: Homepage URL (optional)
+      description: A docs site or landing page, if different from the source repo.
+      placeholder: https://example.com
+    validations:
+      required: false
+
+  - type: input
+    id: install
+    attributes:
+      label: Install hint (optional)
+      description: A one-line install instruction, if there is one.
+      placeholder: Add to ~/.claude/skills/ or run the marketplace install command.
+    validations:
+      required: false
+
+  - type: input
+    id: lang
+    attributes:
+      label: Languages (optional)
+      description: Which languages the skill supports / is documented in (e.g. `en`, or `en, zh`).
+      placeholder: en, zh
+    validations:
+      required: false
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (optional)
+      description: A few freeform discovery tags, comma-separated.
+      placeholder: literature-search, multi-source, mcp
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Before you submit
+
+  - type: checkboxes
+    id: attestation
+    attributes:
+      label: Final checklist
+      description: All four are required.
+      options:
+        - label: I am a human. The skill itself may be AI-assisted, but this recommendation is made by a person who has actually looked at it — not auto-filed by an agent on my behalf.
+          required: true
+        - label: I searched the existing entries and open/closed issues, and this is not a duplicate.
+          required: true
+        - label: All links work and are public, and the repository is at least 7 days old (measured from its first public commit).
+          required: true
+        - label: I have read the [Contributing guidelines](https://github.com/O0000-code/awesome-academic-skills/blob/main/CONTRIBUTING.md) and agree to the [Code of Conduct](https://github.com/O0000-code/awesome-academic-skills/blob/main/CODE_OF_CONDUCT.md).
+          required: true

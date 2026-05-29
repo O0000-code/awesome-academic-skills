@@ -1,0 +1,43 @@
+# lychee link-checker config (RF §4 check #3, C7 false-positive allowlist).
+# CI runs the pinned lycheeverse/lychee-action with this config; `make link_check`
+# uses it locally too. Link-checkers produce false positives (sites that 403 or
+# rate-limit CI but work in a browser) — selfhosted keeps a ~60-line allowlist;
+# we budget the same here. Scheduled link failures are LABELS FOR REVIEW, not
+# auto-delists (C7 / R-RF-4).
+
+# Treat these HTTP statuses as success (rate-limit / auth-wall false positives).
+accept = [200, 206, 429]
+
+# Be patient + look like a browser (many sites block default UAs).
+max_retries = 3
+retry_wait_time = 2
+timeout = 30
+user_agent = "Mozilla/5.0 (compatible; awesome-academic-skills link-check; +https://github.com/O0000-code/awesome-academic-skills)"
+
+# Only check real http(s) links; skip mailto, and skip in-page anchors (we
+# generate those deterministically and they are validated by awesome-lint's toc
+# + the generator, not by lychee).
+scheme = ["https", "http"]
+exclude_mail = true
+
+# Allowlist (regex) — sites that habitually 403/timeout in CI but are valid.
+# Keep this list curated and commented; add entries only with a reason.
+# NOTE: single-quoted TOML *literal* strings — backslashes are kept verbatim for the
+# regex engine. Double-quoted strings would treat `\.` as an invalid TOML escape and
+# fail to parse the whole config (which silently broke link-checking before).
+exclude = [
+  # npm registry 403s automated checkers but packages are live (registry API confirms).
+  '^https://(www\.)?npmjs\.com/',
+  # Our own repo's absolute links — skip to avoid self-referential check noise.
+  '^https://github\.com/O0000-code/',
+  # shields.io badge endpoints render fine but rate-limit aggressively in CI.
+  '^https://img\.shields\.io/',
+  # awesome.re badge — static asset, occasionally slow from CI runners.
+  '^https://awesome\.re/',
+  # Twitter/X frequently 403s automated checkers.
+  '^https://(twitter\.com|x\.com)/',
+  # LinkedIn blocks non-browser agents.
+  '^https://www\.linkedin\.com/',
+  # HuggingFace model pages can rate-limit CI.
+  '^https://huggingface\.co/',
+]
