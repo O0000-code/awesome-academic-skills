@@ -1,0 +1,177 @@
+# ASDF static-scan rules — readable rule data (semgrep-inspired)
+# =============================================================================
+# Each rule is open, human-readable, and contestable. Anyone can read exactly
+# what triggers a finding and open a PR to fix a false positive or add a pattern.
+# This is the "rules-as-data" trust mechanism (cf. semgrep, OpenSSF Scorecard):
+# the analysis is not a black box — the regex IS the documented heuristic.
+#
+# Schema per rule:
+#   id        machine id, stable across versions
+#   category  short human label shown in reports
+#   severity  Critical | High | Medium | Low   (see ../../SEVERITY.md)
+#   regex     Python `re` pattern, matched case-INSENSITIVE against text files
+#   message   one line: what this finding means / why it matters
+#   note      (optional) caveats, known-FP guidance, evasion notes
+#
+# Severity here is the FINDING-TYPE band (its inherent risk class). The scanner
+# may DOWNGRADE a finding in context (e.g. a pattern that appears only inside a
+# fenced ```code block``` in documentation) — every downgrade is recorded in the
+# report, never silent.
+#
+# Honesty contract: these patterns catch the OBVIOUS and the LAZY. A determined
+# author can evade grep/AST detection (encoding, indirection, runtime fetch).
+# A clean scan is NOT proof of safety — see ../../README.md "Honest limits".
+# =============================================================================
+
+rules:
+
+  # --- CRITICAL: strong exfiltration / malware / credential-theft signal -----
+  - id: reverse-shell
+    category: reverse-shell
+    severity: Critical
+    regex: '/dev/tcp/|\bnc(at)?[^\S\n]+(-[a-z]+[^\S\n]+|[^\s/][^\s]*[^\S\n]+)*-e[^\S\n]*\S|\bsocat\s[^\n]*\bexec:|\bsocat\s[^\n]*\bEXEC:|(^|[^\w./-])(ba)?sh\s+-i\b.*(>|<|\||\d>&\d|/dev/tcp)|socket\.connect\(.*\b(SHELL|/bin/sh|/bin/bash|cmd\.exe)|pty\.spawn\(|subprocess\.\w+\(\s*\[?\s*["''](/bin/)?(ba)?sh["''].*-i'
+    message: Reverse-shell pattern — opens an interactive shell back to a remote host.
+    note: 'Near-zero legitimate use in an academic skill. Catches `nc -e`/`ncat -e` in any flag order (incl. `nc host port -e /bin/sh`), `socat ... EXEC:/bin/sh`, a `/dev/tcp/` redirect, a bare `sh -i` WITH a redirection/pipe (so a script named `foo.sh -i <input>` is not matched), a socket.connect tied to a shell, or pty.spawn. A socket.connect + subprocess pair split across lines is caught by the `reverse-shell-py` rule. Still confirm it is not a "what not to do" doc example.'
+
+  - id: reverse-shell-py
+    category: reverse-shell
+    severity: Critical
+    regex: 'socket\.socket\([^)]*\)[^\n]{0,400}?\.connect\((?s:(?:(?!def\s)[\s\S]){0,400}?)(subprocess\.(call|run|Popen|check_output|check_call)|\bPopen\s*\(|os\.system\s*\(|os\.dup2\s*\(|pty\.spawn\s*\()'
+    message: Python socket + process-exec reverse shell — connects a socket then spawns a shell/process (multi-line).
+    note: 'Catches the canonical Python reverse shell where `socket.socket(...).connect((host, port))` is followed (within a few lines) by `subprocess.*`, `Popen(`, `os.system(`, `os.dup2(`, or `pty.spawn(` — the split-across-lines form the single-line `reverse-shell` rule misses. The window is bounded and stops at a `def ` boundary to avoid matching two unrelated functions. A plain network client (socket.connect with no nearby process spawn) is NOT matched.'
+
+  - id: shell-exec-spawn
+    category: shell-exec-spawn
+    severity: High
+    regex: '(^|[^.\w])os\.popen\s*\(|\bchild_process\.(exec|execSync|spawn|spawnSync)\s*\(|(^|[^.\w])Popen\s*\([^)]*shell\s*=\s*True|(^|[^.\w])(check_output|check_call|call|run)\s*\([^)]*shell\s*=\s*True|\brequire\(\s*["'']child_process["'']\s*\)'
+    message: Shell command execution — os.popen / child_process.exec / bare Popen(shell=True) (a shell-injection-prone exec sink).
+    note: 'A command-execution sink distinct from the `subprocess.<name>(... shell=True)` form already caught by dangerous-eval-exec: this adds bare `Popen(... shell=True)` (imported via `from subprocess import Popen`), `os.popen(`, Node `child_process.exec/spawn`, and `require("child_process")`. High (an execution surface, often legitimate in a tool) — read context for whether the command string is attacker-influenced.'
+
+  - id: decode-then-exec
+    category: decode-then-exec
+    severity: Critical
+    regex: 'base64\s+(-d|--decode)[^\n|]*\|\s*(ba)?sh|(exec|eval)\s*\(\s*(base64\.)?b64decode\(|(b64decode|a85decode|b85decode|b32decode|unhexlify|bytes\.fromhex)\([^)]*\)(?s:[\s\S]{0,80}?)(exec|eval|os\.system|subprocess|Popen)|(exec|eval|os\.system|subprocess\.\w+|Popen)\s*\([^)]{0,80}?(b64decode|a85decode|b85decode|unhexlify|bytes\.fromhex|codecs\.decode)\(|atob\([^)]*\)(?s:[\s\S]{0,80}?)(eval|Function)|(eval|Function)\s*\(\s*atob\('
+    message: Decode-then-execute — runs code that was hidden as an encoded blob (classic obfuscation).
+    note: 'The hallmark of payload smuggling. Catches both orders (decode→exec and exec(decode(...))) and across a line break within a small window: `exec(base64.b64decode(blob))`, `data = b64decode(x); exec(data)`, `eval(atob(...))`. Distinguish from legitimate base64 of binary DATA with no exec sink nearby.'
+
+  - id: credential-path-read
+    category: credential-path-read
+    severity: Critical
+    regex: '\.ssh/(id_[a-z0-9]+|authorized_keys)|\.aws/credentials|/etc/(passwd|shadow)|\.netrc\b|\.git-credentials|\.docker/config\.json|\.kube/config'
+    message: Reads a credential/secret path (.ssh, .aws, .netrc, etc.) — possible secret harvesting.
+    note: Legitimate tools rarely touch these. A read combined with a network sink is a strong reject signal.
+
+  - id: dangerous-powershell
+    category: dangerous-powershell
+    severity: Critical
+    regex: '\bIEX\s*[\(\$]|\|\s*iex\b|Invoke-Expression|DownloadString\s*\(|FromBase64String\s*\(|-EncodedCommand\b|-enc\s+[A-Za-z0-9+/]{16,}'
+    message: PowerShell dynamic-execution / download-and-run / encoded-command pattern.
+    note: 'Windows analog of decode-then-exec + pipe-to-shell. IEX must be an invocation (`IEX(`, `IEX $`, or `| iex`) so the company name "IEX Cloud" and the Elixir REPL are not matched; -enc needs a long base64 arg.'
+
+  - id: destructive-command
+    category: destructive-command
+    severity: Critical
+    regex: 'rm\s+-rf?\s+(-[a-z]+\s+)*(/\s|/$|/\*|/\s*"|~/?\s|~/?$|~/\*|\$HOME\b|\${HOME}|\*\s|\*$|\.\s|\.$)|chmod\s+(-[a-zA-Z]+\s+)?777\b|mkfs\.|:\(\)\s*\{[^}]*\}\s*;\s*:|dd\s+if=\S+\s+of=/dev/(sd|nvme|disk)'
+    message: Destructive command — recursive force-delete of root/home, fork bomb, or raw disk write.
+    note: 'rm -rf of a project-local subpath (rm -rf /tmp/foo, rm -rf ./build) is benign and NOT matched; this flags only root (/), home (~ / $HOME), or bare-wildcard targets. Verify the actual target.'
+
+  - id: exfil-webhook
+    category: exfil-webhook
+    severity: Critical
+    regex: 'discord(app)?\.com/api/webhooks|hooks\.slack\.com/services|api\.telegram\.org/bot|chat\.googleapis\.com/v1/spaces|webhook\.site|requestbin\.|pipedream\.net'
+    message: Hard-coded chat/webhook exfil endpoint (Discord/Slack/Telegram/etc.) — data can be sent out silently.
+    note: A webhook URL baked into a skill that also reads local data is a textbook exfil channel.
+
+  - id: exfil-data-read
+    category: exfil-data-read
+    severity: High
+    regex: '(requests\.(post|put|patch)|httpx\.(post|put|patch)|urllib\.request\.urlopen|session\.(post|put)|fetch|axios\.(post|put|patch))\s*\([^\n]{0,200}\b(data|body|files|json)\s*=\s*open\s*\(|(requests\.(post|put|patch)|httpx\.(post|put|patch)|axios\.(post|put|patch))\s*\([^\n]{0,200}\.(read|read_bytes|read_text)\s*\('
+    message: Reads a local file and sends it in an outbound HTTP request — possible data exfiltration.
+    note: 'Matches `requests.post(url, data=open(path))` / `httpx.post(..., files=open(...))` / `axios.post(url, fs.readFileSync(...))`-style patterns where a file handle or a `.read()` result is the request body. High (not Critical) on its own because legitimate uploaders do this; pair it with a credential-path-read or a hard-coded webhook for a strong exfil signal. The host being arbitrary (not a named API) raises suspicion — read context.'
+
+  - id: miner-or-rat
+    category: miner-or-rat
+    severity: Critical
+    regex: '\bxmrig\b|stratum\+tcp://|cobalt\s?strike|mimikatz|metasploit|meterpreter|\bnjrat\b|\bquasar\s?rat\b'
+    message: Cryptominer / remote-access-trojan / offensive-tooling signature.
+    note: Any hit demands manual confirmation; treat as malware until proven a documentation reference.
+
+  # --- HIGH: dynamic execution & exfil-capable patterns needing manual review -
+  - id: dangerous-eval-exec
+    category: dangerous-eval-exec
+    severity: High
+    regex: '(^|[^.\w$])eval\s*\(|(^|[^.\w])exec\s*\(|\bFunction\s*\(\s*["'']|yaml\.load\s*\((?![^)]*Loader)|(^|[^.\w])os\.system\s*\(|subprocess\.[A-Za-z_]+\([^)]*shell\s*=\s*True'
+    message: Dynamic code execution (eval/exec/Function/unsafe yaml.load/os.system/shell=True).
+    note: 'Common and sometimes legitimate (templating, sandboxes). High because it is an execution sink; read context to judge intent. Excludes `$eval` (Puppeteer/Playwright DOM helper, not code eval), dotted `.eval(`/`.exec(` method calls (e.g. regex/df eval), the function/method definitions `def eval(`/`async def eval(`/`class Eval`, and (in the scanner) commented-out lines — these are not execution sinks.'
+
+  - id: dynamic-import-or-unpickle
+    category: dynamic-import-or-unpickle
+    severity: Medium
+    regex: '__import__\s*\(|pickle\.loads\s*\(|cloudpickle\.loads\s*\(|marshal\.loads\s*\('
+    message: Dynamic import-by-name (__import__) or untrusted-deserialization (pickle/marshal.loads).
+    note: 'Mostly benign: __import__ is the standard lazy-import idiom; pickle.loads on a tool''s OWN cache is normal. Medium (not High) because it is a weaker signal — only dangerous when the imported name or the pickled bytes come from untrusted input. Verify the data source.'
+
+  - id: suspicious-url
+    category: suspicious-url
+    severity: High
+    regex: '(?<![\w.])(bit\.ly|tinyurl\.com|is\.gd/|goo\.gl/|t\.co/)|\b(pastebin\.com/raw|hastebin\.com|ngrok\.io|ngrok-free\.app|trycloudflare\.com)|\.onion\b'
+    message: URL shortener / paste-raw / tunnel / Tor address — obscures the true fetch destination.
+    note: 'Shorteners hide what is actually downloaded; paste-raw + a fetch is a common payload host. The lookbehind avoids matching legitimate hosts that merely END in these strings (e.g. posit.co vs t.co).'
+
+  - id: bare-public-ip
+    category: bare-public-ip
+    severity: High
+    regex: '(?<![\w.=><~^])(?!10\.|127\.|0\.|255\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.|169\.254\.|22[4-9]\.|23\d\.|24\d\.|25[0-5]\.)((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(?![\w.\d])'
+    message: Hard-coded public IP address — unusual for a skill that should call named APIs.
+    note: 'Each octet must be 0-255 (so it is a real IPv4, not a 4-part version like 1.27.2.3); the lookbehind drops version specifiers (==, >=, ~=, ^). The scanner additionally skips this rule in dependency manifests and recorded HTTP test cassettes (see security_scan.py _IP_SKIP_FILES). Still verify it is an actual network target.'
+
+  # --- MEDIUM: supply-chain / disclosure-worthy; disclose & justify, not a fail
+  - id: pipe-to-shell
+    category: pipe-to-shell
+    severity: Medium
+    regex: '(curl|wget)\s[^\n|]*\|\s*(sudo\s+)?(ba)?sh\b'
+    message: Pipe-to-shell install (curl|wget … | sh) — runs unreviewed remote code.
+    note: Even official installers (rustup, uv) do this; flag-not-fail. Disclose so a user can choose to review first.
+
+  - id: auto-update-latest
+    category: auto-update-latest
+    severity: Medium
+    regex: 'npx\s+[^\n]*@latest|npm\s+i(nstall)?\s+[^\n]*@latest|pip\s+install\s+-U\b|uvx\s+[^\n]*@latest|cargo\s+install\s+[^\n]*--git'
+    message: Unpinned / auto-updating dependency (@latest, pip -U, cargo --git) — supply-chain drift risk.
+    note: Means "whatever the registry serves at run time", so a future compromised release runs unreviewed.
+
+  - id: long-base64-blob
+    category: long-base64-blob
+    severity: Medium
+    regex: '[A-Za-z0-9+/]{220,}={0,2}'
+    message: Long base64 blob (>=220 chars) — could hide a payload, an embedded asset, or just data.
+    note: High false-positive rate (inlined fonts/images/test fixtures). Medium; pair with decode-then-exec for a real signal.
+
+  - id: prompt-injection
+    category: prompt-injection
+    severity: Medium
+    regex: 'ignore\s+(all\s+)?(previous|prior|above)\s+(instructions|prompts)|disregard\s+(the|all)\s+(system|previous)|you\s+are\s+now\s+in\s+developer\s+mode'
+    message: Prompt-injection phrase embedded in content — could subvert an agent that ingests this repo.
+    note: May be a legitimate test fixture or a defensive example. Judge whether it is live instruction vs documentation.
+
+  - id: jailbreak-marker
+    category: jailbreak-marker
+    severity: Medium
+    regex: '<\s*system\s*>|\bDAN\s+mode\b|do\s+anything\s+now\b'
+    message: Jailbreak marker (fake <system> tag / "DAN mode" / "do anything now").
+    note: Often appears in anti-jailbreak guardrail skills as the thing being defended against; read context.
+
+  - id: hidden-unicode
+    category: hidden-unicode
+    severity: Medium
+    regex: "[​‌‍‪-‮⁦-⁩﻿]"
+    message: Hidden / bidirectional Unicode (zero-width or RTL-override) — can conceal code (Trojan-Source class).
+    note: 'Zero-width chars can hide instructions from a human reader while an agent still parses them (Trojan-Source class). The scanner down-weights to Low when the char sits inside a normal quoted string literal assigned to a descriptively-named variable (e.g. `zwsp_char = "<ZWSP>" if zwsp else ""` — a deliberate, named ZWSP feature), and keeps full weight for a zero-width char inside an identifier, a comment, or a bare instruction (the actual attack vector).'
+
+  # --- LOW: weak signals / context only ------------------------------------
+  - id: telemetry-endpoint
+    category: telemetry-endpoint
+    severity: Low
+    regex: 'google-analytics\.com|googletagmanager\.com|segment\.(io|com)/v1|mixpanel\.com|amplitude\.com|sentry\.io|posthog\.com'
+    message: Analytics/telemetry endpoint — usage data may be collected; should be disclosed.
+    note: 'Low on its own; matters mostly as a Stage-0-vs-Stage-1 discrepancy (telemetry: false but endpoint present).'

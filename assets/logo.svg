@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Awesome Academic Skills"><title>Awesome Academic Skills</title>
+<rect width="512" height="512" fill="#ffffff"/>
+<rect x="40.5" y="40.5" width="431" height="431" fill="none" stroke="#e5e5e5" stroke-width="1"/>
+<line x1="208" y1="108.5" x2="304" y2="108.5" stroke="#e5e5e5" stroke-width="1"/>
+<g fill="#0a0a0a"><path transform="translate(155.800 350.000) scale(0.30000 -0.30000)" d="M20 0 276 710H392L648 0H554L483 202H185L114 0ZM214 286H454L334 635Z"/></g>
+<g fill="#737373"><path transform="translate(200.800 424.000) scale(0.02400 -0.02400)" d="M78 0V99H248V611H78V710H522V611H352V99H522V0Z"/>
+<path transform="translate(224.800 424.000) scale(0.02400 -0.02400)" d="M68 0V710H196L429 149V710H532V0H404L171 561V0Z"/>
+<path transform="translate(248.800 424.000) scale(0.02400 -0.02400)" d="M83 0V710H256Q350 710 419.5 668.5Q489 627 526.5 547.5Q564 468 564 354Q564 240 526.5 161.0Q489 82 419.5 41.0Q350 0 256 0ZM188 99H253Q350 99 402.5 162.5Q455 226 455 354Q455 482 402.5 546.5Q350 611 253 611H188Z"/>
+<path transform="translate(272.800 424.000) scale(0.02400 -0.02400)" d="M88 0V710H524V611H193V404H512V308H193V99H532V0Z"/>
+<path transform="translate(296.800 424.000) scale(0.02400 -0.02400)" d="M45 0 232 357 48 710H167L301 437L435 710H552L368 356L555 0H436L299 277L161 0Z"/></g>
+</svg>

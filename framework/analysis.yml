@@ -1,0 +1,447 @@
+# Disclosure cross-check per entry (ASDF). Records only disclosure_mismatch.
+academic-paper-skills:
+  disclosure_mismatch: false
+academic-research-agent-skill:
+  disclosure_mismatch: false
+academic-research-skills:
+  disclosure_mismatch: false
+academic-research-skills-codex:
+  disclosure_mismatch: false
+academic-review-skill:
+  disclosure_mismatch: false
+academic-skills:
+  disclosure_mismatch: false
+academic-writing:
+  disclosure_mismatch: false
+academic-writing-agents:
+  disclosure_mismatch: false
+academic-writing-skills:
+  disclosure_mismatch: false
+academicforge:
+  disclosure_mismatch: false
+ageaf:
+  disclosure_mismatch: false
+agent-research-skills:
+  disclosure_mismatch: false
+agentfiguregallery:
+  disclosure_mismatch: false
+ai-agent-research-starter-kit:
+  disclosure_mismatch: false
+ai-anthropology-toolkit:
+  disclosure_mismatch: false
+ai-peer-review-skill:
+  disclosure_mismatch: false
+ai-research-army:
+  disclosure_mismatch: false
+ai-research-feedback:
+  disclosure_mismatch: false
+ai-research-skills:
+  disclosure_mismatch: false
+ai-research-skills-orchestra:
+  disclosure_mismatch: false
+ai-skill-scholar:
+  disclosure_mismatch: false
+ai4ss-skills:
+  disclosure_mismatch: false
+aigc-down-skill:
+  disclosure_mismatch: false
+alterlab-academic-skills:
+  disclosure_mismatch: false
+anaxa:
+  disclosure_mismatch: false
+anthropic-docx:
+  disclosure_mismatch: false
+anthropic-pdf:
+  disclosure_mismatch: false
+anthropic-pptx:
+  disclosure_mismatch: false
+anthropic-xlsx:
+  disclosure_mismatch: false
+anthropics-life-sciences:
+  disclosure_mismatch: false
+anti-aigc-zh:
+  disclosure_mismatch: false
+any2pdf:
+  disclosure_mismatch: false
+apa-referencing-skill:
+  disclosure_mismatch: false
+archora-skills:
+  disclosure_mismatch: false
+aris:
+  disclosure_mismatch: false
+arxiv-paper-zh:
+  disclosure_mismatch: false
+arxiv-skills:
+  disclosure_mismatch: false
+asta-skill:
+  disclosure_mismatch: false
+aut-sci-write:
+  disclosure_mismatch: false
+auto-paper-harvester:
+  disclosure_mismatch: false
+autodidact-skill:
+  disclosure_mismatch: false
+automcm-pro:
+  disclosure_mismatch: false
+autoresearch-skill:
+  disclosure_mismatch: false
+avoid-ai-writing:
+  disclosure_mismatch: false
+awesome-gaussian-skills:
+  disclosure_mismatch: false
+awesome-latex-skills:
+  disclosure_mismatch: false
+awesome-rosetta-skills:
+  disclosure_mismatch: false
+beamer-academic:
+  disclosure_mismatch: false
+beamer-skill:
+  disclosure_mismatch: false
+beamer-skill-2:
+  disclosure_mismatch: false
+benchmark-research-skill:
+  disclosure_mismatch: false
+beril-research-observatory:
+  disclosure_mismatch: false
+bioskills:
+  disclosure_mismatch: false
+cheatsheet-generator-skill:
+  disclosure_mismatch: false
+chinese-reference-formatter-skill:
+  disclosure_mismatch: false
+chinese-thesis-workbench-skill:
+  disclosure_mismatch: false
+citation-assistant:
+  disclosure_mismatch: false
+claude-academic-research:
+  disclosure_mismatch: false
+claude-code-my-workflow:
+  disclosure_mismatch: false
+claude-deep-research-skill:
+  disclosure_mismatch: false
+claude-paper:
+  disclosure_mismatch: false
+claude-research:
+  disclosure_mismatch: false
+claude-scholar:
+  disclosure_mismatch: false
+claude-scholar-2:
+  disclosure_mismatch: false
+claude-scientific-skills:
+  disclosure_mismatch: false
+claude-scientific-writer:
+  disclosure_mismatch: false
+claude-skill-overleaf:
+  disclosure_mismatch: false
+claude-skills-journalism:
+  disclosure_mismatch: false
+claude-statistical-analysis-skill:
+  disclosure_mismatch: false
+claude-workflow-for-econ-phd:
+  disclosure_mismatch: false
+clawbio:
+  disclosure_mismatch: false
+cnki-skills:
+  disclosure_mismatch: false
+codex-paper-skills:
+  disclosure_mismatch: false
+daaf:
+  disclosure_mismatch: false
+dailypaper-skills:
+  disclosure_mismatch: false
+de-anthropocentric-research-engine:
+  disclosure_mismatch: false
+deai-academic-zh:
+  disclosure_mismatch: false
+deep-research-skills:
+  disclosure_mismatch: false
+deeppapernote:
+  disclosure_mismatch: false
+diogenes:
+  disclosure_mismatch: false
+dissertation-polisher-zh:
+  disclosure_mismatch: false
+docx-skill-4-cn-paper:
+  disclosure_mismatch: false
+dr-cook:
+  disclosure_mismatch: false
+econ-writing-skill:
+  disclosure_mismatch: false
+econometrics-skill:
+  disclosure_mismatch: false
+education-agent-skills:
+  disclosure_mismatch: false
+encode-toolkit:
+  disclosure_mismatch: false
+engineering-figure-agent:
+  disclosure_mismatch: false
+english-writing:
+  disclosure_mismatch: false
+enhanced-mathmodel-codex-skills:
+  disclosure_mismatch: false
+fiftyone-skills:
+  disclosure_mismatch: false
+franklee16-academic-research-skills:
+  disclosure_mismatch: false
+gdm-science-skills:
+  disclosure_mismatch: false
+gen-pseudocode-skill:
+  disclosure_mismatch: false
+genealogy-research:
+  disclosure_mismatch: false
+grounded-research-skill:
+  disclosure_mismatch: false
+gs-skills:
+  disclosure_mismatch: false
+humanities-thesis-skill:
+  disclosure_mismatch: false
+humanize-academic-writing:
+  disclosure_mismatch: false
+humanizer:
+  disclosure_mismatch: false
+humanizer-academic:
+  disclosure_mismatch: false
+humanizer-academic-zh:
+  disclosure_mismatch: false
+humanizer-zh-academic:
+  disclosure_mismatch: false
+humanmade-antislop:
+  disclosure_mismatch: false
+journal-adapt-writing-skill:
+  disclosure_mismatch: false
+labclaw:
+  disclosure_mismatch: false
+latex-arxiv-skill:
+  disclosure_mismatch: false
+latex-document-skill:
+  disclosure_mismatch: false
+latex-paper-skills:
+  disclosure_mismatch: false
+lecture-to-notes:
+  disclosure_mismatch: false
+list-ai-boost:
+  disclosure_mismatch: false
+list-awesome-ai-for-economists:
+  disclosure_mismatch: false
+list-internscience:
+  disclosure_mismatch: false
+list-tsinghua-ai-scientists:
+  disclosure_mismatch: false
+lit-review:
+  disclosure_mismatch: false
+literature-harvest:
+  disclosure_mismatch: false
+literature-review-skill:
+  disclosure_mismatch: false
+litllm:
+  disclosure_mismatch: false
+litreviewskill:
+  disclosure_mismatch: false
+llm-wiki:
+  disclosure_mismatch: false
+make-bib:
+  disclosure_mismatch: false
+manuscript-review-skill:
+  disclosure_mismatch: false
+markdown-exporter:
+  disclosure_mismatch: false
+materials-simulation-skills:
+  disclosure_mismatch: false
+mathmodel-skill:
+  disclosure_mismatch: false
+matlab-agentic-toolkit:
+  disclosure_mismatch: false
+mcp-overleaf:
+  disclosure_mismatch: false
+mean-reviewer-skill:
+  disclosure_mismatch: false
+medical-research-skills:
+  disclosure_mismatch: false
+medsci-agent:
+  disclosure_mismatch: false
+medsci-skills:
+  disclosure_mismatch: false
+mgmt-paper-skills:
+  disclosure_mismatch: false
+mineru-skill:
+  disclosure_mismatch: false
+my-submission-formatting-agent:
+  disclosure_mismatch: false
+nano-scientist:
+  disclosure_mismatch: false
+nature-paper-skills:
+  disclosure_mismatch: false
+nature-skills:
+  disclosure_mismatch: false
+nature-writing-skill:
+  disclosure_mismatch: false
+neurico:
+  disclosure_mismatch: false
+neuroclaw:
+  disclosure_mismatch: false
+nice-figures:
+  disclosure_mismatch: false
+notebooklm-skill:
+  disclosure_mismatch: false
+notebooklm-skill-2:
+  disclosure_mismatch: false
+oh-my-hermes-for-legal-researcher:
+  disclosure_mismatch: false
+oneshot-academic-research-skill:
+  disclosure_mismatch: false
+open-scholar-skill:
+  disclosure_mismatch: false
+open-science-skills:
+  disclosure_mismatch: false
+openclaw-medical-skills:
+  disclosure_mismatch: false
+paper-analyst:
+  disclosure_mismatch: false
+paper-craft-skills:
+  disclosure_mismatch: false
+paper-discipline-skills:
+  disclosure_mismatch: false
+paper-fetch:
+  disclosure_mismatch: false
+paper-humanizer-skill:
+  disclosure_mismatch: false
+paper-orchestra-for-claude-code:
+  disclosure_mismatch: false
+paper-reader-heilmeier:
+  disclosure_mismatch: false
+paper-reading-skill:
+  disclosure_mismatch: false
+paper-search-pro:
+  disclosure_mismatch: false
+paper-style:
+  disclosure_mismatch: false
+paper-writing-skill:
+  disclosure_mismatch: false
+paper2code:
+  disclosure_mismatch: false
+paper2patent:
+  disclosure_mismatch: false
+paperbanana-skill:
+  disclosure_mismatch: false
+papercash:
+  disclosure_mismatch: false
+paperfit:
+  disclosure_mismatch: false
+paperorchestra:
+  disclosure_mismatch: false
+paperspine:
+  disclosure_mismatch: false
+phd-skills:
+  disclosure_mismatch: false
+physics-lab-report-skill:
+  disclosure_mismatch: false
+polisci-review:
+  disclosure_mismatch: false
+posit-skills:
+  disclosure_mismatch: false
+powerpoint-skill:
+  disclosure_mismatch: false
+proofreading:
+  disclosure_mismatch: false
+protein-design-skills:
+  disclosure_mismatch: false
+q-skills:
+  disclosure_mismatch: false
+remote-sensing-research-radar:
+  disclosure_mismatch: false
+research-agora:
+  disclosure_mismatch: false
+research-paper-figure-skill-factory:
+  disclosure_mismatch: false
+research-paper-writing:
+  disclosure_mismatch: false
+research-units-pipeline-skills:
+  disclosure_mismatch: false
+research-writing-skill:
+  disclosure_mismatch: false
+researchclaw:
+  disclosure_mismatch: false
+rstack:
+  disclosure_mismatch: false
+scholar-deep-research:
+  disclosure_mismatch: false
+scholar-kit:
+  disclosure_mismatch: false
+scholar-skill:
+  disclosure_mismatch: false
+scholaraio:
+  disclosure_mismatch: false
+sciagent-skills:
+  disclosure_mismatch: false
+sciclaw:
+  disclosure_mismatch: false
+science-narrative-skills:
+  disclosure_mismatch: false
+scienceclaw:
+  disclosure_mismatch: false
+scienceclaw-2:
+  disclosure_mismatch: false
+scienceclaw-3:
+  disclosure_mismatch: false
+scientific-agent-skills:
+  disclosure_mismatch: false
+scientific-research-skills:
+  disclosure_mismatch: false
+scientific-skills:
+  disclosure_mismatch: false
+sciwrite:
+  disclosure_mismatch: false
+scp:
+  disclosure_mismatch: false
+semanticscholar-skill:
+  disclosure_mismatch: false
+skill-deslop:
+  disclosure_mismatch: false
+skill-research-figure:
+  disclosure_mismatch: false
+skill-thesis-writer:
+  disclosure_mismatch: false
+skillfoundry:
+  disclosure_mismatch: false
+slopbuster:
+  disclosure_mismatch: false
+slr-prisma:
+  disclosure_mismatch: false
+social-data-analysis:
+  disclosure_mismatch: false
+stata-ai-fusion:
+  disclosure_mismatch: false
+stata-graphics-skill:
+  disclosure_mismatch: false
+stata-skill:
+  disclosure_mismatch: false
+stats-paper-writing-agent-skills:
+  disclosure_mismatch: false
+stop-slop:
+  disclosure_mismatch: false
+thesis-defense-pptx-skill:
+  disclosure_mismatch: false
+thesis-figure-skill:
+  disclosure_mismatch: false
+thesis-writer:
+  disclosure_mismatch: false
+trivium:
+  disclosure_mismatch: false
+tufte-data-viz:
+  disclosure_mismatch: false
+tw-research-skills:
+  disclosure_mismatch: false
+unslop:
+  disclosure_mismatch: false
+vibe-science:
+  disclosure_mismatch: false
+voidful-academic-skills:
+  disclosure_mismatch: false
+wenxian:
+  disclosure_mismatch: false
+word-format-skill:
+  disclosure_mismatch: false
+writing-in-the-sciences-skill:
+  disclosure_mismatch: false
+xueshuzhi-skills:
+  disclosure_mismatch: false
