@@ -8,13 +8,15 @@ category: Skill Suites
 lifecycle_stage: suite
 type: suite
 skills_count: 9
-description: A tight 9-skill bundle strongest on Nature-style prose and figures, weakest as a data toolkit.
+description: A tight 9-skill bundle strongest on Nature-style prose and figures, weakest
+  as a data toolkit.
 description_zh: 一个精炼的九 skill 套件，最强在 Nature 风格的行文与配图，最弱在作为数据工具集。
-description_long: A tight 9-skill bundle for Nature-grade output (search, reader, citation, data, writing,
-  polishing, figure, paper-to-PPT, reviewer-response) by an SJTU medical-AI PhD; strongest on Nature-style
-  prose and figures, weakest as a data toolkit.
-description_zh_long: 一个精炼的九 skill 套件，面向 Nature 量级的产出（检索、阅读、引用、数据、写作、润色、配图、论文转 PPT、审稿回应），作者是上海交大医学 AI 方向的博士；最强在
-  Nature 风格的行文与配图，最弱则在作为数据工具集。
+description_long: A tight 9-skill bundle for Nature-grade output (search, reader,
+  citation, data, writing, polishing, figure, paper-to-PPT, reviewer-response) by
+  an SJTU medical-AI PhD; strongest on Nature-style prose and figures, weakest as
+  a data toolkit.
+description_zh_long: 一个精炼的九 skill 套件，面向 Nature 量级的产出（检索、阅读、引用、数据、写作、润色、配图、论文转 PPT、审稿回应），作者是上海交大医学
+  AI 方向的博士；最强在 Nature 风格的行文与配图，最弱则在作为数据工具集。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -26,10 +28,10 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 homepage_url: ''
-install: Copy each skills/nature-* folder into your skills dir (include references/assets), or add as
-  a Codex Desktop plugin marketplace from the repo URL
-validate_claim: Use nature-writing to draft a Results paragraph from a small dataset, then nature-figure
-  to spec a publication figure; check both match Nature house style.
+install: Copy each skills/nature-* folder into your skills dir (include references/assets),
+  or add as a Codex Desktop plugin marketplace from the repo URL
+validate_claim: Use nature-writing to draft a Results paragraph from a small dataset,
+  then nature-figure to spec a publication figure; check both match Nature house style.
 lang:
 - en
 - zh
@@ -41,8 +43,8 @@ tags:
 - Yuan1z0825
 featured: false
 spotlight: false
-stargazers_count: 14777
-updated_at: '2026-06-01'
+stargazers_count: 15857
+updated_at: '2026-06-02'
 archived: false
 current_release:
   tag: null

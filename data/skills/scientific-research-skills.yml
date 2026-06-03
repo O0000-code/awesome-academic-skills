@@ -1,4 +1,3 @@
-# scientific-research-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: scientific-research-skills
 slug: scientific-research-skills
 source_url: https://github.com/jxtse/scientific-research-skills
@@ -8,8 +7,9 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: 'Methodology-first research skills for agents: literature search, three-depth paper reading,
-  full-text harvest, related-work survey, Zotero management and publication-figure generation.'
+description: 'Methodology-first research skills for agents: literature search, three-depth
+  paper reading, full-text harvest, related-work survey, Zotero management and publication-figure
+  generation.'
 description_zh: 方法学优先的 agent 研究技能：文献检索、三种深度的论文阅读、全文获取、related-work 综述、Zotero 管理与可发表配图生成。沉淀的是工作流经验，而非单薄的工具封装。
 security:
   makes_network_calls: true
@@ -51,9 +51,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
 stargazers_count: 44
 updated_at: '2026-05-19'
 archived: false
+current_release:
+  tag: null
+  published_at: null

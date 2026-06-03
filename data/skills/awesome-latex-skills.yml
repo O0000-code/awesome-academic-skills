@@ -1,4 +1,3 @@
-# awesome-latex-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: awesome-latex-skills
 slug: awesome-latex-skills
 source_url: https://github.com/calix-l/awesome-latex-skills
@@ -8,11 +7,11 @@ license: MIT
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: suite
-description: 'LaTeX paper-writing suite: fix compile errors, polish academic prose, format for venue templates,
-  read papers, and recover lost source. Tight and practical for manuscript work; prompt-pack style, so
-  depth depends on the agent.'
-description_zh: 一个 LaTeX 论文写作 skill 集：修复编译报错、润色学术文笔、按会议/期刊模板排版、阅读论文，以及找回丢失的源码。对稿件工作精炼而实用；本质是 prompt 合集，因此深度取决于背后的
-  agent。
+description: 'LaTeX paper-writing suite: fix compile errors, polish academic prose,
+  format for venue templates, read papers, and recover lost source. Tight and practical
+  for manuscript work; prompt-pack style, so depth depends on the agent.'
+description_zh: 一个 LaTeX 论文写作 skill 集：修复编译报错、润色学术文笔、按会议/期刊模板排版、阅读论文，以及找回丢失的源码。对稿件工作精炼而实用；本质是
+  prompt 合集，因此深度取决于背后的 agent。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -23,9 +22,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
-  claims match scholarly conventions and the source material.
+validate_claim: Ask Claude to use this skill to draft a described section, then verify
+  the structure and claims match scholarly conventions and the source material.
 subcategory: LaTeX & typesetting-integrated writing
-stargazers_count: 169
+stargazers_count: 171
 updated_at: '2026-05-07'
 archived: false
+current_release:
+  tag: null
+  published_at: null

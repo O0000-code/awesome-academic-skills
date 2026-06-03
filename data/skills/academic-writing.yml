@@ -1,4 +1,3 @@
-# academic-writing.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: academic-writing
 slug: academic-writing
 source_url: https://github.com/alessandrocaforio/academic-writing
@@ -8,9 +7,9 @@ license: MIT
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: suite
-description: Multi-agent writing system that decomposes an empirical thesis into per-section skills (intro,
-  methods, results, discussion, abstract) plus literature review, analysis, and submission. The section-level
-  structure is its strength; nominally econ.
+description: Multi-agent writing system that decomposes an empirical thesis into per-section
+  skills (intro, methods, results, discussion, abstract) plus literature review, analysis,
+  and submission. The section-level structure is its strength; nominally econ.
 description_zh: 多 agent 写作系统，将一篇实证论文拆解为各章节专属的 skill（引言、方法、结果、讨论、摘要），外加文献综述、分析与投稿环节。章节级的结构划分是其强项；名义上面向经济学。
 security:
   makes_network_calls: false
@@ -24,9 +23,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
-  claims match scholarly conventions and the source material.
+validate_claim: Ask Claude to use this skill to draft a described section, then verify
+  the structure and claims match scholarly conventions and the source material.
 subcategory: Manuscript drafting pipelines
 stargazers_count: 12
 updated_at: '2026-03-31'
 archived: false
+current_release:
+  tag: null
+  published_at: null

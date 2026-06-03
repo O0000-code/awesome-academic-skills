@@ -1,4 +1,3 @@
-# thesis-defense-pptx-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: thesis-defense-pptx-skill
 slug: thesis-defense-pptx-skill
 source_url: https://github.com/zouchenzhen/thesis-defense-pptx-skill
@@ -8,11 +7,11 @@ license: Apache-2.0
 category: Submission, Formatting & Conversion
 lifecycle_stage: publishing
 type: skill
-description: Builds an editable defense deck from your thesis PDF/LaTeX while strictly reusing a university
-  PPTX template; inventories cited figures and runs overflow/layout checks. Windows+PowerPoint COM for
-  the full quality gates.
-description_zh: 从你的学位论文 PDF/LaTeX 构建可编辑的答辩幻灯片，并严格沿用学校的 PPTX 模板；清点所引图表，执行溢出/版式检查。完整的质量 gate 需要 Windows
-  + PowerPoint COM 才能运行。
+description: Builds an editable defense deck from your thesis PDF/LaTeX while strictly
+  reusing a university PPTX template; inventories cited figures and runs overflow/layout
+  checks. Windows+PowerPoint COM for the full quality gates.
+description_zh: 从你的学位论文 PDF/LaTeX 构建可编辑的答辩幻灯片，并严格沿用学校的 PPTX 模板；清点所引图表，执行溢出/版式检查。完整的质量
+  gate 需要 Windows + PowerPoint COM 才能运行。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -25,9 +24,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
-  the output compiles/opens and matches the spec.
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template,
+  then verify the output compiles/opens and matches the spec.
 subcategory: Slides & presentation decks
-stargazers_count: 144
-updated_at: '2026-05-25'
+stargazers_count: 154
+updated_at: '2026-06-02'
 archived: false
+current_release:
+  tag: null
+  published_at: null

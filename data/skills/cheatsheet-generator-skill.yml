@@ -1,4 +1,3 @@
-# cheatsheet-generator-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: cheatsheet-generator-skill
 slug: cheatsheet-generator-skill
 source_url: https://github.com/evan715823/cheatsheet-generator-skill
@@ -8,9 +7,9 @@ license: MIT
 category: Reading, Summarization & Q&A
 lifecycle_stage: reading
 type: skill
-description: Turns course slides and PDFs into dense, exam-ready LaTeX cheatsheets. Narrow and student-focused
-  (study/teaching rather than original research), but well-targeted and popular; good for condensing course
-  material, not for literature work.
+description: Turns course slides and PDFs into dense, exam-ready LaTeX cheatsheets.
+  Narrow and student-focused (study/teaching rather than original research), but well-targeted
+  and popular; good for condensing course material, not for literature work.
 description_zh: 把课程幻灯片与 PDF 转成信息密集、可直接应考的 LaTeX 速查表。定位窄、面向学生（偏学习/教学而非原创研究），但切中需求且受欢迎；适合浓缩课程材料，不适合文献工作。
 security:
   makes_network_calls: true
@@ -23,9 +22,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
-  then verify each claim is grounded in the source text.
+validate_claim: Ask Claude to use this skill to summarize or answer questions about
+  a specific paper, then verify each claim is grounded in the source text.
 subcategory: Study & derivative artifacts
-stargazers_count: 111
+stargazers_count: 121
 updated_at: '2026-04-09'
 archived: false
+current_release:
+  tag: null
+  published_at: null

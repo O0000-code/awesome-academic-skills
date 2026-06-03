@@ -1,4 +1,3 @@
-# slr-prisma.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: slr-prisma
 slug: slr-prisma
 source_url: https://github.com/keemanxp/slr-prisma
@@ -8,11 +7,11 @@ license: NOASSERTION
 category: Peer Review & Response
 lifecycle_stage: discovery
 type: skill
-description: A systematic-literature-review scaffold following the PRISMA 2020 framework (protocol,
-  search, screening, flow diagram, synthesis). Solid methodology for rigorous reviews; process-guidance
-  rather than automated search, and its license is unclear.
-description_zh: 按 PRISMA 2020 框架（方案、检索、筛选、流程图、综合）引导你完成一次系统文献综述。是严谨综述的扎实方法学脚手架；提供的是流程指引而非自动检索，且其 license
-  尚不明确。
+description: A systematic-literature-review scaffold following the PRISMA 2020 framework
+  (protocol, search, screening, flow diagram, synthesis). Solid methodology for rigorous
+  reviews; process-guidance rather than automated search, and its license is unclear.
+description_zh: 按 PRISMA 2020 框架（方案、检索、筛选、流程图、综合）引导你完成一次系统文献综述。是严谨综述的扎实方法学脚手架；提供的是流程指引而非自动检索，且其
+  license 尚不明确。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -24,9 +23,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
-  returned title/DOI resolves to a real paper.
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
+  then verify every returned title/DOI resolves to a real paper.
 subcategory: Systematic review & evidence appraisal
-stargazers_count: 71
+stargazers_count: 72
 updated_at: '2026-03-28'
 archived: false
+current_release:
+  tag: v1.0.1
+  published_at: '2026-03-28'

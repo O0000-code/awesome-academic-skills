@@ -1,4 +1,3 @@
-# claude-skill-overleaf.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: claude-skill-overleaf
 slug: claude-skill-overleaf
 source_url: https://github.com/junhahyung/claude-skill-overleaf
@@ -8,11 +7,12 @@ license: MIT
 category: Submission, Formatting & Conversion
 lifecycle_stage: publishing
 type: skill
-description: 'Reads and writes Overleaf projects from Claude Code via the Overleaf git bridge: edit, commit,
-  and push LaTeX to the web editor with secure token handling and no force-push. Includes a rebuttal
-  scaffold. A clean way to bring an agent into Overleaf.'
-description_zh: 在 Claude Code 中经由 Overleaf 的 git bridge 读写 Overleaf 项目：编辑、提交并把 LaTeX 推回网页编辑器，token 处理安全、不做
-  force-push。附带 rebuttal 脚手架。把 agent 接入 Overleaf 的干净做法。
+description: 'Reads and writes Overleaf projects from Claude Code via the Overleaf
+  git bridge: edit, commit, and push LaTeX to the web editor with secure token handling
+  and no force-push. Includes a rebuttal scaffold. A clean way to bring an agent into
+  Overleaf.'
+description_zh: 在 Claude Code 中经由 Overleaf 的 git bridge 读写 Overleaf 项目：编辑、提交并把 LaTeX
+  推回网页编辑器，token 处理安全、不做 force-push。附带 rebuttal 脚手架。把 agent 接入 Overleaf 的干净做法。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -24,9 +24,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
-  the output compiles/opens and matches the spec.
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template,
+  then verify the output compiles/opens and matches the spec.
 subcategory: LaTeX authoring & submission prep
 stargazers_count: 24
 updated_at: '2026-05-07'
 archived: false
+current_release:
+  tag: null
+  published_at: null

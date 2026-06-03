@@ -1,4 +1,3 @@
-# claude-statistical-analysis-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: claude-statistical-analysis-skill
 slug: claude-statistical-analysis-skill
 source_url: https://github.com/terryfyl/claude-statistical-analysis-skill
@@ -8,11 +7,12 @@ license: MIT
 category: Data Analysis & Statistics
 lifecycle_stage: analysis
 type: skill
-description: Statistical-consultant skill that diagnoses assumptions first, auto-selects methods (t-test
-  to SEM/HLM/IRT/meta-analysis) and emits an APA-7 table, 300dpi figure and results paragraph. Assumption-first
-  is its edge; advanced methods need the R Docker.
-description_zh: 统计顾问式 skill：先诊断前提假设，再自动选择方法（从 t 检验到 SEM/HLM/IRT/meta-analysis），并产出 APA-7 表格、300dpi 图表与结果段落。先验前提优先是它的特色；高级方法需要
-  R Docker 支持。
+description: Statistical-consultant skill that diagnoses assumptions first, auto-selects
+  methods (t-test to SEM/HLM/IRT/meta-analysis) and emits an APA-7 table, 300dpi figure
+  and results paragraph. Assumption-first is its edge; advanced methods need the R
+  Docker.
+description_zh: 统计顾问式 skill：先诊断前提假设，再自动选择方法（从 t 检验到 SEM/HLM/IRT/meta-analysis），并产出
+  APA-7 表格、300dpi 图表与结果段落。先验前提优先是它的特色；高级方法需要 R Docker 支持。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -23,9 +23,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to run a described analysis on a small dataset, then verify
-  the statistics and output are correct and reproducible.
+validate_claim: Ask Claude to use this skill to run a described analysis on a small
+  dataset, then verify the statistics and output are correct and reproducible.
 subcategory: Statistical modeling & test selection
 stargazers_count: 7
 updated_at: '2026-02-10'
 archived: false
+current_release:
+  tag: null
+  published_at: null

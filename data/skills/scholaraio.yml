@@ -1,4 +1,3 @@
-# scholaraio.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: scholaraio
 slug: scholaraio
 source_url: https://github.com/zimoliao/scholaraio
@@ -8,11 +7,11 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: 'Modular all-in-one research suite (47 skills): literature search, reference management,
-  PDF parsing and writing support, built to compose. A reasonable general backbone of moderate depth;
-  note it ships an SSH-backup feature and a hook to review.'
-description_zh: 模块化的一体式研究套件（47 个技能）：文献检索、引用管理、PDF 解析与写作支持，设计上可自由组合。是一套深度中等、尚算合理的通用骨架；注意它附带一个 SSH 备份功能和一个需要审查的
-  hook。
+description: 'Modular all-in-one research suite (47 skills): literature search, reference
+  management, PDF parsing and writing support, built to compose. A reasonable general
+  backbone of moderate depth; note it ships an SSH-backup feature and a hook to review.'
+description_zh: 模块化的一体式研究套件（47 个技能）：文献检索、引用管理、PDF 解析与写作支持，设计上可自由组合。是一套深度中等、尚算合理的通用骨架；注意它附带一个
+  SSH 备份功能和一个需要审查的 hook。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
-stargazers_count: 497
-updated_at: '2026-05-30'
+stargazers_count: 501
+updated_at: '2026-06-03'
 archived: false
+current_release:
+  tag: v1.5.0
+  published_at: '2026-05-24'

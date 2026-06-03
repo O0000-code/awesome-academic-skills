@@ -1,4 +1,3 @@
-# nature-writing-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: nature-writing-skill
 slug: nature-writing-skill
 source_url: https://github.com/syntaxsmith/nature-writing-skill
@@ -8,11 +7,12 @@ license: No License
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: suite
-description: Nature-family (NMI/NC/NCS/Nature) paper-writing craft for Chinese AI/ML researchers, built
-  from sentence-level extraction of 44 open-access papers with a grep-traceable corpus and a sister figure
-  skill. Niche to Nature-style AI methods papers.
-description_zh: 面向中国 AI/ML 研究者的 Nature 系（NMI/NC/NCS/Nature）论文写作技艺，基于对 44 篇开放获取论文的句子级抽取构建，配有可 grep 溯源的语料库和一个配套的图表
-  skill。聚焦于 Nature 风格的 AI 方法类论文这一细分场景。
+description: Nature-family (NMI/NC/NCS/Nature) paper-writing craft for Chinese AI/ML
+  researchers, built from sentence-level extraction of 44 open-access papers with
+  a grep-traceable corpus and a sister figure skill. Niche to Nature-style AI methods
+  papers.
+description_zh: 面向中国 AI/ML 研究者的 Nature 系（NMI/NC/NCS/Nature）论文写作技艺，基于对 44 篇开放获取论文的句子级抽取构建，配有可
+  grep 溯源的语料库和一个配套的图表 skill。聚焦于 Nature 风格的 AI 方法类论文这一细分场景。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -35,9 +35,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
-  claims match scholarly conventions and the source material.
+validate_claim: Ask Claude to use this skill to draft a described section, then verify
+  the structure and claims match scholarly conventions and the source material.
 subcategory: Manuscript drafting pipelines
-stargazers_count: 8
+stargazers_count: 9
 updated_at: '2026-04-27'
 archived: false
+current_release:
+  tag: null
+  published_at: null

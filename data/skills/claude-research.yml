@@ -1,4 +1,3 @@
-# claude-research.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: claude-research
 slug: claude-research
 source_url: https://github.com/flonat/claude-research
@@ -8,9 +7,9 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: 'PhD-researcher infrastructure: 50 skills plus agents, hooks and rules for bibliography validation,
-  LaTeX health-checks, experiment and causal design, and reproducible project setup. Strong end-to-end;
-  ships hooks and an unscoped Bash.'
+description: 'PhD-researcher infrastructure: 50 skills plus agents, hooks and rules
+  for bibliography validation, LaTeX health-checks, experiment and causal design,
+  and reproducible project setup. Strong end-to-end; ships hooks and an unscoped Bash.'
 description_zh: 面向博士研究者的基础设施：50 个 skill，外加 agent、hook 与规则，用于参考文献校验、LaTeX 健康检查、实验与因果设计，以及可复现的项目搭建。端到端能力很强；附带
   hook 和一个未限定范围的 Bash。
 security:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
-stargazers_count: 78
+stargazers_count: 80
 updated_at: '2026-05-31'
 archived: false
+current_release:
+  tag: v0.2.1
+  published_at: '2026-05-31'

@@ -1,4 +1,3 @@
-# beril-research-observatory.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: beril-research-observatory
 slug: beril-research-observatory
 source_url: https://github.com/kbaseincubator/beril-research-observatory
@@ -8,11 +7,11 @@ license: AGPL-3.0
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 'KBase AI co-scientist over the BER microbial-ecology data lakehouse: 16 skills plus reusable
-  patterns for pangenomics, fitness, metagenomics and biochemistry. Strong for KBase research; large executable
-  surface and AGPL, so read before trusting.'
-description_zh: 架设在 BER 微生物生态数据湖仓之上的 KBase AI 协作科学家：16 个 skill 外加用于泛基因组学、适应度、宏基因组学与生物化学的可复用范式。对 KBase
-  研究很强；可执行面较大且采用 AGPL，信任前请先通读。
+description: 'KBase AI co-scientist over the BER microbial-ecology data lakehouse:
+  16 skills plus reusable patterns for pangenomics, fitness, metagenomics and biochemistry.
+  Strong for KBase research; large executable surface and AGPL, so read before trusting.'
+description_zh: 架设在 BER 微生物生态数据湖仓之上的 KBase AI 协作科学家：16 个 skill 外加用于泛基因组学、适应度、宏基因组学与生物化学的可复用范式。对
+  KBase 研究很强；可执行面较大且采用 AGPL，信任前请先通读。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Biomedical & life sciences
 stargazers_count: 14
-updated_at: '2026-05-29'
+updated_at: '2026-06-02'
 archived: false
+current_release:
+  tag: v0.0.2
+  published_at: '2026-05-20'

@@ -1,4 +1,3 @@
-# literature-harvest.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: literature-harvest
 slug: literature-harvest
 source_url: https://github.com/zhongzhx/literature-harvest
@@ -8,11 +7,11 @@ license: MIT
 category: Literature Search & Discovery
 lifecycle_stage: discovery
 type: skill
-description: 'Bulk keyword-driven literature harvesting across PubMed, Europe PMC, Crossref and OpenAlex:
-  builds a candidate table, downloads legally-accessible full-text PDFs with an HTML-to-PDF second pass,
-  and dedups.'
-description_zh: 跨 PubMed、Europe PMC、Crossref 和 OpenAlex 的关键词批量文献采集：构建候选清单，下载合法可获取的全文 PDF（并以 HTML 转 PDF
-  作为兜底补充），并做去重。适合可复现的语料库构建。
+description: 'Bulk keyword-driven literature harvesting across PubMed, Europe PMC,
+  Crossref and OpenAlex: builds a candidate table, downloads legally-accessible full-text
+  PDFs with an HTML-to-PDF second pass, and dedups.'
+description_zh: 跨 PubMed、Europe PMC、Crossref 和 OpenAlex 的关键词批量文献采集：构建候选清单，下载合法可获取的全文
+  PDF（并以 HTML 转 PDF 作为兜底补充），并做去重。适合可复现的语料库构建。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -30,9 +29,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
-  returned title/DOI resolves to a real paper.
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
+  then verify every returned title/DOI resolves to a real paper.
 subcategory: Full-text acquisition
 stargazers_count: 58
 updated_at: '2026-05-14'
 archived: false
+current_release:
+  tag: null
+  published_at: null

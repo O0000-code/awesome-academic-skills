@@ -1,4 +1,3 @@
-# automcm-pro.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: automcm-pro
 slug: automcm-pro
 source_url: https://github.com/realseaberry/automcm-pro
@@ -8,9 +7,9 @@ license: MIT
 category: Discipline-Specific Packs
 lifecycle_stage: autonomous
 type: suite
-description: 'End-to-end math-modeling-competition assistant (CUMCM/MCM): drives literature search, derivation,
-  code, LaTeX and paper writing with forced code self-verification. Strong for modeling contests; competition-specific
-  and Chinese-first.'
+description: 'End-to-end math-modeling-competition assistant (CUMCM/MCM): drives literature
+  search, derivation, code, LaTeX and paper writing with forced code self-verification.
+  Strong for modeling contests; competition-specific and Chinese-first.'
 description_zh: 端到端的数学建模竞赛助手（CUMCM/MCM）：贯通文献检索、推导、代码、LaTeX 与论文写作，并强制进行代码自我验证。在建模竞赛场景下很强；专为竞赛设计、以中文为先。
 security:
   makes_network_calls: true
@@ -28,9 +27,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
-  and drafted result whose sources actually exist.
+validate_claim: Give the system a concrete research question and verify it returns
+  a searched, cited, and drafted result whose sources actually exist.
 subcategory: Physical, computational & mathematical sciences
-stargazers_count: 121
+stargazers_count: 126
 updated_at: '2026-05-03'
 archived: false
+current_release:
+  tag: null
+  published_at: null

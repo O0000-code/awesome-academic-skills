@@ -1,4 +1,3 @@
-# social-data-analysis.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: social-data-analysis
 slug: social-data-analysis
 source_url: https://github.com/nealcaren/social-data-analysis
@@ -8,9 +7,9 @@ license: MIT
 category: Data Analysis & Statistics
 lifecycle_stage: discipline
 type: suite
-description: An 18-skill sociology methods pack covering quantitative and qualitative social-data analysis,
-  authored by a computational sociologist. Scope and provenance are strong; component depth unverified
-  (content not inspected).
+description: An 18-skill sociology methods pack covering quantitative and qualitative
+  social-data analysis, authored by a computational sociologist. Scope and provenance
+  are strong; component depth unverified (content not inspected).
 description_zh: 18 个技能的社会学方法包，覆盖定量与定性社会数据分析，作者为一位计算社会学家。范围与来源可靠；各组件深度未经核实（内容未作检视）。
 security:
   makes_network_calls: true
@@ -61,9 +60,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Statistical modeling & test selection
 stargazers_count: 61
 updated_at: '2026-01-30'
 archived: false
+current_release:
+  tag: null
+  published_at: null

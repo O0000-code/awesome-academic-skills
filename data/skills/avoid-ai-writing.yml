@@ -7,13 +7,15 @@ license: MIT
 category: Writing Quality & De-AI
 lifecycle_stage: writing-quality
 type: skill
-description: The most intellectually honest de-AI skill — it cites false-positive research and insists
-  its flags are "signals, not proof".
+description: The most intellectually honest de-AI skill — it cites false-positive
+  research and insists its flags are "signals, not proof".
 description_zh: 最诚实的去 AI 化技能——它引用误报研究，坚持自己的标记"只是信号，不是证据"。
-description_long: The most intellectually honest de-AI skill — detect, rewrite, and iterate modes plus
-  voice profiles, but it opens by citing the false-positive research and insists its flags are "signals,
-  not proof". Best when AI-detection carries real stakes.
-description_zh_long: 最诚实的去 AI 化技能——具备检测、改写、迭代三种模式与多套语气画像，但它开篇就引用误报研究，并坚持自己的标记"只是信号，不是证据"。当 AI 检测真会带来后果时，它最值得用。
+description_long: The most intellectually honest de-AI skill — detect, rewrite, and
+  iterate modes plus voice profiles, but it opens by citing the false-positive research
+  and insists its flags are "signals, not proof". Best when AI-detection carries real
+  stakes.
+description_zh_long: 最诚实的去 AI 化技能——具备检测、改写、迭代三种模式与多套语气画像，但它开篇就引用误报研究，并坚持自己的标记"只是信号，不是证据"。当
+  AI 检测真会带来后果时，它最值得用。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -25,9 +27,9 @@ security:
   allowed_tools_scoped: true
 homepage_url: null
 install: Add as a Claude Code skill; also packaged as a plugin (plugins/avoid-ai-writing).
-validate_claim: 'Ask: ''Use avoid-ai-writing in detect-only mode on this abstract, then rewrite with a
-  professional voice profile.'' Expect a flagged-pattern report (with the signals-not-proof caveat) followed
-  by a voice-matched rewrite.'
+validate_claim: 'Ask: ''Use avoid-ai-writing in detect-only mode on this abstract,
+  then rewrite with a professional voice profile.'' Expect a flagged-pattern report
+  (with the signals-not-proof caveat) followed by a voice-matched rewrite.'
 lang:
 - en
 tags:
@@ -37,7 +39,7 @@ tags:
 - editing
 featured: false
 spotlight: false
-stargazers_count: 1637
+stargazers_count: 1668
 updated_at: '2026-05-29'
 archived: false
 current_release:

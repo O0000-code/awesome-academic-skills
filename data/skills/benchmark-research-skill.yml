@@ -1,4 +1,3 @@
-# benchmark-research-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: benchmark-research-skill
 slug: benchmark-research-skill
 source_url: https://github.com/eternalwavee/benchmark-research-skill
@@ -8,11 +7,11 @@ license: MIT
 category: Reading, Summarization & Q&A
 lifecycle_stage: reading
 type: skill
-description: Extracts benchmarks, datasets, metrics and baselines from a paper, or surveys what benchmarks
-  fit a research direction; arXiv-source-first with Obsidian notes. Uses an unscoped Bash(*) allowlist
-  — broad shell access.
-description_zh: 从论文中提取 benchmark、数据集、指标与 baseline，或调研哪些 benchmark 契合某个研究方向；优先用 arXiv 源、配 Obsidian 笔记。使用未加限定的
-  Bash(*) 白名单——shell 权限范围很宽。
+description: Extracts benchmarks, datasets, metrics and baselines from a paper, or
+  surveys what benchmarks fit a research direction; arXiv-source-first with Obsidian
+  notes. Uses an unscoped Bash(*) allowlist — broad shell access.
+description_zh: 从论文中提取 benchmark、数据集、指标与 baseline，或调研哪些 benchmark 契合某个研究方向；优先用 arXiv
+  源、配 Obsidian 笔记。使用未加限定的 Bash(*) 白名单——shell 权限范围很宽。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -26,9 +25,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
-  then verify each claim is grounded in the source text.
+validate_claim: Ask Claude to use this skill to summarize or answer questions about
+  a specific paper, then verify each claim is grounded in the source text.
 subcategory: Deep reading & comprehension
 stargazers_count: 28
 updated_at: '2026-04-24'
 archived: false
+current_release:
+  tag: null
+  published_at: null

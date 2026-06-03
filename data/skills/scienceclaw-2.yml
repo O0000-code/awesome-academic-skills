@@ -1,4 +1,3 @@
-# scienceclaw-2.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: scienceclaw
 slug: scienceclaw-2
 source_url: https://github.com/lamm-mit/scienceclaw
@@ -8,8 +7,9 @@ license: Apache-2.0
 category: Data Analysis & Statistics
 lifecycle_stage: suite
 type: suite
-description: 'Computational science-and-engineering skill suite (340+ skills) from MIT''s LAMM lab: materials
-  science, molecular dynamics, finite-element analysis, symbolic math and multiscale modeling.'
+description: 'Computational science-and-engineering skill suite (340+ skills) from
+  MIT''s LAMM lab: materials science, molecular dynamics, finite-element analysis,
+  symbolic math and multiscale modeling.'
 description_zh: 来自 MIT LAMM 实验室、含 340+ 个 skill 的计算科学与工程套件：材料科学、分子动力学、有限元分析、符号数学与多尺度建模。
 security:
   makes_network_calls: true
@@ -60,9 +60,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Domain computational & simulation pipelines
 stargazers_count: 205
 updated_at: '2026-05-29'
 archived: false
+current_release:
+  tag: null
+  published_at: null

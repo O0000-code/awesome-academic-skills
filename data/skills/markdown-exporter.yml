@@ -7,14 +7,15 @@ license: Apache-2.0
 category: Submission, Formatting & Conversion
 lifecycle_stage: publishing
 type: skill
-description: The broadest, most battle-tested format coverage here (DOCX/PDF/PPTX/XLSX/EPUB), running
-  locally with no outbound calls.
+description: The broadest, most battle-tested format coverage here (DOCX/PDF/PPTX/XLSX/EPUB),
+  running locally with no outbound calls.
 description_zh: 本列表中格式覆盖最广、最久经考验的转换器（DOCX/PDF/PPTX/XLSX/EPUB），纯本地运行、无外联。
-description_long: Converts Markdown into DOCX, PDF, PPTX, XLSX, HTML, LaTeX, EPUB and more — the broadest
-  format coverage here and most battle-tested (also a Dify plugin, on PyPI since early 2025). Runs locally,
-  no outbound calls. The pick for many office formats.
-description_zh_long: 把 Markdown 转成 DOCX、PDF、PPTX、XLSX、HTML、LaTeX、EPUB 等多种格式——本列表中格式覆盖最广、也最久经考验（同时是 Dify
-  插件，自 2025 年初上架 PyPI）。纯本地运行，不发起任何外联请求。需要多种 office 格式时的首选。
+description_long: Converts Markdown into DOCX, PDF, PPTX, XLSX, HTML, LaTeX, EPUB
+  and more — the broadest format coverage here and most battle-tested (also a Dify
+  plugin, on PyPI since early 2025). Runs locally, no outbound calls. The pick for
+  many office formats.
+description_zh_long: 把 Markdown 转成 DOCX、PDF、PPTX、XLSX、HTML、LaTeX、EPUB 等多种格式——本列表中格式覆盖最广、也最久经考验（同时是
+  Dify 插件，自 2025 年初上架 PyPI）。纯本地运行，不发起任何外联请求。需要多种 office 格式时的首选。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -24,9 +25,11 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-install: '/plugin marketplace add bowenliang123/markdown-exporter (or import the source zip; PyPI: md-exporter)'
-validate_claim: Ask the agent to export a Markdown doc with a table and headings to DOCX and PDF; confirm
-  both open correctly with the table preserved and no network access occurs during conversion.
+install: '/plugin marketplace add bowenliang123/markdown-exporter (or import the source
+  zip; PyPI: md-exporter)'
+validate_claim: Ask the agent to export a Markdown doc with a table and headings to
+  DOCX and PDF; confirm both open correctly with the table preserved and no network
+  access occurs during conversion.
 lang:
 - en
 - zh
@@ -39,7 +42,7 @@ tags:
 homepage_url: https://marketplace.dify.ai/plugins/bowenliang123/md_exporter
 featured: false
 spotlight: false
-stargazers_count: 228
+stargazers_count: 232
 updated_at: '2026-04-27'
 archived: false
 current_release:

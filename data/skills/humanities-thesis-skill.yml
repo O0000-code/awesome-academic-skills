@@ -1,4 +1,3 @@
-# humanities-thesis-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: humanities-thesis-skill
 slug: humanities-thesis-skill
 source_url: https://github.com/ganzhi-black/humanities-thesis-skill
@@ -8,8 +7,9 @@ license: MIT
 category: Academic Writing & Drafting
 lifecycle_stage: suite
 type: skill
-description: A Chinese-first humanities/social-science thesis copilot that stresses thinking the argument
-  through and auditing every paragraph over generating text. Strong anti-fabrication discipline.
+description: A Chinese-first humanities/social-science thesis copilot that stresses
+  thinking the argument through and auditing every paragraph over generating text.
+  Strong anti-fabrication discipline.
 description_zh: 中文优先的人文/社科学位论文副驾，强调把论证想透、逐段审查，而非直接生成文字。反编造的纪律很强。
 security:
   makes_network_calls: true
@@ -34,9 +34,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Thesis & degree-work authoring
-stargazers_count: 125
+stargazers_count: 130
 updated_at: '2026-04-29'
 archived: false
+current_release:
+  tag: null
+  published_at: null

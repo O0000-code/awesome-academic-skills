@@ -1,4 +1,3 @@
-# encode-toolkit.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: encode-toolkit
 slug: encode-toolkit
 source_url: https://github.com/ammawla/encode-toolkit
@@ -8,11 +7,11 @@ license: AGPL-3.0
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 'Genomics suite: searches ENCODE, cross-references 14 databases (GWAS, ClinVar, GTEx, JASPAR),
-  runs 7 pipelines, and writes provenance-tracked methods. Heavily tested; AGPL and genomics-specific,
-  so niche elsewhere.'
-description_zh: 基因组学套件：检索 ENCODE，交叉比对 14 个数据库（GWAS、ClinVar、GTEx、JASPAR），运行 7 条 pipeline，并撰写带 provenance
-  追踪的 methods。测试充分；AGPL 且专攻基因组学，在其他领域较为小众。
+description: 'Genomics suite: searches ENCODE, cross-references 14 databases (GWAS,
+  ClinVar, GTEx, JASPAR), runs 7 pipelines, and writes provenance-tracked methods.
+  Heavily tested; AGPL and genomics-specific, so niche elsewhere.'
+description_zh: 基因组学套件：检索 ENCODE，交叉比对 14 个数据库（GWAS、ClinVar、GTEx、JASPAR），运行 7 条 pipeline，并撰写带
+  provenance 追踪的 methods。测试充分；AGPL 且专攻基因组学，在其他领域较为小众。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Biomedical & life sciences
 stargazers_count: 35
 updated_at: '2026-05-08'
 archived: false
+current_release:
+  tag: v0.3.0
+  published_at: '2026-03-21'

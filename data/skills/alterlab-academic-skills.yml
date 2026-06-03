@@ -1,4 +1,3 @@
-# alterlab-academic-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: alterlab-academic-skills
 slug: alterlab-academic-skills
 source_url: https://github.com/alterlab-ieu/alterlab-academic-skills
@@ -8,9 +7,11 @@ license: MIT
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 186+ domain-organized academic skills for faculty/researchers, wrapping real scientific databases
-  and libraries (ENA, biopython, cellxgene, cobrapy, ESM, etc.).
-description_zh: 面向教师/研究人员的 186+ 个按领域组织的学术 skill，封装了真实的科研数据库与库（ENA、biopython、cellxgene、cobrapy、ESM 等）。在生物信息学/计算科学的覆盖广度上很强。
+description: 186+ domain-organized academic skills for faculty/researchers, wrapping
+  real scientific databases and libraries (ENA, biopython, cellxgene, cobrapy, ESM,
+  etc.).
+description_zh: 面向教师/研究人员的 186+ 个按领域组织的学术 skill，封装了真实的科研数据库与库（ENA、biopython、cellxgene、cobrapy、ESM
+  等）。在生物信息学/计算科学的覆盖广度上很强。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -60,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Biomedical & life sciences
 stargazers_count: 22
 updated_at: '2026-04-27'
 archived: false
+current_release:
+  tag: v1.0.0
+  published_at: '2026-03-24'

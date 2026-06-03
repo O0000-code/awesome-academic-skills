@@ -7,14 +7,14 @@ license: MIT
 category: Figures & Visualization
 lifecycle_stage: figures
 type: skill
-description: A taste layer, not a plotting library — curated references so the agent stops guessing what
-  a Nature figure looks like.
+description: A taste layer, not a plotting library — curated references so the agent
+  stops guessing what a Nature figure looks like.
 description_zh: 一层"审美"而非绘图库——agent 从 1.6 万+ 图库中遴选，从此不再凭空想象 Nature 配图该长什么样。
-description_long: 'A taste layer, not a plotting library: before writing figure code the agent queries
-  a 16k+ gallery, you like/reject in a localhost UI, and the picks export as a reference bundle — so it
-  stops guessing what a Nature figure looks like.'
-description_zh_long: 这是一层"审美"，而非绘图库：写图表代码之前，agent 先检索一个 1.6 万+ 的图库，你在本地 UI 里逐张点赞/否决，选中的图导出为参考包—— 从此它不再凭空想象一张
-  Nature 配图该长什么样。
+description_long: 'A taste layer, not a plotting library: before writing figure code
+  the agent queries a 16k+ gallery, you like/reject in a localhost UI, and the picks
+  export as a reference bundle — so it stops guessing what a Nature figure looks like.'
+description_zh_long: 这是一层"审美"，而非绘图库：写图表代码之前，agent 先检索一个 1.6 万+ 的图库，你在本地 UI 里逐张点赞/否决，选中的图导出为参考包——
+  从此它不再凭空想象一张 Nature 配图该长什么样。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -25,11 +25,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-install: git clone + pip install -e .; then `agentfiguregallery install-skill --target claude-code`
-validate_claim: '"Use AgentFigureGallery to pull embedding-plot references for a single-cell atlas figure,
-  open the gallery, like two and reject one, export the bundle, then write the plot." Verify candidates
-  render with stable IDs, preferences persist, and the exported bundle contains the selected references
-  plus source-script paths.'
+install: git clone + pip install -e .; then `agentfiguregallery install-skill --target
+  claude-code`
+validate_claim: '"Use AgentFigureGallery to pull embedding-plot references for a single-cell
+  atlas figure, open the gallery, like two and reject one, export the bundle, then
+  write the plot." Verify candidates render with stable IDs, preferences persist,
+  and the exported bundle contains the selected references plus source-script paths.'
 lang:
 - en
 tags:
@@ -38,7 +39,7 @@ tags:
 - cross-agent
 featured: false
 spotlight: false
-stargazers_count: 125
+stargazers_count: 128
 updated_at: '2026-05-29'
 archived: false
 current_release:

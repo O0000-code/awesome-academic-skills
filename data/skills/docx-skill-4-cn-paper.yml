@@ -1,4 +1,3 @@
-# docx-skill-4-cn-paper.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: docx-skill-4-cn-paper
 slug: docx-skill-4-cn-paper
 source_url: https://github.com/gostyan/docx-skill-4-cn-paper
@@ -8,10 +7,12 @@ license: MIT
 category: Submission, Formatting & Conversion
 lifecycle_stage: publishing
 type: suite
-description: Applies standard Chinese-paper Word formatting - fonts, sizes, spacing, margins, heading
-  levels, figure/table numbering, references - for course papers, math-modeling competitions and theses,
-  incl. md-to-docx. Narrow but does its job well.
-description_zh: 套用标准中文论文 Word 排版——字体、字号、行距、页边距、标题层级、图表编号、参考文献——适用于课程论文、数学建模竞赛和学位论文，含 md 转 docx。功能窄，但本职做得很好。
+description: Applies standard Chinese-paper Word formatting - fonts, sizes, spacing,
+  margins, heading levels, figure/table numbering, references - for course papers,
+  math-modeling competitions and theses, incl. md-to-docx. Narrow but does its job
+  well.
+description_zh: 套用标准中文论文 Word 排版——字体、字号、行距、页边距、标题层级、图表编号、参考文献——适用于课程论文、数学建模竞赛和学位论文，含
+  md 转 docx。功能窄，但本职做得很好。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -27,9 +28,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
-  the output compiles/opens and matches the spec.
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template,
+  then verify the output compiles/opens and matches the spec.
 subcategory: Journal & Word-template formatting
-stargazers_count: 212
+stargazers_count: 222
 updated_at: '2026-05-11'
 archived: false
+current_release:
+  tag: null
+  published_at: null

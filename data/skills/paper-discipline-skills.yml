@@ -1,4 +1,3 @@
-# paper-discipline-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: paper-discipline-skills
 slug: paper-discipline-skills
 source_url: https://github.com/lambenthan/paper-discipline-skills
@@ -8,9 +7,10 @@ license: MIT
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: suite
-description: '12 zh research-writing ''discipline'' skills from a real book of mistakes: backup-before-Word,
-  terminology protection, pilot-before-batch, logical-consistency, parallel-audit. Each has a rationalization
-  table to stop skipping. Guardrails, not content.'
+description: '12 zh research-writing ''discipline'' skills from a real book of mistakes:
+  backup-before-Word, terminology protection, pilot-before-batch, logical-consistency,
+  parallel-audit. Each has a rationalization table to stop skipping. Guardrails, not
+  content.'
 description_zh: 源自一本真实「错误记录册」的 12 个中文科研写作「纪律」skill：改 Word 前先备份、术语保护、批量前先试点、逻辑一致性、并行审查。每个都配有一张「借口对照表」来杜绝偷工。提供的是护栏，而非内容。
 security:
   makes_network_calls: false
@@ -21,9 +21,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
-  claims match scholarly conventions and the source material.
+validate_claim: Ask Claude to use this skill to draft a described section, then verify
+  the structure and claims match scholarly conventions and the source material.
 subcategory: Prose refinement & discipline-specific style
 stargazers_count: 18
 updated_at: '2026-05-15'
 archived: false
+current_release:
+  tag: null
+  published_at: null

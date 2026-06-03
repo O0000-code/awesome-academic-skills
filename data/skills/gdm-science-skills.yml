@@ -8,19 +8,21 @@ category: Skill Suites
 lifecycle_stage: suite
 type: suite
 skills_count: 37
-description: Google DeepMind's official pack grounding agents in real biological data — narrow to structural
-  bio and genomics, but authoritative.
+description: Google DeepMind's official pack grounding agents in real biological data
+  — narrow to structural bio and genomics, but authoritative.
 description_zh: Google DeepMind 官方套件，把 agent 接入真实的生物数据——范围窄于结构生物学与基因组学，但权威。
-description_long: Google DeepMind's official 37-skill pack for grounding agents in real biological data
-  — connectors to AlphaFold DB, AlphaGenome, ChEMBL, Ensembl, gnomAD, PDB, UniProt plus PyMOL; narrow
-  (structural bio, genomics) but authoritative and official.
-description_zh_long: Google DeepMind 官方的 37 个 skill 套件，把 agent 接入真实的生物数据——连接 AlphaFold DB、AlphaGenome、ChEMBL、Ensembl、gnomAD、PDB、UniProt，并配
-  PyMOL；范围偏窄（结构生物学、基因组学），但权威且官方出品。
+description_long: Google DeepMind's official 37-skill pack for grounding agents in
+  real biological data — connectors to AlphaFold DB, AlphaGenome, ChEMBL, Ensembl,
+  gnomAD, PDB, UniProt plus PyMOL; narrow (structural bio, genomics) but authoritative
+  and official.
+description_zh_long: Google DeepMind 官方的 37 个 skill 套件，把 agent 接入真实的生物数据——连接 AlphaFold
+  DB、AlphaGenome、ChEMBL、Ensembl、gnomAD、PDB、UniProt，并配 PyMOL；范围偏窄（结构生物学、基因组学），但权威且官方出品。
 security:
   makes_network_calls: true
   network_endpoints:
-  - AlphaFold DB, AlphaGenome, ChEMBL, Ensembl, gnomAD, RCSB PDB, UniProt, PubChem, PubMed, EMBL-EBI,
-    ENCODE, GTEx, Open Targets, Reactome (and ~20 more biomolecular databases)
+  - AlphaFold DB, AlphaGenome, ChEMBL, Ensembl, gnomAD, RCSB PDB, UniProt, PubChem,
+    PubMed, EMBL-EBI, ENCODE, GTEx, Open Targets, Reactome (and ~20 more biomolecular
+    databases)
   has_hooks: false
   requires_bypass_permissions: false
   telemetry: false
@@ -28,9 +30,11 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 homepage_url: https://antigravity.google/use-cases/science
-install: npx skills add google-deepmind/science-skills/  (or enable the Science plugin in Google Antigravity)
-validate_claim: Use pdb-database to fetch a structure by sequence similarity, then alphafold to retrieve
-  the predicted model; confirm both pull real records, not hallucinated IDs.
+install: npx skills add google-deepmind/science-skills/  (or enable the Science plugin
+  in Google Antigravity)
+validate_claim: Use pdb-database to fetch a structure by sequence similarity, then
+  alphafold to retrieve the predicted model; confirm both pull real records, not hallucinated
+  IDs.
 lang:
 - en
 tags:
@@ -41,7 +45,7 @@ tags:
 - databases
 featured: false
 spotlight: false
-stargazers_count: 692
+stargazers_count: 1051
 updated_at: '2026-05-28'
 archived: false
 current_release:

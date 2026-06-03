@@ -1,4 +1,3 @@
-# papercash.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: papercash
 slug: papercash
 source_url: https://github.com/jesseovo/papercash
@@ -8,9 +7,9 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: 'End-to-end Chinese-student paper workflow over 8 free sources (S2, arXiv, Crossref, PubMed,
-  CNKI, Wanfang, Baidu/Google Scholar): search, review, polish, plagiarism precheck, AI-rate reduction,
-  GB/T-7714 refs. Broad but shallow per stage.'
+description: 'End-to-end Chinese-student paper workflow over 8 free sources (S2, arXiv,
+  Crossref, PubMed, CNKI, Wanfang, Baidu/Google Scholar): search, review, polish,
+  plagiarism precheck, AI-rate reduction, GB/T-7714 refs. Broad but shallow per stage.'
 description_zh: 面向中国学生、覆盖 8 个免费来源（S2、arXiv、Crossref、PubMed、CNKI、万方、百度/Google Scholar）的端到端论文工作流：检索、综述、润色、查重预检、降
   AI 率、GB/T 7714 参考文献。覆盖广，但每个环节都偏浅。
 security:
@@ -36,9 +35,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
-stargazers_count: 64
+stargazers_count: 65
 updated_at: '2026-04-07'
 archived: false
+current_release:
+  tag: null
+  published_at: null

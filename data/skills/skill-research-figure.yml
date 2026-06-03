@@ -1,4 +1,3 @@
-# skill-research-figure.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: skill-research-figure
 slug: skill-research-figure
 source_url: https://github.com/chingswy/skill-research-figure
@@ -8,10 +7,11 @@ license: No License
 category: Figures & Visualization
 lifecycle_stage: figures
 type: skill
-description: Draws professional academic figures for papers — LaTeX/TikZ diagrams and hand-drawn-style
-  SVG. Tightly scoped to scholarly figure generation; needs a LICENSE added. Clean static scan; a solid
-  pick for paper figures, especially TikZ.
-description_zh: 为论文绘制专业的学术配图——LaTeX/TikZ 图示与手绘风格 SVG。定位严格收敛于学术配图生成；需补上 LICENSE。静态扫描干净；做论文配图（尤其 TikZ）是一个靠谱之选。
+description: Draws professional academic figures for papers — LaTeX/TikZ diagrams
+  and hand-drawn-style SVG. Tightly scoped to scholarly figure generation; needs a
+  LICENSE added. Clean static scan; a solid pick for paper figures, especially TikZ.
+description_zh: 为论文绘制专业的学术配图——LaTeX/TikZ 图示与手绘风格 SVG。定位严格收敛于学术配图生成；需补上 LICENSE。静态扫描干净；做论文配图（尤其
+  TikZ）是一个靠谱之选。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -23,9 +23,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to produce a described figure, then verify it renders at
-  publication quality and matches the request.
+validate_claim: Ask Claude to use this skill to produce a described figure, then verify
+  it renders at publication quality and matches the request.
 subcategory: Method & concept diagrams
-stargazers_count: 85
+stargazers_count: 88
 updated_at: '2026-05-21'
 archived: false
+current_release:
+  tag: null
+  published_at: null

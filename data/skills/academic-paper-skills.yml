@@ -7,13 +7,14 @@ license: MIT
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: skill
-description: A rare humanities-focused drafting pipeline for philosophy and preprint venues, with citation-backed
-  gap analysis — now unmaintained.
+description: A rare humanities-focused drafting pipeline for philosophy and preprint
+  venues, with citation-backed gap analysis — now unmaintained.
 description_zh: 难得以人文学科为重心的撰写流水线，面向哲学与预印本平台，配引文支撑的研究空白分析——现已停止维护。
-description_long: A strategist-then-composer pipeline for philosophy and interdisciplinary papers targeting
-  preprint venues (PhilArchive, PhilSci, PsyArXiv), with citation-backed gap analysis and a 35-point reviewer
-  simulation. Rare humanities focus; now unmaintained.
-description_zh_long: 先策划、后撰写的流水线，面向哲学与跨学科论文，瞄准 PhilArchive、PhilSci、PsyArXiv 等预印本平台，配有引文支撑的研究空白分析和 35 项审稿人模拟。难得的人文学科取向；现已停止维护。
+description_long: A strategist-then-composer pipeline for philosophy and interdisciplinary
+  papers targeting preprint venues (PhilArchive, PhilSci, PsyArXiv), with citation-backed
+  gap analysis and a 35-point reviewer simulation. Rare humanities focus; now unmaintained.
+description_zh_long: 先策划、后撰写的流水线，面向哲学与跨学科论文，瞄准 PhilArchive、PhilSci、PsyArXiv 等预印本平台，配有引文支撑的研究空白分析和
+  35 项审稿人模拟。难得的人文学科取向；现已停止维护。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -25,9 +26,9 @@ security:
   allowed_tools_scoped: true
 homepage_url: null
 install: cp -R strategist composer ~/.claude/skills/
-validate_claim: 'Give a philosophy paper idea and ask: ''Use academic-paper-strategist to identify research
-  gaps and produce an optimized outline for a PhilArchive submission.'' Expect platform analysis, citation-backed
-  gaps, and a reviewer-assessed outline.'
+validate_claim: 'Give a philosophy paper idea and ask: ''Use academic-paper-strategist
+  to identify research gaps and produce an optimized outline for a PhilArchive submission.''
+  Expect platform analysis, citation-backed gaps, and a reviewer-assessed outline.'
 lang:
 - en
 - zh
@@ -38,7 +39,7 @@ tags:
 - outline
 featured: false
 spotlight: false
-stargazers_count: 793
+stargazers_count: 807
 updated_at: '2026-01-04'
 archived: false
 current_release:

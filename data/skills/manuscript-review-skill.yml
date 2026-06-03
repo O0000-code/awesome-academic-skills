@@ -1,4 +1,3 @@
-# manuscript-review-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: manuscript-review-skill
 slug: manuscript-review-skill
 source_url: https://github.com/shaowen-ye/manuscript-review-skill
@@ -8,9 +7,9 @@ license: MIT
 category: Peer Review & Response
 lifecycle_stage: peer-review
 type: skill
-description: Pre-submission manuscript review by six role-specialized AI reviewers (architecture, theory,
-  methods, etc.) that emits a bilingual EN-ZH color-annotated .docx with a 1-10 scoring matrix and prioritized
-  fixes, calibrated to a target journal.
+description: Pre-submission manuscript review by six role-specialized AI reviewers
+  (architecture, theory, methods, etc.) that emits a bilingual EN-ZH color-annotated
+  .docx with a 1-10 scoring matrix and prioritized fixes, calibrated to a target journal.
 description_zh: 由六位角色专精的 AI 审稿人（架构、理论、方法等）做投稿前稿件评审，输出一份中英双语、彩色批注的 .docx，含 1-10 评分矩阵与按优先级排列的修改建议，并按目标期刊校准。专业性强。
 security:
   makes_network_calls: false
@@ -21,9 +20,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify the critique is
-  specific, accurate, and actionable.
+validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify
+  the critique is specific, accurate, and actionable.
 subcategory: Pre-submission review & rebuttal
-stargazers_count: 13
+stargazers_count: 14
 updated_at: '2026-03-02'
 archived: false
+current_release:
+  tag: claude_skill
+  published_at: '2026-03-02'

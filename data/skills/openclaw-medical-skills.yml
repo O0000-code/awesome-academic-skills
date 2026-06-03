@@ -7,12 +7,13 @@ license: No License
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: The largest open medical-research library (hundreds of skills) — broad coverage, but giant,
-  unauditable and unlicensed.
+description: The largest open medical-research library (hundreds of skills) — broad
+  coverage, but giant, unauditable and unlicensed.
 description_zh: 最大的开放医学研究 skill 库（数百个 skill）——覆盖很广，但体量巨大、无法逐一审查、且无许可证。
-description_long: The largest open medical-research skill library (hundreds of skills) from the FreedomIntelligence
-  lab — clinical-trial matching, GEO/genomics access, reporting-guideline and biomedical workflows. Broad
-  coverage, but giant, unauditable, no license.
+description_long: The largest open medical-research skill library (hundreds of skills)
+  from the FreedomIntelligence lab — clinical-trial matching, GEO/genomics access,
+  reporting-guideline and biomedical workflows. Broad coverage, but giant, unauditable,
+  no license.
 description_zh_long: 出自 FreedomIntelligence 实验室、最大的开放医学研究 skill 库（数百个 skill）——临床试验匹配、GEO/基因组数据获取、报告规范及生物医学工作流。覆盖很广，但体量巨大、无法逐一审查、且无许可证。
 security:
   makes_network_calls: true
@@ -25,8 +26,9 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: true
 install: Clone and point your agent at the skills/ directory (see repo README)
-validate_claim: Ask a skill in the clinical-trials area to match a patient profile to eligible trials;
-  confirm it reasons over real inclusion/exclusion criteria rather than fabricating trial IDs.
+validate_claim: Ask a skill in the clinical-trials area to match a patient profile
+  to eligible trials; confirm it reasons over real inclusion/exclusion criteria rather
+  than fabricating trial IDs.
 lang:
 - en
 tags:
@@ -36,7 +38,7 @@ tags:
 - genomics
 featured: false
 spotlight: false
-stargazers_count: 2584
+stargazers_count: 2591
 updated_at: '2026-03-27'
 archived: false
 current_release:

@@ -1,4 +1,3 @@
-# q-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: q-skills
 slug: q-skills
 source_url: https://github.com/tyrealq/q-skills
@@ -8,9 +7,10 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: 'Twelve-skill academic toolkit for empirical research: literature review, R and Stata analysis,
-  reproducible-research scaffolding, survey design, grant writing, peer review, and citations. Strong
-  for quantitative social science; breadth over depth.'
+description: 'Twelve-skill academic toolkit for empirical research: literature review,
+  R and Stata analysis, reproducible-research scaffolding, survey design, grant writing,
+  peer review, and citations. Strong for quantitative social science; breadth over
+  depth.'
 description_zh: 面向实证研究、含 12 个 skill 的学术工具箱：文献综述、R 与 Stata 分析、可复现研究脚手架、问卷设计、基金申请书写作、同行评议与参考文献。对定量社会科学很强；重广度而非深度。
 security:
   makes_network_calls: false
@@ -25,9 +25,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
 stargazers_count: 23
 updated_at: '2026-05-05'
 archived: false
+current_release:
+  tag: null
+  published_at: null

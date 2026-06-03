@@ -1,4 +1,3 @@
-# awesome-rosetta-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: awesome-rosetta-skills
 slug: awesome-rosetta-skills
 source_url: https://github.com/xjtulyc/awesome-rosetta-skills
@@ -8,9 +7,9 @@ license: NOASSERTION
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 'Multi-discipline research-skills library: 169 skills across 24 fields (physics to linguistics
-  to public health), each wiring domain data sources and methods. Unmatched breadth for non-CS disciplines;
-  depth varies, license is NOASSERTION.'
+description: 'Multi-discipline research-skills library: 169 skills across 24 fields
+  (physics to linguistics to public health), each wiring domain data sources and methods.
+  Unmatched breadth for non-CS disciplines; depth varies, license is NOASSERTION.'
 description_zh: 多学科研究技能库：横跨 24 个领域（从物理到语言学到公共卫生）共 169 个技能，每个都接入了该领域的数据源与方法。在非 CS 学科上覆盖面无出其右；但深度参差，license
   为 NOASSERTION。
 security:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Cross-discipline / multi-field packs
-stargazers_count: 25
+stargazers_count: 26
 updated_at: '2026-04-14'
 archived: false
+current_release:
+  tag: null
+  published_at: null

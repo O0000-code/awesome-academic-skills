@@ -1,4 +1,3 @@
-# citation-assistant.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: citation-assistant
 slug: citation-assistant
 source_url: https://github.com/zhangny301/citation-assistant
@@ -8,11 +7,11 @@ license: No License
 category: Reference & Citation Management
 lifecycle_stage: writing
 type: skill
-description: 'Automated academic-citation skill over the Semantic Scholar API: resolve, verify, and format
-  citations into a manuscript. Useful, focused citation helper; single-skill and tied to S2 coverage,
-  and its license needs confirming.'
-description_zh: 基于 Semantic Scholar API 的自动化学术引用 skill：解析、核验并将引用格式化嵌入稿件。实用、聚焦的引用助手；为单一 skill，受限于 S2 的覆盖范围，且其
-  license 仍待确认。
+description: 'Automated academic-citation skill over the Semantic Scholar API: resolve,
+  verify, and format citations into a manuscript. Useful, focused citation helper;
+  single-skill and tied to S2 coverage, and its license needs confirming.'
+description_zh: 基于 Semantic Scholar API 的自动化学术引用 skill：解析、核验并将引用格式化嵌入稿件。实用、聚焦的引用助手；为单一
+  skill，受限于 S2 的覆盖范围，且其 license 仍待确认。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -29,9 +28,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
-  claims match scholarly conventions and the source material.
+validate_claim: Ask Claude to use this skill to draft a described section, then verify
+  the structure and claims match scholarly conventions and the source material.
 subcategory: BibTeX / metadata generation
 stargazers_count: 214
 updated_at: '2026-03-14'
 archived: false
+current_release:
+  tag: null
+  published_at: null

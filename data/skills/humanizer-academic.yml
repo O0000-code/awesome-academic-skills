@@ -7,13 +7,15 @@ license: MIT
 category: Writing Quality & De-AI
 lifecycle_stage: writing-quality
 type: skill
-description: De-slop for medical manuscripts that makes the inverse move — it restores formal terms LLMs
-  avoid rather than flattening everything.
+description: De-slop for medical manuscripts that makes the inverse move — it restores
+  formal terms LLMs avoid rather than flattening everything.
 description_zh: 面向医学论文的去 AI 味工具，反其道而行——找回 LLM 刻意回避的正式术语，而非把一切抹平。
-description_long: De-slop tuned for medical and scientific manuscripts, from Wikipedia's "Signs of AI
-  writing". Its differentiator is the inverse move — it preserves legit academic transitions and restores
-  formal terms LLMs avoid, rather than flattening everything.
-description_zh_long: 一款为医学与科学论文调校的去 AI 味工具，源自维基百科"AI 写作特征"。它的差异化在于反向操作——保留合理的学术过渡词、找回 LLM 刻意回避的正式术语，而不是把一切都抹平。
+description_long: De-slop tuned for medical and scientific manuscripts, from Wikipedia's
+  "Signs of AI writing". Its differentiator is the inverse move — it preserves legit
+  academic transitions and restores formal terms LLMs avoid, rather than flattening
+  everything.
+description_zh_long: 一款为医学与科学论文调校的去 AI 味工具，源自维基百科"AI 写作特征"。它的差异化在于反向操作——保留合理的学术过渡词、找回
+  LLM 刻意回避的正式术语，而不是把一切都抹平。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -25,9 +27,10 @@ security:
   allowed_tools_scoped: true
 homepage_url: null
 install: git clone into ~/.claude/skills/humanizer_academic
-validate_claim: 'Paste an AI-drafted Methods/Discussion passage and ask: ''Use humanizer_academic to remove
-  AI tells but keep standard academic transitions.'' Expect inflated claims and -ing analyses fixed while
-  ''Notably/Prior studies'' and formal verbs are retained or restored.'
+validate_claim: 'Paste an AI-drafted Methods/Discussion passage and ask: ''Use humanizer_academic
+  to remove AI tells but keep standard academic transitions.'' Expect inflated claims
+  and -ing analyses fixed while ''Notably/Prior studies'' and formal verbs are retained
+  or restored.'
 lang:
 - en
 tags:
@@ -37,7 +40,7 @@ tags:
 - humanizer
 featured: false
 spotlight: false
-stargazers_count: 93
+stargazers_count: 94
 updated_at: '2026-04-21'
 archived: false
 current_release:

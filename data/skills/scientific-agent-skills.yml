@@ -8,16 +8,20 @@ category: Skill Suites
 lifecycle_stage: suite
 type: suite
 skills_count: 142
-description: The biggest computational-science pack — deep for life-science labs, near-useless for humanities.
+description: The biggest computational-science pack — deep for life-science labs,
+  near-useless for humanities.
 description_zh: 体量最大的计算科学套件——对生命科学实验室极深入，对人文学科几乎无用。
-description_long: The biggest computational-science pack — 142 skills wiring an agent into 100+ databases
-  (PubChem, ChEMBL, UniProt) and Python tools (RDKit, Scanpy, OpenMM) for genomics and drug discovery;
-  deep for life-science labs, near-useless for humanities.
-description_zh_long: 体量最大的计算科学套件——142 个 skill 把 agent 接入 100 多个数据库（PubChem、ChEMBL、UniProt）和 Python 工具（RDKit、Scanpy、OpenMM），服务于基因组学与药物发现；对生命科学实验室极深入，对人文学科则几乎无用。
+description_long: The biggest computational-science pack — 142 skills wiring an agent
+  into 100+ databases (PubChem, ChEMBL, UniProt) and Python tools (RDKit, Scanpy,
+  OpenMM) for genomics and drug discovery; deep for life-science labs, near-useless
+  for humanities.
+description_zh_long: 体量最大的计算科学套件——142 个 skill 把 agent 接入 100 多个数据库（PubChem、ChEMBL、UniProt）和
+  Python 工具（RDKit、Scanpy、OpenMM），服务于基因组学与药物发现；对生命科学实验室极深入，对人文学科则几乎无用。
 security:
   makes_network_calls: true
   network_endpoints:
-  - public scientific databases (PubChem, ChEMBL, UniProt, NCBI, ClinicalTrials.gov, ~78 sources)
+  - public scientific databases (PubChem, ChEMBL, UniProt, NCBI, ClinicalTrials.gov,
+    ~78 sources)
   - Exa Search API
   - Hugging Face (Hugging Science catalog)
   has_hooks: false
@@ -27,9 +31,10 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 homepage_url: https://k-dense.ai
-install: npx (all platforms) or `gh skill` interactive install; see README Getting Started
-validate_claim: 'Install the diffdock skill and ask: ''Dock this SMILES ligand against PDB 6LU7 and report
-  top binding poses with confidence scores.'''
+install: npx (all platforms) or `gh skill` interactive install; see README Getting
+  Started
+validate_claim: 'Install the diffdock skill and ask: ''Dock this SMILES ligand against
+  PDB 6LU7 and report top binding poses with confidence scores.'''
 lang:
 - en
 tags:
@@ -41,15 +46,16 @@ tags:
 - vendor-backed
 featured: false
 spotlight: false
-spotlight_rationale: The deepest computational-science pack out there — 142 skills wiring an agent into
-  100+ databases (PubChem, ChEMBL, UniProt) and tools like RDKit and Scanpy for genomics and drug discovery.
-  Unmatched for wet-lab and computational-biology work; mostly noise if you are in the humanities. It
-  is vendor-backed and large enough that we list it unreviewed — read its own security CI before institutional
-  use.
-spotlight_rationale_zh: 目前最深入的计算科学套件——142 个 skill 把 agent 接入 100 多个数据库（PubChem、ChEMBL、 UniProt）以及 RDKit、Scanpy
-  等工具，服务于基因组学与药物发现。在湿实验和计算生物学领域 无可匹敌；若身处人文学科，则大多是噪声。它背靠厂商、体量庞大，我们仅作收录而未予审查—— 机构级使用前请先查阅它自带的安全 CI。
-stargazers_count: 26802
-updated_at: '2026-05-28'
+spotlight_rationale: The deepest computational-science pack out there — 142 skills
+  wiring an agent into 100+ databases (PubChem, ChEMBL, UniProt) and tools like RDKit
+  and Scanpy for genomics and drug discovery. Unmatched for wet-lab and computational-biology
+  work; mostly noise if you are in the humanities. It is vendor-backed and large enough
+  that we list it unreviewed — read its own security CI before institutional use.
+spotlight_rationale_zh: 目前最深入的计算科学套件——142 个 skill 把 agent 接入 100 多个数据库（PubChem、ChEMBL、
+  UniProt）以及 RDKit、Scanpy 等工具，服务于基因组学与药物发现。在湿实验和计算生物学领域 无可匹敌；若身处人文学科，则大多是噪声。它背靠厂商、体量庞大，我们仅作收录而未予审查——
+  机构级使用前请先查阅它自带的安全 CI。
+stargazers_count: 27049
+updated_at: '2026-06-01'
 archived: false
 current_release:
   tag: v2.45.0

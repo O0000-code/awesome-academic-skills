@@ -1,4 +1,3 @@
-# scienceclaw.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: scienceclaw
 slug: scienceclaw
 source_url: https://github.com/beita6969/scienceclaw
@@ -8,11 +7,11 @@ license: MIT
 category: Autonomous Research Systems
 lifecycle_stage: autonomous
 type: suite
-description: 'Large self-evolving research-agent platform (OpenClaw-based): 285 skills across 28+ disciplines,
-  persistent memory, API-grounded citations. Popular for end-to-end research agents; bundles a full messaging/browser/sandbox
-  OS, so read before trusting.'
-description_zh: 一个大型自演化研究 agent 平台（基于 OpenClaw）：横跨 28+ 个学科的 285 个 skill，配有持久化记忆和以 API 为依据的引用。在端到端研究 agent
-  领域颇受欢迎；但内置了一整套消息/浏览器/沙箱式的“操作系统”，使用前务必先读懂再信任。
+description: 'Large self-evolving research-agent platform (OpenClaw-based): 285 skills
+  across 28+ disciplines, persistent memory, API-grounded citations. Popular for end-to-end
+  research agents; bundles a full messaging/browser/sandbox OS, so read before trusting.'
+description_zh: 一个大型自演化研究 agent 平台（基于 OpenClaw）：横跨 28+ 个学科的 285 个 skill，配有持久化记忆和以
+  API 为依据的引用。在端到端研究 agent 领域颇受欢迎；但内置了一整套消息/浏览器/沙箱式的“操作系统”，使用前务必先读懂再信任。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
-  and drafted result whose sources actually exist.
+validate_claim: Give the system a concrete research question and verify it returns
+  a searched, cited, and drafted result whose sources actually exist.
 subcategory: Domain-bound autonomous systems
-stargazers_count: 829
+stargazers_count: 831
 updated_at: '2026-05-25'
 archived: false
+current_release:
+  tag: null
+  published_at: null

@@ -1,4 +1,3 @@
-# semanticscholar-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: semanticscholar-skill
 slug: semanticscholar-skill
 source_url: https://github.com/agents365-ai/semanticscholar-skill
@@ -8,11 +7,12 @@ license: MIT
 category: Literature Search & Discovery
 lifecycle_stage: discovery
 type: skill
-description: Wraps the Semantic Scholar Graph API for paper search, citation-graph traversal, and author
-  lookup across 200M+ papers, rate-limited for multi-agent use. A reliable discovery building block; intentionally
-  narrow (S2 only), so pair it with others.
-description_zh: 封装 Semantic Scholar Graph API，可在 2 亿多篇论文中做论文检索、引用图遍历与作者查询，并为多 agent 使用做了限速。是可靠的检索基础组件；刻意做得很窄（仅
-  S2），宜与其他工具搭配使用。
+description: Wraps the Semantic Scholar Graph API for paper search, citation-graph
+  traversal, and author lookup across 200M+ papers, rate-limited for multi-agent use.
+  A reliable discovery building block; intentionally narrow (S2 only), so pair it
+  with others.
+description_zh: 封装 Semantic Scholar Graph API，可在 2 亿多篇论文中做论文检索、引用图遍历与作者查询，并为多 agent
+  使用做了限速。是可靠的检索基础组件；刻意做得很窄（仅 S2），宜与其他工具搭配使用。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -32,9 +32,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
-  returned title/DOI resolves to a real paper.
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
+  then verify every returned title/DOI resolves to a real paper.
 subcategory: Multi-source discovery search
 stargazers_count: 43
 updated_at: '2026-05-19'
 archived: false
+current_release:
+  tag: v0.8.1
+  published_at: '2026-05-10'

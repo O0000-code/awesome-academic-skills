@@ -1,4 +1,3 @@
-# ai-anthropology-toolkit.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: ai-anthropology-toolkit
 slug: ai-anthropology-toolkit
 source_url: https://github.com/mattartzanthro/ai-anthropology-toolkit
@@ -8,11 +7,11 @@ license: NOASSERTION
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: Qualitative-research skills for anthropology — peer review, manuscript evaluation, revision
-  strategy — that treat epistemic stance as a design parameter rather than an afterthought. Scholarly
-  and self-aware; confirm the license terms.
-description_zh: 面向人类学的质性研究 skill——同行评审、稿件评估、修改策略——将认识论立场当作一项设计参数来对待，而非事后补充。学术性强且具自省意识；使用前请确认其 license
-  条款。
+description: Qualitative-research skills for anthropology — peer review, manuscript
+  evaluation, revision strategy — that treat epistemic stance as a design parameter
+  rather than an afterthought. Scholarly and self-aware; confirm the license terms.
+description_zh: 面向人类学的质性研究 skill——同行评审、稿件评估、修改策略——将认识论立场当作一项设计参数来对待，而非事后补充。学术性强且具自省意识；使用前请确认其
+  license 条款。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -31,9 +30,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Humanities, law & qualitative-research disciplines
 stargazers_count: 18
 updated_at: '2026-03-20'
 archived: false
+current_release:
+  tag: null
+  published_at: null

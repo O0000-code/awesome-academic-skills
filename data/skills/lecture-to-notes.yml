@@ -1,4 +1,3 @@
-# lecture-to-notes.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: lecture-to-notes
 slug: lecture-to-notes
 source_url: https://github.com/ysyecust/lecture-to-notes
@@ -8,9 +7,10 @@ license: NOASSERTION
 category: Reading, Summarization & Q&A
 lifecycle_stage: reading
 type: skill
-description: Turns YouTube/Bilibili lecture videos into structured LaTeX/PDF notes via transcript extraction,
-  key-frame detection, and smart-cropped screenshots. Novel and useful for students; quality depends on
-  transcript availability, and the license is murky.
+description: Turns YouTube/Bilibili lecture videos into structured LaTeX/PDF notes
+  via transcript extraction, key-frame detection, and smart-cropped screenshots. Novel
+  and useful for students; quality depends on transcript availability, and the license
+  is murky.
 description_zh: 通过字幕提取、关键帧检测与智能裁剪截图，把 YouTube/Bilibili 的讲座视频转成结构化的 LaTeX/PDF 笔记。对学生既新颖又实用；质量取决于字幕是否可得，许可证情况也存疑。
 security:
   makes_network_calls: false
@@ -24,9 +24,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
-  then verify each claim is grounded in the source text.
+validate_claim: Ask Claude to use this skill to summarize or answer questions about
+  a specific paper, then verify each claim is grounded in the source text.
 subcategory: Study & derivative artifacts
-stargazers_count: 84
+stargazers_count: 86
 updated_at: '2026-05-19'
 archived: false
+current_release:
+  tag: null
+  published_at: null

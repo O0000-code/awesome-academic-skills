@@ -1,4 +1,3 @@
-# mean-reviewer-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: mean-reviewer-skill
 slug: mean-reviewer-skill
 source_url: https://github.com/xz-liu/mean-reviewer-skill
@@ -8,10 +7,12 @@ license: No License
 category: Peer Review & Response
 lifecycle_stage: peer-review
 type: skill
-description: 'Roleplays the worst-case adversarial peer reviewer: an inflated wall of weaknesses, framework
-  attacks, a score fixed at reject, and a rebuttal phase conceding nothing. Half polemic on LLM reviews,
-  half a pre-submission stress test; not a gentle tool.'
-description_zh: 扮演最坏情况下的对抗式审稿人：堆砌夸大的“缺点墙”、攻击研究框架、把分数钉死在 reject，并在 rebuttal 阶段寸步不让。一半是对 LLM 审稿的讽喻，一半是真正的投稿前压力测试；并非一个温和的工具。
+description: 'Roleplays the worst-case adversarial peer reviewer: an inflated wall
+  of weaknesses, framework attacks, a score fixed at reject, and a rebuttal phase
+  conceding nothing. Half polemic on LLM reviews, half a pre-submission stress test;
+  not a gentle tool.'
+description_zh: 扮演最坏情况下的对抗式审稿人：堆砌夸大的“缺点墙”、攻击研究框架、把分数钉死在 reject，并在 rebuttal 阶段寸步不让。一半是对
+  LLM 审稿的讽喻，一半是真正的投稿前压力测试；并非一个温和的工具。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -24,9 +25,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify the critique is
-  specific, accurate, and actionable.
+validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify
+  the critique is specific, accurate, and actionable.
 subcategory: Pre-submission review & rebuttal
 stargazers_count: 55
 updated_at: '2026-04-12'
 archived: false
+current_release:
+  tag: null
+  published_at: null

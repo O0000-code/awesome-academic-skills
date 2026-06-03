@@ -1,4 +1,3 @@
-# claude-workflow-for-econ-phd.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: claude-workflow-for-econ-phd
 slug: claude-workflow-for-econ-phd
 source_url: https://github.com/saptarsibhowmick/claude-workflow-for-econ-phd
@@ -8,9 +7,9 @@ license: MIT
 category: Autonomous Research Systems
 lifecycle_stage: autonomous
 type: suite
-description: 'Fork-ready scaffold for multi-paper empirical-economics PhD work (lit review to submission):
-  9 skills (missing-lit, referee2, blindspot), a Zotero PDF-chunking literature pipeline, file-safety
-  and IRB handling. A scaffold to adopt, not a drop-in.'
+description: 'Fork-ready scaffold for multi-paper empirical-economics PhD work (lit
+  review to submission): 9 skills (missing-lit, referee2, blindspot), a Zotero PDF-chunking
+  literature pipeline, file-safety and IRB handling. A scaffold to adopt, not a drop-in.'
 description_zh: 面向多篇论文的实证经济学博士工作、可直接 fork 的脚手架（从文献综述到投稿）：9 个 skill（missing-lit、referee2、blindspot）、一条基于
   Zotero 的 PDF 分块文献流水线，以及文件安全与 IRB 处理。是供人采纳的脚手架，而非即插即用。
 security:
@@ -38,9 +37,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
-  and drafted result whose sources actually exist.
+validate_claim: Give the system a concrete research question and verify it returns
+  a searched, cited, and drafted result whose sources actually exist.
 subcategory: Domain-bound autonomous systems
 stargazers_count: 6
 updated_at: '2026-04-14'
 archived: false
+current_release:
+  tag: null
+  published_at: null

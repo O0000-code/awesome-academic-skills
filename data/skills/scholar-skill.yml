@@ -1,4 +1,3 @@
-# scholar-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: scholar-skill
 slug: scholar-skill
 source_url: https://github.com/eesjgong/scholar-skill
@@ -8,9 +7,9 @@ license: MIT
 category: Reading, Summarization & Q&A
 lifecycle_stage: reading
 type: suite
-description: 'Obsidian-centric academic-reading suite: deep-reads papers and links them into an evolving
-  personal knowledge base with reflection prompts. A strong pick for Obsidian users; it reads and
-  organizes rather than discovering papers.'
+description: 'Obsidian-centric academic-reading suite: deep-reads papers and links
+  them into an evolving personal knowledge base with reflection prompts. A strong
+  pick for Obsidian users; it reads and organizes rather than discovering papers.'
 description_zh: 以 Obsidian 为中心的学术阅读套件：深读论文，并借助反思式提示将其链接进一个不断演进的个人知识库。如果你常驻 Obsidian，这是个不错的选择；它做的是阅读与整理，而非发现论文。
 security:
   makes_network_calls: true
@@ -27,9 +26,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
-  then verify each claim is grounded in the source text.
+validate_claim: Ask Claude to use this skill to summarize or answer questions about
+  a specific paper, then verify each claim is grounded in the source text.
 subcategory: Deep reading & comprehension
 stargazers_count: 198
 updated_at: '2026-03-20'
 archived: false
+current_release:
+  tag: v0.1.0
+  published_at: '2026-03-20'

@@ -1,4 +1,3 @@
-# clawbio.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: clawbio
 slug: clawbio
 source_url: https://github.com/clawbio/clawbio
@@ -8,10 +7,11 @@ license: MIT
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 'Bioinformatics-native agent skill library: local-first, reproducible genomics/QC/GWAS workflows
-  built on OpenClaw, with CI and a cited release. Strong domain coverage; large executable surface typical
-  of a real bioinformatics stack.'
-description_zh: 生物信息学原生的 agent skill 库：基于 OpenClaw 构建的本地优先、可复现的基因组学/QC/GWAS 工作流，配有 CI 与可被引用的发布版本。领域覆盖扎实；可执行面较大，这是真实生物信息学技术栈的常态。
+description: 'Bioinformatics-native agent skill library: local-first, reproducible
+  genomics/QC/GWAS workflows built on OpenClaw, with CI and a cited release. Strong
+  domain coverage; large executable surface typical of a real bioinformatics stack.'
+description_zh: 生物信息学原生的 agent skill 库：基于 OpenClaw 构建的本地优先、可复现的基因组学/QC/GWAS 工作流，配有
+  CI 与可被引用的发布版本。领域覆盖扎实；可执行面较大，这是真实生物信息学技术栈的常态。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -61,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Biomedical & life sciences
-stargazers_count: 902
-updated_at: '2026-06-01'
+stargazers_count: 913
+updated_at: '2026-06-03'
 archived: false
+current_release:
+  tag: v0.5.0
+  published_at: '2026-04-04'

@@ -1,4 +1,3 @@
-# codex-paper-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: codex-paper-skills
 slug: codex-paper-skills
 source_url: https://github.com/moonlarry/codex-paper-skills
@@ -8,11 +7,12 @@ license: No License
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: Codex/Claude paper suite (27 skills) covering the writing chain, figures, experiment-to-claim
-  consistency, citation auditing, proof checking and rebuttal, with an evidence-first agent protocol.
-  Strong breadth; the missing LICENSE is its main gap.
-description_zh: 面向 Codex/Claude 的论文套件（27 个 skill），覆盖写作链路、图表、实验与论点的一致性、引用审计、证明核查与反驳，并采用证据优先的 agent 协议。覆盖面很广；缺少
-  LICENSE 是它的主要短板。
+description: Codex/Claude paper suite (27 skills) covering the writing chain, figures,
+  experiment-to-claim consistency, citation auditing, proof checking and rebuttal,
+  with an evidence-first agent protocol. Strong breadth; the missing LICENSE is its
+  main gap.
+description_zh: 面向 Codex/Claude 的论文套件（27 个 skill），覆盖写作链路、图表、实验与论点的一致性、引用审计、证明核查与反驳，并采用证据优先的
+  agent 协议。覆盖面很广；缺少 LICENSE 是它的主要短板。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -40,9 +40,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
-stargazers_count: 63
-updated_at: '2026-05-31'
+stargazers_count: 66
+updated_at: '2026-06-02'
 archived: false
+current_release:
+  tag: v0.4
+  published_at: '2026-06-02'

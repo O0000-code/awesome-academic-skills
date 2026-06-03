@@ -1,4 +1,3 @@
-# enhanced-mathmodel-codex-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: enhanced-mathmodel-codex-skills
 slug: enhanced-mathmodel-codex-skills
 source_url: https://github.com/xzwwwwww/enhanced-mathmodel-codex-skills
@@ -8,8 +7,9 @@ license: No License
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: suite
-description: Full-pipeline skills for mathematical-modeling competitions, automating the workflow through
-  to a complete modeling paper (Codex-oriented). Niche but genuinely scholarly and specific; ships no license.
+description: Full-pipeline skills for mathematical-modeling competitions, automating
+  the workflow through to a complete modeling paper (Codex-oriented). Niche but genuinely
+  scholarly and specific; ships no license.
 description_zh: 面向数学建模竞赛的全流程 skill，把工作流一路自动化到一篇完整的建模论文（偏 Codex）。小众但确实有学术性、针对性强；无许可证是主要短板。
 security:
   makes_network_calls: true
@@ -21,9 +21,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to draft a described section, then verify the structure and
-  claims match scholarly conventions and the source material.
+validate_claim: Ask Claude to use this skill to draft a described section, then verify
+  the structure and claims match scholarly conventions and the source material.
 subcategory: Manuscript drafting pipelines
 stargazers_count: 40
 updated_at: '2026-05-06'
 archived: false
+current_release:
+  tag: null
+  published_at: null

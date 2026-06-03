@@ -1,4 +1,3 @@
-# notebooklm-skill-2.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: notebooklm-skill
 slug: notebooklm-skill-2
 source_url: https://github.com/pleaseprompto/notebooklm-skill
@@ -8,11 +7,11 @@ license: MIT
 category: Reading, Summarization & Q&A
 lifecycle_stage: reading
 type: skill
-description: Bridges Claude Code to Google NotebookLM so you get source-grounded, citation-backed answers
-  drawn only from your uploaded documents. Excellent for grounded Q&A over a personal corpus; depends
-  on a Google NotebookLM account and the notebooklm-mcp.
-description_zh: 把 Claude Code 接入 Google NotebookLM，让回答仅取自你上传的文档、有出处、附引用。在个人语料库上做有据 Q&A 表现出色；依赖一个 Google
-  NotebookLM 账号和 notebooklm-mcp。
+description: Bridges Claude Code to Google NotebookLM so you get source-grounded,
+  citation-backed answers drawn only from your uploaded documents. Excellent for grounded
+  Q&A over a personal corpus; depends on a Google NotebookLM account and the notebooklm-mcp.
+description_zh: 把 Claude Code 接入 Google NotebookLM，让回答仅取自你上传的文档、有出处、附引用。在个人语料库上做有据
+  Q&A 表现出色；依赖一个 Google NotebookLM 账号和 notebooklm-mcp。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -30,9 +29,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
-  then verify each claim is grounded in the source text.
+validate_claim: Ask Claude to use this skill to summarize or answer questions about
+  a specific paper, then verify each claim is grounded in the source text.
 subcategory: Grounded Q&A & knowledge bases
-stargazers_count: 6785
+stargazers_count: 6831
 updated_at: '2025-11-21'
 archived: false
+current_release:
+  tag: v1.3.0
+  published_at: '2025-11-21'

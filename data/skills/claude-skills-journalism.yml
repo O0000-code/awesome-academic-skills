@@ -7,28 +7,31 @@ license: MIT
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 'A journalism pack whose academic core is its research-toolkit: legal paywall-bypass via
-  Unpaywall, web archiving, change-monitoring.'
+description: 'A journalism pack whose academic core is its research-toolkit: legal
+  paywall-bypass via Unpaywall, web archiving, change-monitoring.'
 description_zh: 面向新闻业的套件，学术内核是 research-toolkit：经 Unpaywall 合法绕过付费墙、网页存档、变更监控。
-description_long: 'Journalism/academia pack whose research-toolkit is the academic core: legal paywall-bypass
-  via Unpaywall, web archiving (Wayback/Archive.today), page-change monitoring, a curated free-API catalog.
-  Source-verification and AI-slop-detox round it out.'
+description_long: 'Journalism/academia pack whose research-toolkit is the academic
+  core: legal paywall-bypass via Unpaywall, web archiving (Wayback/Archive.today),
+  page-change monitoring, a curated free-API catalog. Source-verification and AI-slop-detox
+  round it out.'
 description_zh_long: 面向新闻业/学术的套件，其学术内核是 research-toolkit：经 Unpaywall 合法绕过付费墙、网页存档（Wayback/Archive.today）、页面变更监控、一份精选的免费
   API 目录。再辅以来源核实与 AI 流水文清理。
 security:
   makes_network_calls: true
   network_endpoints:
-  - Unpaywall, web-archive services, optional Slack/Discord webhooks for page-monitoring alerts
+  - Unpaywall, web-archive services, optional Slack/Discord webhooks for page-monitoring
+    alerts
   has_hooks: true
   requires_bypass_permissions: false
   telemetry: false
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-install: /plugin marketplace add jamditis/claude-skills-journalism then install the plugin(s) you need
-  (e.g. research-toolkit, pdf-playground)
-validate_claim: Ask the research-toolkit to locate a legal open-access copy of a paywalled paper via Unpaywall
-  and archive a source page; confirm it returns a real OA link/DOI and a working archive snapshot URL.
+install: /plugin marketplace add jamditis/claude-skills-journalism then install the
+  plugin(s) you need (e.g. research-toolkit, pdf-playground)
+validate_claim: Ask the research-toolkit to locate a legal open-access copy of a paywalled
+  paper via Unpaywall and archive a source page; confirm it returns a real OA link/DOI
+  and a working archive snapshot URL.
 lang:
 - en
 tags:
@@ -39,8 +42,8 @@ tags:
 homepage_url: https://skills.amditis.tech/
 featured: false
 spotlight: false
-stargazers_count: 233
-updated_at: '2026-05-30'
+stargazers_count: 238
+updated_at: '2026-06-01'
 archived: false
 current_release:
   tag: v2.0.0

@@ -7,14 +7,15 @@ license: CC-BY-SA-4.0
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: The largest education pack — 165 evidence-based pedagogical skills across 20 domains; local
-  install free, hosted MCP gated.
+description: The largest education pack — 165 evidence-based pedagogical skills across
+  20 domains; local install free, hosted MCP gated.
 description_zh: 最大的教育类套件——165 个循证教学 skill、横跨 20 个领域；本地安装免费，托管版 MCP 设有门槛。
-description_long: 165 evidence-based pedagogical skills across 20 domains for educators and designers
-  — spaced practice, retrieval learning, assessment design — plus a student-facing domain shaping how
-  AI responds to learners. Largest education pack; hosted MCP gated.
-description_zh_long: 面向教育者与教学设计者的 165 个循证教学 skill，横跨 20 个领域——间隔练习、提取式学习、测评设计——外加一个面向学生的板块，用以约束 AI 如何回应学习者。最大的教育类套件；托管版
-  MCP 设有门槛。
+description_long: 165 evidence-based pedagogical skills across 20 domains for educators
+  and designers — spaced practice, retrieval learning, assessment design — plus a
+  student-facing domain shaping how AI responds to learners. Largest education pack;
+  hosted MCP gated.
+description_zh_long: 面向教育者与教学设计者的 165 个循证教学 skill，横跨 20 个领域——间隔练习、提取式学习、测评设计——外加一个面向学生的板块，用以约束
+  AI 如何回应学习者。最大的教育类套件；托管版 MCP 设有门槛。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -24,11 +25,11 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-install: claude plugin install https://github.com/GarethManning/education-agent-skills (local/plugin path
-  is free; hosted MCP now needs a token)
-validate_claim: Ask the spaced-practice skill to schedule review sessions for a topic over a term; confirm
-  it applies a defensible spacing schedule grounded in the learning- science rationale it cites, not arbitrary
-  intervals.
+install: claude plugin install https://github.com/GarethManning/education-agent-skills
+  (local/plugin path is free; hosted MCP now needs a token)
+validate_claim: Ask the spaced-practice skill to schedule review sessions for a topic
+  over a term; confirm it applies a defensible spacing schedule grounded in the learning-
+  science rationale it cites, not arbitrary intervals.
 lang:
 - en
 tags:
@@ -39,7 +40,7 @@ tags:
 homepage_url: https://agentskills.io
 featured: false
 spotlight: false
-stargazers_count: 278
+stargazers_count: 283
 updated_at: '2026-05-27'
 archived: false
 current_release:

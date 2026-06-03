@@ -1,4 +1,3 @@
-# medsci-agent.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: medsci-agent
 slug: medsci-agent
 source_url: https://github.com/omar-a-hassan/medsci-agent
@@ -8,11 +7,11 @@ license: MIT
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 'Biomedical-research suite of 17 skills: multi-source literature search, ClinicalTrials.gov,
-  drug interactions, and a genomics stack (gene lookup, variant annotation via ClinVar/dbSNP/gnomAD, pathway
-  analysis). Deep domain coverage.'
-description_zh: 面向生物医学研究的 17 个 skill 套件：多源文献检索、ClinicalTrials.gov、药物相互作用，以及一套基因组学工具栈（基因查询、经 ClinVar/dbSNP/gnomAD
-  的变异注释、通路分析）。领域覆盖很深。
+description: 'Biomedical-research suite of 17 skills: multi-source literature search,
+  ClinicalTrials.gov, drug interactions, and a genomics stack (gene lookup, variant
+  annotation via ClinVar/dbSNP/gnomAD, pathway analysis). Deep domain coverage.'
+description_zh: 面向生物医学研究的 17 个 skill 套件：多源文献检索、ClinicalTrials.gov、药物相互作用，以及一套基因组学工具栈（基因查询、经
+  ClinVar/dbSNP/gnomAD 的变异注释、通路分析）。领域覆盖很深。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -55,9 +54,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Biomedical & life sciences
 stargazers_count: 19
 updated_at: '2026-03-14'
 archived: false
+current_release:
+  tag: null
+  published_at: null

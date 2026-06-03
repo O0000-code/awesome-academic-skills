@@ -1,4 +1,3 @@
-# diogenes.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: diogenes
 slug: diogenes
 source_url: https://github.com/diogenes-project/diogenes
@@ -8,9 +7,9 @@ license: GPL-3.0
 category: Peer Review & Response
 lifecycle_stage: peer-review
 type: skill
-description: Applies a unified, anti-sycophantic evidence methodology - ICD 203, GRADE, PRISMA, Cochrane
-  RoB and others - as a 14-step appraisal for systematic reviews, evidence grading and claim verification.
-  Rigorous; ships hooks.
+description: Applies a unified, anti-sycophantic evidence methodology - ICD 203, GRADE,
+  PRISMA, Cochrane RoB and others - as a 14-step appraisal for systematic reviews,
+  evidence grading and claim verification. Rigorous; ships hooks.
 description_zh: 将一套统一的、反“随声附和”的证据方法论（ICD 203、GRADE、PRISMA、Cochrane RoB 等）落实为 14 步评估流程，用于系统综述、证据分级与论断核验。严谨；附带
   hook。
 security:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify the critique is
-  specific, accurate, and actionable.
+validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify
+  the critique is specific, accurate, and actionable.
 subcategory: Systematic review & evidence appraisal
 stargazers_count: 6
 updated_at: '2026-05-27'
 archived: false
+current_release:
+  tag: v1.2.1
+  published_at: '2026-05-14'

@@ -1,4 +1,3 @@
-# arxiv-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: arxiv-skills
 slug: arxiv-skills
 source_url: https://github.com/ultimatile/arxiv-skills
@@ -8,11 +7,11 @@ license: MIT
 category: Literature Search & Discovery
 lifecycle_stage: discovery
 type: suite
-description: 'Pair of arXiv skills: convert a paper (LaTeX-source-first, PDF fallback) into implementation-ready
-  Markdown with preserved math, plus a lightweight arXiv API DOI/title-search lookup. Conversion quality
-  hinges on pandoc.'
-description_zh: 一对 arXiv skill：把论文（优先 LaTeX 源、PDF 兜底）转换为可直接用于实现的 Markdown 并保留数学公式，外加一个轻量的 arXiv API DOI/标题检索查询。转换质量取决于
-  pandoc。
+description: 'Pair of arXiv skills: convert a paper (LaTeX-source-first, PDF fallback)
+  into implementation-ready Markdown with preserved math, plus a lightweight arXiv
+  API DOI/title-search lookup. Conversion quality hinges on pandoc.'
+description_zh: 一对 arXiv skill：把论文（优先 LaTeX 源、PDF 兜底）转换为可直接用于实现的 Markdown 并保留数学公式，外加一个轻量的
+  arXiv API DOI/标题检索查询。转换质量取决于 pandoc。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -24,9 +23,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
-  returned title/DOI resolves to a real paper.
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
+  then verify every returned title/DOI resolves to a real paper.
 subcategory: Multi-source discovery search
-stargazers_count: 20
+stargazers_count: 21
 updated_at: '2026-04-30'
 archived: false
+current_release:
+  tag: null
+  published_at: null

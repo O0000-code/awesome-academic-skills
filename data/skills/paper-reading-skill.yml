@@ -1,4 +1,3 @@
-# paper-reading-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: paper-reading-skill
 slug: paper-reading-skill
 source_url: https://github.com/kingslayer-bot/paper-reading-skill
@@ -8,10 +7,12 @@ license: MIT
 category: Reading, Summarization & Q&A
 lifecycle_stage: reading
 type: skill
-description: 'Deep paper-reading skill with two modes: paragraph-level close reading with agentic Q&A,
-  and a 20+-dimension analysis run by parallel agents, emitting Obsidian-ready notes. Strong for deconstructing
-  single papers; not a search or citation tool.'
-description_zh: 一个深度论文研读 skill，提供两种模式：段落级的细读配 agentic 问答，以及由并行 agent 执行的 20+ 维度分析，并输出可直接导入 Obsidian 的笔记。擅长拆解单篇论文；不是检索或引用工具。
+description: 'Deep paper-reading skill with two modes: paragraph-level close reading
+  with agentic Q&A, and a 20+-dimension analysis run by parallel agents, emitting
+  Obsidian-ready notes. Strong for deconstructing single papers; not a search or citation
+  tool.'
+description_zh: 一个深度论文研读 skill，提供两种模式：段落级的细读配 agentic 问答，以及由并行 agent 执行的 20+ 维度分析，并输出可直接导入
+  Obsidian 的笔记。擅长拆解单篇论文；不是检索或引用工具。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -24,9 +25,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to summarize or answer questions about a specific paper,
-  then verify each claim is grounded in the source text.
+validate_claim: Ask Claude to use this skill to summarize or answer questions about
+  a specific paper, then verify each claim is grounded in the source text.
 subcategory: Deep reading & comprehension
-stargazers_count: 6
+stargazers_count: 7
 updated_at: '2026-04-29'
 archived: false
+current_release:
+  tag: null
+  published_at: null

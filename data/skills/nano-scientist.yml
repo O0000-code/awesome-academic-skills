@@ -1,4 +1,3 @@
-# nano-scientist.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: nano-scientist
 slug: nano-scientist
 source_url: https://github.com/ai4scientist/nano-scientist
@@ -8,9 +7,9 @@ license: No License
 category: Autonomous Research Systems
 lifecycle_stage: autonomous
 type: suite
-description: 'Autonomous research agent: turns a topic into a full draft paper via four budget-capped
-  loops (deep-search, experiment, improvement, review) with CrossRef citation recovery and a multi-model
-  review gate.'
+description: 'Autonomous research agent: turns a topic into a full draft paper via
+  four budget-capped loops (deep-search, experiment, improvement, review) with CrossRef
+  citation recovery and a multi-model review gate.'
 description_zh: 自主研究 agent：通过四个有预算上限的循环（深度检索、实验、改进、评审）把一个选题变成完整的论文初稿，配 CrossRef 引用补全和多模型评审关卡。强大且模块化（含
   87+ 研究技能）。
 security:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Give the system a concrete research question and verify it returns a searched, cited,
-  and drafted result whose sources actually exist.
+validate_claim: Give the system a concrete research question and verify it returns
+  a searched, cited, and drafted result whose sources actually exist.
 subcategory: Fully autonomous auto-scientists
 stargazers_count: 98
 updated_at: '2026-05-17'
 archived: false
+current_release:
+  tag: null
+  published_at: null

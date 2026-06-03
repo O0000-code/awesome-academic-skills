@@ -1,4 +1,3 @@
-# genealogy-research.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: genealogy-research
 slug: genealogy-research
 source_url: https://github.com/sliday/genealogy-research
@@ -8,11 +7,12 @@ license: MIT
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: skill
-description: Applies the Genealogical Proof Standard to family-history research — multilingual handwritten-record
-  reading, evidence-level tracking, negative-result logging, GEDCOM and an Obsidian knowledge base. Specialist,
-  but methodologically serious.
-description_zh: 将"族谱证明标准"（Genealogical Proof Standard）应用于家族史研究——多语种手写记录识读、证据等级追踪、阴性结果记录、GEDCOM 与 Obsidian
-  知识库。高度专门化，但方法论上相当严谨。
+description: Applies the Genealogical Proof Standard to family-history research —
+  multilingual handwritten-record reading, evidence-level tracking, negative-result
+  logging, GEDCOM and an Obsidian knowledge base. Specialist, but methodologically
+  serious.
+description_zh: 将"族谱证明标准"（Genealogical Proof Standard）应用于家族史研究——多语种手写记录识读、证据等级追踪、阴性结果记录、GEDCOM
+  与 Obsidian 知识库。高度专门化，但方法论上相当严谨。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -24,9 +24,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Humanities, law & qualitative-research disciplines
-stargazers_count: 20
+stargazers_count: 21
 updated_at: '2026-03-23'
 archived: false
+current_release:
+  tag: null
+  published_at: null

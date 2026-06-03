@@ -1,4 +1,3 @@
-# mgmt-paper-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: mgmt-paper-skills
 slug: mgmt-paper-skills
 source_url: https://github.com/haonanalex/mgmt-paper-skills
@@ -8,9 +7,10 @@ license: Apache-2.0
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: 'Management-research workbench: idea-to-review pipeline with SPSS/Stata/Python analysis,
-  causal methods (DiD/RDD/IV/SC/PSM), qualitative coding and journal-figure profiles (UTD24). Deep for
-  econ/management; Chinese-data oriented, needs a stats MCP.'
+description: 'Management-research workbench: idea-to-review pipeline with SPSS/Stata/Python
+  analysis, causal methods (DiD/RDD/IV/SC/PSM), qualitative coding and journal-figure
+  profiles (UTD24). Deep for econ/management; Chinese-data oriented, needs a stats
+  MCP.'
 description_zh: 管理学研究工作台：从选题到评审的全流程，含 SPSS/Stata/Python 分析、因果方法（DiD/RDD/IV/SC/PSM）、质性编码与期刊图表规范（UTD24）。在经济/管理领域很深；偏向中文数据，需要一个统计
   MCP。
 security:
@@ -58,9 +58,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
 stargazers_count: 117
 updated_at: '2026-05-02'
 archived: false
+current_release:
+  tag: null
+  published_at: null

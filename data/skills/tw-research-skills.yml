@@ -1,4 +1,3 @@
-# tw-research-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: tw-research-skills
 slug: tw-research-skills
 source_url: https://github.com/fw1201/tw-research-skills
@@ -8,10 +7,11 @@ license: No License
 category: Discipline-Specific Packs
 lifecycle_stage: suite
 type: suite
-description: A full Taiwanese-academic lifecycle pack (proposals to submission), strong on qualitative
-  methods (grounded theory, content analysis with Kappa) and TSSCI/NSC norms. Localized but broadly useful;
-  confirm the license.
-description_zh: 覆盖台湾学术全生命周期的工具包（从研究计划到投稿），长于质性方法（扎根理论、带 Kappa 的内容分析）与 TSSCI/NSC 规范。本地化但普遍适用；请确认 license。
+description: A full Taiwanese-academic lifecycle pack (proposals to submission), strong
+  on qualitative methods (grounded theory, content analysis with Kappa) and TSSCI/NSC
+  norms. Localized but broadly useful; confirm the license.
+description_zh: 覆盖台湾学术全生命周期的工具包（从研究计划到投稿），长于质性方法（扎根理论、带 Kappa 的内容分析）与 TSSCI/NSC 规范。本地化但普遍适用；请确认
+  license。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -32,9 +32,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Humanities, law & qualitative-research disciplines
 stargazers_count: 6
 updated_at: '2026-05-08'
 archived: false
+current_release:
+  tag: null
+  published_at: null

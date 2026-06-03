@@ -7,20 +7,21 @@ license: MIT
 category: Autonomous Research Systems
 lifecycle_stage: autonomous
 type: suite
-description: An autonomous research loop whose signature is a cross-model jury — Claude, GPT and Gemini
-  critique each other so no model rubber-stamps itself.
+description: An autonomous research loop whose signature is a cross-model jury — Claude,
+  GPT and Gemini critique each other so no model rubber-stamps itself.
 description_zh: 一个自主科研循环，标志性设计是跨模型陪审团——Claude、GPT 与 Gemini 互相批判，使任何模型都无法为自己盖橡皮图章。
-description_long: An autonomous research loop (plan, draft, adversarial review, iterate, persist) whose
-  signature is a cross-model jury — Claude, GPT and Gemini critique each other against a shared research
-  wiki so no model rubber-stamps itself. ~77 skills plus a CLI.
-description_zh_long: 一个自主科研循环（规划、起草、对抗式评审、迭代、留存），其标志性设计是一个跨模型陪审团——Claude、GPT 与 Gemini 围绕一个共享的研究 wiki 互相批判，使任何模型都无法为自己盖橡皮图章。约
-  77 个 skill 外加一个 CLI。
+description_long: An autonomous research loop (plan, draft, adversarial review, iterate,
+  persist) whose signature is a cross-model jury — Claude, GPT and Gemini critique
+  each other against a shared research wiki so no model rubber-stamps itself. ~77
+  skills plus a CLI.
+description_zh_long: 一个自主科研循环（规划、起草、对抗式评审、迭代、留存），其标志性设计是一个跨模型陪审团——Claude、GPT 与 Gemini
+  围绕一个共享的研究 wiki 互相批判，使任何模型都无法为自己盖橡皮图章。约 77 个 skill 外加一个 CLI。
 security:
   makes_network_calls: true
   network_endpoints:
   - arXiv, OpenAlex, Semantic Scholar, Exa (literature fetch)
-  - Anthropic / OpenAI / Google Gemini / DeepSeek / MiniMax / Qwen / Doubao / DashScope (cross-model review
-    + the ARIS-Code CLI's providers)
+  - Anthropic / OpenAI / Google Gemini / DeepSeek / MiniMax / Qwen / Doubao / DashScope
+    (cross-model review + the ARIS-Code CLI's providers)
   - Overleaf Git bridge; Feishu / notification webhooks
   has_hooks: true
   requires_bypass_permissions: false
@@ -29,10 +30,11 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 homepage_url: https://wanshuiyin.github.io/Auto-claude-code-research-in-sleep/ARIS_INTRO.html
-install: Use the skills/ as a workflow in Claude Code / Codex / Cursor / Antigravity, or install the standalone
-  ARIS-Code CLI (see docs/ARIS-Code-README_EN.md)
-validate_claim: Trigger an auto-review-loop on a draft idea and confirm a second model produces an independent
-  critique that gates the next iteration (the 'jury can drive, never acquit' behavior).
+install: Use the skills/ as a workflow in Claude Code / Codex / Cursor / Antigravity,
+  or install the standalone ARIS-Code CLI (see docs/ARIS-Code-README_EN.md)
+validate_claim: Trigger an auto-review-loop on a draft idea and confirm a second model
+  produces an independent critique that gates the next iteration (the 'jury can drive,
+  never acquit' behavior).
 lang:
 - en
 - zh
@@ -44,8 +46,8 @@ tags:
 - wanshuiyin
 featured: false
 spotlight: false
-stargazers_count: 11141
-updated_at: '2026-06-01'
+stargazers_count: 11270
+updated_at: '2026-06-02'
 archived: false
 current_release:
   tag: v0.4.15

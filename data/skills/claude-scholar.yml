@@ -8,14 +8,16 @@ category: Skill Suites
 lifecycle_stage: suite
 type: suite
 skills_count: 47
-description: A CS/AI research workspace with an evidence-gated Claim Promotion Gate; uniquely ships its
-  own PreToolUse security-guard hook.
-description_zh: 面向 CS/AI 研究者的工作台，带一道以证据为门槛的 Claim Promotion Gate；独有自带的 PreToolUse 安全防护 hook。
-description_long: A semi-automated workspace for CS/AI researchers — 47 skills, 6 agents, an Obsidian
-  KB and Zotero MCP, plus an evidence-gated Claim Promotion Gate so notes can't become claims without
-  backing; uniquely ships its own PreToolUse security-guard hook.
-description_zh_long: 面向 CS/AI 研究者的半自动化工作台——47 个 skill、6 个 agent、一个 Obsidian 知识库和 Zotero MCP，外加一道以证据为门槛的
-  Claim Promotion Gate，让笔记没有依据就无法升格为论断；独有自带的 PreToolUse 安全防护 hook。
+description: A CS/AI research workspace with an evidence-gated Claim Promotion Gate;
+  uniquely ships its own PreToolUse security-guard hook.
+description_zh: 面向 CS/AI 研究者的工作台，带一道以证据为门槛的 Claim Promotion Gate；独有自带的 PreToolUse
+  安全防护 hook。
+description_long: A semi-automated workspace for CS/AI researchers — 47 skills, 6
+  agents, an Obsidian KB and Zotero MCP, plus an evidence-gated Claim Promotion Gate
+  so notes can't become claims without backing; uniquely ships its own PreToolUse
+  security-guard hook.
+description_zh_long: 面向 CS/AI 研究者的半自动化工作台——47 个 skill、6 个 agent、一个 Obsidian 知识库和 Zotero
+  MCP，外加一道以证据为门槛的 Claim Promotion Gate，让笔记没有依据就无法升格为论断；独有自带的 PreToolUse 安全防护 hook。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -28,10 +30,11 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: true
 homepage_url: https://galaxy-dawn.github.io/
-install: Run the repo installer (setup.sh) — preserves your CLAUDE.md as CLAUDE.scholar.md; switch to
-  the codex/ or opencode/ branch for those CLIs
-validate_claim: Open a project, add a paper via Zotero MCP, and confirm a synthesized claim is blocked
-  from the Writing area until it carries an Evidence Record (the Claim Promotion Gate).
+install: Run the repo installer (setup.sh) — preserves your CLAUDE.md as CLAUDE.scholar.md;
+  switch to the codex/ or opencode/ branch for those CLIs
+validate_claim: Open a project, add a paper via Zotero MCP, and confirm a synthesized
+  claim is blocked from the Writing area until it carries an Evidence Record (the
+  Claim Promotion Gate).
 lang:
 - en
 - zh
@@ -43,8 +46,8 @@ tags:
 - Galaxy-Dawn
 featured: false
 spotlight: false
-stargazers_count: 4134
-updated_at: '2026-06-01'
+stargazers_count: 4175
+updated_at: '2026-06-03'
 archived: false
 current_release:
   tag: v1.0.0

@@ -1,4 +1,3 @@
-# paper2patent.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: paper2patent
 slug: paper2patent
 source_url: https://github.com/7tocr/paper2patent
@@ -8,9 +7,10 @@ license: MIT
 category: Submission, Formatting & Conversion
 lifecycle_stage: publishing
 type: suite
-description: Turns a finished paper into a China invention-patent application draft (claims layout, specification
-  norms, technical-effect argumentation) via structured prompts, patent-figure generation, and skills.
-  A unique paper-to-IP bridge for China patents.
+description: Turns a finished paper into a China invention-patent application draft
+  (claims layout, specification norms, technical-effect argumentation) via structured
+  prompts, patent-figure generation, and skills. A unique paper-to-IP bridge for China
+  patents.
 description_zh: 把一篇完成的论文转成中国发明专利申请草稿（权利要求布局、说明书规范、技术效果论证），借助结构化提示、专利附图生成与多个技能完成。一座独特的论文到知识产权的桥梁；面向中国专利。
 security:
   makes_network_calls: false
@@ -23,9 +23,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to format a manuscript to a target template, then verify
-  the output compiles/opens and matches the spec.
+validate_claim: Ask Claude to use this skill to format a manuscript to a target template,
+  then verify the output compiles/opens and matches the spec.
 subcategory: Format conversion & document transformation
-stargazers_count: 206
+stargazers_count: 211
 updated_at: '2026-05-20'
 archived: false
+current_release:
+  tag: null
+  published_at: null

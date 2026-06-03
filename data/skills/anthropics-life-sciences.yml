@@ -7,19 +7,21 @@ license: LicenseRef-Mixed-Apache-2.0-and-provider-licensed
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: Anthropic's official life-sciences marketplace — a vetted directory of ~20 partner data integrations,
-  not a skill collection.
+description: Anthropic's official life-sciences marketplace — a vetted directory of
+  ~20 partner data integrations, not a skill collection.
 description_zh: Anthropic 官方的生命科学 marketplace——一份经甄选的约 20 项合作方数据集成目录，而非 skill 合集。
-description_long: Anthropic's official Claude Code marketplace for life sciences — a curated directory
-  of ~20 partner integrations (PubMed, bioRxiv, ChEMBL, Consensus, BioRender, ClinicalTrials.gov, Open
-  Targets), not a skill collection but a vetted partner list.
-description_zh_long: Anthropic 官方的生命科学 Claude Code marketplace——一份精选的合作方集成目录，约 20 项（PubMed、bioRxiv、ChEMBL、Consensus、BioRender、ClinicalTrials.gov、Open
-  Targets）；它不是一个 skill 合集，而是一份经过甄选的合作方清单。
+description_long: Anthropic's official Claude Code marketplace for life sciences —
+  a curated directory of ~20 partner integrations (PubMed, bioRxiv, ChEMBL, Consensus,
+  BioRender, ClinicalTrials.gov, Open Targets), not a skill collection but a vetted
+  partner list.
+description_zh_long: Anthropic 官方的生命科学 Claude Code marketplace——一份精选的合作方集成目录，约 20
+  项（PubMed、bioRxiv、ChEMBL、Consensus、BioRender、ClinicalTrials.gov、Open Targets）；它不是一个
+  skill 合集，而是一份经过甄选的合作方清单。
 security:
   makes_network_calls: true
   network_endpoints:
-  - partner services per listing (PubMed, bioRxiv, ChEMBL, Consensus, BioRender, ClinicalTrials.gov, Open
-    Targets, scvi-tools, etc.)
+  - partner services per listing (PubMed, bioRxiv, ChEMBL, Consensus, BioRender, ClinicalTrials.gov,
+    Open Targets, scvi-tools, etc.)
   has_hooks: false
   requires_bypass_permissions: false
   telemetry: false
@@ -27,9 +29,10 @@ security:
   depends_3rdparty: true
   allowed_tools_scoped: true
 homepage_url: https://www.anthropic.com/news/claude-for-life-sciences
-install: /plugin marketplace add anthropics/life-sciences, then install the partner plugins you need
-validate_claim: Add the marketplace and install the PubMed integration; confirm a query returns real PMID-backed
-  results inside Claude Code.
+install: /plugin marketplace add anthropics/life-sciences, then install the partner
+  plugins you need
+validate_claim: Add the marketplace and install the PubMed integration; confirm a
+  query returns real PMID-backed results inside Claude Code.
 lang:
 - en
 tags:
@@ -40,7 +43,7 @@ tags:
 - mcp
 featured: false
 spotlight: false
-stargazers_count: 402
+stargazers_count: 410
 updated_at: '2026-05-08'
 archived: false
 current_release:

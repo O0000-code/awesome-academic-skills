@@ -1,4 +1,3 @@
-# research-agora.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: research-agora
 slug: research-agora
 source_url: https://github.com/rpatrik96/research-agora
@@ -8,9 +7,10 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: Suite for ML researchers spanning literature search, paper writing, citation verification,
-  experiment tracking, LaTeX automation, benchmarking, and peer review. The experiment-tracking and benchmark
-  angle is its edge; breadth means moderate depth.
+description: Suite for ML researchers spanning literature search, paper writing, citation
+  verification, experiment tracking, LaTeX automation, benchmarking, and peer review.
+  The experiment-tracking and benchmark angle is its edge; breadth means moderate
+  depth.
 description_zh: 面向 ML 研究者的套件，覆盖文献检索、论文写作、引用核验、实验追踪、LaTeX 自动化、基准测试与同行评审。实验追踪与基准测试这一切入点是它的长处；覆盖面广也意味着各项深度只属中等。
 security:
   makes_network_calls: true
@@ -55,9 +55,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
 stargazers_count: 11
 updated_at: '2026-05-08'
 archived: false
+current_release:
+  tag: null
+  published_at: null

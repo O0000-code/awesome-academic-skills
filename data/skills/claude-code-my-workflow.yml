@@ -7,14 +7,15 @@ license: MIT
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: suite
-description: An econometrician's fork-ready, 36-command Claude Code setup from a PhD course — but ships
-  with bypass-permissions on by default.
+description: An econometrician's fork-ready, 36-command Claude Code setup from a PhD
+  course — but ships with bypass-permissions on by default.
 description_zh: 一位计量经济学家从博士课程打磨出的、可直接 fork 的 36 命令 Claude Code 配置——但默认开启 bypass-permissions。
-description_long: An econometrician's fork-ready Claude Code setup from a PhD course — ~36 commands across
-  lit-review, drafting, referee responses, Stata replication, Quarto/LaTeX, and reproducibility audits.
-  Ships with bypass-permissions mode on by default.
-description_zh_long: 一位计量经济学家在博士课程中打磨出的、可直接 fork 的 Claude Code 配置——约 36 条命令，覆盖文献综述、起草、审稿回复、Stata 复现、Quarto/LaTeX
-  与可复现性审查。默认开启 bypass-permissions 模式。
+description_long: An econometrician's fork-ready Claude Code setup from a PhD course
+  — ~36 commands across lit-review, drafting, referee responses, Stata replication,
+  Quarto/LaTeX, and reproducibility audits. Ships with bypass-permissions mode on
+  by default.
+description_zh_long: 一位计量经济学家在博士课程中打磨出的、可直接 fork 的 Claude Code 配置——约 36 条命令，覆盖文献综述、起草、审稿回复、Stata
+  复现、Quarto/LaTeX 与可复现性审查。默认开启 bypass-permissions 模式。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -26,10 +27,10 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 homepage_url: https://psantanna.com/claude-code-my-workflow/
-install: Fork + clone, then ./scripts/validate-setup.sh (needs Claude Code + git; XeLaTeX/Quarto/R for
-  full demos).
-validate_claim: In a repo with a draft, run `/review-paper` or `/respond-to-referees` and expect a structured
-  multi-pass writing review or a point-by-point referee reply.
+install: Fork + clone, then ./scripts/validate-setup.sh (needs Claude Code + git;
+  XeLaTeX/Quarto/R for full demos).
+validate_claim: In a repo with a draft, run `/review-paper` or `/respond-to-referees`
+  and expect a structured multi-pass writing review or a point-by-point referee reply.
 lang:
 - en
 tags:
@@ -39,7 +40,7 @@ tags:
 - reproducibility
 featured: false
 spotlight: false
-stargazers_count: 1188
+stargazers_count: 1199
 updated_at: '2026-06-01'
 archived: false
 current_release:

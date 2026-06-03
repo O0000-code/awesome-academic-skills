@@ -7,14 +7,16 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: Posit's official R / Quarto / tidyverse skills from the makers of RStudio — the pick when
-  analysis lives in R, not Python.
-description_zh: 出自 RStudio 团队的 Posit 官方 R / Quarto / tidyverse skill——当分析建立在 R 而非 Python 上时的首选。
-description_long: Posit's official Skills for the R / Quarto / Shiny / tidyverse stack plus dev-workflow
-  skills (adversarial code review, CRAN prep, testthat-3 testing); the one to reach for when analysis
-  lives in R rather than Python, from the makers of RStudio.
-description_zh_long: Posit 官方出品的 Skill，面向 R / Quarto / Shiny / tidyverse 技术栈，并配有开发工作流 skill（对抗式代码审查、CRAN
-  发布准备、testthat 3 测试）；当分析工作建立在 R 而非 Python 上时的首选，出自 RStudio 的开发团队。
+description: Posit's official R / Quarto / tidyverse skills from the makers of RStudio
+  — the pick when analysis lives in R, not Python.
+description_zh: 出自 RStudio 团队的 Posit 官方 R / Quarto / tidyverse skill——当分析建立在 R 而非
+  Python 上时的首选。
+description_long: Posit's official Skills for the R / Quarto / Shiny / tidyverse stack
+  plus dev-workflow skills (adversarial code review, CRAN prep, testthat-3 testing);
+  the one to reach for when analysis lives in R rather than Python, from the makers
+  of RStudio.
+description_zh_long: Posit 官方出品的 Skill，面向 R / Quarto / Shiny / tidyverse 技术栈，并配有开发工作流
+  skill（对抗式代码审查、CRAN 发布准备、testthat 3 测试）；当分析工作建立在 R 而非 Python 上时的首选，出自 RStudio 的开发团队。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -25,10 +27,10 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: true
 homepage_url: ''
-install: Copy a skill folder from the repo into your skills dir; works in Claude.ai, Claude Code, or via
-  the API
-validate_claim: Use the cran-extrachecks skill on an R package and confirm it flags ad-hoc CRAN requirements
-  that devtools::check() misses.
+install: Copy a skill folder from the repo into your skills dir; works in Claude.ai,
+  Claude Code, or via the API
+validate_claim: Use the cran-extrachecks skill on an R package and confirm it flags
+  ad-hoc CRAN requirements that devtools::check() misses.
 lang:
 - en
 tags:
@@ -39,7 +41,7 @@ tags:
 - data-science
 featured: false
 spotlight: false
-stargazers_count: 379
+stargazers_count: 385
 updated_at: '2026-05-29'
 archived: false
 current_release:

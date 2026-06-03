@@ -1,4 +1,3 @@
-# gs-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: gs-skills
 slug: gs-skills
 source_url: https://github.com/cookjohn/gs-skills
@@ -8,11 +7,12 @@ license: MIT
 category: Literature Search & Discovery
 lifecycle_stage: discovery
 type: suite
-description: 'A genuinely useful Google Scholar toolkit for the CLI: keyword/advanced search, citation-chain
-  tracking, full-text link resolution and one-step Zotero export. Relies on Chrome DevTools MCP and scrapes
-  the DOM, so it can break when Scholar changes.'
-description_zh: 一套真正实用的命令行 Google Scholar 工具箱：关键词/高级检索、引用链追踪、全文链接解析与一键 Zotero 导出。依赖 Chrome DevTools MCP
-  并抓取 DOM，因此 Scholar 一改版就可能失效。
+description: 'A genuinely useful Google Scholar toolkit for the CLI: keyword/advanced
+  search, citation-chain tracking, full-text link resolution and one-step Zotero export.
+  Relies on Chrome DevTools MCP and scrapes the DOM, so it can break when Scholar
+  changes.'
+description_zh: 一套真正实用的命令行 Google Scholar 工具箱：关键词/高级检索、引用链追踪、全文链接解析与一键 Zotero 导出。依赖
+  Chrome DevTools MCP 并抓取 DOM，因此 Scholar 一改版就可能失效。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -30,9 +30,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
-  returned title/DOI resolves to a real paper.
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
+  then verify every returned title/DOI resolves to a real paper.
 subcategory: Multi-source discovery search
-stargazers_count: 351
+stargazers_count: 360
 updated_at: '2026-03-13'
 archived: false
+current_release:
+  tag: null
+  published_at: null

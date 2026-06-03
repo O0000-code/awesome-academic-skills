@@ -1,4 +1,3 @@
-# cnki-skills.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: cnki-skills
 slug: cnki-skills
 source_url: https://github.com/cookjohn/cnki-skills
@@ -8,11 +7,12 @@ license: No License
 category: Literature Search & Discovery
 lifecycle_stage: discovery
 type: suite
-description: 'Drives CNKI (China''s main academic database) from Claude Code via Chrome DevTools MCP:
-  search, journal browse, citation analysis, PDF download, BibTeX/Zotero export. Go-to for Chinese-language
-  lit work; needs browser-MCP setup and ships no license.'
-description_zh: 在 Claude Code 中经由 Chrome DevTools MCP 驱动 CNKI（中国主要学术数据库）：检索、期刊浏览、引文分析、PDF 下载，以及 BibTeX/Zotero
-  导出。中文文献工作的首选；需要配置 browser MCP，且未附 LICENSE。
+description: 'Drives CNKI (China''s main academic database) from Claude Code via Chrome
+  DevTools MCP: search, journal browse, citation analysis, PDF download, BibTeX/Zotero
+  export. Go-to for Chinese-language lit work; needs browser-MCP setup and ships no
+  license.'
+description_zh: 在 Claude Code 中经由 Chrome DevTools MCP 驱动 CNKI（中国主要学术数据库）：检索、期刊浏览、引文分析、PDF
+  下载，以及 BibTeX/Zotero 导出。中文文献工作的首选；需要配置 browser MCP，且未附 LICENSE。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -29,9 +29,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to find recent papers on a specific topic, then verify every
-  returned title/DOI resolves to a real paper.
+validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
+  then verify every returned title/DOI resolves to a real paper.
 subcategory: Multi-source discovery search
-stargazers_count: 532
+stargazers_count: 542
 updated_at: '2026-03-13'
 archived: false
+current_release:
+  tag: null
+  published_at: null

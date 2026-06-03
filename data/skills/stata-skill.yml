@@ -7,14 +7,15 @@ license: No License
 category: Data Analysis & Statistics
 lifecycle_stage: analysis
 type: plugin
-description: The eval-backed reference that stops Claude writing subtly-wrong Stata — the silent traps
-  that run clean but mislead.
+description: The eval-backed reference that stops Claude writing subtly-wrong Stata
+  — the silent traps that run clean but mislead.
 description_zh: 一份有评测背书的参考，专治 Claude 写出"看似没错、实则有坑"的 Stata 代码——那些不报错却误导结果的陷阱。
-description_long: 'The reference that stops Claude writing subtly-wrong Stata: ~28 docs on silent traps
-  (missings sort to +infinity, = vs ==, macro quoting) plus idiomatic econometrics (reghdfe, did, rdrobust,
-  panel, Mata). Backed by a 24-task eval; needs local Stata.'
-description_zh_long: 专治 Claude 写出"看似没错、实则有坑"的 Stata 代码：约 28 篇文档讲透那些不报错的陷阱（缺失值排序时当作正无穷、= 与 ==、宏的引号）， 外加地道的计量经济学写法（reghdfe、did、rdrobust、面板、Mata）。配有
-  24 项任务的评测；需本地安装 Stata。
+description_long: 'The reference that stops Claude writing subtly-wrong Stata: ~28
+  docs on silent traps (missings sort to +infinity, = vs ==, macro quoting) plus idiomatic
+  econometrics (reghdfe, did, rdrobust, panel, Mata). Backed by a 24-task eval; needs
+  local Stata.'
+description_zh_long: 专治 Claude 写出"看似没错、实则有坑"的 Stata 代码：约 28 篇文档讲透那些不报错的陷阱（缺失值排序时当作正无穷、=
+  与 ==、宏的引号）， 外加地道的计量经济学写法（reghdfe、did、rdrobust、面板、Mata）。配有 24 项任务的评测；需本地安装 Stata。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -24,10 +25,12 @@ security:
   auto_update: false
   depends_3rdparty: true
   allowed_tools_scoped: true
-install: Add as a Claude Code plugin (marketplace.json) or copy the `stata` skill into ~/.claude/skills/
-validate_claim: '"Write a reghdfe two-way fixed-effects regression of wage on a treatment dummy with clustered
-  SEs, and guard every inequality filter against missing values." Verify the output uses `if !missing(...)`
-  and correct local-macro backtick/quote syntax.'
+install: Add as a Claude Code plugin (marketplace.json) or copy the `stata` skill
+  into ~/.claude/skills/
+validate_claim: '"Write a reghdfe two-way fixed-effects regression of wage on a treatment
+  dummy with clustered SEs, and guard every inequality filter against missing values."
+  Verify the output uses `if !missing(...)` and correct local-macro backtick/quote
+  syntax.'
 lang:
 - en
 tags:
@@ -36,7 +39,7 @@ tags:
 - causal-inference
 featured: false
 spotlight: false
-stargazers_count: 237
+stargazers_count: 239
 updated_at: '2026-04-10'
 archived: false
 current_release:

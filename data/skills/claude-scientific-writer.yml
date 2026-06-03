@@ -1,4 +1,3 @@
-# claude-scientific-writer.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: claude-scientific-writer
 slug: claude-scientific-writer
 source_url: https://github.com/k-dense-ai/claude-scientific-writer
@@ -8,9 +7,9 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: 'A 27-skill scientific-writing suite: literature review, citation management, peer review,
-  figures, posters, slides and manuscript drafting. The most popular here and broad, but jack-of-all-trades;
-  ships an unscoped Bash.'
+description: 'A 27-skill scientific-writing suite: literature review, citation management,
+  peer review, figures, posters, slides and manuscript drafting. The most popular
+  here and broad, but jack-of-all-trades; ships an unscoped Bash.'
 description_zh: 一个包含 27 个 skill 的科学写作 skill 集：文献综述、引用管理、同行评审、图表、海报、幻灯片以及稿件起草。是此处最受欢迎、覆盖面最广的一个，但样样通而无一精；且附带了一个未限定权限范围的
   Bash。
 security:
@@ -62,9 +61,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: false
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
-stargazers_count: 1875
+stargazers_count: 1885
 updated_at: '2026-05-27'
 archived: false
+current_release:
+  tag: v2.12.0
+  published_at: '2026-02-21'

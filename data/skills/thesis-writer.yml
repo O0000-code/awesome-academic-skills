@@ -1,4 +1,3 @@
-# thesis-writer.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: thesis-writer
 slug: thesis-writer
 source_url: https://github.com/ibrahim-kukash/thesis-writer
@@ -8,11 +7,12 @@ license: MIT
 category: Writing Quality & De-AI
 lifecycle_stage: writing-quality
 type: skill
-description: Writes thesis chapters while scanning for 14 common AI-writing tells against a 23-point rubric,
-  aimed at making academic prose read as human. A focused writing + de-AI tool for theses; useful as a
-  quality gate, though only lightly proven (8 stars).
-description_zh: 撰写学位论文章节，同时对照一份 23 点量表扫查 14 种常见的 AI 写作痕迹，力求让学术文字读起来像人写的。一个聚焦于写作 + 去 AI 味的学位论文工具；作为质量闸门很有用，但验证尚浅（8
-  star）。
+description: Writes thesis chapters while scanning for 14 common AI-writing tells
+  against a 23-point rubric, aimed at making academic prose read as human. A focused
+  writing + de-AI tool for theses; useful as a quality gate, though only lightly proven
+  (8 stars).
+description_zh: 撰写学位论文章节，同时对照一份 23 点量表扫查 14 种常见的 AI 写作痕迹，力求让学术文字读起来像人写的。一个聚焦于写作 +
+  去 AI 味的学位论文工具；作为质量闸门很有用，但验证尚浅（8 star）。
 security:
   makes_network_calls: false
   network_endpoints:
@@ -24,9 +24,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
-  and preserves the original meaning and citations.
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify
+  it reads naturally and preserves the original meaning and citations.
 subcategory: Manuscript proofreading & quality audit
-stargazers_count: 8
+stargazers_count: 9
 updated_at: '2026-05-30'
 archived: false
+current_release:
+  tag: null
+  published_at: null

@@ -1,4 +1,3 @@
-# econometrics-skill.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: econometrics-skill
 slug: econometrics-skill
 source_url: https://github.com/xiaomihu1992/econometrics-skill
@@ -8,10 +7,11 @@ license: MIT
 category: Data Analysis & Statistics
 lifecycle_stage: analysis
 type: skill
-description: 'Applied causal-inference skill: 17 estimators (OLS, PSM/IPW/AIPW, IV/2SLS, DiD/event-study,
-  sharp/fuzzy RDD) with a method-selection decision tree, diagnostics and reporting templates. Solid for
-  tabular econometrics; assumes clean panel data.'
-description_zh: 一个应用因果推断 skill：涵盖 17 种估计量（OLS、PSM/IPW/AIPW、IV/2SLS、DiD/事件研究、精确/模糊 RDD），并配有方法选择决策树、诊断检验与报告模板。对表格型计量经济学很扎实；但前提是面板数据已清洗干净。
+description: 'Applied causal-inference skill: 17 estimators (OLS, PSM/IPW/AIPW, IV/2SLS,
+  DiD/event-study, sharp/fuzzy RDD) with a method-selection decision tree, diagnostics
+  and reporting templates. Solid for tabular econometrics; assumes clean panel data.'
+description_zh: 一个应用因果推断 skill：涵盖 17 种估计量（OLS、PSM/IPW/AIPW、IV/2SLS、DiD/事件研究、精确/模糊
+  RDD），并配有方法选择决策树、诊断检验与报告模板。对表格型计量经济学很扎实；但前提是面板数据已清洗干净。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -21,9 +21,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to run a described analysis on a small dataset, then verify
-  the statistics and output are correct and reproducible.
+validate_claim: Ask Claude to use this skill to run a described analysis on a small
+  dataset, then verify the statistics and output are correct and reproducible.
 subcategory: Causal inference & econometrics
 stargazers_count: 19
 updated_at: '2026-04-17'
 archived: false
+current_release:
+  tag: null
+  published_at: null

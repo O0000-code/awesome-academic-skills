@@ -1,4 +1,3 @@
-# sciclaw.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: sciclaw
 slug: sciclaw
 source_url: https://github.com/drpedapati/sciclaw
@@ -8,8 +7,9 @@ license: No License
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: A 'pair-scientist' research suite (23 skills) wrapped in a lightweight Go runtime that injects
-  lifecycle hooks, a manuscript spine and run-logging so every session is reproducible, logged and citeable.
+description: A 'pair-scientist' research suite (23 skills) wrapped in a lightweight
+  Go runtime that injects lifecycle hooks, a manuscript spine and run-logging so every
+  session is reproducible, logged and citeable.
 description_zh: 一套"结对科学家"式的研究套件（23 个 skill），封装在轻量的 Go runtime 中，注入生命周期 hook、稿件主干结构与运行日志，使每次会话都可复现、有记录、可引用。
 security:
   makes_network_calls: true
@@ -60,9 +60,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task, and verify the result
-  matches what that skill claims to do.
+validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
+  and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
 stargazers_count: 76
 updated_at: '2026-05-06'
 archived: false
+current_release:
+  tag: v0.3.4
+  published_at: '2026-05-05'

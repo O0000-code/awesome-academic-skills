@@ -7,14 +7,14 @@ license: CC-BY-4.0
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: The largest open life-sciences library (199 skills), reporting a 65%-to-92% BixBench jump;
-  low-risk but too large to fully audit.
+description: The largest open life-sciences library (199 skills), reporting a 65%-to-92%
+  BixBench jump; low-risk but too large to fully audit.
 description_zh: 最大的开放生命科学 skill 库（199 个 skill），据称将 BixBench 成绩从 65% 提到 92%；风险低，但体量过大、无法完整审查。
-description_long: The largest open life-sciences skill library — 199 markdown skills across genomics,
-  single-cell, drug discovery and biostatistics — reporting a 65%-to-92% jump on BixBench. Low execution
-  risk (markdown-only) but too large to fully audit.
-description_zh_long: 最大的开放生命科学 skill 库——199 个 markdown skill，横跨基因组学、单细胞、药物发现与生物统计——据称在 BixBench 上将成绩从
-  65% 提升到 92%。执行风险低（纯 markdown），但体量过大、无法完整审查。
+description_long: The largest open life-sciences skill library — 199 markdown skills
+  across genomics, single-cell, drug discovery and biostatistics — reporting a 65%-to-92%
+  jump on BixBench. Low execution risk (markdown-only) but too large to fully audit.
+description_zh_long: 最大的开放生命科学 skill 库——199 个 markdown skill，横跨基因组学、单细胞、药物发现与生物统计——据称在
+  BixBench 上将成绩从 65% 提升到 92%。执行风险低（纯 markdown），但体量过大、无法完整审查。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -24,9 +24,11 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-install: Clone the repo and point your agent at the skills/ directory (plain markdown, no npm)
-validate_claim: With the genomics skills loaded, ask for a Scanpy single-cell QC + clustering workflow;
-  confirm correct API usage (e.g. sc.pp/sc.tl ordering) rather than invented function names.
+install: Clone the repo and point your agent at the skills/ directory (plain markdown,
+  no npm)
+validate_claim: With the genomics skills loaded, ask for a Scanpy single-cell QC +
+  clustering workflow; confirm correct API usage (e.g. sc.pp/sc.tl ordering) rather
+  than invented function names.
 lang:
 - en
 tags:
@@ -37,7 +39,7 @@ tags:
 homepage_url: https://omicshorizon.ai/en/
 featured: false
 spotlight: false
-stargazers_count: 186
+stargazers_count: 188
 updated_at: '2026-05-28'
 archived: false
 current_release:

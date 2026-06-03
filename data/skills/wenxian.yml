@@ -1,4 +1,3 @@
-# wenxian.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: wenxian
 slug: wenxian
 source_url: https://github.com/njzjz/wenxian
@@ -8,11 +7,11 @@ license: LGPL-3.0
 category: Reference & Citation Management
 lifecycle_stage: citation
 type: skill
-description: Generates BibTeX from a DOI, PMID, arXiv ID, or paper title by querying CrossRef, PubMed,
-  arXiv, Semantic Scholar and ChemRxiv. Mature, tested, PyPI-published; the agent skill is a thin wrapper
-  over a solid CLI. LGPL-3.0.
-description_zh: 通过查询 CrossRef、PubMed、arXiv、Semantic Scholar 和 ChemRxiv，从 DOI、PMID、arXiv ID 或论文标题生成 BibTeX。成熟、经过测试、已发布到
-  PyPI；该 agent skill 是对一个扎实 CLI 的轻量封装。LGPL-3.0。
+description: Generates BibTeX from a DOI, PMID, arXiv ID, or paper title by querying
+  CrossRef, PubMed, arXiv, Semantic Scholar and ChemRxiv. Mature, tested, PyPI-published;
+  the agent skill is a thin wrapper over a solid CLI. LGPL-3.0.
+description_zh: 通过查询 CrossRef、PubMed、arXiv、Semantic Scholar 和 ChemRxiv，从 DOI、PMID、arXiv
+  ID 或论文标题生成 BibTeX。成熟、经过测试、已发布到 PyPI；该 agent skill 是对一个扎实 CLI 的轻量封装。LGPL-3.0。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -48,9 +47,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to format or verify a set of references, then check each
-  citation against the authoritative record (DOI/metadata).
+validate_claim: Ask Claude to use this skill to format or verify a set of references,
+  then check each citation against the authoritative record (DOI/metadata).
 subcategory: BibTeX / metadata generation
 stargazers_count: 16
 updated_at: '2026-06-01'
 archived: false
+current_release:
+  tag: v0.3.2
+  published_at: '2026-06-01'

@@ -1,4 +1,3 @@
-# anti-aigc-zh.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: anti-aigc-zh
 slug: anti-aigc-zh
 source_url: https://github.com/beizi6/anti-aigc-zh
@@ -8,9 +7,9 @@ license: MIT
 category: Writing Quality & De-AI
 lifecycle_stage: writing-quality
 type: skill
-description: A Chinese counter-AIGC rewriter that reasons from how detectors work (probability curvature,
-  perplexity uniformity, watermark tokens) plus image-metadata stripping. Niche and evasion-focused; bundled
-  chunked-file-writer is incidental.
+description: A Chinese counter-AIGC rewriter that reasons from how detectors work
+  (probability curvature, perplexity uniformity, watermark tokens) plus image-metadata
+  stripping. Niche and evasion-focused; bundled chunked-file-writer is incidental.
 description_zh: 一个中文反 AIGC 改写工具，从检测器的工作原理出发进行推理（概率曲率、perplexity 均匀性、水印 token），并附带图片元数据清除功能。定位小众、偏重规避检测；附带的分块写文件工具只是顺带提供。
 security:
   makes_network_calls: false
@@ -21,9 +20,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use this skill to revise a sample passage, then verify it reads naturally
-  and preserves the original meaning and citations.
+validate_claim: Ask Claude to use this skill to revise a sample passage, then verify
+  it reads naturally and preserves the original meaning and citations.
 subcategory: AIGC detector evasion (thesis)
 stargazers_count: 9
 updated_at: '2026-04-20'
 archived: false
+current_release:
+  tag: null
+  published_at: null

@@ -7,14 +7,15 @@ license: No License
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 31 full-lifecycle skills distilled from 17 LLM-agent repos — useful breadth, but unlicensed
-  and rough-edged.
+description: 31 full-lifecycle skills distilled from 17 LLM-agent repos — useful breadth,
+  but unlicensed and rough-edged.
 description_zh: 提炼自 17 个 LLM agent 仓库的 31 个全生命周期 skill——广度实用，但未附许可证、略显粗糙。
-description_long: 31 skills across the full paper lifecycle — literature search, data analysis with NumPy/SciPy
-  stats, self-review, deep-research, slides — distilled from 17 LLM-agent repos. Useful breadth, but unlicensed
-  and rough-edged (a broken link in its README).
-description_zh_long: 31 个覆盖论文全生命周期的 skill——文献检索、用 NumPy/SciPy 做统计分析、自我审稿、深度研究、幻灯片——提炼自 17 个 LLM agent
-  仓库。广度实用，但未附许可证，且略显粗糙（README 里有一个失效链接）。
+description_long: 31 skills across the full paper lifecycle — literature search, data
+  analysis with NumPy/SciPy stats, self-review, deep-research, slides — distilled
+  from 17 LLM-agent repos. Useful breadth, but unlicensed and rough-edged (a broken
+  link in its README).
+description_zh_long: 31 个覆盖论文全生命周期的 skill——文献检索、用 NumPy/SciPy 做统计分析、自我审稿、深度研究、幻灯片——提炼自
+  17 个 LLM agent 仓库。广度实用，但未附许可证，且略显粗糙（README 里有一个失效链接）。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -25,10 +26,11 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-install: npx skills add lingzhi227/agent-research-skills -g -a claude-code (global; then run install.sh
-  for slash commands)
-validate_claim: Ask the data-analysis skill to run a t-test and report effect size on a small CSV; confirm
-  it uses numpy/scipy correctly and states assumptions rather than inventing a p-value.
+install: npx skills add lingzhi227/agent-research-skills -g -a claude-code (global;
+  then run install.sh for slash commands)
+validate_claim: Ask the data-analysis skill to run a t-test and report effect size
+  on a small CSV; confirm it uses numpy/scipy correctly and states assumptions rather
+  than inventing a p-value.
 lang:
 - en
 tags:
@@ -38,7 +40,7 @@ tags:
 - deep-research
 featured: false
 spotlight: false
-stargazers_count: 91
+stargazers_count: 95
 updated_at: '2026-02-27'
 archived: false
 current_release:

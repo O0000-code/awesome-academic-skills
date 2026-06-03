@@ -1,4 +1,3 @@
-# remote-sensing-research-radar.yml - added 2026-06-01 (completeness round, audit LIST verdict).
 name: remote-sensing-research-radar
 slug: remote-sensing-research-radar
 source_url: https://github.com/limi124/remote-sensing-research-radar
@@ -8,11 +7,11 @@ license: No License
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: skill
-description: 'Remote-sensing research-frontier radar: scans arXiv/Papers-with-Code/GitHub/HF and venue
-  pages for geospatial-AI and transferable-CV work, ranks by novelty/reproducibility/fit, drafts related-work
-  tables. Niche but well-scoped; no LICENSE.'
-description_zh: 遥感研究前沿雷达：扫描 arXiv/Papers-with-Code/GitHub/HF 及会议/期刊页面，搜罗地理空间 AI 与可迁移 CV 方向的工作，按新颖性/可复现性/契合度排序，并起草相关工作（related
-  work）表格。题材小众但定位清晰；无 LICENSE。
+description: 'Remote-sensing research-frontier radar: scans arXiv/Papers-with-Code/GitHub/HF
+  and venue pages for geospatial-AI and transferable-CV work, ranks by novelty/reproducibility/fit,
+  drafts related-work tables. Niche but well-scoped; no LICENSE.'
+description_zh: 遥感研究前沿雷达：扫描 arXiv/Papers-with-Code/GitHub/HF 及会议/期刊页面，搜罗地理空间 AI 与可迁移
+  CV 方向的工作，按新颖性/可复现性/契合度排序，并起草相关工作（related work）表格。题材小众但定位清晰；无 LICENSE。
 security:
   makes_network_calls: false
   network_endpoints: []
@@ -22,9 +21,12 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Ask Claude to use a skill in this pack on a task from its field, then verify the output
-  meets that discipline's conventions.
+validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
+  verify the output meets that discipline's conventions.
 subcategory: Computer science, AI / ML & graphics
-stargazers_count: 66
+stargazers_count: 75
 updated_at: '2026-05-10'
 archived: false
+current_release:
+  tag: null
+  published_at: null
