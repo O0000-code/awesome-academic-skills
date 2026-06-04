@@ -39,7 +39,7 @@ security:
   allowed_tools_scoped: true
 validate_claim: Ask Claude to use this skill to convert a sample PDF, then verify
   the output preserves the document's structure (headings, tables, formulas).
-stargazers_count: 19
+stargazers_count: 20
 updated_at: '2026-05-19'
 archived: false
 current_release:

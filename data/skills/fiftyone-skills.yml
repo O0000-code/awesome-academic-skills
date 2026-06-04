@@ -42,7 +42,7 @@ validate_claim: Ask Claude to use this skill to run a described analysis on a sm
   dataset, then verify the statistics and output are correct and reproducible.
 subcategory: Domain computational & simulation pipelines
 stargazers_count: 30
-updated_at: '2026-05-22'
+updated_at: '2026-06-03'
 archived: false
 current_release:
   tag: null

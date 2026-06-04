@@ -23,8 +23,8 @@ security:
 validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
   and verify the result matches what that skill claims to do.
 subcategory: Biomedical & life sciences
-stargazers_count: 963
-updated_at: '2026-06-02'
+stargazers_count: 976
+updated_at: '2026-06-03'
 archived: false
 current_release:
   tag: latest

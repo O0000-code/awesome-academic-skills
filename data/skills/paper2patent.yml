@@ -26,7 +26,7 @@ security:
 validate_claim: Ask Claude to use this skill to format a manuscript to a target template,
   then verify the output compiles/opens and matches the spec.
 subcategory: Format conversion & document transformation
-stargazers_count: 211
+stargazers_count: 214
 updated_at: '2026-05-20'
 archived: false
 current_release:
