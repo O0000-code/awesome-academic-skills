@@ -23,7 +23,7 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: true
 subcategory: Data-driven statistical plots
-stargazers_count: 6
+stargazers_count: 7
 updated_at: '2026-05-30'
 archived: false
 current_release:
