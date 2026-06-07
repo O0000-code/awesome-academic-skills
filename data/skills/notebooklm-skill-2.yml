@@ -32,7 +32,7 @@ security:
 validate_claim: Ask Claude to use this skill to summarize or answer questions about
   a specific paper, then verify each claim is grounded in the source text.
 subcategory: Grounded Q&A & knowledge bases
-stargazers_count: 6896
+stargazers_count: 6909
 updated_at: '2025-11-21'
 archived: false
 current_release:

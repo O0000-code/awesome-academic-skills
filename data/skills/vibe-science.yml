@@ -52,7 +52,7 @@ security:
   allowed_tools_scoped: false
 subcategory: Human-in-the-loop / gate-driven pipelines
 stargazers_count: 11
-updated_at: '2026-04-30'
+updated_at: '2026-06-06'
 archived: false
 current_release:
   tag: v7.0
