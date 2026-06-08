@@ -64,7 +64,7 @@ security:
 validate_claim: Give the system a concrete research question and verify it returns
   a searched, cited, and drafted result whose sources actually exist.
 subcategory: Human-in-the-loop / gate-driven pipelines
-stargazers_count: 128
+stargazers_count: 127
 updated_at: '2026-06-02'
 archived: false
 current_release:

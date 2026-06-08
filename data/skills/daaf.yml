@@ -64,7 +64,7 @@ validate_claim: Ask Claude to use this skill to run a described analysis on a sm
   dataset, then verify the statistics and output are correct and reproducible.
 subcategory: Reproducible-analysis frameworks
 stargazers_count: 214
-updated_at: '2026-05-31'
+updated_at: '2026-06-07'
 archived: false
 current_release:
   tag: v2.1.0

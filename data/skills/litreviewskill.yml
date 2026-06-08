@@ -28,7 +28,7 @@ validate_claim: Ask Claude to use this skill to find recent papers on a specific
   then verify every returned title/DOI resolves to a real paper.
 subcategory: Systematic review & deep-research pipelines
 stargazers_count: 6
-updated_at: '2026-04-24'
+updated_at: '2026-06-08'
 archived: false
 current_release:
   tag: null

@@ -37,7 +37,7 @@ security:
 validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
   and verify the result matches what that skill claims to do.
 subcategory: Thesis & degree-work authoring
-stargazers_count: 145
+stargazers_count: 153
 updated_at: '2026-04-29'
 archived: false
 current_release:
