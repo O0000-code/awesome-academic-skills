@@ -45,12 +45,12 @@ tags:
 - databases
 featured: false
 spotlight: false
-stargazers_count: 1696
-updated_at: '2026-05-28'
+stargazers_count: 1740
+updated_at: '2026-06-08'
 archived: false
 current_release:
-  tag: v1.0.2
-  published_at: '2026-05-28'
+  tag: v1.0.4
+  published_at: '2026-06-08'
 last_link_check: null
 last_security_scan: null
 subcategory: Compute & data-science suites
