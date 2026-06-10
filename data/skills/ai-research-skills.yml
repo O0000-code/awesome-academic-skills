@@ -63,7 +63,7 @@ security:
   allowed_tools_scoped: true
 validate_claim: Open the list and verify its entries link to real, in-scope repositories.
 subcategory: Compute & data-science suites
-stargazers_count: 9458
+stargazers_count: 9495
 updated_at: '2026-04-28'
 archived: false
 current_release:
