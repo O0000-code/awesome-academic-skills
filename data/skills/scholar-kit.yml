@@ -41,5 +41,5 @@ stargazers_count: 15
 updated_at: '2026-06-10'
 archived: false
 current_release:
-  tag: null
-  published_at: null
+  tag: v1.13.0
+  published_at: '2026-06-10'
