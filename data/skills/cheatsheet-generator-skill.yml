@@ -25,7 +25,7 @@ security:
 validate_claim: Ask Claude to use this skill to summarize or answer questions about
   a specific paper, then verify each claim is grounded in the source text.
 subcategory: Study & derivative artifacts
-stargazers_count: 142
+stargazers_count: 146
 updated_at: '2026-04-09'
 archived: false
 current_release:
