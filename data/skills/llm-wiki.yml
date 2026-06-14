@@ -30,8 +30,8 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 subcategory: Grounded Q&A & knowledge bases
-stargazers_count: 557
-updated_at: '2026-05-23'
+stargazers_count: 577
+updated_at: '2026-06-13'
 archived: false
 current_release:
   tag: v0.10.2

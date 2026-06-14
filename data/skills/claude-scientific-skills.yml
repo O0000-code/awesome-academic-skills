@@ -25,8 +25,8 @@ security:
 validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
   and verify the result matches what that skill claims to do.
 subcategory: Domain computational & simulation pipelines
-stargazers_count: 28090
-updated_at: '2026-06-12'
+stargazers_count: 28161
+updated_at: '2026-06-13'
 archived: false
 current_release:
   tag: v2.52.0
