@@ -42,12 +42,12 @@ tags:
 - Orchestra-Research
 featured: false
 spotlight: false
-stargazers_count: 9712
-updated_at: '2026-04-28'
+stargazers_count: 9750
+updated_at: '2026-06-16'
 archived: false
 current_release:
-  tag: v1.4.0
-  published_at: '2026-03-16'
+  tag: v1.7.2
+  published_at: '2026-06-16'
 last_link_check: null
 last_security_scan: null
 subcategory: Compute & data-science suites

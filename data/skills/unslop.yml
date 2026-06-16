@@ -63,7 +63,7 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: true
 subcategory: De-AI & humanizing
-stargazers_count: 59
+stargazers_count: 58
 updated_at: '2026-06-08'
 archived: false
 current_release:

@@ -65,7 +65,7 @@ security:
 validate_claim: Ask Claude to use this skill to format a manuscript to a target template,
   then verify the output compiles/opens and matches the spec.
 subcategory: LaTeX authoring & submission prep
-stargazers_count: 312
+stargazers_count: 313
 updated_at: '2026-05-26'
 archived: false
 current_release:

@@ -65,7 +65,7 @@ validate_claim: Ask Claude to use this skill to draft a described section, then 
   the structure and claims match scholarly conventions and the source material.
 subcategory: LaTeX & typesetting-integrated writing
 stargazers_count: 22
-updated_at: '2026-04-23'
+updated_at: '2026-06-15'
 archived: false
 current_release:
   tag: v0.1.0
