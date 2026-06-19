@@ -36,7 +36,7 @@ validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete 
   and verify the result matches what that skill claims to do.
 subcategory: Humanities, law & qualitative-research disciplines
 stargazers_count: 6
-updated_at: '2026-05-08'
+updated_at: '2026-06-17'
 archived: false
 current_release:
   tag: null

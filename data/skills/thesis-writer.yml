@@ -27,7 +27,7 @@ security:
 validate_claim: Ask Claude to use this skill to revise a sample passage, then verify
   it reads naturally and preserves the original meaning and citations.
 subcategory: Manuscript proofreading & quality audit
-stargazers_count: 10
+stargazers_count: 11
 updated_at: '2026-05-30'
 archived: false
 current_release:

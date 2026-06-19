@@ -27,7 +27,7 @@ security:
 validate_claim: Ask Claude to use this skill to draft a described section, then verify
   the structure and claims match scholarly conventions and the source material.
 subcategory: Thesis & degree-work authoring
-stargazers_count: 476
+stargazers_count: 483
 updated_at: '2026-05-07'
 archived: false
 current_release:
