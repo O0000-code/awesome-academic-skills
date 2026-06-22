@@ -60,7 +60,7 @@ security:
 validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
   then verify every returned title/DOI resolves to a real paper.
 subcategory: Full-text acquisition
-stargazers_count: 137
+stargazers_count: 139
 updated_at: '2026-05-26'
 archived: false
 current_release:

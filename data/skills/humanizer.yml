@@ -24,7 +24,7 @@ security:
 validate_claim: Ask Claude to use this skill to revise a sample passage, then verify
   it reads naturally and preserves the original meaning and citations.
 subcategory: De-AI & humanizing
-stargazers_count: 25253
+stargazers_count: 25506
 updated_at: '2026-06-07'
 archived: false
 current_release:

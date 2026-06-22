@@ -26,7 +26,7 @@ security:
 validate_claim: Ask Claude to use this skill to draft a described section, then verify
   the structure and claims match scholarly conventions and the source material.
 subcategory: Prose refinement & discipline-specific style
-stargazers_count: 263
+stargazers_count: 267
 updated_at: '2026-03-19'
 archived: false
 current_release:
