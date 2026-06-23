@@ -31,8 +31,8 @@ validate_claim: Ask Claude to use this skill to run a described analysis on a sm
   dataset, then verify the statistics and output are correct and reproducible.
 subcategory: Statistical modeling & test selection
 stargazers_count: 32
-updated_at: '2026-05-03'
+updated_at: '2026-06-22'
 archived: false
 current_release:
-  tag: v0.2.3
-  published_at: '2026-03-17'
+  tag: v0.3.0
+  published_at: '2026-06-22'

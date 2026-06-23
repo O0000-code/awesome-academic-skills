@@ -35,7 +35,7 @@ validate_claim: Give the system a concrete research question and verify it retur
   a searched, cited, and drafted result whose sources actually exist.
 subcategory: Fully autonomous auto-scientists
 stargazers_count: 378
-updated_at: '2026-06-21'
+updated_at: '2026-06-23'
 archived: false
 current_release:
   tag: v3.2.2
