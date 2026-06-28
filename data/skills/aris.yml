@@ -46,12 +46,12 @@ tags:
 - wanshuiyin
 featured: false
 spotlight: false
-stargazers_count: 12688
-updated_at: '2026-06-26'
+stargazers_count: 12717
+updated_at: '2026-06-28'
 archived: false
 current_release:
-  tag: v0.4.20
-  published_at: '2026-06-19'
+  tag: v0.4.21
+  published_at: '2026-06-28'
 last_link_check: null
 last_security_scan: null
 subcategory: Fully autonomous auto-scientists
