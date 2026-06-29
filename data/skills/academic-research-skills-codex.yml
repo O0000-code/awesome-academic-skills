@@ -64,9 +64,9 @@ security:
 validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
   and verify the result matches what that skill claims to do.
 subcategory: Full-lifecycle research backbones
-stargazers_count: 4917
-updated_at: '2026-06-21'
+stargazers_count: 5010
+updated_at: '2026-06-29'
 archived: false
 current_release:
-  tag: v0.1.14
-  published_at: '2026-06-21'
+  tag: v0.1.15
+  published_at: '2026-06-29'

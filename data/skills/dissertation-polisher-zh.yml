@@ -26,7 +26,7 @@ security:
 validate_claim: Ask Claude to use this skill to revise a sample passage, then verify
   it reads naturally and preserves the original meaning and citations.
 subcategory: AIGC detector evasion (thesis)
-stargazers_count: 37
+stargazers_count: 38
 updated_at: '2026-03-19'
 archived: false
 current_release:

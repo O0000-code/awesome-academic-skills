@@ -63,7 +63,7 @@ security:
 validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete task,
   and verify the result matches what that skill claims to do.
 subcategory: Social sciences
-stargazers_count: 24
+stargazers_count: 26
 updated_at: '2026-05-19'
 archived: false
 current_release:

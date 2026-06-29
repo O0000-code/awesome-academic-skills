@@ -64,7 +64,7 @@ security:
   allowed_tools_scoped: true
 subcategory: De-AI & humanizing
 stargazers_count: 66
-updated_at: '2026-06-22'
+updated_at: '2026-06-29'
 archived: false
 current_release:
   tag: unslop-v0.6.2
