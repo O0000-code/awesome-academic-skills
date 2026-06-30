@@ -54,8 +54,8 @@ spotlight_rationale: The deepest computational-science pack out there — 142 sk
 spotlight_rationale_zh: 目前最深入的计算科学套件——142 个 skill 把 agent 接入 100 多个数据库（PubChem、ChEMBL、
   UniProt）以及 RDKit、Scanpy 等工具，服务于基因组学与药物发现。在湿实验和计算生物学领域 无可匹敌；若身处人文学科，则大多是噪声。它背靠厂商、体量庞大，我们仅作收录而未予审查——
   机构级使用前请先查阅它自带的安全 CI。
-stargazers_count: 29560
-updated_at: '2026-06-23'
+stargazers_count: 29639
+updated_at: '2026-06-29'
 archived: false
 current_release:
   tag: v2.53.0
