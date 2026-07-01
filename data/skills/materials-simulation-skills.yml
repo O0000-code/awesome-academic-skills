@@ -37,7 +37,7 @@ security:
 validate_claim: Ask Claude to use this skill to run a described analysis on a small
   dataset, then verify the statistics and output are correct and reproducible.
 subcategory: Domain computational & simulation pipelines
-stargazers_count: 51
+stargazers_count: 52
 updated_at: '2026-06-25'
 archived: false
 current_release:
