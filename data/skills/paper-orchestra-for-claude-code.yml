@@ -7,14 +7,15 @@ license: MIT
 category: Academic Writing & Drafting
 lifecycle_stage: writing
 type: skill
-description: An ambitious 12-agent Korean+English SCI-paper pipeline, but its SKILL.md leans on grand
-  "surpasses everything" marketing — read warily.
+description: An ambitious 12-agent Korean+English SCI-paper pipeline, but its SKILL.md
+  leans on grand "surpasses everything" marketing — read warily.
 description_zh: 一条野心十足的 12-agent 韩英双语 SCI 论文流水线，但其 SKILL.md 充斥"超越一切"式夸大宣传——阅读时需多留个心眼。
-description_long: A 12-agent, human-in-the-loop SCI-paper pipeline (novelty radar, story arc, multi-persona
-  review, Korean+English drafts, HTML/DOCX/PDF). Bilingual and ambitious, but its SKILL.md leans on grand
-  "surpasses every prior system" marketing; read warily.
-description_zh_long: 一条 12-agent、人在回路的 SCI 论文流水线（新颖性雷达、故事线、多角色评审、韩英双语稿、HTML/DOCX/PDF）。双语且野心十足，但其 SKILL.md
-  充斥"超越以往一切系统"之类的夸大宣传；阅读时需多留个心眼。
+description_long: A 12-agent, human-in-the-loop SCI-paper pipeline (novelty radar,
+  story arc, multi-persona review, Korean+English drafts, HTML/DOCX/PDF). Bilingual
+  and ambitious, but its SKILL.md leans on grand "surpasses every prior system" marketing;
+  read warily.
+description_zh_long: 一条 12-agent、人在回路的 SCI 论文流水线（新颖性雷达、故事线、多角色评审、韩英双语稿、HTML/DOCX/PDF）。双语且野心十足，但其
+  SKILL.md 充斥"超越以往一切系统"之类的夸大宣传；阅读时需多留个心眼。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -27,8 +28,9 @@ security:
   allowed_tools_scoped: true
 homepage_url: null
 install: Clone to ~/.claude/skills/paper-orchestra (see README).
-validate_claim: 'Ask: ''Use paper-orchestra to brainstorm contributions and produce a story arc for my
-  draft, then a multi-persona review.'' Expect the HITL checkpoints and a multi-reviewer critique.'
+validate_claim: 'Ask: ''Use paper-orchestra to brainstorm contributions and produce
+  a story arc for my draft, then a multi-persona review.'' Expect the HITL checkpoints
+  and a multi-reviewer critique.'
 lang:
 - en
 - ko
@@ -39,7 +41,7 @@ tags:
 - korean
 featured: false
 spotlight: false
-stargazers_count: 10
+stargazers_count: 11
 updated_at: '2026-04-10'
 archived: false
 current_release:
