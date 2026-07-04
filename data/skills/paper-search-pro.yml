@@ -56,11 +56,11 @@ tags:
 featured: false
 spotlight: false
 stargazers_count: 83
-updated_at: '2026-05-29'
+updated_at: '2026-07-04'
 archived: false
 current_release:
-  tag: v2.1.2
-  published_at: '2026-05-29'
+  tag: v2.2.0
+  published_at: '2026-07-04'
 last_link_check: null
 last_security_scan: null
 subcategory: Multi-source discovery search

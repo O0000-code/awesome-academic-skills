@@ -64,7 +64,7 @@ security:
 validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
   verify the output meets that discipline's conventions.
 subcategory: Cross-discipline / multi-field packs
-stargazers_count: 32
+stargazers_count: 33
 updated_at: '2026-04-14'
 archived: false
 current_release:
