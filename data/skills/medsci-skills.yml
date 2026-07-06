@@ -64,8 +64,8 @@ security:
 validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
   verify the output meets that discipline's conventions.
 subcategory: Biomedical & life sciences
-stargazers_count: 182
-updated_at: '2026-07-05'
+stargazers_count: 184
+updated_at: '2026-07-06'
 archived: false
 current_release:
   tag: v5.17.0

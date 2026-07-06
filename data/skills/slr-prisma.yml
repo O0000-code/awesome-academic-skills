@@ -26,7 +26,7 @@ security:
 validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
   then verify every returned title/DOI resolves to a real paper.
 subcategory: Systematic review & evidence appraisal
-stargazers_count: 79
+stargazers_count: 80
 updated_at: '2026-03-28'
 archived: false
 current_release:
