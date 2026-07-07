@@ -32,7 +32,7 @@ security:
 validate_claim: Ask Claude to use this skill to format or verify a set of references,
   then check each citation against the authoritative record (DOI/metadata).
 subcategory: Reference formatting & style
-stargazers_count: 64
+stargazers_count: 65
 updated_at: '2026-05-10'
 archived: false
 current_release:

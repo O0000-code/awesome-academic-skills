@@ -23,7 +23,7 @@ security:
 validate_claim: Ask Claude to use this skill to revise a sample passage, then verify
   it reads naturally and preserves the original meaning and citations.
 subcategory: Prose refinement & discipline-specific style
-stargazers_count: 684
+stargazers_count: 685
 updated_at: '2026-05-15'
 archived: false
 current_release:
