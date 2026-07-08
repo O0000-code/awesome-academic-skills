@@ -39,12 +39,12 @@ tags:
 - editing
 featured: false
 spotlight: false
-stargazers_count: 2190
-updated_at: '2026-07-07'
+stargazers_count: 2212
+updated_at: '2026-07-08'
 archived: false
 current_release:
-  tag: null
-  published_at: null
+  tag: v3.14.0
+  published_at: '2026-07-08'
 last_link_check: null
 last_security_scan: null
 subcategory: De-AI & humanizing
