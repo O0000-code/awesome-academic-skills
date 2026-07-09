@@ -18,7 +18,7 @@
 
 ![Skills](https://img.shields.io/badge/skills-223-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
-![Updated](https://img.shields.io/badge/updated-2026.07.08-000?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.07.09-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
 
 </div>
@@ -361,35 +361,35 @@
 
 | 套件                                                                                            |     ★ | 技能数 | 最适合                                                                                                                                                | 运行            |
 | --------------------------------------------------------------------------------------------- | ----: | --: | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills)             | 36.8k |   — | 一条专为对抗 AI 编造而设计、刻意拒绝代笔的人在环路流水线；非商业许可证                                                                                                              | `net` `hooks` |
-| [academic-research-skills-codex](https://github.com/imbad0202/academic-research-skills-codex) |  5.7k |   — | Codex 原生的学术研究 Skill 集：深度调研、论文起草、稿件评审、从研究到成文的流水线、引用与学术诚信核查。端到端覆盖面广；但以一整个巨型 skill 的形式打包内置（审查时需相应留意）；采用非商用 license                                    | `net` `hooks` |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills)             |   37k |   — | 一条专为对抗 AI 编造而设计、刻意拒绝代笔的人在环路流水线；非商业许可证                                                                                                              | `net` `hooks` |
+| [academic-research-skills-codex](https://github.com/imbad0202/academic-research-skills-codex) |  5.8k |   — | Codex 原生的学术研究 Skill 集：深度调研、论文起草、稿件评审、从研究到成文的流水线、引用与学术诚信核查。端到端覆盖面广；但以一整个巨型 skill 的形式打包内置（审查时需相应留意）；采用非商用 license                                    | `net` `hooks` |
 | [AcademicForge](https://github.com/HughYau/AcademicForge)                                     |  2.2k |   7 | 一个方便的网页安装器，把七套现成的学术 skill 打包装入——但本质是转手打包他人的成果，而非自有产出                                                                                               | `net`         |
 | [AI Research Skills (Orchestra)](https://github.com/Orchestra-Research/AI-Research-SKILLs)    | 10.5k |  98 | 一套 98 个 skill 的课程体系，专攻机器学习研究偏工程的那一半，带 agent 从想法走到训练好的模型——不涉及湿实验                                                                                    | `net`         |
 | [ai-research-skills](https://github.com/zechenzhangagi/ai-research-skills)                    | 10.5k |   — | 包含 98 个 skill 的 AI/ML 研究套件：研究构思、文献综述、baseline/消融设计、实验追踪、统计显著性检验、图表生成、论文写作、同行评审与 rebuttal。堪称“把你的 agent 变成研究者”的参照级套件                                 | `net`         |
-| [anthropics/life-sciences](https://github.com/anthropics/life-sciences)                       |   517 |   — | Anthropic 官方的生命科学 marketplace——一份经甄选的约 20 项合作方数据集成目录，而非 skill 合集                                                                                   | `net`         |
-| [aut_sci_write](https://github.com/shzhao27208/aut_sci_write)                                 |   159 |   — | 一个覆盖研究全生命周期的模块化 skill 集：跨 arXiv/PubMed/Web of Science 文献检索、PDF 与图表提取、综述/meta 分析写作、Zotero 同步以及幻灯片制作。覆盖面广、采用率高；属于“样样都能做”的大而全 skill 集，而非某一环节做到最好的专精工具 | `net`         |
+| [anthropics/life-sciences](https://github.com/anthropics/life-sciences)                       |   521 |   — | Anthropic 官方的生命科学 marketplace——一份经甄选的约 20 项合作方数据集成目录，而非 skill 合集                                                                                   | `net`         |
+| [aut_sci_write](https://github.com/shzhao27208/aut_sci_write)                                 |   160 |   — | 一个覆盖研究全生命周期的模块化 skill 集：跨 arXiv/PubMed/Web of Science 文献检索、PDF 与图表提取、综述/meta 分析写作、Zotero 同步以及幻灯片制作。覆盖面广、采用率高；属于“样样都能做”的大而全 skill 集，而非某一环节做到最好的专精工具 | `net`         |
 | [claude-academic-research](https://github.com/mronkko/claude-academic-research)               |    17 |   — | 由教授打造、覆盖研究全生命周期的套件：PRISMA 综述、同行评议、稿件修订、实证完整性的统计核查，以及由 Zotero/MCP 锚定、拒绝幻觉引用的参考文献。严谨性强；需要配置 Zotero+MCP                                               | `net`         |
-| [claude-research](https://github.com/flonat/claude-research)                                  |   111 |   — | 面向博士研究者的基础设施：50 个 skill，外加 agent、hook 与规则，用于参考文献校验、LaTeX 健康检查、实验与因果设计，以及可复现的项目搭建。端到端能力很强；附带 hook 和一个未限定范围的 Bash                                    | `net` `hooks` |
-| [claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar)                               |  4.5k |  47 | 面向 CS/AI 研究者的工作台，带一道以证据为门槛的 Claim Promotion Gate；独有自带的 PreToolUse 安全防护 hook                                                                        | `net` `hooks` |
+| [claude-research](https://github.com/flonat/claude-research)                                  |   113 |   — | 面向博士研究者的基础设施：50 个 skill，外加 agent、hook 与规则，用于参考文献校验、LaTeX 健康检查、实验与因果设计，以及可复现的项目搭建。端到端能力很强；附带 hook 和一个未限定范围的 Bash                                    | `net` `hooks` |
+| [claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar)                               |  4.6k |  47 | 面向 CS/AI 研究者的工作台，带一道以证据为门槛的 Claim Promotion Gate；独有自带的 PreToolUse 安全防护 hook                                                                        | `net` `hooks` |
 | [claude-scholar](https://github.com/yy/claude-scholar)                                        |    29 |   — | 一套 12 个 skill 的学术工具箱：OpenAlex/arXiv 检索、DOI 转 BibTeX、引用核验、LaTeX 清理、arXiv 打包、投稿前检查、数学核验、稿件/图表点评。坦诚自己尚处早期阶段；并列出其数据外发情况                                | `net`         |
 | [claude-scientific-writer](https://github.com/k-dense-ai/claude-scientific-writer)            |  2.1k |   — | 一个包含 27 个 skill 的科学写作 skill 集：文献综述、引用管理、同行评审、图表、海报、幻灯片以及稿件起草。是此处最受欢迎、覆盖面最广的一个，但样样通而无一精；且附带了一个未限定权限范围的 Bash                                         | `net`         |
-| [codex-paper-skills](https://github.com/moonlarry/codex-paper-skills)                         |   107 |   — | 面向 Codex/Claude 的论文套件（27 个 skill），覆盖写作链路、图表、实验与论点的一致性、引用审计、证明核查与反驳，并采用证据优先的 agent 协议。覆盖面很广；缺少 LICENSE 是它的主要短板                                      | `net`         |
+| [codex-paper-skills](https://github.com/moonlarry/codex-paper-skills)                         |   109 |   — | 面向 Codex/Claude 的论文套件（27 个 skill），覆盖写作链路、图表、实验与论点的一致性、引用审计、证明核查与反驳，并采用证据优先的 agent 协议。覆盖面很广；缺少 LICENSE 是它的主要短板                                      | `net`         |
 | [google-deepmind/science-skills](https://github.com/google-deepmind/science-skills)           |  2.3k |  37 | Google DeepMind 官方套件，把 agent 接入真实的生物数据——范围窄于结构生物学与基因组学，但权威                                                                                         | `net`         |
 | [mgmt-paper-skills](https://github.com/haonanalex/mgmt-paper-skills)                          |   118 |   — | 管理学研究工作台：从选题到评审的全流程，含 SPSS/Stata/Python 分析、因果方法（DiD/RDD/IV/SC/PSM）、质性编码与期刊图表规范（UTD24）。在经济/管理领域很深；偏向中文数据，需要一个统计 MCP                                 | `net`         |
-| [nature-skills](https://github.com/Yuan1z0825/nature-skills)                                  | 26.9k |   9 | 一个精炼的九 skill 套件，最强在 Nature 风格的行文与配图，最弱在作为数据工具集                                                                                                     | `net`         |
+| [nature-skills](https://github.com/Yuan1z0825/nature-skills)                                  | 27.3k |   9 | 一个精炼的九 skill 套件，最强在 Nature 风格的行文与配图，最弱在作为数据工具集                                                                                                     | `net`         |
 | [open-scholar-skill](https://github.com/joshzyj/open-scholar-skill)                           |    95 |   — | 面向顶刊的社会科学论文套件：分析能力可产出可直接发表的回归表格/图（NHANES/IPUMS/GSS）、文献综合、因果设计、引用。端到端覆盖面广；非商业许可，且带一处自引导向                                                            | `net`         |
-| [papercash](https://github.com/jesseovo/papercash)                                            |    85 |   — | 面向中国学生、覆盖 8 个免费来源（S2、arXiv、Crossref、PubMed、CNKI、万方、百度/Google Scholar）的端到端论文工作流：检索、综述、润色、查重预检、降 AI 率、GB/T 7714 参考文献。覆盖广，但每个环节都偏浅                    | `net` `hooks` |
-| [posit-dev/skills](https://github.com/posit-dev/skills)                                       |   422 |   — | 出自 RStudio 团队的 Posit 官方 R / Quarto / tidyverse skill——当分析建立在 R 而非 Python 上时的首选                                                                     | —             |
+| [papercash](https://github.com/jesseovo/papercash)                                            |    87 |   — | 面向中国学生、覆盖 8 个免费来源（S2、arXiv、Crossref、PubMed、CNKI、万方、百度/Google Scholar）的端到端论文工作流：检索、综述、润色、查重预检、降 AI 率、GB/T 7714 参考文献。覆盖广，但每个环节都偏浅                    | `net` `hooks` |
+| [posit-dev/skills](https://github.com/posit-dev/skills)                                       |   423 |   — | 出自 RStudio 团队的 Posit 官方 R / Quarto / tidyverse skill——当分析建立在 R 而非 Python 上时的首选                                                                     | —             |
 | [q-skills](https://github.com/tyrealq/q-skills)                                               |    23 |   — | 面向实证研究、含 12 个 skill 的学术工具箱：文献综述、R 与 Stata 分析、可复现研究脚手架、问卷设计、基金申请书写作、同行评议与参考文献。对定量社会科学很强；重广度而非深度                                                     | —             |
 | [research-agora](https://github.com/rpatrik96/research-agora)                                 |    13 |   — | 面向 ML 研究者的套件，覆盖文献检索、论文写作、引用核验、实验追踪、LaTeX 自动化、基准测试与同行评审。实验追踪与基准测试这一切入点是它的长处；覆盖面广也意味着各项深度只属中等                                                        | `net` `hooks` |
 | [researchclaw](https://github.com/alphalab-ustc/researchclaw)                                 |   130 |   — | 端到端的 OpenClaw 研究伴侣（六项能力，含 arXiv 检索、阅读、写作），无需 API key 并附带在线 demo，来自 USTC 的一个实验室。工作流覆盖面广；仓库里残留的 SKILL.md.bak 暗示其清理略显粗放                               | —             |
 | [scholaraio](https://github.com/zimoliao/scholaraio)                                          |   542 |   — | 模块化的一体式研究套件（47 个技能）：文献检索、引用管理、PDF 解析与写作支持，设计上可自由组合。是一套深度中等、尚算合理的通用骨架；注意它附带一个 SSH 备份功能和一个需要审查的 hook                                                 | `net` `hooks` |
-| [sciclaw](https://github.com/drpedapati/sciclaw)                                              |    84 |   — | 一套"结对科学家"式的研究套件（23 个 skill），封装在轻量的 Go runtime 中，注入生命周期 hook、稿件主干结构与运行日志，使每次会话都可复现、有记录、可引用                                                          | `net` `hooks` |
+| [sciclaw](https://github.com/drpedapati/sciclaw)                                              |    85 |   — | 一套"结对科学家"式的研究套件（23 个 skill），封装在轻量的 Go runtime 中，注入生命周期 hook、稿件主干结构与运行日志，使每次会话都可复现、有记录、可引用                                                          | `net` `hooks` |
 | [scienceclaw](https://github.com/zaoqu-liu/scienceclaw)                                       |    55 |   — | 端到端研究套件（275 个 skill、9 个 agent、77 个数据库），覆盖文献检索到发表。单一仓库内野心勃勃、覆盖面极广，但质量参差，且附带一个聊天机器人通道、hook 与一个 tools 通配符，值得先行审查                                      | `net` `hooks` |
-| [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)              | 30.4k | 142 | 体量最大的计算科学套件——对生命科学实验室极深入，对人文学科几乎无用                                                                                                                 | `net`         |
+| [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)              | 30.5k | 142 | 体量最大的计算科学套件——对生命科学实验室极深入，对人文学科几乎无用                                                                                                                 | `net`         |
 | [scientific-research-skills](https://github.com/jxtse/scientific-research-skills)             |    54 |   — | 方法学优先的 agent 研究技能：文献检索、三种深度的论文阅读、全文获取、related-work 综述、Zotero 管理与可发表配图生成。沉淀的是工作流经验，而非单薄的工具封装                                                        | `net`         |
 | [voidful/academic-skills](https://github.com/voidful/academic-skills)                         |   101 |   8 | 精简而主张鲜明、带 CS/ML 气质的研究生流水线，可在 Claude Code、Codex 与 Gemini 上运行                                                                                        | —             |
-| [xueshuzhi-skills](https://github.com/yipng05-max/-skills)                                    |   237 |   — | 覆盖面很广的中文学术套件：选题、研究设计、CNKI/外文文献检索与核验、主题编码、综述与学位论文撰写，外加一条 12 检查点的 TA 流水线来拼装 Word 初稿。重广度而非深度                                                          | `net`         |
+| [xueshuzhi-skills](https://github.com/yipng05-max/-skills)                                    |   241 |   — | 覆盖面很广的中文学术套件：选题、研究设计、CNKI/外文文献检索与核验、主题编码、综述与学位论文撰写，外加一条 12 检查点的 TA 流水线来拼装 Word 初稿。重广度而非深度                                                          | `net`         |
 
 ### 自主研究系统
 
@@ -499,7 +499,7 @@
 
 ## 最近更新
 
-**avoid-ai-writing**, **latex-document-skill**, **Awesome AI for Science**, **beril-research-observatory**, **claude-scientific-skills**。（链接与描述见上方各生命周期分区。）
+**AcademicForge**, **aut_sci_write**, **de-anthropocentric-research-engine**, **latex-document-skill**, **Awesome AI for Science**。（链接与描述见上方各生命周期分区。）
 
 ## 如何使用本列表
 
