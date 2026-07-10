@@ -31,7 +31,7 @@ security:
 validate_claim: Ask Claude to use this skill to format a manuscript to a target template,
   then verify the output compiles/opens and matches the spec.
 subcategory: Slides & presentation decks
-stargazers_count: 231
+stargazers_count: 234
 updated_at: '2026-06-05'
 archived: false
 current_release:

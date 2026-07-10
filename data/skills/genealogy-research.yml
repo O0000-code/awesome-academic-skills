@@ -27,7 +27,7 @@ security:
 validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
   verify the output meets that discipline's conventions.
 subcategory: Humanities, law & qualitative-research disciplines
-stargazers_count: 21
+stargazers_count: 22
 updated_at: '2026-03-23'
 archived: false
 current_release:

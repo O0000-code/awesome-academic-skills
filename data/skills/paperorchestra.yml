@@ -41,7 +41,7 @@ validate_claim: Ask Claude to use this skill to draft a described section, then 
   the structure and claims match scholarly conventions and the source material.
 subcategory: Manuscript drafting pipelines
 stargazers_count: 605
-updated_at: '2026-06-13'
+updated_at: '2026-07-09'
 archived: false
 current_release:
   tag: v0.2.0
