@@ -26,9 +26,9 @@ security:
 validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
   verify the output meets that discipline's conventions.
 subcategory: Physical, computational & mathematical sciences
-stargazers_count: 192
-updated_at: '2026-06-29'
+stargazers_count: 193
+updated_at: '2026-07-11'
 archived: false
 current_release:
-  tag: v2.0.0
-  published_at: '2026-06-02'
+  tag: v2.1.0
+  published_at: '2026-07-11'
