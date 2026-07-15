@@ -23,7 +23,7 @@ security:
 validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify
   the critique is specific, accurate, and actionable.
 subcategory: Pre-submission review & rebuttal
-stargazers_count: 5
+stargazers_count: 6
 updated_at: '2026-03-15'
 archived: false
 current_release:
