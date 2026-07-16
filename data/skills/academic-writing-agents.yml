@@ -24,7 +24,7 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 subcategory: LaTeX & typesetting-integrated writing
-stargazers_count: 134
+stargazers_count: 136
 updated_at: '2026-05-11'
 archived: false
 current_release:
