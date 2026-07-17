@@ -61,7 +61,7 @@ validate_claim: Ask Claude to use this skill to find recent papers on a specific
   then verify every returned title/DOI resolves to a real paper.
 subcategory: Full-text acquisition
 stargazers_count: 152
-updated_at: '2026-06-24'
+updated_at: '2026-07-16'
 archived: false
 current_release:
   tag: v0.15.1

@@ -31,7 +31,7 @@ validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete 
   and verify the result matches what that skill claims to do.
 subcategory: Social sciences
 stargazers_count: 32
-updated_at: '2026-07-14'
+updated_at: '2026-07-17'
 archived: false
 current_release:
   tag: v2.0.0

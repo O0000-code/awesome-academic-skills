@@ -36,7 +36,7 @@ validate_claim: Ask Claude to use this skill to find recent papers on a specific
   then verify every returned title/DOI resolves to a real paper.
 subcategory: Multi-source discovery search
 stargazers_count: 54
-updated_at: '2026-05-19'
+updated_at: '2026-07-16'
 archived: false
 current_release:
   tag: v0.8.1
