@@ -64,7 +64,7 @@ validate_claim: Pick one skill in the suite, ask Claude to run it on a concrete 
   and verify the result matches what that skill claims to do.
 subcategory: Domain computational & simulation pipelines
 stargazers_count: 234
-updated_at: '2026-07-19'
+updated_at: '2026-07-20'
 archived: false
 current_release:
   tag: resonance-data
