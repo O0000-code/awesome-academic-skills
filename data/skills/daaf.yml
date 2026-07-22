@@ -63,7 +63,7 @@ security:
 validate_claim: Ask Claude to use this skill to run a described analysis on a small
   dataset, then verify the statistics and output are correct and reproducible.
 subcategory: Reproducible-analysis frameworks
-stargazers_count: 221
+stargazers_count: 222
 updated_at: '2026-07-21'
 archived: false
 current_release:
