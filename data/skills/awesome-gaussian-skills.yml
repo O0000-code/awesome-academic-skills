@@ -50,8 +50,8 @@ security:
 validate_claim: Ask Claude to use a skill in this pack on a task from its field, then
   verify the output meets that discipline's conventions.
 subcategory: Computer science, AI / ML & graphics
-stargazers_count: 127
-updated_at: '2026-07-20'
+stargazers_count: 129
+updated_at: '2026-07-24'
 archived: false
 current_release:
   tag: null
