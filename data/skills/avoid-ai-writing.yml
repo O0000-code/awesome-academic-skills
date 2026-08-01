@@ -39,11 +39,11 @@ tags:
 - editing
 featured: false
 spotlight: false
-stargazers_count: 2710
+stargazers_count: 2731
 updated_at: '2026-07-31'
 archived: false
 current_release:
-  tag: v3.22.0
+  tag: v3.22.1
   published_at: '2026-07-31'
 last_link_check: null
 last_security_scan: null
