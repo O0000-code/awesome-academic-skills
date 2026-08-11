@@ -42,12 +42,12 @@ tags:
 homepage_url: https://marketplace.dify.ai/plugins/bowenliang123/md_exporter
 featured: false
 spotlight: false
-stargazers_count: 258
-updated_at: '2026-08-08'
+stargazers_count: 260
+updated_at: '2026-08-11'
 archived: false
 current_release:
-  tag: 3.6.8
-  published_at: '2026-02-24'
+  tag: 3.8.0
+  published_at: '2026-08-11'
 last_link_check: null
 last_security_scan: null
 subcategory: Format conversion & document transformation
