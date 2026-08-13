@@ -27,9 +27,9 @@ security:
 validate_claim: Ask Claude to use this skill to produce a described figure, then verify
   it renders at publication quality and matches the request.
 subcategory: Method & concept diagrams
-stargazers_count: 42
-updated_at: '2026-08-03'
+stargazers_count: 43
+updated_at: '2026-08-12'
 archived: false
 current_release:
-  tag: v4.4.0
-  published_at: '2026-08-03'
+  tag: v4.5.0
+  published_at: '2026-08-12'
