@@ -35,8 +35,8 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 subcategory: Deep reading & comprehension
-stargazers_count: 285
-updated_at: '2026-04-03'
+stargazers_count: 294
+updated_at: '2026-08-14'
 archived: false
 current_release:
   tag: null
