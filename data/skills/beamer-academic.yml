@@ -32,7 +32,7 @@ validate_claim: Ask Claude to use this skill to format a manuscript to a target 
   then verify the output compiles/opens and matches the spec.
 subcategory: Slides & presentation decks
 stargazers_count: 272
-updated_at: '2026-06-05'
+updated_at: '2026-08-17'
 archived: false
 current_release:
   tag: v1.3.0
