@@ -43,11 +43,11 @@ homepage_url: https://skills.amditis.tech/
 featured: false
 spotlight: false
 stargazers_count: 366
-updated_at: '2026-08-20'
+updated_at: '2026-08-21'
 archived: false
 current_release:
-  tag: v2.4.0
-  published_at: '2026-07-25'
+  tag: v2.7.2
+  published_at: '2026-08-21'
 last_link_check: null
 last_security_scan: null
 subcategory: Humanities, law & qualitative-research disciplines
