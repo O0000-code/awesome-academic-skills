@@ -1,0 +1,37 @@
+name: shidi-skill
+slug: shidi-skill
+source_url: https://github.com/IcyCreamDAS/shidi-skill
+author: IcyCreamDAS
+author_url: https://github.com/IcyCreamDAS
+license: MIT
+category: Skill Suites
+lifecycle_stage: suite
+type: suite
+description: Bilingual research workflow for agent IDEs: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief for a second model. Zero deps, MIT.
+security:
+  makes_network_calls: true
+  network_endpoints:
+    - OpenAlex API (OA lookup for batch PDF download, fetch_pdfs.py)
+    - Unpaywall API (OA lookup for batch PDF download, fetch_pdfs.py)
+    - Model provider API (agent runtime for searches and LLM calls; baseline, not a plugin server)
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+homepage_url: https://github.com/IcyCreamDAS/shidi-skill
+install: Copy skills/shidi into your agent skills directory (Claude Code ~/.claude/skills/, DSH ~/.agents/skills/); references/ and scripts/ ship alongside.
+validate_claim: Ask your agent to run a multi-angle literature review on a topic you care about; correct result: per-angle intermediate files under shidi-output, DOIs that resolve, and a final eight-section report that includes the caveat list and per-source reading-depth marks.
+lang:
+  - en
+  - zh
+tags:
+  - research-workflow
+  - literature-review
+  - experiment-design
+  - figures
+  - paper-reading
+  - cross-verification
+  - bilingual
+  - zero-dependency
