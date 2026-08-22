@@ -3,15 +3,16 @@ slug: medsci-skills
 source_url: https://github.com/aperivue/medsci-skills
 author: aperivue
 author_url: https://github.com/aperivue
-license: NOASSERTION
+license: MIT
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: suite
-description: 'A 34-skill medical-research suite from a physician-researcher: PubMed
-  search, study design, IRB protocols, biostatistics, PRISMA/STROBE/TRIPOD reporting
-  checks, figures and manuscript drafting. Broad and clinical; license is NOASSERTION.'
-description_zh: 由一位临床研究型医师打造、含 34 个 skill 的医学研究套件：PubMed 检索、研究设计、IRB 方案、生物统计、PRISMA/STROBE/TRIPOD
-  报告核查、绘图与稿件撰写。覆盖广、偏临床；许可证为 NOASSERTION。
+description: 'A 59-skill medical-research suite from a physician-researcher: PubMed
+  search, study design, IRB protocols, biostatistics, reporting checks against 49
+  EQUATOR guidelines, figures, manuscript drafting. Biased toward radiology and diagnostic
+  accuracy.'
+description_zh: 由一位临床研究型医师打造、含 59 个 skill 的医学研究套件：PubMed 检索、研究设计、IRB 方案、生物统计、对照 49
+  项 EQUATOR 报告规范核查、绘图与稿件撰写。覆盖广、偏临床；偏重放射与诊断准确性研究。
 security:
   makes_network_calls: true
   network_endpoints:
