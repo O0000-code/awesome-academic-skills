@@ -40,12 +40,12 @@ tags:
 - reproducibility
 featured: false
 spotlight: false
-stargazers_count: 1523
-updated_at: '2026-08-23'
+stargazers_count: 1525
+updated_at: '2026-08-24'
 archived: false
 current_release:
-  tag: v1.9.0
-  published_at: '2026-05-20'
+  tag: v2.5.0
+  published_at: '2026-08-23'
 last_link_check: null
 last_security_scan: null
 subcategory: Prose refinement & discipline-specific style
