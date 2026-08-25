@@ -31,7 +31,7 @@ security:
   allowed_tools_scoped: false
 subcategory: Grounded Q&A & knowledge bases
 stargazers_count: 1061
-updated_at: '2026-08-23'
+updated_at: '2026-08-24'
 archived: false
 current_release:
   tag: v0.24.3
