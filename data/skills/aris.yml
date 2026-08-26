@@ -46,12 +46,12 @@ tags:
 - wanshuiyin
 featured: false
 spotlight: false
-stargazers_count: 15120
-updated_at: '2026-08-24'
+stargazers_count: 15246
+updated_at: '2026-08-26'
 archived: false
 current_release:
-  tag: dsh-aris-v0.1.0
-  published_at: '2026-08-21'
+  tag: v0.4.24
+  published_at: '2026-08-09'
 last_link_check: null
 last_security_scan: null
 subcategory: Fully autonomous auto-scientists
