@@ -41,6 +41,24 @@ jobs:
 
       # peter-evans/create-issue-from-file v5.0.1 — open/update ONE tracking issue,
       # only when lychee found broken links (exit_code != 0). Human triages; no auto-delist.
+      # `create-issue-from-file` only UPDATES an existing issue when it is given an
+      # `issue-number`; without one it opens a NEW issue on every run. That is why
+      # this weekly sweep accumulated one fresh issue per week instead of keeping the
+      # single rolling tracking issue the comment above always claimed. Look up the
+      # open issue by its exact title and reuse it; empty output = open a new one.
+      - name: Find the existing tracking issue
+        id: tracking
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TITLE: "Link sweep: broken links to review"
+        run: |
+          set -euo pipefail
+          n=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --label maintenance \
+                --limit 100 --json number,title \
+                --jq "[.[] | select(.title == env.TITLE)] | sort_by(.number) | .[0].number // empty")
+          echo "number=$n" >> "$GITHUB_OUTPUT"
+          if [ -n "$n" ]; then echo ">> reusing tracking issue #$n"; else echo ">> no open tracking issue; a new one will be opened"; fi
+
       - name: Open/update broken-link issue
         if: steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd
@@ -48,3 +66,4 @@ jobs:
           title: "Link sweep: broken links to review"
           content-filepath: ./lychee/out.md
           labels: maintenance, broken-link, needs-triage
+          issue-number: ${{ steps.tracking.outputs.number }}

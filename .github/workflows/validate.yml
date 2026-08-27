@@ -32,6 +32,8 @@ on:
 permissions:
   contents: read
   pull-requests: write
+  issues: write        # the security pre-scan posts its report as an issue comment;
+                       # without this the step 403s ("Resource not accessible by integration")
 
 jobs:
   validate:
@@ -75,8 +77,33 @@ jobs:
       - name: Generate READMEs
         run: make generate
 
-      - name: Drift gate (committed READMEs must match the generator)
-        run: git diff --exit-code README.md README.zh-CN.md
+      # Drift gate. On `push` to main the committed READMEs must match the generator.
+      # On a PR they legitimately may NOT: CONTRIBUTING tells contributors "you never
+      # edit the README directly", so any PR that adds or edits an entry leaves the
+      # committed README stale by design, and the maintainer regenerates at merge.
+      # Failing those PRs made every entry submission red through no fault of the
+      # contributor. What this gate is actually for is catching a HAND-EDIT to a
+      # generated file — so on a PR we enforce it only when the PR touched a README.
+      - name: Drift gate
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = "push" ]; then
+            git diff --exit-code README.md README.zh-CN.md
+            echo ">> main: committed READMEs match the generator."
+            exit 0
+          fi
+          if git diff --name-only "$BASE" "$HEAD" | grep -qE '^README(\.zh-CN)?\.md$'; then
+            echo ">> This PR modifies a generated README, so it must match the generator."
+            git diff --exit-code README.md README.zh-CN.md
+          else
+            echo ">> PR leaves the generated READMEs untouched, as CONTRIBUTING instructs."
+            echo ">> Data renders cleanly (the Generate step above passed); the maintainer"
+            echo ">> regenerates at merge time."
+          fi
 
       # Check #3 — link health (lychee, pinned action, with allowlist). Blocks on PR.
       # lycheeverse/lychee-action v2.7.0
