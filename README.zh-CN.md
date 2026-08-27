@@ -18,7 +18,7 @@
 
 ![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
-![Updated](https://img.shields.io/badge/updated-2026.08.27-000?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.08.28-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
 
 </div>
@@ -389,7 +389,6 @@
 | [scienceclaw](https://github.com/zaoqu-liu/scienceclaw)                                       |    59 |   — | 端到端研究套件（275 个 skill、9 个 agent、77 个数据库），覆盖文献检索到发表。单一仓库内野心勃勃、覆盖面极广，但质量参差，且附带一个聊天机器人通道、hook 与一个 tools 通配符，值得先行审查                                      | `net` `hooks` |
 | [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)              | 35.1k | 142 | 体量最大的计算科学套件——对生命科学实验室极深入，对人文学科几乎无用                                                                                                                 | `net`         |
 | [scientific-research-skills](https://github.com/jxtse/scientific-research-skills)             |    66 |   — | 方法学优先的 agent 研究技能：文献检索、三种深度的论文阅读、全文获取、related-work 综述、Zotero 管理与可发表配图生成。沉淀的是工作流经验，而非单薄的工具封装                                                        | `net`         |
-| [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill)                                     |     — |   — | 面向 agent IDE 的双语研究工作流：多角度文献综述（每个角度单独出文件）、带注意事项清单的实验设计、绘图与论文精读；除产出文件外，还会给一份交叉验证简报供另一个模型复核。零依赖                                                       | `net`         |
 | [voidful/academic-skills](https://github.com/voidful/academic-skills)                         |   123 |   8 | 精简而主张鲜明、带 CS/ML 气质的研究生流水线，可在 Claude Code、Codex 与 Gemini 上运行                                                                                        | —             |
 | [xueshuzhi-skills](https://github.com/yipng05-max/-skills)                                    |   278 |   — | 覆盖面很广的中文学术套件：选题、研究设计、CNKI/外文文献检索与核验、主题编码、综述与学位论文撰写，外加一条 12 检查点的 TA 流水线来拼装 Word 初稿。重广度而非深度                                                          | `net`         |
 
@@ -412,6 +411,7 @@
 - `Suite` [anaxa](https://github.com/citrus-bit/anaxa) - 作者 [citrus-bit](https://github.com/citrus-bit) · `MIT` · `net`.<br>可审计、可暂停的研究 agent 工作台：把一个选题依次推过文献检索、证据绑定、沙箱实验、初稿与引用审计，最终产出带人工闸门的 LaTeX/PDF 成品包。是重型全栈应用，而非即插即用的 skill。
 - `Suite` [phd-skills](https://github.com/fcakyon/phd-skills) - 作者 [fcakyon](https://github.com/fcakyon) · `MIT` · `net` `hooks`.<br>面向博士/ML 研究的护栏：复现 arXiv 论文、以证据为先地调试实验、在同一 epoch 下对比实验、审查数据集偏差、运行启动前的预检。能拦下代价高昂的 AI 研究错误；使用了一个 Bash 通配符外加可选的告警。
 - `Suite` [research-units-pipeline-skills](https://github.com/willoscar/research-units-pipeline-skills) - 作者 [willoscar](https://github.com/willoscar) · `No License` · `net`.<br>以文件为先的研究 harness，把开放式目标转化为流程化、可续跑的 pipeline（文献调查、论文评审、证据综合），各阶段设有验收 gate 并产出持久化 artifact。机制厚重；学习曲线陡峭；目前尚无 LICENSE 文件。
+- [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill) - 作者 [IcyCreamDAS](https://github.com/IcyCreamDAS) · `MIT` · `net`.<br>面向 agent IDE 的双语研究工作流：多角度文献综述（每个角度单独出文件）、带注意事项清单的实验设计、绘图与论文精读；除产出文件外，还会给一份交叉验证简报供另一个模型复核。零依赖。
 - `Plugin` [vibe-science](https://github.com/th3vib3coder/vibe-science) - 作者 [th3vib3coder](https://github.com/th3vib3coder) · `Apache-2.0` · `net` `hooks`.<br>以诚信为先的 Claude Code 研究运行时：一个强制执行检查并持久化状态的 plugin，外加一个建立在可证伪性、对抗式评审与混杂因素纪律之上的方法学 skill。目标是让 AI 做科学难以造假；执行开销较重。
 
 #### 领域专用自主系统

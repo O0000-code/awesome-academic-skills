@@ -7,28 +7,34 @@ license: MIT
 category: Literature Search & Discovery
 lifecycle_stage: discovery
 type: mcp-server
-description: Restricts an agent's literature search to full text from a fixed set of
-  peer-reviewed venues and returns a verbatim supporting quote for each verified
+description: Restricts an agent's literature search to full text from a fixed set
+  of peer-reviewed venues and returns a verbatim supporting quote for each verified
   claim. Strong on ML and security; indexes nothing else, so not a general search.
 description_zh: 将智能体的文献检索限定在固定的同行评审场所全文范围内，核查论断时返回论文中的原文引句。机器学习与安全方向覆盖较好；索引场所之外没有任何内容，因此不能当作通用学术搜索使用。
 homepage_url: https://luneresearch.com
 install: npx -y @retrograde-labs/lune-mcp-server
 lang:
-  - en
-  - zh
+- en
+- zh
 tags:
-  - literature-search
-  - citations
-  - claim-verification
-  - peer-review
+- literature-search
+- citations
+- claim-verification
+- peer-review
 security:
   makes_network_calls: true
   network_endpoints:
-    - api.luneresearch.com
-    - mcp.luneresearch.com
+  - api.luneresearch.com
+  - mcp.luneresearch.com
   has_hooks: false
   requires_bypass_permissions: false
   telemetry: false
   auto_update: false
   depends_3rdparty: true
   allowed_tools_scoped: true
+stargazers_count: 3
+updated_at: '2026-08-24'
+archived: false
+current_release:
+  tag: null
+  published_at: null

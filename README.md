@@ -18,7 +18,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 ![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
-![Updated](https://img.shields.io/badge/updated-2026.08.27-000?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.08.28-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
 
 </div>
@@ -389,7 +389,6 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 | [scienceclaw](https://github.com/zaoqu-liu/scienceclaw)                                       |    59 |      — | End-to-end research suite (275 skills, 9 agents, 77 databases) spanning literature search to publication. Ambitious breadth in one repo, but quality is uneven and it ships a chat-bot channel, hooks and a tools wildcard worth reviewing               | `net` `hooks` |
 | [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)              | 35.1k |    142 | The biggest computational-science pack — deep for life-science labs, near-useless for humanities                                                                                                                                                         | `net`         |
 | [scientific-research-skills](https://github.com/jxtse/scientific-research-skills)             |    66 |      — | Methodology-first research skills for agents: literature search, three-depth paper reading, full-text harvest, related-work survey, Zotero management and publication-figure generation                                                                  | `net`         |
-| [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill)                                     |     — |      — | Bilingual research workflow for agent IDEs: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief for a second model. Zero deps       | `net`         |
 | [voidful/academic-skills](https://github.com/voidful/academic-skills)                         |   123 |      8 | A compact, opinionated grad-school pipeline (CS/ML flavor) across Claude Code, Codex and Gemini                                                                                                                                                          | —             |
 | [xueshuzhi-skills](https://github.com/yipng05-max/-skills)                                    |   278 |      — | Wide-coverage Chinese academic suite: topic selection, research design, CNKI/foreign literature search and verification, thematic coding, review and dissertation drafting, plus a 12-checkpoint TA pipeline assembling a Word draft. Breadth over depth | `net`         |
 
@@ -412,6 +411,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 - `Suite` [anaxa](https://github.com/citrus-bit/anaxa) - by [citrus-bit](https://github.com/citrus-bit) · `MIT` · `net`.<br>Auditable, pausable research-agent workbench: drives a topic through lit search, evidence binding, sandboxed experiments, draft and citation audit to a LaTeX/PDF bundle with human gates. Heavy full-stack app, not a drop-in skill.
 - `Suite` [phd-skills](https://github.com/fcakyon/phd-skills) - by [fcakyon](https://github.com/fcakyon) · `MIT` · `net` `hooks`.<br>PhD/ML research guardrails: reproduce arXiv papers, debug runs evidence-first, compare experiments at the same epoch, audit dataset bias, run pre-flight launch checks. Catches costly AI research mistakes; uses a Bash wildcard plus opt-in alerts.
 - `Suite` [research-units-pipeline-skills](https://github.com/willoscar/research-units-pipeline-skills) - by [willoscar](https://github.com/willoscar) · `No License` · `net`.<br>File-first research harness turning open-ended goals into protocolized, resumable pipelines (lit survey, paper review, evidence synthesis) with per-stage acceptance gates and durable artifacts. Heavy machinery; steep to learn; no LICENSE file yet.
+- [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill) - by [IcyCreamDAS](https://github.com/IcyCreamDAS) · `MIT` · `net`.<br>Bilingual research workflow for agent IDEs: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief for a second model. Zero deps.
 - `Plugin` [vibe-science](https://github.com/th3vib3coder/vibe-science) - by [th3vib3coder](https://github.com/th3vib3coder) · `Apache-2.0` · `net` `hooks`.<br>Integrity-first research runtime for Claude Code: a plugin that enforces checks and persists state, plus a methodology skill built on falsification, adversarial review, and confounder discipline. Aims to make AI science hard to fake; heavy exec.
 
 #### Domain-bound autonomous systems

@@ -4,9 +4,10 @@ source_url: https://github.com/IcyCreamDAS/shidi-skill
 author: IcyCreamDAS
 author_url: https://github.com/IcyCreamDAS
 license: MIT
-category: Skill Suites
-lifecycle_stage: suite
-type: suite
+category: Autonomous Research Systems
+subcategory: Human-in-the-loop / gate-driven pipelines
+lifecycle_stage: autonomous
+type: skill
 description: 'Bilingual research workflow for agent IDEs: multi-angle literature review
   with per-angle files, anchored experiment design with a caveat list, figures, paper
   reading; returns files plus a cross-verification brief for a second model. Zero
@@ -42,3 +43,9 @@ tags:
 - cross-verification
 - bilingual
 - zero-dependency
+stargazers_count: 5
+updated_at: '2026-08-22'
+archived: false
+current_release:
+  tag: v0.3.0
+  published_at: '2026-08-22'
