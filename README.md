@@ -18,7 +18,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 ![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
-![Updated](https://img.shields.io/badge/updated-2026.08.28-000?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.08.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
 
 </div>

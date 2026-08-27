@@ -392,7 +392,12 @@ def _build_subcats(entries: list[dict], sub_order: list, cfg: dict,
 
 
 def build_context(cfg: dict, entries: list[dict], lang: str) -> dict:
-    today = _dt.date.today().isoformat()
+    # UTC, not local time. The drift gate re-renders in CI (which runs in UTC) and
+    # compares against the committed README, so a local-time stamp makes every commit
+    # made while the local date is ahead of UTC fail the gate — a whole-timezone-offset
+    # window each day for any maintainer east of Greenwich. UTC makes the render
+    # reproducible everywhere.
+    today = _dt.datetime.now(_dt.timezone.utc).date().isoformat()
     labels = TABLE_LABELS[lang]
     sec = LOCALIZED_SECTIONS[lang]
     analysis = load_analysis()
