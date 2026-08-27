@@ -16,7 +16,7 @@ A bilingual index of Claude and agent skills for academic work, from literature 
 Organized by where skills fit in the research lifecycle; each entry notes its license and what it runs (network, hooks).
 <br/>
 
-![Skills](https://img.shields.io/badge/skills-220-000?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
 ![Updated](https://img.shields.io/badge/updated-2026.08.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
@@ -84,6 +84,10 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 - [literature-harvest](https://github.com/zhongzhx/literature-harvest) - by [zhongzhx](https://github.com/zhongzhx) · `MIT` · `net`.<br>Bulk keyword-driven literature harvesting across PubMed, Europe PMC, Crossref and OpenAlex: builds a candidate table, downloads legally-accessible full-text PDFs with an HTML-to-PDF second pass, and dedups.
 - [paper-fetch](https://github.com/agents365-ai/paper-fetch) - by [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>Resolves a DOI (or batch) to a downloadable PDF via a 7-source fallback chain (Unpaywall, Semantic Scholar, arXiv, PMC, bioRxiv, publisher, then Sci-Hub) with per-source reporting. Clean and zero-deps; the Sci-Hub fallback is a caveat.
+
+#### More
+
+- `mcp-server` [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) - by [Retrograde Labs](https://github.com/RetrogradeLabs) · `MIT` · `net`.<br>Restricts an agent's literature search to full text from a fixed set of peer-reviewed venues and returns a verbatim supporting quote for each verified claim. Strong on ML and security; indexes nothing else, so not a general search.
 
 ### Reference & Citation Management
 
@@ -385,6 +389,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 | [scienceclaw](https://github.com/zaoqu-liu/scienceclaw)                                       |    59 |      — | End-to-end research suite (275 skills, 9 agents, 77 databases) spanning literature search to publication. Ambitious breadth in one repo, but quality is uneven and it ships a chat-bot channel, hooks and a tools wildcard worth reviewing               | `net` `hooks` |
 | [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)              | 35.1k |    142 | The biggest computational-science pack — deep for life-science labs, near-useless for humanities                                                                                                                                                         | `net`         |
 | [scientific-research-skills](https://github.com/jxtse/scientific-research-skills)             |    66 |      — | Methodology-first research skills for agents: literature search, three-depth paper reading, full-text harvest, related-work survey, Zotero management and publication-figure generation                                                                  | `net`         |
+| [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill)                                     |     — |      — | Bilingual research workflow for agent IDEs: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief for a second model. Zero deps       | `net`         |
 | [voidful/academic-skills](https://github.com/voidful/academic-skills)                         |   123 |      8 | A compact, opinionated grad-school pipeline (CS/ML flavor) across Claude Code, Codex and Gemini                                                                                                                                                          | —             |
 | [xueshuzhi-skills](https://github.com/yipng05-max/-skills)                                    |   278 |      — | Wide-coverage Chinese academic suite: topic selection, research design, CNKI/foreign literature search and verification, thematic coding, review and dissertation drafting, plus a 12-checkpoint TA pipeline assembling a Word draft. Breadth over depth | `net`         |
 
@@ -486,13 +491,13 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 | Lifecycle stage        | Categories | Skills |
 | ---------------------- | ---------: | -----: |
-| Discover & Collect     |          2 |     20 |
+| Discover & Collect     |          2 |     21 |
 | Read & Understand      |          2 |     23 |
 | Analyze & Visualize    |          2 |     23 |
 | Write & Refine         |          2 |     52 |
 | Review & Publish       |          2 |     24 |
-| Suites, Systems & Meta |          4 |     78 |
-| Total                  |         14 |    220 |
+| Suites, Systems & Meta |          4 |     79 |
+| Total                  |         14 |    222 |
 
 ## Recently updated
 

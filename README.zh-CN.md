@@ -16,7 +16,7 @@
 按技能在研究流程中的位置来组织；每个条目都标注许可证，以及它会做什么（联网、hook）。
 <br/>
 
-![Skills](https://img.shields.io/badge/skills-220-000?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
 ![Updated](https://img.shields.io/badge/updated-2026.08.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
@@ -84,6 +84,10 @@
 
 - [literature-harvest](https://github.com/zhongzhx/literature-harvest) - 作者 [zhongzhx](https://github.com/zhongzhx) · `MIT` · `net`.<br>跨 PubMed、Europe PMC、Crossref 和 OpenAlex 的关键词批量文献采集：构建候选清单，下载合法可获取的全文 PDF（并以 HTML 转 PDF 作为兜底补充），并做去重。适合可复现的语料库构建。
 - [paper-fetch](https://github.com/agents365-ai/paper-fetch) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>通过一条 7 源兜底链（Unpaywall、Semantic Scholar、arXiv、PMC、bioRxiv、出版商，最后才是 Sci-Hub）把一个（或一批）DOI 解析为可下载的 PDF，并逐源报告结果。干净、零依赖；Sci-Hub 兜底是一处需注意的隐患。
+
+#### 更多
+
+- `mcp-server` [lune-research](https://github.com/RetrogradeLabs/lune-mcp-server) - 作者 [Retrograde Labs](https://github.com/RetrogradeLabs) · `MIT` · `net`.<br>将智能体的文献检索限定在固定的同行评审场所全文范围内，核查论断时返回论文中的原文引句。机器学习与安全方向覆盖较好；索引场所之外没有任何内容，因此不能当作通用学术搜索使用。
 
 ### 参考文献与引用管理
 
@@ -385,6 +389,7 @@
 | [scienceclaw](https://github.com/zaoqu-liu/scienceclaw)                                       |    59 |   — | 端到端研究套件（275 个 skill、9 个 agent、77 个数据库），覆盖文献检索到发表。单一仓库内野心勃勃、覆盖面极广，但质量参差，且附带一个聊天机器人通道、hook 与一个 tools 通配符，值得先行审查                                      | `net` `hooks` |
 | [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)              | 35.1k | 142 | 体量最大的计算科学套件——对生命科学实验室极深入，对人文学科几乎无用                                                                                                                 | `net`         |
 | [scientific-research-skills](https://github.com/jxtse/scientific-research-skills)             |    66 |   — | 方法学优先的 agent 研究技能：文献检索、三种深度的论文阅读、全文获取、related-work 综述、Zotero 管理与可发表配图生成。沉淀的是工作流经验，而非单薄的工具封装                                                        | `net`         |
+| [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill)                                     |     — |   — | 面向 agent IDE 的双语研究工作流：多角度文献综述（每个角度单独出文件）、带注意事项清单的实验设计、绘图与论文精读；除产出文件外，还会给一份交叉验证简报供另一个模型复核。零依赖                                                       | `net`         |
 | [voidful/academic-skills](https://github.com/voidful/academic-skills)                         |   123 |   8 | 精简而主张鲜明、带 CS/ML 气质的研究生流水线，可在 Claude Code、Codex 与 Gemini 上运行                                                                                        | —             |
 | [xueshuzhi-skills](https://github.com/yipng05-max/-skills)                                    |   278 |   — | 覆盖面很广的中文学术套件：选题、研究设计、CNKI/外文文献检索与核验、主题编码、综述与学位论文撰写，外加一条 12 检查点的 TA 流水线来拼装 Word 初稿。重广度而非深度                                                          | `net`         |
 
@@ -486,13 +491,13 @@
 
 | 生命周期阶段   | 分类 | 技能数 |
 | -------- | -: | --: |
-| 检索与采集    |  2 |  20 |
+| 检索与采集    |  2 |  21 |
 | 阅读与理解    |  2 |  23 |
 | 分析与可视化   |  2 |  23 |
 | 写作与润色    |  2 |  52 |
 | 评审与发表    |  2 |  24 |
-| 套件、系统与生态 |  4 |  78 |
-| 合计       | 14 | 220 |
+| 套件、系统与生态 |  4 |  79 |
+| 合计       | 14 | 222 |
 
 ## 最近更新
 
