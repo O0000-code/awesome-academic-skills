@@ -133,6 +133,25 @@ required; the summary below is a friendly orientation, not a substitute for it.
 | `description` | ≤250 characters; see the style rules below |
 | `security` | The disclosure block — see [Security disclosure](#security-disclosure-required) |
 
+### Check it before you open the PR
+
+One command, and it catches almost everything a reviewer would otherwise catch for
+you — a mistyped field, a missing `validate_claim`, a duplicate `source_url`, or a
+YAML slip:
+
+```bash
+make install        # first time only: creates .venv and installs the deps
+make schema_check
+```
+
+The most common trip-up is a colon inside an unquoted value. YAML reads
+`description: Tools for X: literature and figures` as a nested mapping and the file
+stops parsing, usually with an error pointing at a line further down than the real
+problem. Quote any value containing `: ` — `description: 'Tools for X: …'` — or run
+the check and let it tell you.
+
+Do **not** regenerate `README.md` yourself; that happens on merge.
+
 **Recommended (optional, but they help):** `homepage_url`, `install` (a one-line
 install hint), `validate_claim` (**required for a skill or suite** — see below),
 `lang` (e.g. `[en]` or `[en, zh]`), `tags`.
