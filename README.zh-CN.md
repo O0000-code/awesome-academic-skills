@@ -16,7 +16,7 @@
 按技能在研究流程中的位置来组织；每个条目都标注许可证，以及它会做什么（联网、hook）。
 <br/>
 
-![Skills](https://img.shields.io/badge/skills-223-000?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-220-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
 ![Updated](https://img.shields.io/badge/updated-2026.08.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
@@ -97,7 +97,7 @@
 #### BibTeX / 元数据生成
 
 - [citation-assistant](https://github.com/zhangny301/citation-assistant) - 作者 [zhangny301](https://github.com/zhangny301) · `No License` · `net`.<br>基于 Semantic Scholar API 的自动化学术引用 skill：解析、核验并将引用格式化嵌入稿件。实用、聚焦的引用助手；为单一 skill，受限于 S2 的覆盖范围，且其 license 仍待确认。
-- [make-bib](https://github.com/milkclouds/make-bib) - 作者 [milkclouds](https://github.com/milkclouds) · `No License` · `net`.<br>带人工确认环节的 BibTeX 抓取器，每个字段都从权威出版方（ACL/PMLR/arXiv/NeurIPS，DBLP 兜底）取得，而非来自 LLM，逐条记录来源出处，遇到含混的 venue 会停下来询问。非常适合给 .bib 去幻觉；未附许可协议。
+- [fetch-bib](https://github.com/MilkClouds/fetch-bib) - 作者 [MilkClouds](https://github.com/MilkClouds) · `No License` · `net`.<br>带人工确认环节的 BibTeX 抓取器，每个字段都从权威出版方（ACL/PMLR/arXiv/NeurIPS，DBLP 兜底）取得，而非来自 LLM，逐条记录来源出处，遇到含混的 venue 会停下来询问。非常适合给 .bib 去幻觉；未附许可协议。
 - [wenxian](https://github.com/njzjz/wenxian) - 作者 [njzjz](https://github.com/njzjz) · `LGPL-3.0` · `net`.<br>通过查询 CrossRef、PubMed、arXiv、Semantic Scholar 和 ChemRxiv，从 DOI、PMID、arXiv ID 或论文标题生成 BibTeX。成熟、经过测试、已发布到 PyPI；该 agent skill 是对一个扎实 CLI 的轻量封装。LGPL-3.0。
 
 ## 阅读与理解
@@ -158,7 +158,7 @@
 
 #### 统计建模与检验选择
 
-- `Suite` [ai4ss-skills](https://github.com/siyaozheng/ai4ss-skills) - 作者 [siyaozheng](https://github.com/siyaozheng) · `GPL-3.0` · `net`.<br>面向社会科学研究的 agent 技能，用 R 和 Python，能跨 session 保持数据集/codebook 上下文，并附 benchmarks 板块。适合可复现的定量社科分析；GPL-3.0，聚焦统计工作流而非写作。
+- `Suite` [GEZHI](https://github.com/SiyaoZheng/GEZHI) - 作者 [SiyaoZheng](https://github.com/SiyaoZheng) · `GPL-3.0` · `net`.<br>面向社会科学研究的 agent 技能，用 R 和 Python，能跨 session 保持数据集/codebook 上下文，并附 benchmarks 板块。适合可复现的定量社科分析；GPL-3.0，聚焦统计工作流而非写作。
 - `Suite` [social-data-analysis](https://github.com/nealcaren/social-data-analysis) - 作者 [nealcaren](https://github.com/nealcaren) · `MIT` · `net`.<br>18 个技能的社会学方法包，覆盖定量与定性社会数据分析，作者为一位计算社会学家。范围与来源可靠；各组件深度未经核实（内容未作检视）。
 - [claude-statistical-analysis-skill](https://github.com/terryfyl/claude-statistical-analysis-skill) - 作者 [terryfyl](https://github.com/terryfyl) · `MIT` · `net`.<br>统计顾问式 skill：先诊断前提假设，再自动选择方法（从 t 检验到 SEM/HLM/IRT/meta-analysis），并产出 APA-7 表格、300dpi 图表与结果段落。先验前提优先是它的特色；高级方法需要 R Docker 支持。
 - [stata-ai-fusion](https://github.com/haoyu-haoyu/stata-ai-fusion) - 作者 [haoyu-haoyu](https://github.com/haoyu-haoyu) · `MIT`.<br>让 agent 通过一个 MCP server 加一份 Stata skill 知识库，驱动一个真实的 Stata 会话：运行命令、查看数据、提取估计结果、抓取图形。为经济学/流行病学/生物统计填补了 AI 与 Stata 之间的空缺；需要已授权的 Stata 安装。
@@ -170,7 +170,6 @@
 
 #### 领域计算与仿真流程
 
-- `Suite` [claude-scientific-skills](https://github.com/k-dense-ai/claude-scientific-skills) - 作者 [k-dense-ai](https://github.com/k-dense-ai) · `MIT`.<br>庞杂的计算科学 skill 套件（143 个 skill）：生物信息学流水线（比对、RNA-seq、变异检测、系统发育、蛋白结构、MD）外加完整的统计栈（差异表达、通路/GO、生存分析、meta 分析等）。
 - `Suite` [fiftyone-skills](https://github.com/voxel51/fiftyone-skills) - 作者 [voxel51](https://github.com/voxel51) · `Apache-2.0` · `net`.<br>FiftyOne 官方 skill 集：借助 AI 助手完成计算机视觉数据集整理、评估与模型分析的专家级工作流，并配有一个配套的 MCP server。对 CV/ML 数据集研究很强；但与 FiftyOne 工具绑定，且专限于计算机视觉。
 - `Suite` [materials-simulation-skills](https://github.com/heshamfs/materials-simulation-skills) - 作者 [heshamfs](https://github.com/heshamfs) · `Apache-2.0` · `net`.<br>含 23 个 skill 的计算材料科学套件：数值稳定性分析、有限元网格剖分、DFT/MD 设置、蒙特卡洛与相场建模、谱方法、时间积分以及不确定性量化。方法学覆盖面很广。
 - `Suite` [matlab-agentic-toolkit](https://github.com/matlab/matlab-agentic-toolkit) - 作者 [matlab](https://github.com/matlab) · `No License` · `net`.<br>MathWorks 官方出品、面向 MATLAB/Simulink 工程与科学工作的 61 个 agent skill 工具包：曲线拟合、系统辨识、时间序列预测、信号去趋势/滤波、参数优化、单位换算、数据清洗等。
@@ -325,10 +324,9 @@
 
 #### LaTeX 写作与投稿准备
 
-- `Suite` [mcp-overleaf](https://github.com/bettyguo/mcp-overleaf) - 作者 [bettyguo](https://github.com/bettyguo) · `MIT` · `net`.<br>一套 Overleaf/LaTeX 投稿准备工具包（一个 MCP server 加 6 个 skill）：清理 .bib、套用会议/期刊规则包、运行 latexdiff，并起草 related-work 章节。
 - `Suite` [paperfit](https://github.com/openraiser/paperfit) - 作者 [openraiser](https://github.com/openraiser) · `MIT` · `net`.<br>LaTeX 排版套件，先编译、把页面渲染为图像，再以视觉方式诊断并修复版式问题（overfull box、浮动体摆放、间距、表格）。其真正的优势在于“视觉闭环”；需要一套可用的本地 LaTeX 工具链。
 - [claude-skill-overleaf](https://github.com/junhahyung/claude-skill-overleaf) - 作者 [junhahyung](https://github.com/junhahyung) · `MIT`.<br>在 Claude Code 中经由 Overleaf 的 git bridge 读写 Overleaf 项目：编辑、提交并把 LaTeX 推回网页编辑器，token 处理安全、不做 force-push。附带 rebuttal 脚手架。把 agent 接入 Overleaf 的干净做法。
-- [latex-arxiv-skill](https://github.com/renocrypt/latex-arxiv-skill) - 作者 [renocrypt](https://github.com/renocrypt) · `No License` · `net`.<br>一个以 issue 驱动、面向 ML/AI 领域 arXiv 综述论文的 Codex skill：搭建 LaTeX 项目脚手架，并对每条 BibTeX 条目做端到端核验。BibTeX 核验让它高出一般的 LaTeX 模板一筹；定位狭窄，仅针对 arXiv 风格的 ML 综述，且无许可证。
+- [latex-arxiv-SKILL](https://github.com/appautomaton/latex-arxiv-SKILL) - 作者 [appautomaton](https://github.com/appautomaton) · `No License` · `net`.<br>一个以 issue 驱动、面向 ML/AI 领域 arXiv 综述论文的 Codex skill：搭建 LaTeX 项目脚手架，并对每条 BibTeX 条目做端到端核验。BibTeX 核验让它高出一般的 LaTeX 模板一筹；定位狭窄，仅针对 arXiv 风格的 ML 综述，且无许可证。
 - [latex-document-skill](https://github.com/ndpvt-web/latex-document-skill) - 作者 [ndpvt-web](https://github.com/ndpvt-web) · `MIT`.<br>本列表中模板最丰富的 LaTeX skill——27 套模板覆盖论文、表单与表格；走广度而非深耕一隅。
 
 #### 幻灯片与演示
@@ -365,15 +363,14 @@
 | [academic-research-skills-codex](https://github.com/imbad0202/academic-research-skills-codex) |  9.4k |   — | Codex 原生的学术研究 Skill 集：深度调研、论文起草、稿件评审、从研究到成文的流水线、引用与学术诚信核查。端到端覆盖面广；但以一整个巨型 skill 的形式打包内置（审查时需相应留意）；采用非商用 license                                    | `net` `hooks` |
 | [AcademicForge](https://github.com/HughYau/AcademicForge)                                     |  2.5k |   7 | 一个方便的网页安装器，把七套现成的学术 skill 打包装入——但本质是转手打包他人的成果，而非自有产出                                                                                               | `net`         |
 | [AI Research Skills (Orchestra)](https://github.com/Orchestra-Research/AI-Research-SKILLs)    | 12.1k |  98 | 一套 98 个 skill 的课程体系，专攻机器学习研究偏工程的那一半，带 agent 从想法走到训练好的模型——不涉及湿实验                                                                                    | `net`         |
-| [ai-research-skills](https://github.com/zechenzhangagi/ai-research-skills)                    | 12.1k |   — | 包含 98 个 skill 的 AI/ML 研究套件：研究构思、文献综述、baseline/消融设计、实验追踪、统计显著性检验、图表生成、论文写作、同行评审与 rebuttal。堪称“把你的 agent 变成研究者”的参照级套件                                 | `net`         |
 | [anthropics/life-sciences](https://github.com/anthropics/life-sciences)                       |   580 |   — | Anthropic 官方的生命科学 marketplace——一份经甄选的约 20 项合作方数据集成目录，而非 skill 合集                                                                                   | `net`         |
 | [aut_sci_write](https://github.com/shzhao27208/aut_sci_write)                                 |   185 |   — | 一个覆盖研究全生命周期的模块化 skill 集：跨 arXiv/PubMed/Web of Science 文献检索、PDF 与图表提取、综述/meta 分析写作、Zotero 同步以及幻灯片制作。覆盖面广、采用率高；属于“样样都能做”的大而全 skill 集，而非某一环节做到最好的专精工具 | `net`         |
 | [claude-academic-research](https://github.com/mronkko/claude-academic-research)               |    21 |   — | 由教授打造、覆盖研究全生命周期的套件：PRISMA 综述、同行评议、稿件修订、实证完整性的统计核查，以及由 Zotero/MCP 锚定、拒绝幻觉引用的参考文献。严谨性强；需要配置 Zotero+MCP                                               | `net`         |
-| [claude-research](https://github.com/flonat/claude-research)                                  |   130 |   — | 面向博士研究者的基础设施：50 个 skill，外加 agent、hook 与规则，用于参考文献校验、LaTeX 健康检查、实验与因果设计，以及可复现的项目搭建。端到端能力很强；附带 hook 和一个未限定范围的 Bash                                    | `net` `hooks` |
 | [claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar)                               |  5.2k |  47 | 面向 CS/AI 研究者的工作台，带一道以证据为门槛的 Claim Promotion Gate；独有自带的 PreToolUse 安全防护 hook                                                                        | `net` `hooks` |
 | [claude-scholar](https://github.com/yy/claude-scholar)                                        |    35 |   — | 一套 12 个 skill 的学术工具箱：OpenAlex/arXiv 检索、DOI 转 BibTeX、引用核验、LaTeX 清理、arXiv 打包、投稿前检查、数学核验、稿件/图表点评。坦诚自己尚处早期阶段；并列出其数据外发情况                                | `net`         |
 | [claude-scientific-writer](https://github.com/k-dense-ai/claude-scientific-writer)            |  2.3k |   — | 一个包含 27 个 skill 的科学写作 skill 集：文献综述、引用管理、同行评审、图表、海报、幻灯片以及稿件起草。是此处最受欢迎、覆盖面最广的一个，但样样通而无一精；且附带了一个未限定权限范围的 Bash                                         | `net`         |
 | [codex-paper-skills](https://github.com/moonlarry/codex-paper-skills)                         |   151 |   — | 面向 Codex/Claude 的论文套件（27 个 skill），覆盖写作链路、图表、实验与论点的一致性、引用审计、证明核查与反驳，并采用证据优先的 agent 协议。覆盖面很广；缺少 LICENSE 是它的主要短板                                      | `net`         |
+| [flonat-research](https://github.com/flonat/flonat-research)                                  |   130 |   — | 面向博士研究者的基础设施：50 个 skill，外加 agent、hook 与规则，用于参考文献校验、LaTeX 健康检查、实验与因果设计，以及可复现的项目搭建。端到端能力很强；附带 hook 和一个未限定范围的 Bash                                    | `net` `hooks` |
 | [google-deepmind/science-skills](https://github.com/google-deepmind/science-skills)           |  2.8k |  37 | Google DeepMind 官方套件，把 agent 接入真实的生物数据——范围窄于结构生物学与基因组学，但权威                                                                                         | `net`         |
 | [mgmt-paper-skills](https://github.com/haonanalex/mgmt-paper-skills)                          |   121 |   — | 管理学研究工作台：从选题到评审的全流程，含 SPSS/Stata/Python 分析、因果方法（DiD/RDD/IV/SC/PSM）、质性编码与期刊图表规范（UTD24）。在经济/管理领域很深；偏向中文数据，需要一个统计 MCP                                 | `net`         |
 | [nature-skills](https://github.com/Yuan1z0825/nature-skills)                                  | 37.5k |   9 | 一个精炼的九 skill 套件，最强在 Nature 风格的行文与配图，最弱在作为数据工具集                                                                                                     | `net`         |
@@ -427,7 +424,7 @@
 
 - `Suite` [alterlab-academic-skills](https://github.com/alterlab-ieu/alterlab-academic-skills) - 作者 [alterlab-ieu](https://github.com/alterlab-ieu) · `MIT` · `net`.<br>面向教师/研究人员的 186+ 个按领域组织的学术 skill，封装了真实的科研数据库与库（ENA、biopython、cellxgene、cobrapy、ESM 等）。在生物信息学/计算科学的覆盖广度上很强。
 - `Suite` [beril-research-observatory](https://github.com/kbaseincubator/beril-research-observatory) - 作者 [kbaseincubator](https://github.com/kbaseincubator) · `AGPL-3.0` · `net`.<br>架设在 BER 微生物生态数据湖仓之上的 KBase AI 协作科学家：16 个 skill 外加用于泛基因组学、适应度、宏基因组学与生物化学的可复用范式。对 KBase 研究很强；可执行面较大且采用 AGPL，信任前请先通读。
-- `Suite` [bioSkills](https://github.com/GPTomics/bioSkills) - 作者 [GPTomics](https://github.com/GPTomics) · `MIT`.<br>基准测试最坦诚的生物信息学套件——地道的 samtools/DESeq2/Seurat 代码，并公布了 Bio-Task Bench 成绩。
+- `Suite` [bioSkills](https://github.com/GPTomics/bioSkills) - 作者 [GPTomics](https://github.com/GPTomics) · `MIT`.<br>基准测试最坦诚的生物信息学套件——地道的 samtools/DESeq2/Seurat 代码，并公布了 Bio-Task Bench 成绩；上游已归档。
 - `Suite` [clawbio](https://github.com/clawbio/clawbio) - 作者 [clawbio](https://github.com/clawbio) · `MIT` · `net`.<br>生物信息学原生的 agent skill 库：基于 OpenClaw 构建的本地优先、可复现的基因组学/QC/GWAS 工作流，配有 CI 与可被引用的发布版本。领域覆盖扎实；可执行面较大，这是真实生物信息学技术栈的常态。
 - `Suite` [dr-cook](https://github.com/wen-chen/dr-cook) - 作者 [wen-chen](https://github.com/wen-chen) · `MIT`.<br>模块化的研究全生命周期套件（文献、空白分析、写作、同行评审、生物信息学、基金申请），带路由层，并在中医药领域有深度积累。在中医/生物医学场景下很强；采用度一般，主打面面俱到的广度。
 - `Suite` [encode-toolkit](https://github.com/ammawla/encode-toolkit) - 作者 [ammawla](https://github.com/ammawla) · `AGPL-3.0` · `net`.<br>基因组学套件：检索 ENCODE，交叉比对 14 个数据库（GWAS、ClinVar、GTEx、JASPAR），运行 7 条 pipeline，并撰写带 provenance 追踪的 methods。测试充分；AGPL 且专攻基因组学，在其他领域较为小众。
@@ -477,7 +474,7 @@
 > agent 技能生态中的其他精选列表与导览图——本索引之外，下一步该往哪儿看。
 
 - `List` [Awesome AI for Economists](https://github.com/hanlulong/awesome-ai-for-economists) - 作者 [Lu Han](https://github.com/hanlulong) · `CC0-1.0`.<br>面向经济学研究与教学的 AI 工具图谱，由 OpenEcon 团队维护。
-- `List` [Awesome AI for Science](https://github.com/ai-boost/awesome-ai-for-science) - 作者 [AwesomeGPTS (ai-boost)](https://github.com/ai-boost) · `MIT`.<br>覆盖面更广的 AI4Science 资源图谱（工具、论文、数据集），比技能列表更偏模型与文献。
+- `List` [Awesome AI for Science](https://github.com/ai4s-research/awesome-ai-for-science) - 作者 [ai4s-research](https://github.com/ai4s-research) · `MIT`.<br>覆盖面更广的 AI4Science 资源图谱（工具、论文、数据集），比技能列表更偏模型与文献。
 - `List` [Awesome Scientific Skills](https://github.com/InternScience/Awesome-Scientific-Skills) - 作者 [Intern Science](https://github.com/InternScience) · `MIT`.<br>最接近的活跃同类——一份科研 agent 技能的 awesome 列表；可交叉参考，而非竞争。
 - `List` [Awesome-AI-Scientists](https://github.com/tsinghua-fib-lab/Awesome-AI-Scientists) - 作者 [FIB Lab, Tsinghua University](https://github.com/tsinghua-fib-lab) · `MIT`.<br>清华 FIB 实验室《AI 科学家综述》的配套阅读清单——以论文为主的文献图谱。
 
@@ -491,11 +488,11 @@
 | -------- | -: | --: |
 | 检索与采集    |  2 |  20 |
 | 阅读与理解    |  2 |  23 |
-| 分析与可视化   |  2 |  24 |
+| 分析与可视化   |  2 |  23 |
 | 写作与润色    |  2 |  52 |
-| 评审与发表    |  2 |  25 |
-| 套件、系统与生态 |  4 |  79 |
-| 合计       | 14 | 223 |
+| 评审与发表    |  2 |  24 |
+| 套件、系统与生态 |  4 |  78 |
+| 合计       | 14 | 220 |
 
 ## 最近更新
 

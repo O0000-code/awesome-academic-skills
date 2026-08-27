@@ -1,8 +1,8 @@
-name: make-bib
+name: fetch-bib
 slug: make-bib
-source_url: https://github.com/milkclouds/make-bib
-author: milkclouds
-author_url: https://github.com/milkclouds
+source_url: https://github.com/MilkClouds/fetch-bib
+author: MilkClouds
+author_url: https://github.com/MilkClouds
 license: No License
 category: Reference & Citation Management
 lifecycle_stage: citation

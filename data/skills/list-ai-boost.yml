@@ -1,8 +1,8 @@
 name: Awesome AI for Science
 slug: list-ai-boost
-source_url: https://github.com/ai-boost/awesome-ai-for-science
-author: AwesomeGPTS (ai-boost)
-author_url: https://github.com/ai-boost
+source_url: https://github.com/ai4s-research/awesome-ai-for-science
+author: ai4s-research
+author_url: https://github.com/ai4s-research
 license: MIT
 category: Awesome Lists & Ecosystem Maps
 lifecycle_stage: meta
@@ -24,7 +24,7 @@ security:
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-homepage_url: https://github.com/ai-boost/awesome-ai-for-science
+homepage_url: https://github.com/ai4s-research/awesome-ai-for-science
 lang:
 - en
 tags:

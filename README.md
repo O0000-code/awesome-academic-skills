@@ -16,7 +16,7 @@ A bilingual index of Claude and agent skills for academic work, from literature 
 Organized by where skills fit in the research lifecycle; each entry notes its license and what it runs (network, hooks).
 <br/>
 
-![Skills](https://img.shields.io/badge/skills-223-000?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-220-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
 ![Updated](https://img.shields.io/badge/updated-2026.08.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
@@ -97,7 +97,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 #### BibTeX / metadata generation
 
 - [citation-assistant](https://github.com/zhangny301/citation-assistant) - by [zhangny301](https://github.com/zhangny301) · `No License` · `net`.<br>Automated academic-citation skill over the Semantic Scholar API: resolve, verify, and format citations into a manuscript. Useful, focused citation helper; single-skill and tied to S2 coverage, and its license needs confirming.
-- [make-bib](https://github.com/milkclouds/make-bib) - by [milkclouds](https://github.com/milkclouds) · `No License` · `net`.<br>Human-in-the-loop BibTeX fetcher pulling every field from the authoritative publisher (ACL/PMLR/arXiv/NeurIPS, DBLP fallback) not the LLM, with provenance per entry and a stop-to-ask on ambiguous venues. Great for de-hallucinating .bib; no license.
+- [fetch-bib](https://github.com/MilkClouds/fetch-bib) - by [MilkClouds](https://github.com/MilkClouds) · `No License` · `net`.<br>Human-in-the-loop BibTeX fetcher pulling every field from the authoritative publisher (ACL/PMLR/arXiv/NeurIPS, DBLP fallback) not the LLM, with provenance per entry and a stop-to-ask on ambiguous venues. Great for de-hallucinating .bib; no license.
 - [wenxian](https://github.com/njzjz/wenxian) - by [njzjz](https://github.com/njzjz) · `LGPL-3.0` · `net`.<br>Generates BibTeX from a DOI, PMID, arXiv ID, or paper title by querying CrossRef, PubMed, arXiv, Semantic Scholar and ChemRxiv. Mature, tested, PyPI-published; the agent skill is a thin wrapper over a solid CLI. LGPL-3.0.
 
 ## Read & Understand
@@ -158,7 +158,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 #### Statistical modeling & test selection
 
-- `Suite` [ai4ss-skills](https://github.com/siyaozheng/ai4ss-skills) - by [siyaozheng](https://github.com/siyaozheng) · `GPL-3.0` · `net`.<br>Agent skills for social-science research in R and Python that persist dataset/codebook context across sessions, with a benchmarks section. Good for reproducible quant social-science analysis; GPL-3.0 and stats-workflow-focused, not writing.
+- `Suite` [GEZHI](https://github.com/SiyaoZheng/GEZHI) - by [SiyaoZheng](https://github.com/SiyaoZheng) · `GPL-3.0` · `net`.<br>Agent skills for social-science research in R and Python that persist dataset/codebook context across sessions, with a benchmarks section. Good for reproducible quant social-science analysis; GPL-3.0 and stats-workflow-focused, not writing.
 - `Suite` [social-data-analysis](https://github.com/nealcaren/social-data-analysis) - by [nealcaren](https://github.com/nealcaren) · `MIT` · `net`.<br>An 18-skill sociology methods pack covering quantitative and qualitative social-data analysis, authored by a computational sociologist. Scope and provenance are strong; component depth unverified (content not inspected).
 - [claude-statistical-analysis-skill](https://github.com/terryfyl/claude-statistical-analysis-skill) - by [terryfyl](https://github.com/terryfyl) · `MIT` · `net`.<br>Statistical-consultant skill that diagnoses assumptions first, auto-selects methods (t-test to SEM/HLM/IRT/meta-analysis) and emits an APA-7 table, 300dpi figure and results paragraph. Assumption-first is its edge; advanced methods need the R Docker.
 - [stata-ai-fusion](https://github.com/haoyu-haoyu/stata-ai-fusion) - by [haoyu-haoyu](https://github.com/haoyu-haoyu) · `MIT`.<br>Lets an agent drive a real Stata session (run commands, inspect data, extract estimation results, capture graphs) via an MCP server plus a Stata skill knowledge base. Fills the AI-Stata gap for econ/epi/biostat; requires a licensed Stata install.
@@ -170,7 +170,6 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 #### Domain computational & simulation pipelines
 
-- `Suite` [claude-scientific-skills](https://github.com/k-dense-ai/claude-scientific-skills) - by [k-dense-ai](https://github.com/k-dense-ai) · `MIT`.<br>Sprawling computational-science suite (143 skills): bioinformatics pipelines (alignment, RNA-seq, variant calling, phylogenetics, protein structure, MD) plus a full stats stack (differential expression, pathway/GO, survival, meta-analysis, more).
 - `Suite` [fiftyone-skills](https://github.com/voxel51/fiftyone-skills) - by [voxel51](https://github.com/voxel51) · `Apache-2.0` · `net`.<br>Official FiftyOne skill suite: expert workflows for computer-vision dataset curation, evaluation and model analysis via AI assistants, with a companion MCP server. Strong for CV/ML dataset research; tied to the FiftyOne tool and CV-specific.
 - `Suite` [materials-simulation-skills](https://github.com/heshamfs/materials-simulation-skills) - by [heshamfs](https://github.com/heshamfs) · `Apache-2.0` · `net`.<br>23-skill computational-materials-science suite: numerical-stability analysis, finite-element meshing, DFT/MD setup, Monte-Carlo/phase-field modeling, spectral methods, time-integration, and uncertainty quantification. Strong methodological breadth.
 - `Suite` [matlab-agentic-toolkit](https://github.com/matlab/matlab-agentic-toolkit) - by [matlab](https://github.com/matlab) · `No License` · `net`.<br>Official MathWorks toolkit of 61 agent skills for MATLAB/Simulink engineering and scientific work: curve fitting, system identification, timeseries forecasting, signal detrending/filtering, parameter optimization, unit conversion, and data cleaning.
@@ -325,10 +324,9 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 #### LaTeX authoring & submission prep
 
-- `Suite` [mcp-overleaf](https://github.com/bettyguo/mcp-overleaf) - by [bettyguo](https://github.com/bettyguo) · `MIT` · `net`.<br>An Overleaf/LaTeX submission-prep bundle (MCP server plus 6 skills): cleans the .bib, applies venue rule packs, runs latexdiff, and drafts related-work sections.
 - `Suite` [paperfit](https://github.com/openraiser/paperfit) - by [openraiser](https://github.com/openraiser) · `MIT` · `net`.<br>LaTeX typesetting suite that compiles, renders pages to images, then visually diagnoses and fixes layout problems (overfull boxes, float placement, spacing, tables). The vision-in-the-loop loop is its real edge; needs a working local LaTeX toolchain.
 - [claude-skill-overleaf](https://github.com/junhahyung/claude-skill-overleaf) - by [junhahyung](https://github.com/junhahyung) · `MIT`.<br>Reads and writes Overleaf projects from Claude Code via the Overleaf git bridge: edit, commit, and push LaTeX to the web editor with secure token handling and no force-push. Includes a rebuttal scaffold. A clean way to bring an agent into Overleaf.
-- [latex-arxiv-skill](https://github.com/renocrypt/latex-arxiv-skill) - by [renocrypt](https://github.com/renocrypt) · `No License` · `net`.<br>Issue-driven Codex skill for ML/AI arXiv review papers: scaffolds the LaTeX project and verifies every BibTeX entry end-to-end. The BibTeX verification lifts it above generic templates; aimed narrowly at arXiv-style ML reviews; ships no license.
+- [latex-arxiv-SKILL](https://github.com/appautomaton/latex-arxiv-SKILL) - by [appautomaton](https://github.com/appautomaton) · `No License` · `net`.<br>Issue-driven Codex skill for ML/AI arXiv review papers: scaffolds the LaTeX project and verifies every BibTeX entry end-to-end. The BibTeX verification lifts it above generic templates; aimed narrowly at arXiv-style ML reviews; ships no license.
 - [latex-document-skill](https://github.com/ndpvt-web/latex-document-skill) - by [ndpvt-web](https://github.com/ndpvt-web) · `MIT`.<br>The most template-heavy LaTeX skill here — 27 templates spanning papers, forms and tables; breadth over a single niche.
 
 #### Slides & presentation decks
@@ -365,15 +363,14 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 | [academic-research-skills-codex](https://github.com/imbad0202/academic-research-skills-codex) |  9.4k |      — | Codex-native Academic Research Skills: deep research, paper drafting, manuscript review, research-to-paper pipelines, citation/integrity checks. Broad end-to-end; vendored as one giant skill (audit accordingly); non-commercial license               | `net` `hooks` |
 | [AcademicForge](https://github.com/HughYau/AcademicForge)                                     |  2.5k |      7 | A convenient web installer that bundles seven existing academic skills — but it repackages others' work rather than adding its own                                                                                                                       | `net`         |
 | [AI Research Skills (Orchestra)](https://github.com/Orchestra-Research/AI-Research-SKILLs)    | 12.1k |     98 | A 98-skill curriculum for the engineering half of ML research, taking an agent from idea to trained model — not wet-lab                                                                                                                                  | `net`         |
-| [ai-research-skills](https://github.com/zechenzhangagi/ai-research-skills)                    | 12.1k |      — | 98-skill AI/ML research suite: ideation, literature review, baseline/ablation design, experiment tracking, significance testing, figure generation, paper writing, peer review and rebuttals. The reference 'turn your agent into a researcher' suite    | `net`         |
 | [anthropics/life-sciences](https://github.com/anthropics/life-sciences)                       |   580 |      — | Anthropic's official life-sciences marketplace — a vetted directory of ~20 partner data integrations, not a skill collection                                                                                                                             | `net`         |
 | [aut_sci_write](https://github.com/shzhao27208/aut_sci_write)                                 |   185 |      — | Modular research-lifecycle suite: literature search across arXiv/PubMed/Web of Science, PDF and figure extraction, review/meta-analysis writing, Zotero sync and slides. Broad and well-adopted; a do-everything suite, not a best-in-one-stage tool     | `net`         |
 | [claude-academic-research](https://github.com/mronkko/claude-academic-research)               |    21 |      — | Professor-built suite spanning the research lifecycle: PRISMA review, peer review, manuscript revision, empirical-integrity stat checks, and Zotero/MCP-grounded citations that refuse hallucinated references. Strong on rigor; needs Zotero+MCP setup  | `net`         |
-| [claude-research](https://github.com/flonat/claude-research)                                  |   130 |      — | PhD-researcher infrastructure: 50 skills plus agents, hooks and rules for bibliography validation, LaTeX health-checks, experiment and causal design, and reproducible project setup. Strong end-to-end; ships hooks and an unscoped Bash                | `net` `hooks` |
 | [claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar)                               |  5.2k |     47 | A CS/AI research workspace with an evidence-gated Claim Promotion Gate; uniquely ships its own PreToolUse security-guard hook                                                                                                                            | `net` `hooks` |
 | [claude-scholar](https://github.com/yy/claude-scholar)                                        |    35 |      — | A 12-skill academic toolkit: OpenAlex/arXiv search, DOI-to-BibTeX, citation verification, LaTeX cleanup, arXiv packaging, pre-submission checks, math verification, manuscript/figure critique. Honest that it is early-stage; lists its data egress     | `net`         |
 | [claude-scientific-writer](https://github.com/k-dense-ai/claude-scientific-writer)            |  2.3k |      — | A 27-skill scientific-writing suite: literature review, citation management, peer review, figures, posters, slides and manuscript drafting. The most popular here and broad, but jack-of-all-trades; ships an unscoped Bash                              | `net`         |
 | [codex-paper-skills](https://github.com/moonlarry/codex-paper-skills)                         |   151 |      — | Codex/Claude paper suite (27 skills) covering the writing chain, figures, experiment-to-claim consistency, citation auditing, proof checking and rebuttal, with an evidence-first agent protocol. Strong breadth; the missing LICENSE is its main gap    | `net`         |
+| [flonat-research](https://github.com/flonat/flonat-research)                                  |   130 |      — | PhD-researcher infrastructure: 50 skills plus agents, hooks and rules for bibliography validation, LaTeX health-checks, experiment and causal design, and reproducible project setup. Strong end-to-end; ships hooks and an unscoped Bash                | `net` `hooks` |
 | [google-deepmind/science-skills](https://github.com/google-deepmind/science-skills)           |  2.8k |     37 | Google DeepMind's official pack grounding agents in real biological data — narrow to structural bio and genomics, but authoritative                                                                                                                      | `net`         |
 | [mgmt-paper-skills](https://github.com/haonanalex/mgmt-paper-skills)                          |   121 |      — | Management-research workbench: idea-to-review pipeline with SPSS/Stata/Python analysis, causal methods (DiD/RDD/IV/SC/PSM), qualitative coding and journal-figure profiles (UTD24). Deep for econ/management; Chinese-data oriented, needs a stats MCP   | `net`         |
 | [nature-skills](https://github.com/Yuan1z0825/nature-skills)                                  | 37.5k |      9 | A tight 9-skill bundle strongest on Nature-style prose and figures, weakest as a data toolkit                                                                                                                                                            | `net`         |
@@ -427,7 +424,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 - `Suite` [alterlab-academic-skills](https://github.com/alterlab-ieu/alterlab-academic-skills) - by [alterlab-ieu](https://github.com/alterlab-ieu) · `MIT` · `net`.<br>186+ domain-organized academic skills for faculty/researchers, wrapping real scientific databases and libraries (ENA, biopython, cellxgene, cobrapy, ESM, etc.).
 - `Suite` [beril-research-observatory](https://github.com/kbaseincubator/beril-research-observatory) - by [kbaseincubator](https://github.com/kbaseincubator) · `AGPL-3.0` · `net`.<br>KBase AI co-scientist over the BER microbial-ecology data lakehouse: 16 skills plus reusable patterns for pangenomics, fitness, metagenomics and biochemistry. Strong for KBase research; large executable surface and AGPL, so read before trusting.
-- `Suite` [bioSkills](https://github.com/GPTomics/bioSkills) - by [GPTomics](https://github.com/GPTomics) · `MIT`.<br>The most benchmark-honest bioinformatics pack — idiomatic samtools/DESeq2/Seurat code, with published Bio-Task Bench scores.
+- `Suite` [bioSkills](https://github.com/GPTomics/bioSkills) - by [GPTomics](https://github.com/GPTomics) · `MIT`.<br>The most benchmark-honest bioinformatics pack — idiomatic samtools/DESeq2/Seurat code, with published Bio-Task Bench scores — now archived upstream.
 - `Suite` [clawbio](https://github.com/clawbio/clawbio) - by [clawbio](https://github.com/clawbio) · `MIT` · `net`.<br>Bioinformatics-native agent skill library: local-first, reproducible genomics/QC/GWAS workflows built on OpenClaw, with CI and a cited release. Strong domain coverage; large executable surface typical of a real bioinformatics stack.
 - `Suite` [dr-cook](https://github.com/wen-chen/dr-cook) - by [wen-chen](https://github.com/wen-chen) · `MIT`.<br>Modular research-lifecycle suite (literature, gap analysis, writing, peer review, bioinformatics, grants) with a routing layer and depth in Traditional Chinese Medicine. Strong for TCM/biomed; modest adoption, do-everything breadth.
 - `Suite` [encode-toolkit](https://github.com/ammawla/encode-toolkit) - by [ammawla](https://github.com/ammawla) · `AGPL-3.0` · `net`.<br>Genomics suite: searches ENCODE, cross-references 14 databases (GWAS, ClinVar, GTEx, JASPAR), runs 7 pipelines, and writes provenance-tracked methods. Heavily tested; AGPL and genomics-specific, so niche elsewhere.
@@ -477,7 +474,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 > Other curated lists and maps of the agent-skill ecosystem — where to look next, beyond this index.
 
 - `List` [Awesome AI for Economists](https://github.com/hanlulong/awesome-ai-for-economists) - by [Lu Han](https://github.com/hanlulong) · `CC0-1.0`.<br>A discipline-focused map of AI tools for economics research and teaching, from the OpenEcon team.
-- `List` [Awesome AI for Science](https://github.com/ai-boost/awesome-ai-for-science) - by [AwesomeGPTS (ai-boost)](https://github.com/ai-boost) · `MIT`.<br>A broad AI4Science map of tools, papers and datasets — wider and more model-oriented than a skills list.
+- `List` [Awesome AI for Science](https://github.com/ai4s-research/awesome-ai-for-science) - by [ai4s-research](https://github.com/ai4s-research) · `MIT`.<br>A broad AI4Science map of tools, papers and datasets — wider and more model-oriented than a skills list.
 - `List` [Awesome Scientific Skills](https://github.com/InternScience/Awesome-Scientific-Skills) - by [Intern Science](https://github.com/InternScience) · `MIT`.<br>The closest active peer — a curated awesome-list of agent skills for science. Cross-reference, don't race.
 - `List` [Awesome-AI-Scientists](https://github.com/tsinghua-fib-lab/Awesome-AI-Scientists) - by [FIB Lab, Tsinghua University](https://github.com/tsinghua-fib-lab) · `MIT`.<br>The reading list behind Tsinghua FIB Lab's AI-Scientists survey — a paper-centric map of the literature.
 
@@ -491,11 +488,11 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 | ---------------------- | ---------: | -----: |
 | Discover & Collect     |          2 |     20 |
 | Read & Understand      |          2 |     23 |
-| Analyze & Visualize    |          2 |     24 |
+| Analyze & Visualize    |          2 |     23 |
 | Write & Refine         |          2 |     52 |
-| Review & Publish       |          2 |     25 |
-| Suites, Systems & Meta |          4 |     79 |
-| Total                  |         14 |    223 |
+| Review & Publish       |          2 |     24 |
+| Suites, Systems & Meta |          4 |     78 |
+| Total                  |         14 |    220 |
 
 ## Recently updated
 

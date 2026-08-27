@@ -4,7 +4,7 @@ _comment: 'Backlog - academic skills discovered and reviewed but not (yet) liste
   static assessments from the completeness-round audit (2026-06-01), not final judgments - contest any entry via a re-review
   issue.'
 generated: '2026-06-01'
-count: 748
+count: 749
 entries:
 - repo: eseckel/ai-for-grant-writing
   url: https://github.com/eseckel/ai-for-grant-writing
@@ -4032,3 +4032,9 @@ entries:
   held_for: 'Karpathy-LLM-Wiki personal knowledge wiki: Python extracts PDFs/EPUBs/MOBIs, then an LLM writes cross-referenced
     Obsidian wiki pages with contradiction detection and local hybrid semantic search. In-scope-adjacent (paper reading/knowledge
     management) but immature: 0 stars, no LIC'
+- repo: bettyguo/mcp-overleaf
+  url: https://github.com/bettyguo/mcp-overleaf
+  stars: 7
+  held_for: 'Delisted 2026-08-27: the upstream repository is gone (404 unauthenticated; the owner''s account
+    still exists, so it was deleted or made private, not renamed). It was listed under Submission, Formatting
+    & Conversion as an Overleaf/LaTeX submission-prep bundle. Relist immediately if it comes back public.'

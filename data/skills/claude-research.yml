@@ -1,6 +1,6 @@
-name: claude-research
+name: flonat-research
 slug: claude-research
-source_url: https://github.com/flonat/claude-research
+source_url: https://github.com/flonat/flonat-research
 author: flonat
 author_url: https://github.com/flonat
 license: MIT
