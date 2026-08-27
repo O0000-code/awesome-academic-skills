@@ -7,13 +7,16 @@ license: MIT
 category: Skill Suites
 lifecycle_stage: suite
 type: suite
-description: Bilingual research workflow for agent IDEs: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief for a second model. Zero deps, MIT.
+description: 'Bilingual research workflow for agent IDEs: multi-angle literature review
+  with per-angle files, anchored experiment design with a caveat list, figures, paper
+  reading; returns files plus a cross-verification brief for a second model. Zero
+  deps.'
+description_zh: 面向 agent IDE 的双语研究工作流：多角度文献综述（每个角度单独出文件）、带注意事项清单的实验设计、绘图与论文精读；除产出文件外，还会给一份交叉验证简报供另一个模型复核。零依赖。
 security:
   makes_network_calls: true
   network_endpoints:
-    - OpenAlex API (OA lookup for batch PDF download, fetch_pdfs.py)
-    - Unpaywall API (OA lookup for batch PDF download, fetch_pdfs.py)
-    - Model provider API (agent runtime for searches and LLM calls; baseline, not a plugin server)
+  - api.openalex.org
+  - api.unpaywall.org
   has_hooks: false
   requires_bypass_permissions: false
   telemetry: false
@@ -21,17 +24,21 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: true
 homepage_url: https://github.com/IcyCreamDAS/shidi-skill
-install: Copy skills/shidi into your agent skills directory (Claude Code ~/.claude/skills/, DSH ~/.agents/skills/); references/ and scripts/ ship alongside.
-validate_claim: Ask your agent to run a multi-angle literature review on a topic you care about; correct result: per-angle intermediate files under shidi-output, DOIs that resolve, and a final eight-section report that includes the caveat list and per-source reading-depth marks.
+install: Copy skills/shidi into your agent skills directory (Claude Code ~/.claude/skills/,
+  DSH ~/.agents/skills/); references/ and scripts/ ship alongside.
+validate_claim: 'Ask your agent to run a multi-angle literature review on a topic
+  you care about; correct result: per-angle intermediate files under shidi-output,
+  DOIs that resolve, and a final eight-section report that includes the caveat list
+  and per-source reading-depth marks.'
 lang:
-  - en
-  - zh
+- en
+- zh
 tags:
-  - research-workflow
-  - literature-review
-  - experiment-design
-  - figures
-  - paper-reading
-  - cross-verification
-  - bilingual
-  - zero-dependency
+- research-workflow
+- literature-review
+- experiment-design
+- figures
+- paper-reading
+- cross-verification
+- bilingual
+- zero-dependency
