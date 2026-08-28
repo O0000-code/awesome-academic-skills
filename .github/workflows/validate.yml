@@ -110,36 +110,50 @@ jobs:
           fail: true
 
       # Check #5 — Tier-1 security pre-scan of the submitted repo. COMMENT-ONLY:
-      # never blocks (RF check #5). If the PR adds/edits a single entry, the
-      # scan targets that entry's source_url; otherwise it self-tests.
+      # it must never block, and `continue-on-error` is what actually guarantees that
+      # (the step previously failed the whole job whenever the comment POST failed).
+      #
+      # Only entries that are NEW or whose `source_url` changed are scanned. A metadata
+      # refresh touches every entry but introduces no new code to look at, so scanning
+      # all of them wastes several minutes and produced a comment body past GitHub's
+      # 65536-character limit, which is how this step started failing.
       - name: Security pre-scan (comment-only)
-        if: always()
+        if: always() && github.event_name == 'pull_request'
+        continue-on-error: true
         run: |
           set -euo pipefail
-          # Find changed entry files in this PR.
           BASE="${{ github.event.pull_request.base.sha }}"
           HEAD="${{ github.event.pull_request.head.sha }}"
-          CHANGED=$(git diff --name-only "$BASE" "$HEAD" -- 'data/skills/*.yml' || true)
-          echo "Changed entry files:"; echo "$CHANGED"
-          PY=.venv/bin/python   # make install created this venv (has pyyaml)
+          PY=.venv/bin/python
+          url_of () { git show "$1:$2" 2>/dev/null | "$PY" -c "import sys,yaml; print((yaml.safe_load(sys.stdin) or {}).get('source_url',''))" 2>/dev/null || true; }
+
+          TARGETS=""
+          for f in $(git diff --name-only "$BASE" "$HEAD" -- 'data/skills/*.yml' || true); do
+            [ -f "$f" ] || continue
+            NEW_URL=$(url_of "$HEAD" "$f"); OLD_URL=$(url_of "$BASE" "$f")
+            if [ -n "$NEW_URL" ] && [ "$NEW_URL" != "$OLD_URL" ]; then
+              TARGETS="$TARGETS $f"
+            fi
+          done
+
           REPORT=$(mktemp)
-          if [ -z "$CHANGED" ]; then
-            "$PY" framework/scanner/security_scan.py --self-test | tee "$REPORT" || true
+          if [ -z "${TARGETS// /}" ]; then
+            echo "No new or re-pointed entries in this PR — nothing to scan." | tee "$REPORT"
           else
-            for f in $CHANGED; do
-              [ -f "$f" ] || continue
-              URL=$("$PY" -c "import sys,yaml; print((yaml.safe_load(open(sys.argv[1])) or {}).get('source_url',''))" "$f")
+            for f in $TARGETS; do
+              URL=$(url_of "$HEAD" "$f")
               echo "### Scan: $f ($URL)" | tee -a "$REPORT"
-              if [ -n "$URL" ]; then
-                "$PY" framework/scanner/security_scan.py --repo "$URL" | tee -a "$REPORT" || true
-              fi
+              "$PY" framework/scanner/security_scan.py --repo "$URL" | tee -a "$REPORT" || true
             done
           fi
+          # Stay under GitHub's 65536-char comment limit.
+          head -c 60000 "$REPORT" > "$REPORT.cut" && mv "$REPORT.cut" "$REPORT"
           echo "SECURITY_REPORT_PATH=$REPORT" >> "$GITHUB_ENV"
 
       # actions/github-script v7.0.1 — post the scan as a PR comment (best-effort).
       - name: Post security scan comment
         if: always() && github.event.pull_request.number != ''
+        continue-on-error: true
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         with:
           script: |
