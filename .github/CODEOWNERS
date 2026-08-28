@@ -1,8 +1,23 @@
-# CODEOWNERS — every change to the listing or the machinery is a human-reviewed event.
+# CODEOWNERS — routes review of the listing and the machinery to the maintainer.
 #
-# This is the structural guarantee behind the list's "human-in-the-loop" promise:
-# data, generator scripts, schema, the generated READMEs, and the .github config
-# all require maintainer approval before merge. There is no auto-merge path.
+# What this file does on its own: nothing but request a review. CODEOWNERS is not an
+# enforcement mechanism; the enforcement is branch protection on `main`, enabled
+# 2026-08-28, which requires a pull request, one approving review, code-owner review,
+# and a passing `validate` check before anything merges.
+#
+# Stated precisely, because an earlier version of this comment claimed a "structural
+# guarantee" that did not exist — the rules were described here but never configured,
+# so every merge was in fact unreviewed:
+#
+#   * A pull request cannot be merged without the maintainer's approval and a green
+#     `validate`. That part is enforced, not just documented.
+#   * The maintainer is a repository admin and can override both, which GitHub records
+#     on the push as "Bypassed rule violations". It is an audited escape hatch, not a
+#     silent one — the alternative, admin-enforced protection, would lock the sole
+#     maintainer out of their own repository, since GitHub does not permit approving
+#     one's own pull request.
+#   * The daily metadata refresh cannot push to `main` either. It opens a single rolling
+#     pull request instead (`chore/metadata-refresh`).
 #
 # @O0000-code is the repository owner and sole maintainer.
 

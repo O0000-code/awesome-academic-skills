@@ -11,7 +11,8 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write   # commits the refreshed metadata + regenerated READMEs
+  contents: write        # writes the refresh onto its own branch
+  pull-requests: write   # opens/updates the single rolling refresh PR
 
 jobs:
   update:
@@ -36,16 +37,41 @@ jobs:
       - name: Regenerate READMEs
         run: make generate
 
-      - name: Commit changes if any
-        run: |
-          set -euo pipefail
-          PATHS="data/ README.md README.zh-CN.md"
-          if [[ -n "$(git status --porcelain -- $PATHS)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add -- $PATHS
-            git commit -m "chore: daily metadata refresh + regenerated READMEs"
-            git push
-          else
-            echo "No metadata changes."
-          fi
+      # main is a protected branch and this is a personal repository, where classic
+      # branch protection cannot grant bypass allowances (they are organization-only,
+      # verified: HTTP 422 "Only organization repositories can have users and team
+      # restrictions"). github-actions[bot] is not an admin, so a direct push to main
+      # is rejected with GH006. The refresh therefore lands on its own branch and is
+      # offered as ONE rolling pull request that this job keeps up to date — the same
+      # single-tracker shape the sweep workflows use for their issues.
+      #
+      # peter-evans/create-pull-request v8.1.1 (pinned).
+      - name: Open/update the rolling metadata PR
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1
+        with:
+          add-paths: |
+            data/
+            README.md
+            README.zh-CN.md
+          branch: chore/metadata-refresh
+          delete-branch: false
+          commit-message: "chore: daily metadata refresh + regenerated READMEs"
+          author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          committer: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          title: "chore: metadata refresh (rolling)"
+          labels: maintenance
+          body: |
+            Automated refresh of the CI-maintained fields — `stargazers_count`,
+            `updated_at`, `archived`, `current_release` — pulled from the GitHub API,
+            with the READMEs regenerated from the refreshed data. Author-supplied
+            fields are never touched.
+
+            **This is a single rolling PR.** Every daily run force-updates this branch
+            rather than opening a new one, so it always shows the current delta against
+            `main`. Merging it is safe at any time; leaving it open just means the
+            published star counts lag by however long it sits.
+
+            Because GitHub does not run workflows on commits pushed with `GITHUB_TOKEN`,
+            the required `validate` check will not report on this PR by itself. Merge it
+            with an admin override (`gh pr merge --admin --squash`), or re-run the checks
+            by closing and reopening the PR from a user account.
