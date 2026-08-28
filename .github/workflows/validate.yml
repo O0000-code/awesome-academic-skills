@@ -5,15 +5,11 @@
 name: validate
 
 on:
+  # No path filter on pull_request, deliberately. `validate` is a REQUIRED status
+  # check on main, and a required check that never runs leaves the PR stuck forever
+  # on "Expected — waiting for status to be reported". A docs-only PR would deadlock.
+  # The job is ~2 minutes, so running it on every PR is cheaper than the footgun.
   pull_request:
-    paths:
-      - "data/**"
-      - "schema/**"
-      - "templates/**"
-      - "config.yaml"
-      - "scripts/**"
-      - "README.md"
-      - "README.zh-CN.md"
   # Also validate direct pushes to main (this repo is maintainer-pushed, not only
   # PR-merged). Bot commits use GITHUB_TOKEN, which does NOT re-trigger workflows,
   # so the daily metadata refresh won't spam this — only human pushes run it.
