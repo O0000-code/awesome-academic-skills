@@ -63,8 +63,8 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: true
 subcategory: De-AI & humanizing
-stargazers_count: 119
-updated_at: '2026-08-21'
+stargazers_count: 127
+updated_at: '2026-08-31'
 archived: false
 current_release:
   tag: unslop-v0.7.0

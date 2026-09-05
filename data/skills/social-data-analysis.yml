@@ -64,7 +64,7 @@ validate_claim: Ask Claude to use a skill in this pack on a task from its field,
   verify the output meets that discipline's conventions.
 subcategory: Statistical modeling & test selection
 stargazers_count: 84
-updated_at: '2026-01-30'
+updated_at: '2026-08-29'
 archived: false
 current_release:
   tag: null
