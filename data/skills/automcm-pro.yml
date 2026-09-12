@@ -30,9 +30,9 @@ security:
 validate_claim: Give the system a concrete research question and verify it returns
   a searched, cited, and drafted result whose sources actually exist.
 subcategory: Physical, computational & mathematical sciences
-stargazers_count: 197
-updated_at: '2026-08-25'
+stargazers_count: 246
+updated_at: '2026-09-10'
 archived: false
 current_release:
-  tag: v0.3.0
-  published_at: '2026-08-25'
+  tag: v0.3.1
+  published_at: '2026-09-10'
