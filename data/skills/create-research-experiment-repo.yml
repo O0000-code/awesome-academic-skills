@@ -1,0 +1,34 @@
+name: create-research-experiment-repo
+slug: create-research-experiment-repo
+source_url: https://github.com/Shiba-hua/create-research-experiment-repo
+author: Shiba-hua
+author_url: https://github.com/Shiba-hua
+license: MIT
+category: Autonomous Research Systems
+lifecycle_stage: autonomous
+type: skill
+description: A repository-scaffolding skill for delegated experiments; requires approval of report and evidence contracts before creating a traceable project, but does not run experiments by itself.
+description_zh: 面向委托实验的建仓 skill：先审批报告和证据约定，再建立可追溯的项目仓库；skill 本身不执行实验。
+security:
+  makes_network_calls: true
+  network_endpoints:
+    - github.com (optional remote repository workflow and skill installation)
+    - gitee.com (optional remote repository workflow)
+    - huggingface.co (bundled GSM8K reproduction example)
+    - hf-mirror.com (bundled GSM8K reproduction example)
+    - arxiv.org (bundled GSM8K reproduction references)
+    - pypi.org (bundled GSM8K reproduction environment)
+    - files.pythonhosted.org (bundled GSM8K reproduction environment)
+    - download.pytorch.org (bundled GSM8K reproduction environment)
+    - download-r2.pytorch.org (bundled GSM8K reproduction environment)
+    - pypi.nvidia.com (bundled GSM8K reproduction environment)
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: false
+  allowed_tools_scoped: true
+install: npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex --skill create-research-experiment-repo --copy --yes
+validate_claim: 'Ask Codex: "Use $create-research-experiment-repo. I manage a delegated materials-aging experiment. Before creating any repository, draft an approval form covering the report, plots, directory tree, readme2machine roles, and local-versus-remote choice." A correct response asks about missing scientific decisions and presents a concrete approval form without starting the experiment.'
+lang:
+  - zh
