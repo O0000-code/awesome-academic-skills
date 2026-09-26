@@ -33,7 +33,7 @@ security:
   depends_3rdparty: true
   allowed_tools_scoped: true
 stargazers_count: 4
-updated_at: '2026-08-24'
+updated_at: '2026-09-26'
 archived: false
 current_release:
   tag: null
