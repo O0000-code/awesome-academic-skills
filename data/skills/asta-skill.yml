@@ -1,6 +1,6 @@
 name: asta-skill
 slug: asta-skill
-source_url: https://github.com/agents365-ai/asta-skill
+source_url: https://github.com/agents365-ai/365-skills/tree/main/plugins/asta
 author: agents365-ai
 author_url: https://github.com/agents365-ai
 license: MIT
@@ -32,9 +32,9 @@ security:
 validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
   then verify every returned title/DOI resolves to a real paper.
 subcategory: Multi-source discovery search
-stargazers_count: 183
-updated_at: '2026-07-16'
+stargazers_count: 55
+updated_at: '2026-09-22'
 archived: false
 current_release:
-  tag: v0.3.3
-  published_at: '2026-06-27'
+  tag: null
+  published_at: null

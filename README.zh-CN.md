@@ -18,7 +18,7 @@
 
 ![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
-![Updated](https://img.shields.io/badge/updated-2026.08.28-000?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.09.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
 
 </div>
@@ -68,22 +68,22 @@
 - `Suite` [gs-skills](https://github.com/cookjohn/gs-skills) - 作者 [cookjohn](https://github.com/cookjohn) · `MIT` · `net`.<br>一套真正实用的命令行 Google Scholar 工具箱：关键词/高级检索、引用链追踪、全文链接解析与一键 Zotero 导出。依赖 Chrome DevTools MCP 并抓取 DOM，因此 Scholar 一改版就可能失效。
 - `Suite` [scientific-skills](https://github.com/yorkeccak/scientific-skills) - 作者 [yorkeccak](https://github.com/yorkeccak) · `MIT` · `net`.<br>借助 Valyu 语义检索，在 13 个数据源（PubMed、arXiv、bioRxiv/medRxiv、ChEMBL、DrugBank、Open Targets、临床试验、专利）上进行自然语言文献检索。生物医学/药物发现的覆盖很强；依赖 Valyu API，并非自包含。
 - [ai-skill-scholar](https://github.com/dsebastien/ai-skill-scholar) - 作者 [Sébastien Dubois (dsebastien)](https://github.com/dsebastien) · `MIT` · `net`.<br>三个可组合的 OpenAlex 技能（会议检索、引用图游走、综述编排）——纯标准库，免 pip、免 key。
-- [asta-skill](https://github.com/agents365-ai/asta-skill) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT`.<br>驱动 Ai2 旗下 Asta MCP（Semantic Scholar）的指令包式 skill：支持关键词/ID/作者检索、引文追溯、批量查询与约 500 词的片段抓取，并配有稳妥的默认设置。路由清晰；需要 Asta MCP 与一个免费 API key。
+- [asta-skill](https://github.com/agents365-ai/365-skills/tree/main/plugins/asta) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT`.<br>驱动 Ai2 旗下 Asta MCP（Semantic Scholar）的指令包式 skill：支持关键词/ID/作者检索、引文追溯、批量查询与约 500 词的片段抓取，并配有稳妥的默认设置。路由清晰；需要 Asta MCP 与一个免费 API key。
 - [paper-search-pro](https://github.com/O0000-code/paper-search-pro) - 作者 [O0000-code](https://github.com/O0000-code) · `Apache-2.0` · `net`.<br>以 OpenAlex 为主轴的五源检索（PubMed、arXiv、Semantic Scholar、CrossRef），分四档深度；不止给命中清单，还产出饱和度曲线、停检判定与可交互 HTML 报告。免 LLM key，一个免费 OpenAlex key 即可起步。
 - [scholar-kit](https://github.com/lottshin/scholar-kit) - 作者 [lottshin](https://github.com/lottshin) · `MIT` · `net`.<br>以中文为先的文献工具包：检索知网/OpenAlex/Semantic Scholar/arXiv/国家哲学社会科学文献中心，用 Crossref 补全元数据，经 Unpaywall 解析 OA 版本，批量下载（含知网 PDF），导出 GB/T 7714/BibTeX/RIS/APA。知网支持出色；但抓取较脆弱且涉及 ToS 风险。
-- [semanticscholar-skill](https://github.com/agents365-ai/semanticscholar-skill) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>封装 Semantic Scholar Graph API，可在 2 亿多篇论文中做论文检索、引用图遍历与作者查询，并为多 agent 使用做了限速。是可靠的检索基础组件；刻意做得很窄（仅 S2），宜与其他工具搭配使用。
+- [semanticscholar-skill](https://github.com/agents365-ai/365-skills/tree/main/plugins/semanticscholar/skills/semanticscholar-skill) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>封装 Semantic Scholar Graph API，可在 2 亿多篇论文中做论文检索、引用图遍历与作者查询，并为多 agent 使用做了限速。是可靠的检索基础组件；刻意做得很窄（仅 S2），宜与其他工具搭配使用。
 
 #### 系统综述与深度检索流程
 
 - `Suite` [literature-review-skill](https://github.com/yanzhanlin/literature-review-skill) - 作者 [yanzhanlin](https://github.com/yanzhanlin) · `MIT`.<br>一套端到端的文献综述套件（检索、获取、精读、写作、学位论文章节），构建于 PRISMA-S、PICO/SPIDER 及具名的综述方法学框架之上。方法依据扎实，检索日志可复现；以中文为先，star 数一般。
 - [litreviewskill](https://github.com/zsun79/litreviewskill) - 作者 [zsun79](https://github.com/zsun79) · `No License` · `net`.<br>端到端的文献综述工作流：拟定关键词，构建 OpenAlex 种子集，通过前向/后向引用扩展，按标题/摘要筛选直至饱和，再排序并通读至多 30 篇全文，整理成概念矩阵。流程严谨。
 - [oneshot-academic-research-skill](https://github.com/orhoncan/oneshot-academic-research-skill) - 作者 [orhoncan](https://github.com/orhoncan) · `MIT`.<br>迭代式深度文献研究 skill：用 5-15 轮检索汇集 12-50+ 篇文献，附带空白识别、来源多样性追踪与 APA7 脚注，可导出到 Obsidian 或 PDF。自动识别土耳其语/英语；深度取决于底层的 web 检索工具。
-- [scholar-deep-research](https://github.com/agents365-ai/scholar-deep-research) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>脚本驱动的 8 阶段文献综述 pipeline，覆盖 7 个联合来源，强制引用锚定、去重、透明排序、引文追溯，并设有一道必经的自我批判关卡。
+- [scholar-deep-research](https://github.com/agents365-ai/365-skills/tree/main/plugins/scholar-deep-research/skills/scholar-deep-research) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>脚本驱动的 8 阶段文献综述 pipeline，覆盖 7 个联合来源，强制引用锚定、去重、透明排序、引文追溯，并设有一道必经的自我批判关卡。
 
 #### 全文获取
 
 - [literature-harvest](https://github.com/zhongzhx/literature-harvest) - 作者 [zhongzhx](https://github.com/zhongzhx) · `MIT` · `net`.<br>跨 PubMed、Europe PMC、Crossref 和 OpenAlex 的关键词批量文献采集：构建候选清单，下载合法可获取的全文 PDF（并以 HTML 转 PDF 作为兜底补充），并做去重。适合可复现的语料库构建。
-- [paper-fetch](https://github.com/agents365-ai/paper-fetch) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>通过一条 7 源兜底链（Unpaywall、Semantic Scholar、arXiv、PMC、bioRxiv、出版商，最后才是 Sci-Hub）把一个（或一批）DOI 解析为可下载的 PDF，并逐源报告结果。干净、零依赖；Sci-Hub 兜底是一处需注意的隐患。
+- [paper-fetch](https://github.com/agents365-ai/365-skills/tree/main/plugins/paper-fetch) - 作者 [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>通过一条 7 源兜底链（Unpaywall、Semantic Scholar、arXiv、PMC、bioRxiv、出版商，最后才是 Sci-Hub）把一个（或一批）DOI 解析为可下载的 PDF，并逐源报告结果。干净、零依赖；Sci-Hub 兜底是一处需注意的隐患。
 
 #### 更多
 
@@ -501,7 +501,7 @@
 
 ## 最近更新
 
-**anaxa**, **beril-research-observatory**, **claude-skills-journalism**, **clawbio**, **deeppapernote**。（链接与描述见上方各生命周期分区。）
+**asta-skill**, **anaxa**, **beril-research-observatory**, **claude-skills-journalism**, **clawbio**。（链接与描述见上方各生命周期分区。）
 
 ## 如何使用本列表
 

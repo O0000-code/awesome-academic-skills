@@ -1,6 +1,6 @@
 name: semanticscholar-skill
 slug: semanticscholar-skill
-source_url: https://github.com/agents365-ai/semanticscholar-skill
+source_url: https://github.com/agents365-ai/365-skills/tree/main/plugins/semanticscholar/skills/semanticscholar-skill
 author: agents365-ai
 author_url: https://github.com/agents365-ai
 license: MIT
@@ -35,9 +35,9 @@ security:
 validate_claim: Ask Claude to use this skill to find recent papers on a specific topic,
   then verify every returned title/DOI resolves to a real paper.
 subcategory: Multi-source discovery search
-stargazers_count: 68
-updated_at: '2026-07-16'
+stargazers_count: 55
+updated_at: '2026-09-22'
 archived: false
 current_release:
-  tag: v0.8.1
-  published_at: '2026-05-10'
+  tag: null
+  published_at: null

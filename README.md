@@ -18,7 +18,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 ![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
-![Updated](https://img.shields.io/badge/updated-2026.08.28-000?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.09.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
 
 </div>
@@ -68,22 +68,22 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 - `Suite` [gs-skills](https://github.com/cookjohn/gs-skills) - by [cookjohn](https://github.com/cookjohn) · `MIT` · `net`.<br>A genuinely useful Google Scholar toolkit for the CLI: keyword/advanced search, citation-chain tracking, full-text link resolution and one-step Zotero export. Relies on Chrome DevTools MCP and scrapes the DOM, so it can break when Scholar changes.
 - `Suite` [scientific-skills](https://github.com/yorkeccak/scientific-skills) - by [yorkeccak](https://github.com/yorkeccak) · `MIT` · `net`.<br>Natural-language literature search over 13 sources (PubMed, arXiv, bioRxiv/medRxiv, ChEMBL, DrugBank, Open Targets, trials, patents) via Valyu semantic search. Strong biomedical/drug-discovery coverage; depends on the Valyu API, not self-contained.
 - [ai-skill-scholar](https://github.com/dsebastien/ai-skill-scholar) - by [Sébastien Dubois (dsebastien)](https://github.com/dsebastien) · `MIT` · `net`.<br>Three composable OpenAlex skills (venue search, citation-graph walk, review orchestrator) — stdlib-only, no pip, no key.
-- [asta-skill](https://github.com/agents365-ai/asta-skill) - by [agents365-ai](https://github.com/agents365-ai) · `MIT`.<br>Instruction-pack skill that drives Ai2's Asta MCP (Semantic Scholar): keyword/ID/author search, citation traversal, batch lookup and ~500-word snippet retrieval, with safe defaults. Clean routing; needs the Asta MCP + free API key.
+- [asta-skill](https://github.com/agents365-ai/365-skills/tree/main/plugins/asta) - by [agents365-ai](https://github.com/agents365-ai) · `MIT`.<br>Instruction-pack skill that drives Ai2's Asta MCP (Semantic Scholar): keyword/ID/author search, citation traversal, batch lookup and ~500-word snippet retrieval, with safe defaults. Clean routing; needs the Asta MCP + free API key.
 - [paper-search-pro](https://github.com/O0000-code/paper-search-pro) - by [O0000-code](https://github.com/O0000-code) · `Apache-2.0` · `net`.<br>OpenAlex-led five-source search (PubMed, arXiv, Semantic Scholar, CrossRef) across four depth tiers; goes past a hit list to a saturation curve, a stop decision, and an interactive HTML report. No LLM key; one free OpenAlex key to start.
 - [scholar-kit](https://github.com/lottshin/scholar-kit) - by [lottshin](https://github.com/lottshin) · `MIT` · `net`.<br>Chinese-first literature toolkit: search CNKI/OpenAlex/Semantic Scholar/arXiv/NSSD, enrich via Crossref, resolve OA via Unpaywall, batch-download (incl. CNKI PDFs), export GB/T 7714/BibTeX/RIS/APA. Strong CNKI; scraping is fragile + ToS-sensitive.
-- [semanticscholar-skill](https://github.com/agents365-ai/semanticscholar-skill) - by [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>Wraps the Semantic Scholar Graph API for paper search, citation-graph traversal, and author lookup across 200M+ papers, rate-limited for multi-agent use. A reliable discovery building block; intentionally narrow (S2 only), so pair it with others.
+- [semanticscholar-skill](https://github.com/agents365-ai/365-skills/tree/main/plugins/semanticscholar/skills/semanticscholar-skill) - by [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>Wraps the Semantic Scholar Graph API for paper search, citation-graph traversal, and author lookup across 200M+ papers, rate-limited for multi-agent use. A reliable discovery building block; intentionally narrow (S2 only), so pair it with others.
 
 #### Systematic review & deep-research pipelines
 
 - `Suite` [literature-review-skill](https://github.com/yanzhanlin/literature-review-skill) - by [yanzhanlin](https://github.com/yanzhanlin) · `MIT`.<br>End-to-end lit-review suite (search, acquire, deep-read, write, dissertation chapter) built on PRISMA-S, PICO/SPIDER and named review-methodology frameworks. Strong grounding and reproducible search logs; Chinese-first, modest in stars.
 - [litreviewskill](https://github.com/zsun79/litreviewskill) - by [zsun79](https://github.com/zsun79) · `No License` · `net`.<br>End-to-end literature-review workflow: drafts keywords, builds an OpenAlex seed set, expands by backward/forward citations, screens by title/abstract until saturation, then ranks and reads up to 30 full texts into a concept matrix.
 - [oneshot-academic-research-skill](https://github.com/orhoncan/oneshot-academic-research-skill) - by [orhoncan](https://github.com/orhoncan) · `MIT`.<br>Iterative deep-literature-research skill: 5-15 search cycles gathering 12-50+ sources with gap identification, source-diversity tracking and APA7 footnotes, to Obsidian or PDF. Turkish/English auto-detect; depth depends on the underlying web tools.
-- [scholar-deep-research](https://github.com/agents365-ai/scholar-deep-research) - by [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>Script-driven 8-phase literature-review pipeline over 7 federated sources with enforced citation anchoring, dedup, transparent ranking, citation-chasing and a mandatory self-critique gate.
+- [scholar-deep-research](https://github.com/agents365-ai/365-skills/tree/main/plugins/scholar-deep-research/skills/scholar-deep-research) - by [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>Script-driven 8-phase literature-review pipeline over 7 federated sources with enforced citation anchoring, dedup, transparent ranking, citation-chasing and a mandatory self-critique gate.
 
 #### Full-text acquisition
 
 - [literature-harvest](https://github.com/zhongzhx/literature-harvest) - by [zhongzhx](https://github.com/zhongzhx) · `MIT` · `net`.<br>Bulk keyword-driven literature harvesting across PubMed, Europe PMC, Crossref and OpenAlex: builds a candidate table, downloads legally-accessible full-text PDFs with an HTML-to-PDF second pass, and dedups.
-- [paper-fetch](https://github.com/agents365-ai/paper-fetch) - by [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>Resolves a DOI (or batch) to a downloadable PDF via a 7-source fallback chain (Unpaywall, Semantic Scholar, arXiv, PMC, bioRxiv, publisher, then Sci-Hub) with per-source reporting. Clean and zero-deps; the Sci-Hub fallback is a caveat.
+- [paper-fetch](https://github.com/agents365-ai/365-skills/tree/main/plugins/paper-fetch) - by [agents365-ai](https://github.com/agents365-ai) · `MIT` · `net`.<br>Resolves a DOI (or batch) to a downloadable PDF via a 7-source fallback chain (Unpaywall, Semantic Scholar, arXiv, PMC, bioRxiv, publisher, then Sci-Hub) with per-source reporting. Clean and zero-deps; the Sci-Hub fallback is a caveat.
 
 #### More
 
@@ -501,7 +501,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 
 ## Recently updated
 
-**anaxa**, **beril-research-observatory**, **claude-skills-journalism**, **clawbio**, **deeppapernote**. (Links and descriptions are in the lifecycle sections above.)
+**asta-skill**, **anaxa**, **beril-research-observatory**, **claude-skills-journalism**, **clawbio**. (Links and descriptions are in the lifecycle sections above.)
 
 ## How to use this list
 
