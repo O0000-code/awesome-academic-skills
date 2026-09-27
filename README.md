@@ -16,7 +16,7 @@ A bilingual index of Claude and agent skills for academic work, from literature 
 Organized by where skills fit in the research lifecycle; each entry notes its license and what it runs (network, hooks).
 <br/>
 
-![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-223-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
 ![Updated](https://img.shields.io/badge/updated-2026.09.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
@@ -411,6 +411,7 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 - `Suite` [anaxa](https://github.com/citrus-bit/anaxa) - by [citrus-bit](https://github.com/citrus-bit) · `MIT` · `net`.<br>Auditable, pausable research-agent workbench: drives a topic through lit search, evidence binding, sandboxed experiments, draft and citation audit to a LaTeX/PDF bundle with human gates. Heavy full-stack app, not a drop-in skill.
 - `Suite` [phd-skills](https://github.com/fcakyon/phd-skills) - by [fcakyon](https://github.com/fcakyon) · `MIT` · `net` `hooks`.<br>PhD/ML research guardrails: reproduce arXiv papers, debug runs evidence-first, compare experiments at the same epoch, audit dataset bias, run pre-flight launch checks. Catches costly AI research mistakes; uses a Bash wildcard plus opt-in alerts.
 - `Suite` [research-units-pipeline-skills](https://github.com/willoscar/research-units-pipeline-skills) - by [willoscar](https://github.com/willoscar) · `No License` · `net`.<br>File-first research harness turning open-ended goals into protocolized, resumable pipelines (lit survey, paper review, evidence synthesis) with per-stage acceptance gates and durable artifacts. Heavy machinery; steep to learn; no LICENSE file yet.
+- [create-research-experiment-repo](https://github.com/Shiba-hua/create-research-experiment-repo) - by [Shiba-hua](https://github.com/Shiba-hua) · `MIT` · `net`.<br>Scaffolds repos for delegated experiments (Chinese-first): gets report questions, figure specs, directory tree and roles approved first, so each claim traces to raw runs. Executors: agents, lab staff or instruments; runs nothing itself.
 - [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill) - by [IcyCreamDAS](https://github.com/IcyCreamDAS) · `MIT` · `net`.<br>Bilingual research workflow for agent IDEs: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief for a second model. Zero deps.
 - `Plugin` [vibe-science](https://github.com/th3vib3coder/vibe-science) - by [th3vib3coder](https://github.com/th3vib3coder) · `Apache-2.0` · `net` `hooks`.<br>Integrity-first research runtime for Claude Code: a plugin that enforces checks and persists state, plus a methodology skill built on falsification, adversarial review, and confounder discipline. Aims to make AI science hard to fake; heavy exec.
 
@@ -496,8 +497,8 @@ Organized by where skills fit in the research lifecycle; each entry notes its li
 | Analyze & Visualize    |          2 |     23 |
 | Write & Refine         |          2 |     52 |
 | Review & Publish       |          2 |     24 |
-| Suites, Systems & Meta |          4 |     79 |
-| Total                  |         14 |    222 |
+| Suites, Systems & Meta |          4 |     80 |
+| Total                  |         14 |    223 |
 
 ## Recently updated
 

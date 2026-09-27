@@ -16,7 +16,7 @@
 按技能在研究流程中的位置来组织；每个条目都标注许可证，以及它会做什么（联网、hook）。
 <br/>
 
-![Skills](https://img.shields.io/badge/skills-222-000?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-223-000?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-14-000?style=flat-square)
 ![Updated](https://img.shields.io/badge/updated-2026.09.27-000?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC0--1.0-000?style=flat-square)
@@ -411,6 +411,7 @@
 - `Suite` [anaxa](https://github.com/citrus-bit/anaxa) - 作者 [citrus-bit](https://github.com/citrus-bit) · `MIT` · `net`.<br>可审计、可暂停的研究 agent 工作台：把一个选题依次推过文献检索、证据绑定、沙箱实验、初稿与引用审计，最终产出带人工闸门的 LaTeX/PDF 成品包。是重型全栈应用，而非即插即用的 skill。
 - `Suite` [phd-skills](https://github.com/fcakyon/phd-skills) - 作者 [fcakyon](https://github.com/fcakyon) · `MIT` · `net` `hooks`.<br>面向博士/ML 研究的护栏：复现 arXiv 论文、以证据为先地调试实验、在同一 epoch 下对比实验、审查数据集偏差、运行启动前的预检。能拦下代价高昂的 AI 研究错误；使用了一个 Bash 通配符外加可选的告警。
 - `Suite` [research-units-pipeline-skills](https://github.com/willoscar/research-units-pipeline-skills) - 作者 [willoscar](https://github.com/willoscar) · `No License` · `net`.<br>以文件为先的研究 harness，把开放式目标转化为流程化、可续跑的 pipeline（文献调查、论文评审、证据综合），各阶段设有验收 gate 并产出持久化 artifact。机制厚重；学习曲线陡峭；目前尚无 LICENSE 文件。
+- [create-research-experiment-repo](https://github.com/Shiba-hua/create-research-experiment-repo) - 作者 [Shiba-hua](https://github.com/Shiba-hua) · `MIT` · `net`.<br>审批先行的委托实验建仓 skill：先约定报告要回答的问题、逐图规格、目录树与分工，获批后再建仓，让每条结论都能追溯到原始运行记录。执行者可以是 Agent、实验员或仪器；skill 本身不跑实验。
 - [shidi-skill](https://github.com/IcyCreamDAS/shidi-skill) - 作者 [IcyCreamDAS](https://github.com/IcyCreamDAS) · `MIT` · `net`.<br>面向 agent IDE 的双语研究工作流：多角度文献综述（每个角度单独出文件）、带注意事项清单的实验设计、绘图与论文精读；除产出文件外，还会给一份交叉验证简报供另一个模型复核。零依赖。
 - `Plugin` [vibe-science](https://github.com/th3vib3coder/vibe-science) - 作者 [th3vib3coder](https://github.com/th3vib3coder) · `Apache-2.0` · `net` `hooks`.<br>以诚信为先的 Claude Code 研究运行时：一个强制执行检查并持久化状态的 plugin，外加一个建立在可证伪性、对抗式评审与混杂因素纪律之上的方法学 skill。目标是让 AI 做科学难以造假；执行开销较重。
 
@@ -496,8 +497,8 @@
 | 分析与可视化   |  2 |  23 |
 | 写作与润色    |  2 |  52 |
 | 评审与发表    |  2 |  24 |
-| 套件、系统与生态 |  4 |  79 |
-| 合计       | 14 | 222 |
+| 套件、系统与生态 |  4 |  80 |
+| 合计       | 14 | 223 |
 
 ## 最近更新
 
