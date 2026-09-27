@@ -7,8 +7,9 @@ license: MIT
 category: Autonomous Research Systems
 lifecycle_stage: autonomous
 type: skill
-description: A repository-scaffolding skill for delegated experiments; requires approval of report and evidence contracts before creating a traceable project, but does not run experiments by itself.
-description_zh: 面向委托实验的建仓 skill：先审批报告和证据约定，再建立可追溯的项目仓库；skill 本身不执行实验。
+subcategory: Human-in-the-loop / gate-driven pipelines
+description: 'Scaffolds repos for delegated experiments (Chinese-first): gets report questions, figure specs, directory tree and roles approved first, so each claim traces to raw runs. Executors: agents, lab staff or instruments; runs nothing itself.'
+description_zh: 审批先行的委托实验建仓 skill：先约定报告要回答的问题、逐图规格、目录树与分工，获批后再建仓，让每条结论都能追溯到原始运行记录。执行者可以是 Agent、实验员或仪器；skill 本身不跑实验。
 security:
   makes_network_calls: true
   network_endpoints:
@@ -16,7 +17,7 @@ security:
     - gitee.com (optional remote repository workflow)
     - huggingface.co (bundled GSM8K reproduction example)
     - hf-mirror.com (bundled GSM8K reproduction example)
-    - arxiv.org (bundled GSM8K reproduction references)
+    - raw.githubusercontent.com (bundled GSM8K example source fetch)
     - pypi.org (bundled GSM8K reproduction environment)
     - files.pythonhosted.org (bundled GSM8K reproduction environment)
     - download.pytorch.org (bundled GSM8K reproduction environment)
