@@ -8,28 +8,42 @@ category: Autonomous Research Systems
 lifecycle_stage: autonomous
 type: skill
 subcategory: Human-in-the-loop / gate-driven pipelines
-description: 'Scaffolds repos for delegated experiments (Chinese-first): gets report questions, figure specs, directory tree and roles approved first, so each claim traces to raw runs. Executors: agents, lab staff or instruments; runs nothing itself.'
-description_zh: 审批先行的委托实验建仓 skill：先约定报告要回答的问题、逐图规格、目录树与分工，获批后再建仓，让每条结论都能追溯到原始运行记录。执行者可以是 Agent、实验员或仪器；skill 本身不跑实验。
+description: 'Scaffolds repos for delegated experiments (Chinese-first): gets report
+  questions, figure specs, directory tree and roles approved first, so each claim
+  traces to raw runs. Executors: agents, lab staff or instruments; runs nothing itself.'
+description_zh: 审批先行的委托实验建仓 skill：先约定报告要回答的问题、逐图规格、目录树与分工，获批后再建仓，让每条结论都能追溯到原始运行记录。执行者可以是
+  Agent、实验员或仪器；skill 本身不跑实验。
 security:
   makes_network_calls: true
   network_endpoints:
-    - github.com (optional remote repository workflow and skill installation)
-    - gitee.com (optional remote repository workflow)
-    - huggingface.co (bundled GSM8K reproduction example)
-    - hf-mirror.com (bundled GSM8K reproduction example)
-    - raw.githubusercontent.com (bundled GSM8K example source fetch)
-    - pypi.org (bundled GSM8K reproduction environment)
-    - files.pythonhosted.org (bundled GSM8K reproduction environment)
-    - download.pytorch.org (bundled GSM8K reproduction environment)
-    - download-r2.pytorch.org (bundled GSM8K reproduction environment)
-    - pypi.nvidia.com (bundled GSM8K reproduction environment)
+  - github.com (optional remote repository workflow and skill installation)
+  - gitee.com (optional remote repository workflow)
+  - huggingface.co (bundled GSM8K reproduction example)
+  - hf-mirror.com (bundled GSM8K reproduction example)
+  - raw.githubusercontent.com (bundled GSM8K example source fetch)
+  - pypi.org (bundled GSM8K reproduction environment)
+  - files.pythonhosted.org (bundled GSM8K reproduction environment)
+  - download.pytorch.org (bundled GSM8K reproduction environment)
+  - download-r2.pytorch.org (bundled GSM8K reproduction environment)
+  - pypi.nvidia.com (bundled GSM8K reproduction environment)
   has_hooks: false
   requires_bypass_permissions: false
   telemetry: false
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-install: npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex --skill create-research-experiment-repo --copy --yes
-validate_claim: 'Ask Codex: "Use $create-research-experiment-repo. I manage a delegated materials-aging experiment. Before creating any repository, draft an approval form covering the report, plots, directory tree, readme2machine roles, and local-versus-remote choice." A correct response asks about missing scientific decisions and presents a concrete approval form without starting the experiment.'
+install: npx skills@1.7.0 add Shiba-hua/create-research-experiment-repo --agent codex
+  --skill create-research-experiment-repo --copy --yes
+validate_claim: 'Ask Codex: "Use $create-research-experiment-repo. I manage a delegated
+  materials-aging experiment. Before creating any repository, draft an approval form
+  covering the report, plots, directory tree, readme2machine roles, and local-versus-remote
+  choice." A correct response asks about missing scientific decisions and presents
+  a concrete approval form without starting the experiment.'
 lang:
-  - zh
+- zh
+stargazers_count: 4
+updated_at: '2026-10-02'
+archived: false
+current_release:
+  tag: null
+  published_at: null
