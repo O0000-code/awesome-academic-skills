@@ -30,7 +30,7 @@ validate_claim: Ask Claude to use a skill in this pack on a task from its field,
 subcategory: Humanities, law & qualitative-research disciplines
 stargazers_count: 8
 updated_at: '2026-05-16'
-archived: false
+archived: true
 current_release:
   tag: null
   published_at: null

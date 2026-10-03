@@ -55,12 +55,12 @@ tags:
 - prisma
 featured: false
 spotlight: false
-stargazers_count: 148
-updated_at: '2026-07-14'
+stargazers_count: 184
+updated_at: '2026-09-30'
 archived: false
 current_release:
-  tag: v2.3.0
-  published_at: '2026-07-14'
+  tag: v2.5.0
+  published_at: '2026-09-30'
 last_link_check: null
 last_security_scan: null
 subcategory: Multi-source discovery search
