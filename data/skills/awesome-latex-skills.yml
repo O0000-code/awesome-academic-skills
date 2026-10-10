@@ -25,9 +25,9 @@ security:
 validate_claim: Ask Claude to use this skill to draft a described section, then verify
   the structure and claims match scholarly conventions and the source material.
 subcategory: LaTeX & typesetting-integrated writing
-stargazers_count: 173
-updated_at: '2026-05-07'
+stargazers_count: 181
+updated_at: '2026-10-07'
 archived: false
 current_release:
-  tag: null
-  published_at: null
+  tag: v1.25.0
+  published_at: '2026-10-07'
