@@ -27,7 +27,7 @@ validate_claim: Ask Claude to use this skill to produce a described figure, then
   it renders at publication quality and matches the request.
 subcategory: Figure aesthetics & style systems
 stargazers_count: 8
-updated_at: '2026-04-22'
+updated_at: '2026-09-05'
 archived: false
 current_release:
   tag: null
