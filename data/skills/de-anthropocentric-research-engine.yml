@@ -7,36 +7,18 @@ license: Apache-2.0
 category: Autonomous Research Systems
 lifecycle_stage: autonomous
 type: suite
-description: Huge pure-markdown library of autonomous-research SOPs (~770 skills)
-  arranged in a Campaign/Strategy/Tactic/SOP hierarchy covering direction-setting,
-  literature acquisition, gap discovery, hypothesis formation and adversarial stress-testing.
-description_zh: 庞大的纯 markdown 自主研究 SOP 库（约 770 个技能），按 Campaign/Strategy/Tactic/SOP
-  层级组织，覆盖方向设定、文献获取、空白发现、假设形成与对抗式压力测试。
+description: Runs literature synthesis, gap validation, hypothesis formation and experiment design from a stated direction; approves its staged plan first, walks back to the literature when evidence cannot carry an experiment, and stops before drafting a paper.
+description_zh: 给定研究方向后自行完成文献综合、空白验证、假设形成与实验设计；执行前先审批分阶段计划，证据不足以支撑实验时退回文献，不涉及论文起草。
 security:
   makes_network_calls: false
-  network_endpoints:
-  - api.alphaxiv.org
-  - arxiv.org
-  - brave.com
-  - console.apify.com
-  - dotenvx.com
-  - feross.org
-  - opencollective.com
-  - registry.npmjs.org
-  - www.patreon.com
-  - www.semanticscholar.org
   has_hooks: false
   requires_bypass_permissions: false
   telemetry: false
   auto_update: false
   depends_3rdparty: false
   allowed_tools_scoped: true
-validate_claim: Give the system a concrete research question and verify it returns
-  a searched, cited, and drafted result whose sources actually exist.
+validate_claim: Give the engine a research direction in a domain you know, and check that the Research Spec it drafts is approved before any search runs; reject one stage, then interrupt a run and confirm it resumes at the last complete checkpoint rather than restarting. The requested outcome is a tested-or-rejected hypothesis with an auditable trail, not a drafted paper.
 subcategory: Fully autonomous auto-scientists
-stargazers_count: 396
-updated_at: '2026-08-25'
-archived: false
 current_release:
-  tag: v3.2.2
-  published_at: '2026-06-21'
+  tag: v4.0.0
+  published_at: '2026-09-25'
