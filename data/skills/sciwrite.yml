@@ -37,12 +37,12 @@ tags:
 - sainani
 featured: false
 spotlight: false
-stargazers_count: 809
-updated_at: '2026-08-03'
+stargazers_count: 868
+updated_at: '2026-10-28'
 archived: false
 current_release:
-  tag: null
-  published_at: null
+  tag: v1.0.0
+  published_at: '2026-10-28'
 last_link_check: null
 last_security_scan: null
 subcategory: Anti-hallucination & over-revision guards

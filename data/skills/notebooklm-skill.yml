@@ -43,12 +43,12 @@ tags:
 - third-party-service
 featured: false
 spotlight: false
-stargazers_count: 440
-updated_at: '2026-07-18'
+stargazers_count: 486
+updated_at: '2026-10-21'
 archived: false
 current_release:
-  tag: v1.3.0
-  published_at: '2026-07-18'
+  tag: v1.4.0
+  published_at: '2026-10-21'
 last_link_check: null
 last_security_scan: null
 subcategory: Grounded Q&A & knowledge bases

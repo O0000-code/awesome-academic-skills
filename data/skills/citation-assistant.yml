@@ -31,8 +31,8 @@ security:
 validate_claim: Ask Claude to use this skill to draft a described section, then verify
   the structure and claims match scholarly conventions and the source material.
 subcategory: BibTeX / metadata generation
-stargazers_count: 231
-updated_at: '2026-03-14'
+stargazers_count: 238
+updated_at: '2026-10-22'
 archived: false
 current_release:
   tag: null
