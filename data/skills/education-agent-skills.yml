@@ -40,12 +40,12 @@ tags:
 homepage_url: https://agentskills.io
 featured: false
 spotlight: false
-stargazers_count: 701
-updated_at: '2026-08-10'
+stargazers_count: 932
+updated_at: '2026-10-22'
 archived: false
 current_release:
-  tag: null
-  published_at: null
+  tag: v3.1.0
+  published_at: '2026-10-22'
 last_link_check: null
 last_security_scan: null
 subcategory: Social sciences
