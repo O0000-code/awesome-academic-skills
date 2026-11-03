@@ -345,7 +345,7 @@
 
 - `Suite` [docx-skill-4-cn-paper](https://github.com/gostyan/docx-skill-4-cn-paper) - 作者 [gostyan](https://github.com/gostyan) · `MIT`.<br>套用标准中文论文 Word 排版——字体、字号、行距、页边距、标题层级、图表编号、参考文献——适用于课程论文、数学建模竞赛和学位论文，含 md 转 docx。功能窄，但本职做得很好。
 - `Suite` [Manuscript Submission Formatting Agent](https://github.com/maxwell2732/my-submission-formatting-agent) - 作者 [Chen Zhu (朱晨)](https://github.com/maxwell2732) · `No License` · `hooks`.<br>为被拒后改投，把已完稿论文按新期刊作者须知重新排版，全程不动结果。
-- `Plugin` [word-format-skill](https://github.com/yeap531/word-format-skill) - 作者 [yeap531](https://github.com/yeap531) · `No License`.<br>借助 HTML 桥接，把参照 Word 文档的排版样式复刻到新内容上——适合套用期刊或机构的 .docx 模板。在投稿/格式化这类杂活上很强；适用面广（不限学术），其 license 待核实。
+- `Plugin` [word-format-skill](https://github.com/yeap531/word-format-skill) - 作者 [yeap531](https://github.com/yeap531) · `Apache-2.0`.<br>借助 HTML 桥接，把参照 Word 文档的排版样式复刻到新内容上——适合套用期刊或机构的 .docx 模板。在投稿/格式化这类杂活上很强；适用面广（不限学术）。
 
 #### 格式转换与文档转化
 
@@ -401,7 +401,7 @@
 - `Suite` [ARIS (Auto-Research-In-Sleep)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - 作者 [Yang Ruofeng](https://github.com/wanshuiyin) · `MIT` · `net` `hooks`.<br>一个自主科研循环，标志性设计是跨模型陪审团——Claude、GPT 与 Gemini 互相批判，使任何模型都无法为自己盖橡皮图章。
 - `Suite` [autodidact-skill](https://github.com/damonchen-anan/autodidact-skill) - 作者 [damonchen-anan](https://github.com/damonchen-anan) · `MIT`.<br>在 Karpathy 的 LLM-Wiki 基础上扩展的自主"主题转 wiki"研究 agent：自动抓取网络来源，编纂出相互链接的 wiki，并在每一轮自查覆盖盲区。适合无人值守地搭建文献框架；但不是用于核验引用的工具。
 - `Suite` [autoresearch-skill](https://github.com/wjgoarxiv/autoresearch-skill) - 作者 [wjgoarxiv](https://github.com/wjgoarxiv) · `MIT` · `net`.<br>把自然语言写的 research.md 目标转化为 Karpathy 式的「实验—评估—迭代」循环，并从 ML 推广到任何有机械化评估器的任务，配有自动回滚、审计轨迹与安全预算。领域通用；文献能力有限。
-- `Suite` [de-anthropocentric-research-engine](https://github.com/yogsoth-ai/de-anthropocentric-research-engine) - 作者 [yogsoth-ai](https://github.com/yogsoth-ai) · `Apache-2.0`.<br>庞大的纯 markdown 自主研究 SOP 库（约 770 个技能），按 Campaign/Strategy/Tactic/SOP 层级组织，覆盖方向设定、文献获取、空白发现、假设形成与对抗式压力测试。
+- `Suite` [de-anthropocentric-research-engine](https://github.com/yogsoth-ai/de-anthropocentric-research-engine) - 作者 [yogsoth-ai](https://github.com/yogsoth-ai) · `Apache-2.0`.<br>给定研究方向后自行完成文献综合、空白验证、假设形成与实验设计；分阶段计划先经用户批准再执行，证据不足以支撑实验时退回文献，不涉及论文起草。
 - `Suite` [nano-scientist](https://github.com/ai4scientist/nano-scientist) - 作者 [ai4scientist](https://github.com/ai4scientist) · `No License` · `net` `hooks`.<br>自主研究 agent：通过四个有预算上限的循环（深度检索、实验、改进、评审）把一个选题变成完整的论文初稿，配 CrossRef 引用补全和多模型评审关卡。强大且模块化（含 87+ 研究技能）。
 - `Suite` [rstack](https://github.com/sunnnybala/rstack) - 作者 [sunnnybala](https://github.com/sunnnybala) · `MIT` · `net`.<br>一条研究自动化链：/research 在一次会话内依次执行文献综述→新颖性核查→实验→结果分析→论文撰写，直至产出可投稿的草稿；其中每个 skill 也能独立使用。端到端的雄心之作；但成品质量取决于实验这一环。
 
