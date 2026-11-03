@@ -4,7 +4,7 @@ _comment: 'Backlog - academic skills discovered and reviewed but not (yet) liste
   static assessments from the completeness-round audit (2026-06-01), not final judgments - contest any entry via a re-review
   issue.'
 generated: '2026-06-01'
-count: 749
+count: 750
 entries:
 - repo: eseckel/ai-for-grant-writing
   url: https://github.com/eseckel/ai-for-grant-writing
@@ -4038,3 +4038,10 @@ entries:
   held_for: 'Delisted 2026-08-27: the upstream repository is gone (404 unauthenticated; the owner''s account
     still exists, so it was deleted or made private, not renamed). It was listed under Submission, Formatting
     & Conversion as an Overleaf/LaTeX submission-prep bundle. Relist immediately if it comes back public.'
+- repo: cuhk-aim-group/neuroclaw
+  url: https://github.com/cuhk-aim-group/neuroclaw
+  stars: 82
+  held_for: 'Delisted 2026-11-03: the upstream repository is gone (404 unauthenticated; the CUHK-AIM-Group
+    account still exists and lists no successor repo, so it was deleted or made private, not renamed). It was
+    listed under Discipline-Specific Packs as a neuroscience and medical-imaging skill pack. Relist immediately
+    if it comes back public.'

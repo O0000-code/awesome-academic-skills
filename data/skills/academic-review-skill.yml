@@ -1,20 +1,21 @@
-name: academic-review-skill
+name: paper-review
 slug: academic-review-skill
-source_url: https://github.com/pengkangzhen/academic-review-skill
+source_url: https://github.com/pengkangzhen/scientific-research-plugin/tree/main/skills/paper-review
 author: pengkangzhen
 author_url: https://github.com/pengkangzhen
 license: MIT
 category: Peer Review & Response
 lifecycle_stage: peer-review
 type: skill
-description: Reviews OR/management-science manuscripts for academic merit rather than
-  implementation, detecting domain-specific red flags (infeasible quantities, trivial
-  VSS%) and deliberately phrasing critiques as queries to avoid killing genuine findings.
-description_zh: 审阅运筹学/管理科学稿件，着眼学术价值而非实现细节，识别领域特有的疑点（不可行的取值、无意义的 VSS%），并刻意把批评措辞为提问，以免误伤真正反直觉的发现。
+description: 'Three-blind adversarial review of scientific merit: isolated methodology,
+  contribution and attack reviewers plus an author-defense arbitration yield a C/M/N
+  issue list. OR/ML/LLM gates load per paper; doubts are posed as queries, not verdicts.'
+description_zh: 三盲对抗式科学价值审稿：方法严谨性、领域贡献、对抗攻击三位审稿人相互隔离，再经作者答辩仲裁，输出 C/M/N 问题清单；按论文领域加载运筹/ML/LLM
+  审查门，疑点以提问而非定论提出。
 security:
   makes_network_calls: false
   network_endpoints: []
-  has_hooks: false
+  has_hooks: true
   requires_bypass_permissions: false
   telemetry: false
   auto_update: false
@@ -23,9 +24,9 @@ security:
 validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify
   the critique is specific, accurate, and actionable.
 subcategory: Pre-submission review & rebuttal
-stargazers_count: 6
-updated_at: '2026-08-26'
+stargazers_count: 7
+updated_at: '2026-10-27'
 archived: false
 current_release:
-  tag: null
-  published_at: null
+  tag: v0.20.0
+  published_at: '2026-10-27'
