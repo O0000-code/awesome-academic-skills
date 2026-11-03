@@ -71,7 +71,10 @@ jobs:
             `main`. Merging it is safe at any time; leaving it open just means the
             published star counts lag by however long it sits.
 
-            Because GitHub does not run workflows on commits pushed with `GITHUB_TOKEN`,
-            the required `validate` check will not report on this PR by itself. Merge it
-            with an admin override (`gh pr merge --admin --squash`), or re-run the checks
-            by closing and reopening the PR from a user account.
+            The required `validate` check does not report on this PR by itself: its run
+            is created as `action_required` and waits for a maintainer. Approve that run
+            (Actions tab, or `gh api -X POST repos/${{ github.repository }}/actions/runs/<id>/approve`
+            with the id from `gh run list --workflow=validate.yml --branch chore/metadata-refresh`).
+            Once it passes, approve and merge the PR as usual (`gh pr review --approve`,
+            then `gh pr merge --squash`); no admin override is needed. To refresh against
+            the latest `main` first, run this workflow by hand (`gh workflow run update-metadata.yml`).
