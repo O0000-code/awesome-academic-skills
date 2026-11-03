@@ -129,7 +129,7 @@
 - [Deep Research Skill](https://github.com/Weizhena/Deep-Research-skills) - 作者 [Lan Zheng](https://github.com/Weizhena) · `MIT` · `net`.<br>两段式深度研究，任何检索动手前先让你确认提纲——是对"一键放飞"型代理的人在环路制衡。
 - `Plugin` [llm-wiki](https://github.com/nvk/llm-wiki) - 作者 [nvk](https://github.com/nvk) · `MIT` · `net`.<br>为 agent 构建 LLM 编译的知识库：并行多 agent 调研、论点驱动的探查、来源摄入，最终形成可查询的 wiki。适合从大量来源搭建持久、带引用的知识库，属于研究综合工具，而非文献检索工具。
 - [NotebookLM Research Skill](https://github.com/claude-world/notebooklm-skill) - 作者 [Claude-World](https://github.com/claude-world) · `MIT` · `net`.<br>从 Claude 里驱动 Google NotebookLM，产出带引用的答案和免费产物（播客、思维导图、学习指南）。要注意：靠 cookie 的非官方客户端，随时可能失效。
-- [notebooklm-skill](https://github.com/pleaseprompto/notebooklm-skill) - 作者 [pleaseprompto](https://github.com/pleaseprompto) · `MIT`.<br>把 Claude Code 接入 Google NotebookLM，让回答仅取自你上传的文档、有出处、附引用。在个人语料库上做有据 Q&A 表现出色；依赖一个 Google NotebookLM 账号和 notebooklm-mcp。
+- [notebooklm-skill](https://github.com/pleaseprompto/notebooklm-skill) - 作者 [pleaseprompto](https://github.com/pleaseprompto) · `MIT`.<br>把 Claude Code 接入 Google NotebookLM，让回答仅取自你上传的文档、有出处、附引用。在个人语料库上做有据 Q&A 表现出色；依赖一个 Google NotebookLM 账号和 notebooklm-mcp；上游已归档。
 
 #### 论文翻译
 
@@ -468,7 +468,7 @@
 - `Suite` [claude-skills-journalism](https://github.com/jamditis/claude-skills-journalism) - 作者 [Joe Amditis](https://github.com/jamditis) · `MIT` · `net` `hooks`.<br>面向新闻业的套件，学术内核是 research-toolkit：经 Unpaywall 合法绕过付费墙、网页存档、变更监控。
 - `Suite` [tw-research-skills](https://github.com/fw1201/tw-research-skills) - 作者 [fw1201](https://github.com/fw1201) · `No License`.<br>覆盖台湾学术全生命周期的工具包（从研究计划到投稿），长于质性方法（扎根理论、带 Kappa 的内容分析）与 TSSCI/NSC 规范。本地化但普遍适用；请确认 license。
 - [genealogy-research](https://github.com/sliday/genealogy-research) - 作者 [sliday](https://github.com/sliday) · `MIT`.<br>将"族谱证明标准"（Genealogical Proof Standard）应用于家族史研究——多语种手写记录识读、证据等级追踪、阴性结果记录、GEDCOM 与 Obsidian 知识库。高度专门化，但方法论上相当严谨。
-- [oh-my-hermes-for-legal-researcher](https://github.com/charliehotel/oh-my-hermes-for-legal-researcher) - 作者 [charliehotel](https://github.com/charliehotel) · `Apache-2.0` · `net`.<br>从 Anthropic 的 claude-for-legal 移植而来的美国法律研究方法论：结构化的《联邦公报》摘要、带（verify）标记的网络检索判例，以及可选的免费 CourtListener API 用于核验引用。不依赖付费数据库；仅限美国，并坦诚自身局限。
+- [oh-my-hermes-for-legal-researcher](https://github.com/charliehotel/oh-my-hermes-for-legal-researcher) - 作者 [charliehotel](https://github.com/charliehotel) · `Apache-2.0` · `net`.<br>从 Anthropic 的 claude-for-legal 移植而来的美国法律研究方法论：结构化的《联邦公报》摘要、带（verify）标记的网络检索判例，以及可选的免费 CourtListener API 用于核验引用。不依赖付费数据库；仅限美国，并坦诚自身局限；上游已归档。
 
 #### 跨学科 / 多领域包
 

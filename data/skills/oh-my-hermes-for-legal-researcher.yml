@@ -7,12 +7,11 @@ license: Apache-2.0
 category: Discipline-Specific Packs
 lifecycle_stage: discipline
 type: skill
-description: 'US legal-research methodology ported from Anthropic''s claude-for-legal:
-  structured Federal Register digests, web-searched opinions tagged (verify), optional
-  free CourtListener API for verified citations. No paid databases; US-only, candid
-  on limits.'
+description: 'US legal-research methods ported from Anthropic''s claude-for-legal:
+  Federal Register digests, web-searched opinions tagged (verify), optional free CourtListener
+  citation checks. No paid databases; US-only, candid on limits; now archived upstream.'
 description_zh: 从 Anthropic 的 claude-for-legal 移植而来的美国法律研究方法论：结构化的《联邦公报》摘要、带（verify）标记的网络检索判例，以及可选的免费
-  CourtListener API 用于核验引用。不依赖付费数据库；仅限美国，并坦诚自身局限。
+  CourtListener API 用于核验引用。不依赖付费数据库；仅限美国，并坦诚自身局限；上游已归档。
 security:
   makes_network_calls: true
   network_endpoints:
