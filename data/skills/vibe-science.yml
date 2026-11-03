@@ -51,7 +51,7 @@ security:
   depends_3rdparty: false
   allowed_tools_scoped: false
 subcategory: Human-in-the-loop / gate-driven pipelines
-stargazers_count: 16
+stargazers_count: 17
 updated_at: '2026-08-19'
 archived: false
 current_release:
