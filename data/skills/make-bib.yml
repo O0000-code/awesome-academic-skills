@@ -46,8 +46,8 @@ validate_claim: Ask Claude to use this skill to format or verify a set of refere
   then check each citation against the authoritative record (DOI/metadata).
 subcategory: BibTeX / metadata generation
 stargazers_count: 9
-updated_at: '2026-08-02'
+updated_at: '2026-09-01'
 archived: false
 current_release:
-  tag: dblp-db-2026.08
-  published_at: '2026-08-02'
+  tag: null
+  published_at: null

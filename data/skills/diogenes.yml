@@ -64,8 +64,8 @@ security:
 validate_claim: Ask Claude to use this skill to review a sample manuscript, then verify
   the critique is specific, accurate, and actionable.
 subcategory: Systematic review & evidence appraisal
-stargazers_count: 8
-updated_at: '2026-05-27'
+stargazers_count: 9
+updated_at: '2026-10-24'
 archived: false
 current_release:
   tag: v1.2.1
