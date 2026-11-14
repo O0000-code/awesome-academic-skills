@@ -36,9 +36,9 @@ security:
 validate_claim: Ask Claude to use this skill to summarize or answer questions about
   a specific paper, then verify each claim is grounded in the source text.
 subcategory: Deep reading & comprehension
-stargazers_count: 1291
-updated_at: '2026-11-02'
+stargazers_count: 1365
+updated_at: '2026-11-13'
 archived: false
 current_release:
-  tag: v2.3.1
-  published_at: '2026-09-24'
+  tag: v3.0.0
+  published_at: '2026-11-09'
