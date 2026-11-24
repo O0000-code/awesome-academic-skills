@@ -1,0 +1,35 @@
+name: mcp-server-overleaf
+slug: mcp-server-overleaf
+source_url: https://github.com/yangzichao/mcp-server-overleaf
+author: Zichao Yang
+author_url: https://github.com/yangzichao
+license: MIT
+category: Academic Writing & Drafting
+lifecycle_stage: writing
+type: mcp-server
+description: >-
+  Reads and compiles Overleaf LaTeX projects from an MCP client. Git edits stay local until explicit
+  publication and stop on overlapping collaborator changes. A session cookie enables tracked suggestions.
+description_zh: >-
+  在 MCP 客户端读写和编译 Overleaf 的 LaTeX 论文。Git 编辑保存于本地，明确推送前会检查协作者冲突。
+  配置 session cookie 后可提交修订建议。
+security:
+  makes_network_calls: true
+  network_endpoints:
+    - https://git.overleaf.com
+    - https://www.overleaf.com
+    - https://doi.org
+    - https://api.crossref.org
+    - https://export.arxiv.org/api
+    - https://registry.npmjs.org
+  has_hooks: false
+  requires_bypass_permissions: false
+  telemetry: false
+  auto_update: false
+  depends_3rdparty: true
+  allowed_tools_scoped: true
+install: npx --yes mcp-server-overleaf@0.6.1 setup
+validate_claim: >-
+  配置一个 Overleaf 测试项目后，要求 Claude「列出论文的章节并读取摘要，报告引用检查结果，不修改任何文件」。
+  预期返回章节、摘要和引用检查结果，Overleaf 项目无写入。
+tags: [overleaf, latex, collaborative-writing, tracked-changes]
