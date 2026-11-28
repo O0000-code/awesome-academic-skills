@@ -39,12 +39,12 @@ tags:
 - multi-agent
 featured: false
 spotlight: false
-stargazers_count: 527
-updated_at: '2026-10-28'
+stargazers_count: 594
+updated_at: '2026-11-23'
 archived: false
 current_release:
-  tag: null
-  published_at: null
+  tag: v1.0.0
+  published_at: '2026-11-19'
 last_link_check: null
 last_security_scan: null
 subcategory: Pre-submission review & rebuttal

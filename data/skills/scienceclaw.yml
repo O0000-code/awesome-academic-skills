@@ -64,8 +64,8 @@ security:
 validate_claim: Give the system a concrete research question and verify it returns
   a searched, cited, and drafted result whose sources actually exist.
 subcategory: Domain-bound autonomous systems
-stargazers_count: 1024
-updated_at: '2026-11-02'
+stargazers_count: 1033
+updated_at: '2026-11-23'
 archived: false
 current_release:
   tag: null
