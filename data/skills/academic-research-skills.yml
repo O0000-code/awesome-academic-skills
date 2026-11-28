@@ -43,12 +43,12 @@ tags:
 - Imbad0202
 featured: false
 spotlight: false
-stargazers_count: 55141
-updated_at: '2026-11-02'
+stargazers_count: 58912
+updated_at: '2026-11-27'
 archived: false
 current_release:
-  tag: v3.24.1
-  published_at: '2026-11-02'
+  tag: v3.24.5
+  published_at: '2026-11-26'
 last_link_check: null
 last_security_scan: null
 subcategory: Full-lifecycle research backbones
